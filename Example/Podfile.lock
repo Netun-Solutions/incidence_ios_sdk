@@ -1,0 +1,31 @@
+PODS:
+  - Alamofire (5.7.1)
+  - IncidenceLibraryIOS (0.1.2):
+    - Alamofire
+    - Kingfisher
+    - youtube-ios-player-helper
+  - Kingfisher (6.3.1)
+  - youtube-ios-player-helper (1.0.4)
+
+DEPENDENCIES:
+  - IncidenceLibraryIOS (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Kingfisher
+    - youtube-ios-player-helper
+
+EXTERNAL SOURCES:
+  IncidenceLibraryIOS:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Alamofire: 0123a34370cb170936ae79a8df46cc62b2edeb88
+  IncidenceLibraryIOS: 47c4f97cb18f8ca1de3a5b576991b3a7d85dc8eb
+  Kingfisher: 016c8b653a35add51dd34a3aba36b580041acc74
+  youtube-ios-player-helper: e9b97535e816db3152179d84d999bc1807ecd689
+
+PODFILE CHECKSUM: fb5381418531d1af80d70f4590f8fe2bcb7e937c
+
+COCOAPODS: 1.12.1

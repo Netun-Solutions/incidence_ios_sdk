@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Silka-Regular.otf">
+            <string>Silka-Regular</string>
+        </array>
+        <array key="Silka-SemiBold.otf">
+            <string>Silka-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="UjU-I9-fJJ">
+            <objects>
+                <viewController storyboardIdentifier="SignInViewController" id="Xuu-cJ-iEz" customClass="SignInViewController" customModule="IncidenceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rCM-Qz-U5q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJh-vF-WLy">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHM-PS-Tem">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjo-XE-fdX" customClass="TextLabel" customModule="IncidenceApp" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
+                                                <color key="textColor" name="black600"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x7Q-S3-quN" customClass="TextFieldView" customModule="IncidenceApp" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="224" width="366" height="64"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="ZKw-VP-b8X"/>
+                                                </constraints>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3C-zX-HgA" customClass="PrimaryButton" customModule="IncidenceApp" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="332" width="366" height="64"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="64" id="e2D-NN-9Tv"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Silka-SemiBold" family="Silka" pointSize="17"/>
+                                                <state key="normal">
+                                                    <color key="titleColor" name="white"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="continueButtonPressed:" destination="Xuu-cJ-iEz" eventType="touchUpInside" id="yNx-ow-vM7"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M37-T4-9H4" customClass="TextButton" customModule="IncidenceApp" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="432" width="366" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <connections>
+                                                    <action selector="switchSignInTypePressed:" destination="Xuu-cJ-iEz" eventType="touchUpInside" id="Z1N-kX-dkA"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="W3C-zX-HgA" firstAttribute="top" secondItem="x7Q-S3-quN" secondAttribute="bottom" constant="44" id="1vF-He-ZU9"/>
+                                            <constraint firstItem="W3C-zX-HgA" firstAttribute="leading" secondItem="HHM-PS-Tem" secondAttribute="leading" constant="24" id="54d-U2-XaG"/>
+                                            <constraint firstAttribute="trailing" secondItem="W3C-zX-HgA" secondAttribute="trailing" constant="24" id="DkL-KT-O1t"/>
+                                            <constraint firstItem="x7Q-S3-quN" firstAttribute="top" secondItem="Yjo-XE-fdX" secondAttribute="top" constant="180" id="EfT-5o-hZ2"/>
+                                            <constraint firstAttribute="trailing" secondItem="M37-T4-9H4" secondAttribute="trailing" constant="24" id="FE0-7Y-i66"/>
+                                            <constraint firstAttribute="trailing" secondItem="Yjo-XE-fdX" secondAttribute="trailing" constant="24" id="KTa-Dt-Sau"/>
+                                            <constraint firstAttribute="trailing" secondItem="x7Q-S3-quN" secondAttribute="trailing" constant="24" id="Uqr-uq-JM8"/>
+                                            <constraint firstItem="M37-T4-9H4" firstAttribute="top" secondItem="W3C-zX-HgA" secondAttribute="bottom" constant="36" id="Vfk-Es-b2o"/>
+                                            <constraint firstItem="Yjo-XE-fdX" firstAttribute="leading" secondItem="HHM-PS-Tem" secondAttribute="leading" constant="24" id="gip-fR-vjS"/>
+                                            <constraint firstItem="M37-T4-9H4" firstAttribute="leading" secondItem="HHM-PS-Tem" secondAttribute="leading" constant="24" id="iUk-Eg-iJN"/>
+                                            <constraint firstItem="Yjo-XE-fdX" firstAttribute="top" secondItem="HHM-PS-Tem" secondAttribute="top" constant="44" id="rSM-pE-N5O"/>
+                                            <constraint firstItem="x7Q-S3-quN" firstAttribute="leading" secondItem="HHM-PS-Tem" secondAttribute="leading" constant="24" id="u7c-rf-bqe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="HHM-PS-Tem" secondAttribute="trailing" id="1Cl-47-0gk"/>
+                                    <constraint firstAttribute="bottom" secondItem="HHM-PS-Tem" secondAttribute="bottom" id="TtI-7f-7Pw"/>
+                                    <constraint firstItem="HHM-PS-Tem" firstAttribute="top" secondItem="IJh-vF-WLy" secondAttribute="top" id="XxZ-CD-gRI"/>
+                                    <constraint firstItem="HHM-PS-Tem" firstAttribute="height" secondItem="IJh-vF-WLy" secondAttribute="height" priority="250" id="YpS-lV-Jnw"/>
+                                    <constraint firstItem="HHM-PS-Tem" firstAttribute="leading" secondItem="IJh-vF-WLy" secondAttribute="leading" id="gkN-eJ-avE"/>
+                                    <constraint firstItem="HHM-PS-Tem" firstAttribute="width" secondItem="IJh-vF-WLy" secondAttribute="width" id="tI1-Qx-84h"/>
+                                </constraints>
+                            </scrollView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q41-7i-7jB" customClass="TextLabel" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="760.5" width="366" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" name="black500"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0P2-ZI-rja" customClass="TextButton" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="786" width="366" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <connections>
+                                    <action selector="createAccountPressed:" destination="Xuu-cJ-iEz" eventType="touchUpInside" id="Cms-8v-vdY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="u9x-Ow-QXR"/>
+                        <color key="backgroundColor" name="incidence100"/>
+                        <constraints>
+                            <constraint firstItem="Q41-7i-7jB" firstAttribute="leading" secondItem="u9x-Ow-QXR" secondAttribute="leading" constant="24" id="0cf-GP-NKi"/>
+                            <constraint firstItem="0P2-ZI-rja" firstAttribute="leading" secondItem="u9x-Ow-QXR" secondAttribute="leading" constant="24" id="1Xl-tX-xFJ"/>
+                            <constraint firstItem="IJh-vF-WLy" firstAttribute="leading" secondItem="rCM-Qz-U5q" secondAttribute="leading" id="1ik-Jt-fsp"/>
+                            <constraint firstItem="u9x-Ow-QXR" firstAttribute="bottom" secondItem="IJh-vF-WLy" secondAttribute="bottom" id="2sK-sK-xnU"/>
+                            <constraint firstItem="u9x-Ow-QXR" firstAttribute="trailing" secondItem="IJh-vF-WLy" secondAttribute="trailing" id="3A7-LE-Uro"/>
+                            <constraint firstItem="u9x-Ow-QXR" firstAttribute="trailing" secondItem="0P2-ZI-rja" secondAttribute="trailing" constant="24" id="F4h-FJ-NfZ"/>
+                            <constraint firstItem="IJh-vF-WLy" firstAttribute="top" secondItem="u9x-Ow-QXR" secondAttribute="top" id="iC4-2a-f5h"/>
+                            <constraint firstItem="u9x-Ow-QXR" firstAttribute="bottom" secondItem="0P2-ZI-rja" secondAttribute="bottom" constant="44" id="qFW-dx-cld"/>
+                            <constraint firstItem="u9x-Ow-QXR" firstAttribute="trailing" secondItem="Q41-7i-7jB" secondAttribute="trailing" constant="24" id="qoL-xl-LcZ"/>
+                            <constraint firstItem="0P2-ZI-rja" firstAttribute="top" secondItem="Q41-7i-7jB" secondAttribute="bottom" constant="6" id="uQM-UR-VjS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="W3C-zX-HgA" id="FJV-Bs-TaQ"/>
+                        <outlet property="createAccountButton" destination="0P2-ZI-rja" id="wyZ-OO-F5I"/>
+                        <outlet property="createAccountLabel" destination="Q41-7i-7jB" id="FY6-NM-KEs"/>
+                        <outlet property="helperLabel" destination="Yjo-XE-fdX" id="5Qe-rY-iea"/>
+                        <outlet property="inputTextField" destination="x7Q-S3-quN" id="HEy-Uk-UQG"/>
+                        <outlet property="switchSignInType" destination="M37-T4-9H4" id="JKy-Ce-MiP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cqq-Oa-2d4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-510.14492753623193" y="186.83035714285714"/>
+        </scene>
+        <!--Sign In Validation View Controller-->
+        <scene sceneID="We1-Z1-luk">
+            <objects>
+                <viewController storyboardIdentifier="SignInValidationViewController" id="Wei-eb-Wfj" customClass="SignInValidationViewController" customModule="IncidenceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KrS-3u-taE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vZa-3C-osF" customClass="TextLabel" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="88" width="366" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="20"/>
+                                <color key="textColor" name="black600"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBY-nY-5x8" customClass="TextLabel" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="129.5" width="366" height="19"/>
+                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
+                                <color key="textColor" name="black600"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMK-Ai-EWp" customClass="ValidatorView" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="64" y="242" width="286" height="64"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" priority="750" constant="286" id="s2j-e4-dmU"/>
+                                    <constraint firstAttribute="height" priority="250" constant="64" id="w0T-L4-2L0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="br3-HQ-Tn9" customClass="PrimaryButton" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="406.5" width="366" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="YQC-mA-OgN"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="continueButtonPressed:" destination="Wei-eb-Wfj" eventType="touchUpInside" id="VKn-5F-fat"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXr-LS-rwx" customClass="TextLabel" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="368" width="366" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" name="black500"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xc9-SQ-DOU" customClass="TextButton" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="330" width="366" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="resendButtonPressed:" destination="Wei-eb-Wfj" eventType="touchUpInside" id="aDA-xG-LAW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="GE1-2C-CRz"/>
+                        <color key="backgroundColor" name="incidence100"/>
+                        <constraints>
+                            <constraint firstItem="GE1-2C-CRz" firstAttribute="trailing" secondItem="OXr-LS-rwx" secondAttribute="trailing" constant="24" id="3KT-4f-sOP"/>
+                            <constraint firstItem="OXr-LS-rwx" firstAttribute="top" secondItem="Xc9-SQ-DOU" secondAttribute="bottom" constant="8" id="908-MI-sdS"/>
+                            <constraint firstItem="vZa-3C-osF" firstAttribute="leading" secondItem="GE1-2C-CRz" secondAttribute="leading" constant="24" id="C6O-ee-Wo0"/>
+                            <constraint firstItem="OXr-LS-rwx" firstAttribute="leading" secondItem="GE1-2C-CRz" secondAttribute="leading" constant="24" id="F1s-de-tfS"/>
+                            <constraint firstItem="zBY-nY-5x8" firstAttribute="leading" secondItem="GE1-2C-CRz" secondAttribute="leading" constant="24" id="Fzz-Ct-Wjd"/>
+                            <constraint firstItem="zBY-nY-5x8" firstAttribute="top" secondItem="vZa-3C-osF" secondAttribute="bottom" constant="18" id="IG1-VB-wI4"/>
+                            <constraint firstItem="br3-HQ-Tn9" firstAttribute="leading" secondItem="GE1-2C-CRz" secondAttribute="leading" constant="24" id="KN4-6P-Sbt"/>
+                            <constraint firstItem="GE1-2C-CRz" firstAttribute="trailing" secondItem="vZa-3C-osF" secondAttribute="trailing" constant="24" id="NDL-V2-V14"/>
+                            <constraint firstItem="GE1-2C-CRz" firstAttribute="trailing" secondItem="br3-HQ-Tn9" secondAttribute="trailing" constant="24" id="Ps4-j6-HVx"/>
+                            <constraint firstItem="aMK-Ai-EWp" firstAttribute="centerX" secondItem="KrS-3u-taE" secondAttribute="centerX" id="YlF-W1-HMx"/>
+                            <constraint firstItem="vZa-3C-osF" firstAttribute="top" secondItem="GE1-2C-CRz" secondAttribute="top" constant="44" id="bwQ-ck-bj6"/>
+                            <constraint firstItem="Xc9-SQ-DOU" firstAttribute="leading" secondItem="GE1-2C-CRz" secondAttribute="leading" constant="24" id="dFF-Is-SnD"/>
+                            <constraint firstItem="br3-HQ-Tn9" firstAttribute="top" secondItem="OXr-LS-rwx" secondAttribute="bottom" constant="24" id="ffy-Ea-0a4"/>
+                            <constraint firstItem="GE1-2C-CRz" firstAttribute="trailing" secondItem="zBY-nY-5x8" secondAttribute="trailing" constant="24" id="kN5-wM-Nmp"/>
+                            <constraint firstItem="GE1-2C-CRz" firstAttribute="trailing" secondItem="Xc9-SQ-DOU" secondAttribute="trailing" constant="24" id="lds-ea-Ji9"/>
+                            <constraint firstItem="aMK-Ai-EWp" firstAttribute="top" secondItem="vZa-3C-osF" secondAttribute="top" constant="154" id="q8f-W2-CBI"/>
+                            <constraint firstItem="Xc9-SQ-DOU" firstAttribute="top" secondItem="aMK-Ai-EWp" secondAttribute="bottom" constant="24" id="u7H-RA-7QS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="continueButton" destination="br3-HQ-Tn9" id="Lsd-BQ-uOT"/>
+                        <outlet property="countdownLabel" destination="OXr-LS-rwx" id="a8H-fx-qAW"/>
+                        <outlet property="helperLabel" destination="zBY-nY-5x8" id="hkm-yu-32n"/>
+                        <outlet property="resendButton" destination="Xc9-SQ-DOU" id="QRr-Cb-pep"/>
+                        <outlet property="titleLabel" destination="vZa-3C-osF" id="PLR-WV-Jy1"/>
+                        <outlet property="validatorView" destination="aMK-Ai-EWp" id="jiz-NM-4Pm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8D-20-Vuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="197" y="187"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="black500">
+            <color red="0.45098039215686275" green="0.45098039215686275" blue="0.45098039215686275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="black600">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="incidence100">
+            <color red="0.90196078431372551" green="0.94901960784313721" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="white">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

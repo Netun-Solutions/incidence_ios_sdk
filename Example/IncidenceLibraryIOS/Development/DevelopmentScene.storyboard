@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Development View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="DevelopmentViewController" id="Y6W-OH-hqX" customClass="DevelopmentViewController" customModule="IncidenceLibraryIOS_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5fU-ie-WHQ">
+                                <rect key="frame" x="20" y="48" width="374" height="814"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Incidence SDK Demo APP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz2-a2-R3V">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cke-JB-qtc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6s-GS-oAh">
+                                        <rect key="frame" x="0.0" y="50" width="374" height="50"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="G7Z-m9-hJS"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Vincular baliza"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Vincular baliza">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="accountPressed:" destination="Ad2-wu-EvN" eventType="touchUpInside" id="2eV-KG-umZ"/>
+                                            <action selector="btnDeviceCreatePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Kzh-W5-upD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvN-Vt-Jpy">
+                                        <rect key="frame" x="0.0" y="120" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rmg-xC-FK0"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Opciones de baliza"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Desvincular baliza">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDeviceDeletePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="B9d-ei-ZkB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Joe-A6-pz9">
+                                        <rect key="frame" x="0.0" y="190" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hVF-mJ-3ck"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Crear incidencia"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Comprobar baliza">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnDeviceReviewPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AJQ-gk-HWA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PfN-eX-F67">
+                                        <rect key="frame" x="0.0" y="260" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="eH7-tg-AHl"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Cerrar incidencia"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Crear incidencia">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnIncidenceCreatePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WGa-8h-MZ1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6d-Ew-bZw">
+                                        <rect key="frame" x="0.0" y="330" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="0l5-mI-Xcc"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Ecommerce"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cerrar incidencias">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnIncidenceClosePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AlM-g7-cOa"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVt-JF-sYA">
+                                        <rect key="frame" x="0.0" y="400" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Pm5-s3-GfL"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Opciones de baliza"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Ecommerce">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnEcommercePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Yj2-j5-0G3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="UvN-Vt-Jpy" secondAttribute="trailing" id="2ZQ-N8-iSV"/>
+                                    <constraint firstItem="Y6s-GS-oAh" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="30U-Fh-qbv"/>
+                                    <constraint firstItem="Y6s-GS-oAh" firstAttribute="top" secondItem="Iz2-a2-R3V" secondAttribute="bottom" id="4as-s6-Zot"/>
+                                    <constraint firstItem="Iz2-a2-R3V" firstAttribute="top" secondItem="5fU-ie-WHQ" secondAttribute="top" id="DO9-LW-hmi"/>
+                                    <constraint firstItem="qVt-JF-sYA" firstAttribute="top" secondItem="N6d-Ew-bZw" secondAttribute="bottom" constant="20" id="E3Q-2L-Clp"/>
+                                    <constraint firstItem="N6d-Ew-bZw" firstAttribute="top" secondItem="PfN-eX-F67" secondAttribute="bottom" constant="20" id="EFg-HL-Z43"/>
+                                    <constraint firstAttribute="trailing" secondItem="N6d-Ew-bZw" secondAttribute="trailing" id="EUq-cm-gV7"/>
+                                    <constraint firstItem="Iz2-a2-R3V" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="GmJ-IF-35w"/>
+                                    <constraint firstItem="UvN-Vt-Jpy" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="Gox-Qv-0cC"/>
+                                    <constraint firstAttribute="trailing" secondItem="Joe-A6-pz9" secondAttribute="trailing" id="HW7-jD-Kvt"/>
+                                    <constraint firstAttribute="trailing" secondItem="qVt-JF-sYA" secondAttribute="trailing" id="Lzu-YG-6fV"/>
+                                    <constraint firstItem="N6d-Ew-bZw" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="QO8-Un-kro"/>
+                                    <constraint firstItem="PfN-eX-F67" firstAttribute="top" secondItem="Joe-A6-pz9" secondAttribute="bottom" constant="20" id="UKW-Ww-U6e"/>
+                                    <constraint firstItem="Joe-A6-pz9" firstAttribute="top" secondItem="UvN-Vt-Jpy" secondAttribute="bottom" constant="20" id="dtd-Nu-dFY"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iz2-a2-R3V" secondAttribute="trailing" id="gYE-W0-vwX"/>
+                                    <constraint firstAttribute="trailing" secondItem="PfN-eX-F67" secondAttribute="trailing" id="q2B-Ms-A2G"/>
+                                    <constraint firstItem="PfN-eX-F67" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="r7s-pg-CQs"/>
+                                    <constraint firstItem="qVt-JF-sYA" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="tAr-S4-Cya"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y6s-GS-oAh" secondAttribute="trailing" id="vSK-Dk-DBe"/>
+                                    <constraint firstItem="Joe-A6-pz9" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="wSI-t1-KtF"/>
+                                    <constraint firstItem="UvN-Vt-Jpy" firstAttribute="top" secondItem="Y6s-GS-oAh" secondAttribute="bottom" constant="20" id="yE5-hi-xtL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5fU-ie-WHQ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="I3T-NM-rLn"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5fU-ie-WHQ" secondAttribute="bottom" id="UM4-NL-Fui"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="5fU-ie-WHQ" secondAttribute="trailing" constant="20" id="lIW-Mt-llQ"/>
+                            <constraint firstItem="5fU-ie-WHQ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="y0R-t5-xTI"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Ad2-wu-EvN" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="48" y="44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,6 @@
+framework module IncidenceLibraryIOS {
+  umbrella header "IncidenceLibraryIOS-umbrella.h"
+
+  export *
+  module * { export * }
+}

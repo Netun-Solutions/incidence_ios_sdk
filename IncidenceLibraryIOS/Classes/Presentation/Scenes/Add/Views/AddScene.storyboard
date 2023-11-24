@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Silka-Regular.otf">
+            <string>Silka-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Add Selection View Controller-->
+        <scene sceneID="Ofp-lB-fAI">
+            <objects>
+                <viewController storyboardIdentifier="AddSelectionViewController" id="DM8-dQ-fW2" customClass="AddSelectionViewController" customModule="IncidenceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CQe-1b-A1t">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tm6-W3-666">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thO-lP-Qy9">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uq1-0M-lzB" customClass="TextLabel" customModule="IncidenceApp" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
+                                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
+                                                <color key="textColor" name="black600"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="ZgL-JT-UlZ">
+                                                <rect key="frame" x="67" y="127.5" width="280" height="120"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XVm-V0-Id2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="120" id="PQQ-Id-RlZ"/>
+                                                            <constraint firstAttribute="height" constant="120" id="rtn-vG-2NW"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="carButtonPressed:" destination="DM8-dQ-fW2" eventType="touchUpInside" id="3cT-ta-6ds"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MiT-eK-evF">
+                                                        <rect key="frame" x="160" y="0.0" width="120" height="120"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="120" id="5IK-wK-Uu6"/>
+                                                            <constraint firstAttribute="height" constant="120" id="7Tq-MA-zjX"/>
+                                                        </constraints>
+                                                        <state key="normal" title="Button"/>
+                                                        <connections>
+                                                            <action selector="beaconButtonPressed:" destination="DM8-dQ-fW2" eventType="touchUpInside" id="cht-iU-SZb"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ZgL-JT-UlZ" firstAttribute="centerX" secondItem="thO-lP-Qy9" secondAttribute="centerX" id="5dS-TY-Csd"/>
+                                            <constraint firstItem="ZgL-JT-UlZ" firstAttribute="top" secondItem="uq1-0M-lzB" secondAttribute="bottom" constant="64" id="Hfl-op-MhJ"/>
+                                            <constraint firstAttribute="trailing" secondItem="uq1-0M-lzB" secondAttribute="trailing" constant="24" id="fyo-0X-elX"/>
+                                            <constraint firstItem="uq1-0M-lzB" firstAttribute="leading" secondItem="thO-lP-Qy9" secondAttribute="leading" constant="24" id="i1p-aP-fDB"/>
+                                            <constraint firstItem="uq1-0M-lzB" firstAttribute="top" secondItem="thO-lP-Qy9" secondAttribute="top" constant="44" id="nQe-15-44E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="thO-lP-Qy9" secondAttribute="bottom" id="3oC-pz-nUP"/>
+                                    <constraint firstItem="thO-lP-Qy9" firstAttribute="top" secondItem="Tm6-W3-666" secondAttribute="top" id="ApQ-zX-NE2"/>
+                                    <constraint firstItem="thO-lP-Qy9" firstAttribute="width" secondItem="Tm6-W3-666" secondAttribute="width" id="JN3-Ce-HVd"/>
+                                    <constraint firstAttribute="trailing" secondItem="thO-lP-Qy9" secondAttribute="trailing" id="S9c-Kk-540"/>
+                                    <constraint firstItem="thO-lP-Qy9" firstAttribute="leading" secondItem="Tm6-W3-666" secondAttribute="leading" id="eah-dp-Ypl"/>
+                                    <constraint firstItem="thO-lP-Qy9" firstAttribute="height" secondItem="Tm6-W3-666" secondAttribute="height" priority="250" id="osL-GD-syT"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FWs-eh-Kst"/>
+                        <color key="backgroundColor" name="incidence100"/>
+                        <constraints>
+                            <constraint firstItem="Tm6-W3-666" firstAttribute="trailing" secondItem="FWs-eh-Kst" secondAttribute="trailing" id="H94-OP-1e1"/>
+                            <constraint firstItem="FWs-eh-Kst" firstAttribute="bottom" secondItem="Tm6-W3-666" secondAttribute="bottom" id="Vy4-Ay-D8K"/>
+                            <constraint firstItem="Tm6-W3-666" firstAttribute="top" secondItem="FWs-eh-Kst" secondAttribute="top" id="X9Z-dH-WVq"/>
+                            <constraint firstItem="Tm6-W3-666" firstAttribute="leading" secondItem="FWs-eh-Kst" secondAttribute="leading" id="i5c-c6-5ks"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="beaconButton" destination="MiT-eK-evF" id="R8c-qD-NBh"/>
+                        <outlet property="carButton" destination="XVm-V0-Id2" id="4DH-5e-XOG"/>
+                        <outlet property="helperLabel" destination="uq1-0M-lzB" id="Z9z-xI-4vV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bSo-Ci-AoE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="214" y="66"/>
+        </scene>
+        <!--Add Beacon To Car View Controller-->
+        <scene sceneID="bpH-Le-EDy">
+            <objects>
+                <viewController storyboardIdentifier="AddBeaconToCarViewController" id="ap3-hk-qkm" customClass="AddBeaconToCarViewController" customModule="IncidenceApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="faZ-nV-PvT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vs6-MD-Lm1" customClass="TextLabel" customModule="IncidenceApp" customModuleProvider="target">
+                                <rect key="frame" x="24" y="88" width="366" height="19.5"/>
+                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
+                                <color key="textColor" name="black600"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jDT-rm-6hw">
+                                <rect key="frame" x="0.0" y="131.5" width="414" height="730.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="48a-tW-RWy"/>
+                        <color key="backgroundColor" name="incidence100"/>
+                        <constraints>
+                            <constraint firstItem="48a-tW-RWy" firstAttribute="trailing" secondItem="jDT-rm-6hw" secondAttribute="trailing" id="5sc-IP-SFQ"/>
+                            <constraint firstItem="48a-tW-RWy" firstAttribute="trailing" secondItem="Vs6-MD-Lm1" secondAttribute="trailing" constant="24" id="6ao-6O-svz"/>
+                            <constraint firstItem="Vs6-MD-Lm1" firstAttribute="top" secondItem="48a-tW-RWy" secondAttribute="top" constant="44" id="Cue-2W-qKB"/>
+                            <constraint firstItem="jDT-rm-6hw" firstAttribute="top" secondItem="Vs6-MD-Lm1" secondAttribute="bottom" constant="24" id="KYY-4r-rJ3"/>
+                            <constraint firstItem="Vs6-MD-Lm1" firstAttribute="leading" secondItem="48a-tW-RWy" secondAttribute="leading" constant="24" id="YGt-iL-kJZ"/>
+                            <constraint firstItem="48a-tW-RWy" firstAttribute="bottom" secondItem="jDT-rm-6hw" secondAttribute="bottom" id="f7u-cW-Der"/>
+                            <constraint firstItem="jDT-rm-6hw" firstAttribute="leading" secondItem="48a-tW-RWy" secondAttribute="leading" id="jyi-74-eem"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="helperLabel" destination="Vs6-MD-Lm1" id="0SX-nw-XgW"/>
+                        <outlet property="tableView" destination="jDT-rm-6hw" id="khJ-uk-h0l"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kCq-7y-jVn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941" y="66"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="black600">
+            <color red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="incidence100">
+            <color red="0.90196078431372551" green="0.94901960784313721" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
