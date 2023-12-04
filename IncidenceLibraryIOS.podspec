@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/Netun-Solutions/incidence_ios_sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Victor' => 'vimafe@gmail.com' }
+  s.author           = { 'Netun-Solutions' => 'cconde@help-flash.com' }
   s.source           = { :git => 'https://github.com/Netun-Solutions/incidence_ios_sdk.git', :tag => 'v' +  s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
