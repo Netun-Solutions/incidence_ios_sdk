@@ -72,6 +72,9 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
         if (showIOTNumber == 0) {
             hideIOT = true;
         }
+        
+        IncidenceLibraryManager.shared.setViewBackground(view: self.view)
+        IncidenceLibraryManager.shared.setTextColor(view: helperLabel)
     }
     
     @IBAction func skipAction(_ sender: UIButton) {
@@ -342,10 +345,17 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
 
                 Core.shared.saveVehicle(vehicle: self.viewModel.vehicle)
                 
+                var beaconTypeId: Int = 2;
+                let beaconData = result.get(key: "data") ?? BeaconData()
+                if let beacons = beaconData.beacon {
+                    if (beacons.count > 0) {
+                        let beacon = beacons[0];
+                        beaconTypeId = beacon.beaconType?.id ?? 2;
+                    }
+                }
                 
                 //Show beacon added view
-                let vm = RegistrationSuccessBeaconViewModel()
-                vm.origin = .addBeacon
+                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: false, beaconTypeId: beaconTypeId)
                 let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
@@ -544,8 +554,12 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
                 EventNotification.post(code: .VEHICLE_UPDATED, object: vehicle)
                 EventNotification.post(code: .BEACON_ADDED, object: vehicle.beacon)
                 
+                let beacon: Beacon? = result.get(key: "beacon")
+                
                 //Show beacon added view
-                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil))
+                let beaconTypeId: Int = beacon?.beaconType?.id ?? 2;
+                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil), beaconTypeId: beaconTypeId)
+                
                 let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
@@ -656,11 +670,11 @@ extension RegistrationBeaconSelectTypeViewController: UITableViewDelegate, UITab
     }
     
     func didTapCancel() {
-        self.dismiss(animated: true)
+        self.dismiss(animated: false)
     }
     
     func didTapAccept(imei: String){
-        self.dismiss(animated: true)
+        self.dismiss(animated: false)
         
         selectedBeacon = Beacon()
         selectedBeacon.iot = imei

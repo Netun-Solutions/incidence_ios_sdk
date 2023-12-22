@@ -29,7 +29,6 @@
 		0A960F450D886FBD886BAE4DD291D240 /* ModelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901D16A7BBE6A67C436049662916F49 /* ModelDevice.swift */; };
 		0B2294B569C218162B74098B53EACC45 /* CallBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB83E5C416B9615B9BBD11C13D43C37 /* CallBottomSheetView.swift */; };
 		0BC3AB36FCECF5C112340C38EFF788D9 /* RegistrationVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C7ED0F61C0D4925192F433791552 /* RegistrationVehicleViewModel.swift */; };
-		0C390A62D1E09F96A52A8BED28CD0CC5 /* ReportNotificationCarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A47269568572B90795B624F76E9500BB /* ReportNotificationCarViewModel.swift */; };
 		0CB96C288A3649B247AB82CB9B210245 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD25CD1FDE951C734BA8348D22438ED /* youtube-ios-player-helper-dummy.m */; };
 		0E15B98917851DE8CB4C997FD76181A1 /* AccountMyDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85E8E58F9BAA7C61ECF3D1BF387B5AF /* AccountMyDataViewController.swift */; };
 		0E71ED44223F30DB03AD5DF99BCD2B4D /* TextFieldWithSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71233F6BA56912827188A1BD2A5E9B6C /* TextFieldWithSelectView.swift */; };
@@ -143,7 +142,6 @@
 		54E5E1F4A5EEE5A04FA75CB3545DE709 /* PaddingTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CEC347F58D3B25F9CF6D70B03E5C98 /* PaddingTextView.swift */; };
 		55177D4BDC108975C6A233943E3B117B /* Pods-IncidenceLibraryIOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C6F9E80CB5A2829BD3CEAC9351A4A53 /* Pods-IncidenceLibraryIOS_Example-dummy.m */; };
 		552E1502A9550FDF76B384B514A9695A /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7B69AFB84D0A9A73910A743A28A7C8 /* CustomSlider.swift */; };
-		5646B23A72094B17A5F6765CBA5A96AC /* ReportNotificationCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6986F18EF3FE080D7E7B4487417C7B4F /* ReportNotificationCarViewController.swift */; };
 		56F40C1B561FD3676046B7B0F44238A4 /* IResponse+Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66A336746B6BB392E552A1034D1230D1 /* IResponse+Decodable.swift */; };
 		57907D8778FDF8EEED970EB1FA4CFF44 /* AccountScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 1E7414B43DCBEE65976A2E3A7873EC4D /* AccountScene.storyboard */; };
 		57F1FAF147B0A7B62947211DF6CC7DFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207BEE6DFA63E5CF69828DD467E9674 /* Foundation.framework */; };
@@ -368,6 +366,8 @@
 		E350907483A980EC32C36A04AD4B3503 /* IResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CE898940B3D5D6FC46AE2FFC79444F /* IResponse.swift */; };
 		E46C1D557CDE3875D8A22E868FF3FC0B /* Pods-IncidenceLibraryIOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D32BA7F71888DE57D1F3E326D673B850 /* Pods-IncidenceLibraryIOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E5522694CC2EA58312459F4730985666 /* NSTextAttachment+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77E71E2E8CF6308B2D6203235362DD0 /* NSTextAttachment+Kingfisher.swift */; };
+		E5D868542B17573800F9CB7B /* BeaconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D868532B17573800F9CB7B /* BeaconData.swift */; };
+		E5D8685C2B19AE6200F9CB7B /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D8685A2B19AE5700F9CB7B /* AppConfig.swift */; };
 		E61E4E1DF791252FA42033D48545E2D9 /* UIStackView+RemoveAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126BD7CE7585A7F65D5CFD426B022AA /* UIStackView+RemoveAll.swift */; };
 		E6251F02EE12804D1B66AE32E716E664 /* SessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D271E61EABF97D6E283120E11EC43A /* SessionDelegate.swift */; };
 		E6578E90535966F055BDB5C92609BEAA /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88ABD322C2BB69D5B1868E4D435810D /* UIView+Extensions.swift */; };
@@ -662,7 +662,6 @@
 		6772656A66966A9B4BA9CF75C7ECE16C /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
 		680F9573571F30875377BF991942DAFD /* RegistrationColorViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationColorViewModel.swift; sourceTree = "<group>"; };
 		6975331CCC2805F92C5BBA8049F7FD00 /* ValidatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidatorView.swift; sourceTree = "<group>"; };
-		6986F18EF3FE080D7E7B4487417C7B4F /* ReportNotificationCarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportNotificationCarViewController.swift; sourceTree = "<group>"; };
 		69DCE47D15338436E9F32195DEF89EC3 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		6AB8CDE856264FA3ADE503B2A01825B1 /* RegistrationTermsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationTermsViewModel.swift; sourceTree = "<group>"; };
 		6B26F7FF1A285724D0E04B245D4A7D6D /* VehicleType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehicleType.swift; sourceTree = "<group>"; };
@@ -765,7 +764,6 @@
 		A31089B755A0779D78AFDABFFE907F1A /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A3946A90BF103A2B7D5C7C5DA841ACCB /* VehicleColorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehicleColorCell.swift; sourceTree = "<group>"; };
 		A3C1484BD1A21A830E271BC4833C08E4 /* IncidenceLibraryIOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "IncidenceLibraryIOS-Info.plist"; sourceTree = "<group>"; };
-		A47269568572B90795B624F76E9500BB /* ReportNotificationCarViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportNotificationCarViewModel.swift; sourceTree = "<group>"; };
 		A63992A1B484DF40C91A109B9092B73C /* ReportMapViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportMapViewModel.swift; sourceTree = "<group>"; };
 		A77E71E2E8CF6308B2D6203235362DD0 /* NSTextAttachment+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSTextAttachment+Kingfisher.swift"; path = "Sources/Extensions/NSTextAttachment+Kingfisher.swift"; sourceTree = "<group>"; };
 		A79B35A1F5A8ACE43A293C89C55361C0 /* LogFormatter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LogFormatter.swift; sourceTree = "<group>"; };
@@ -876,6 +874,8 @@
 		E2474AEBA22DF360516F6788794FB888 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Image/Filter.swift; sourceTree = "<group>"; };
 		E49A0296A7E90FBAFB7939A54BC7004F /* EcommerceViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcommerceViewModel.swift; sourceTree = "<group>"; };
 		E582F02016503857F37324CDAEC12E48 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
+		E5D868532B17573800F9CB7B /* BeaconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconData.swift; sourceTree = "<group>"; };
+		E5D8685A2B19AE5700F9CB7B /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E5DBA4F4946DBABD4C740A4144939CC7 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E6E16721BFD437453DCD85F6BA04EFF4 /* Pods-IncidenceLibraryIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IncidenceLibraryIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E72A0426EFE5F776DD28C652D3FFF661 /* KeyboardDismiss.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardDismiss.swift; sourceTree = "<group>"; };
@@ -1171,6 +1171,7 @@
 		2B15DD1332F013FFA28BAF1F3719EC76 /* IncidenceLibraryIOS */ = {
 			isa = PBXGroup;
 			children = (
+				E5D868592B19AE4600F9CB7B /* Entity */,
 				5A33E355593EFD67923A7B6854981183 /* Assets.xcassets */,
 				966DFFB93816A2AD14E59929AF50776D /* Colors.xcassets */,
 				8613DE963C1DA2012A64A55D3664CD03 /* IncidenceLibraryManager.swift */,
@@ -1344,7 +1345,6 @@
 				AED43EE8C6D30576C5454C6AAF6D1B60 /* ReportIDKViewModel.swift */,
 				7E4554C9584EDEB7B8EA62EE5E1F3EB1 /* ReportInstructionsViewModel.swift */,
 				A63992A1B484DF40C91A109B9092B73C /* ReportMapViewModel.swift */,
-				A47269568572B90795B624F76E9500BB /* ReportNotificationCarViewModel.swift */,
 				5407A012532A8BF2CD3CFAFD144B9C57 /* ReportTypeViewModel.swift */,
 			);
 			path = ViewModels;
@@ -1485,7 +1485,6 @@
 				5018A5C5DDF58B68680FCDD604CEAF72 /* ReportExpiredInsuranceViewController.swift */,
 				C3BDDFE602038E326F77F6301D69525F /* ReportIDKViewController.swift */,
 				2683778D48B9BDBEFBA14827D75309F2 /* ReportInstructionsViewController.swift */,
-				6986F18EF3FE080D7E7B4487417C7B4F /* ReportNotificationCarViewController.swift */,
 				87D80845CB6C81C6587E146FBFB19848 /* ReportScene.storyboard */,
 				456FFAD21CC9179CCD74590898152876 /* ReportTypeViewController.swift */,
 				0B48352C6CA69D40D8075E7C9E853AF8 /* BottomSheet */,
@@ -1615,6 +1614,7 @@
 				6003EC675516D416AD29EC6876463647 /* Vehicle.swift */,
 				6B26F7FF1A285724D0E04B245D4A7D6D /* VehicleType.swift */,
 				4B8684D78461FFD16A7418749ECF20BA /* Versions.swift */,
+				E5D868532B17573800F9CB7B /* BeaconData.swift */,
 			);
 			name = Domain;
 			path = IncidenceLibraryIOS/Classes/Domain;
@@ -1994,6 +1994,14 @@
 				89C265C03A5FEBCF0B92E3DF48F9FE9C /* ViewControllers */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		E5D868592B19AE4600F9CB7B /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				E5D8685A2B19AE5700F9CB7B /* AppConfig.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		E987E326809F8DFE000934F7A61D6BEC /* Views */ = {
@@ -2597,13 +2605,12 @@
 				8949DC717C8244074D47EC15F4B5F8F5 /* ReportIDKViewController.swift in Sources */,
 				6662C757F182749A1274748316A802AE /* ReportIDKViewModel.swift in Sources */,
 				BF475E49CC04D93F44F0EBD46C7D79DF /* ReportIncidenceSimpleScene.storyboard in Sources */,
+				E5D868542B17573800F9CB7B /* BeaconData.swift in Sources */,
 				D4F5444D22C3589697B2657A67DD9FE3 /* ReportIncidenceSimpleViewController.swift in Sources */,
 				50BC9D3E7F446339BC5DE528E9613355 /* ReportIncidenceSimpleViewModel.swift in Sources */,
 				D23DF875F89A1752E3BACCAE37FACF11 /* ReportInstructionsViewController.swift in Sources */,
 				F80D334A66EAE53B87B31E0D94813DBE /* ReportInstructionsViewModel.swift in Sources */,
 				6972D7578A4A038C0E97FB0C12BF2C29 /* ReportMapViewModel.swift in Sources */,
-				5646B23A72094B17A5F6765CBA5A96AC /* ReportNotificationCarViewController.swift in Sources */,
-				0C390A62D1E09F96A52A8BED28CD0CC5 /* ReportNotificationCarViewModel.swift in Sources */,
 				CAFF04CAE24B3582D138233EF8DAE1D9 /* ReportScene.storyboard in Sources */,
 				E1FD5EE46E210207BE9726C6400C4095 /* ReportTypeViewController.swift in Sources */,
 				2002E64CEC7109D99AC587EFAF5AE4E8 /* ReportTypeViewModel.swift in Sources */,
@@ -2633,6 +2640,7 @@
 				BD450EFDCAA608CE662D50F6B9AD35DC /* TooltipButton.swift in Sources */,
 				60920526DB7CCF62AF8EF1D17E457417 /* TutorialVideo.swift in Sources */,
 				E176167B175E1B7DCF4E739C0E19CD6D /* UIBarButtonItem+Extension.swift in Sources */,
+				E5D8685C2B19AE6200F9CB7B /* AppConfig.swift in Sources */,
 				311122BFCC3A3D74D83A2FB1999FF97E /* UIKitExtensions.swift in Sources */,
 				4D562D8CFF1D9AAA002C4C54928340EB /* UILabel+LineHeight.swift in Sources */,
 				E61E4E1DF791252FA42033D48545E2D9 /* UIStackView+RemoveAll.swift in Sources */,

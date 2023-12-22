@@ -11,10 +11,12 @@ class RegistrationSuccessBeaconViewModel: IABaseViewModel {
     
     public var origin: RegistrationOrigin
     public var isIoT = false
+    public var beaconTypeId: Int
     
-    internal init(origin: RegistrationOrigin = .registration, isIoT:Bool = false) {
+    internal init(origin: RegistrationOrigin = .registration, isIoT:Bool = false, beaconTypeId:Int) {
         self.origin = origin
         self.isIoT = isIoT
+        self.beaconTypeId = beaconTypeId
     }
     
     public override var navigationTitle: String? {

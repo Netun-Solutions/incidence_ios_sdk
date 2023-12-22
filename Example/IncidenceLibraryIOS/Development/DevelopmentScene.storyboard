@@ -138,12 +138,49 @@
                                             <action selector="btnEcommercePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Yj2-j5-0G3"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eof-UZ-t8h">
+                                        <rect key="frame" x="0.0" y="470" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="DfY-Ae-YXv"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Opciones de baliza"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Flujo reportar incidencia">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnReportIncPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="n0u-PT-Hjy"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R7B-0P-S7c">
+                                        <rect key="frame" x="0.0" y="540" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Tqr-52-dAc"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Opciones de baliza"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Flujo reportar incidencia (simplificado)">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnReportIncSimpPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pfI-bH-y3N"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="UvN-Vt-Jpy" secondAttribute="trailing" id="2ZQ-N8-iSV"/>
                                     <constraint firstItem="Y6s-GS-oAh" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="30U-Fh-qbv"/>
                                     <constraint firstItem="Y6s-GS-oAh" firstAttribute="top" secondItem="Iz2-a2-R3V" secondAttribute="bottom" id="4as-s6-Zot"/>
+                                    <constraint firstItem="Eof-UZ-t8h" firstAttribute="top" secondItem="qVt-JF-sYA" secondAttribute="bottom" constant="20" id="7Q2-9N-nne"/>
                                     <constraint firstItem="Iz2-a2-R3V" firstAttribute="top" secondItem="5fU-ie-WHQ" secondAttribute="top" id="DO9-LW-hmi"/>
                                     <constraint firstItem="qVt-JF-sYA" firstAttribute="top" secondItem="N6d-Ew-bZw" secondAttribute="bottom" constant="20" id="E3Q-2L-Clp"/>
                                     <constraint firstItem="N6d-Ew-bZw" firstAttribute="top" secondItem="PfN-eX-F67" secondAttribute="bottom" constant="20" id="EFg-HL-Z43"/>
@@ -151,12 +188,17 @@
                                     <constraint firstItem="Iz2-a2-R3V" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="GmJ-IF-35w"/>
                                     <constraint firstItem="UvN-Vt-Jpy" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="Gox-Qv-0cC"/>
                                     <constraint firstAttribute="trailing" secondItem="Joe-A6-pz9" secondAttribute="trailing" id="HW7-jD-Kvt"/>
+                                    <constraint firstAttribute="trailing" secondItem="R7B-0P-S7c" secondAttribute="trailing" id="Hjq-Av-kfy"/>
                                     <constraint firstAttribute="trailing" secondItem="qVt-JF-sYA" secondAttribute="trailing" id="Lzu-YG-6fV"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eof-UZ-t8h" secondAttribute="trailing" id="OEK-Mx-EiD"/>
+                                    <constraint firstItem="R7B-0P-S7c" firstAttribute="top" secondItem="Eof-UZ-t8h" secondAttribute="bottom" constant="20" id="Okc-18-Gk0"/>
                                     <constraint firstItem="N6d-Ew-bZw" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="QO8-Un-kro"/>
                                     <constraint firstItem="PfN-eX-F67" firstAttribute="top" secondItem="Joe-A6-pz9" secondAttribute="bottom" constant="20" id="UKW-Ww-U6e"/>
+                                    <constraint firstItem="Eof-UZ-t8h" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="Xa1-2l-ZkK"/>
                                     <constraint firstItem="Joe-A6-pz9" firstAttribute="top" secondItem="UvN-Vt-Jpy" secondAttribute="bottom" constant="20" id="dtd-Nu-dFY"/>
                                     <constraint firstAttribute="trailing" secondItem="Iz2-a2-R3V" secondAttribute="trailing" id="gYE-W0-vwX"/>
                                     <constraint firstAttribute="trailing" secondItem="PfN-eX-F67" secondAttribute="trailing" id="q2B-Ms-A2G"/>
+                                    <constraint firstItem="R7B-0P-S7c" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="qP2-DC-e07"/>
                                     <constraint firstItem="PfN-eX-F67" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="r7s-pg-CQs"/>
                                     <constraint firstItem="qVt-JF-sYA" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="tAr-S4-Cya"/>
                                     <constraint firstAttribute="trailing" secondItem="Y6s-GS-oAh" secondAttribute="trailing" id="vSK-Dk-DBe"/>

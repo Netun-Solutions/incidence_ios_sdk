@@ -48,6 +48,9 @@ class RegistrationSuccessBeaconViewController: IABaseViewController, StoryboardI
         subtitleLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0)
         subtitleLabel.text = viewModel.subtitleLabelText
         continueButton.setTitle(viewModel.continueButtonText, for: .normal)
+        
+        let image = viewModel.beaconTypeId == 1 ? UIImage.app("location_smart") : viewModel.beaconTypeId == 3 ? UIImage.app("beacon_hella_reg") : UIImage.app("location")
+        imageBeacon.image = image;
     }
   
     private func setUpStepperView() {

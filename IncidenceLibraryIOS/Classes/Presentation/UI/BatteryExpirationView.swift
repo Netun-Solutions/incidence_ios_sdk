@@ -34,16 +34,27 @@ class BatteryExpirationView: UIView {
         self.setUpUI()
     }
     
-    public func configure(titleText: String, progress: Float, completion: @escaping () -> Void) {
+    public func configure(titleText: String, progress: Float, alert: Int, completion: @escaping () -> Void) {
         titleLabel.text = titleText
         self.completion = completion
         //setTooltipText(tooltipText)
         //showEditIcon = hasEditIcon ?? false
         
-        valueProgress.progress = progress / 100
-        subTitleLabel.text = String(progress) + "%"
+        let formatter = NumberFormatter()
+        formatter.numberStyle = .decimal
+        formatter.maximumFractionDigits = 2
+        formatter.minimumFractionDigits = 2
+        formatter.decimalSeparator = ","
+        formatter.groupingSeparator = ""
+
+        let number = NSNumber(value: progress)
+        let formattedValue = formatter.string(from: number)!
         
-        if (progress < 20) {
+        valueProgress.progress = progress / 100
+        subTitleLabel.text = formattedValue + "%"
+        
+        //if (progress < 20) {
+        if (alert == 1) {
             valueProgress.progressTintColor = UIColor.red
             infoButton.tintColor = UIColor.red
         }

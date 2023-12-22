@@ -14,6 +14,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     @IBOutlet weak var titleLabel: TextLabel!
     @IBOutlet weak var timeLabel: TextLabel!
     @IBOutlet weak var deviceImage: UIImageView!
+    @IBOutlet weak var deviceTypeImage: UIImageView!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var findView: UIView!
     @IBOutlet weak var infoView: UIView!
@@ -27,14 +28,13 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     var timerVibrate:Timer?
     var incidences: [IncidenceDGT] = []
     var battery: Float = 0
+    var alert: Int = 0
     var expirationDate: String = ""
     var dgt: Int = 0
     var hasVibrate: Bool = false
     
     var closedAlertStopDevice: Bool = false
     var closedAlertNewIncidence: Bool = false
-    
-    private var device: Beacon?
     
     static var storyboardFileName = "DevicesScene"
     private var viewModel: DeviceDetailSdkViewModel! { get { return baseViewModel as? DeviceDetailSdkViewModel }}
@@ -44,7 +44,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         let customSubtitleText = "stop_device_desc".localized()
         
         let x = 30.0;
-        let y = view.frame.y;
+        let y = view.frame.y + 60;
         let width = UIScreen.main.bounds.width - x - x
         let widthMargin = 16.0
         let widthCross = 24.0
@@ -119,7 +119,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         let customAlertText = "report_incidence".localized()
         
         let x = 30.0;
-        let y = view.frame.y;
+        let y = view.frame.y + 60;
         let width = UIScreen.main.bounds.width - x - x
         let widthMargin = 16.0
         let widthCross = 24.0
@@ -237,11 +237,19 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         timeLabel.text = "01:30"
         timeLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0, aligment: .center)
         
-        //let image = UIImage.app( "device_start")?.withRenderingMode(.alwaysTemplate)
-        let image = UIImage.app( "device_start")
-        deviceImage.image = image
+        //let image = UIImage(named: "device_start")?.withRenderingMode(.alwaysTemplate)
         deviceImage.contentMode = .scaleAspectFit
         //deviceImage.translatesAutoresizingMaskIntoConstraints = false
+        
+        if (viewModel.device?.beaconType?.imageBeacon != nil) {
+            //deviceImage.image.kf.setImage(with: viewModel.device?.beaconType?.imageBeacon)
+            let imgURL = URL(string: viewModel.device?.beaconType?.imageBeacon ?? "")
+            deviceImage.kf.setImage(with: imgURL)
+        } else {
+            let image = UIImage.app("device_start")
+            deviceImage.image = image
+        }       
+        
         
         backButton.setTitle("return_back".localized(), for: .normal)
         backButton.addTarget(self, action: #selector(onClickReturn), for: .touchUpInside)
@@ -254,6 +262,10 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.insetsContentViewsToSafeArea = false
         
+        let imageType = viewModel.device?.beaconType?.id == 1 ? UIImage.app("beacon_smart") : viewModel.device?.beaconType?.id == 3 ? UIImage.app("beacon_hella") : UIImage.app("beacon")
+        deviceTypeImage.image = imageType
+        deviceTypeImage.contentMode = .scaleAspectFit
+        
         view.addSubview(alertStopDeviceView)
         view.addSubview(alertNewIncidenceView)
         
@@ -263,7 +275,25 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     }
     
     override func loadData() {
-        refreshData();
+        Api.shared.getBeaconSdk(vehicle: viewModel.vehicle, user: viewModel.user, completion: { result in
+            
+            if (result.isSuccess())
+            {
+                let beacons = result.getList(key: "beacon") ?? [Beacon]()
+                if (beacons.count > 0) {
+                    //self.device = beacons[0]
+                    self.viewModel.device = beacons[0]
+                }
+                self.refreshData()
+            }
+            else
+            {
+                self.hideHUD()
+                self.onBadResponse(result: result, handler: { UIAlertAction in
+                    self.backPressed()
+                })
+            }
+       })
     }
     
     private func setUpNavigation() {
@@ -339,13 +369,9 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
                         self.battery = Float(dataDic["battery"] as! Double)
                         self.expirationDate = dataDic["expirationDate"] as! String
                         self.dgt = dataDic["dgt"] as! Int
+                        /*
                         let incidencesVal: [NSDictionary]? = dataDic["incidences"] as? [NSDictionary]
                         
-                        
-                        // print(incidencesVal)
-                        //if let incidencesValT = incidencesVal {
-                        //    print(incidencesValT)
-                        //}
                         
                         if let incidencesVal = incidencesVal {
                             self.incidences.removeAll()
@@ -369,6 +395,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
                                 self.incidences.append(incidenceDGT);
                             }
                         }
+                        */
                         
                         self.changeView()
                         if (self.dgt == 0) {
@@ -459,10 +486,10 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
          */
         
         fechaTextFieldView.configure(titleText: "device_expiration".localized(), valueText: expirationDate);
-        batteryExpirationView.configure(titleText: "device_battery_status".localized(), progress: battery , completion: {
-            if let device = self.device {
+        batteryExpirationView.configure(titleText: "device_battery_status".localized(), progress: battery , alert: alert, completion: {
+            if let device = self.viewModel.device {
                 
-                let deviceModel: DeviceDetailViewModel = DeviceDetailViewModel(device: device)
+                let deviceModel: DeviceDetailViewModel = DeviceDetailViewModel(device: device, useName: true)
                 
                 let vc = DeviceInfoViewController.create(with: deviceModel)
                 self.navigationController?.pushViewController(vc, animated: true)
@@ -496,7 +523,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     }
     
     @objc func createInc() {
-        //let vm = ReportTypeViewModel(vehicle: viewModel.device.vehicle, vehicleTmp: viewModel.device.vehicle, openFromNotification: false)
+        //let vm = ReportTypeViewModel(vehicle: viewModel.device?.vehicle, vehicleTmp: viewModel.device?.vehicle, openFromNotification: false)
         //let viewController = ReportTypeViewController.create(with: vm)
         //navigationController?.pushViewController(viewController, animated: true)
     }

@@ -262,7 +262,9 @@ class RegistrationBeaconViewController: IABaseViewController, StoryboardInstanti
                                             EventNotification.post(code: .BEACON_ADDED, object: vehicle.beacon)
                                             
                                             //Show beacon added view
-                                            let vm = RegistrationSuccessBeaconViewModel()
+                                            let beaconTypeId: Int = vehicle.beacon?.beaconType?.id ?? 2;
+                                            let vm = RegistrationSuccessBeaconViewModel(origin: .registration, isIoT: false, beaconTypeId: beaconTypeId)
+                                            
                                             vm.isIoT = (vehicle.beacon?.iot != nil)
                                             let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                                             self.navigationController?.pushViewController(viewController, animated: true)
@@ -409,12 +411,15 @@ class RegistrationBeaconViewController: IABaseViewController, StoryboardInstanti
                     vehicle.beacon = self.selectedBeacon;
                 }
                 
+                var beacon: Beacon? = result.get(key: "beacon")
+                
                 Core.shared.saveVehicle(vehicle: vehicle)
                 EventNotification.post(code: .VEHICLE_UPDATED, object: vehicle)
                 EventNotification.post(code: .BEACON_ADDED, object: vehicle.beacon)
                 
                 //Show beacon added view
-                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil))
+                let beaconTypeId: Int = beacon?.beaconType?.id ?? 2;
+                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil), beaconTypeId: beaconTypeId)
                 let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                 self.navigationController?.pushViewController(viewController, animated: true)
             }

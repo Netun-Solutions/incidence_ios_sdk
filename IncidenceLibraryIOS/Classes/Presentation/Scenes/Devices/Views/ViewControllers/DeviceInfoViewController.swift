@@ -22,7 +22,9 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
     
     // MARK: - Lifecycle
     static func create(with viewModel: DeviceDetailViewModel) -> DeviceInfoViewController {
-        let view = DeviceInfoViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        
+        let view = DeviceInfoViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         return view
@@ -35,14 +37,26 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
     override func setUpUI() {
         super.setUpUI()
         
-        titleLabel.text = "device_desc_info1".localized()
         titleLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0, aligment: .center)
         
-        //let image = UIImage.app( "device_start")?.withRenderingMode(.alwaysTemplate)
-        let image = UIImage.app( "device_info_1")
-        deviceImage.image = image
+        //let image = UIImage(named: "device_start")?.withRenderingMode(.alwaysTemplate)
         deviceImage.contentMode = .scaleAspectFit
         //deviceImage.translatesAutoresizingMaskIntoConstraints = false
+        
+        
+        if (viewModel.device.beaconType?.imageBeaconScreen1 != nil) {
+            let imgURL = URL(string: viewModel.device.beaconType?.imageBeaconScreen1 ?? "")
+            deviceImage.kf.setImage(with: imgURL)
+        } else {
+            let image = UIImage.app("device_info_1")
+            deviceImage.image = image
+        }
+        
+        if (viewModel.device.beaconType?.textBeaconScreen1 != nil) {
+            titleLabel.text = viewModel.device.beaconType?.textBeaconScreen1;
+        } else {
+            titleLabel.text = "device_desc_info1".localized()
+        }
         
         backButton.setTitle("continuar".localized(), for: .normal)
         backButton.addTarget(self, action: #selector(onClickReturn), for: .touchUpInside)
@@ -62,15 +76,36 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
         if (index == 0) {
             index=1;
             
-            titleLabel.text = "device_desc_info2".localized()
-            let image = UIImage.app( "device_info_2")
-            deviceImage.image = image
+            if (viewModel.device.beaconType?.imageBeaconScreen2 != nil) {
+                let imgURL = URL(string: viewModel.device.beaconType?.imageBeaconScreen2 ?? "")
+                deviceImage.kf.setImage(with: imgURL)
+            } else {
+                let image = UIImage.app("device_info_2")
+                deviceImage.image = image
+            }
+            
+            if (viewModel.device.beaconType?.textBeaconScreen2 != nil) {
+                titleLabel.text = viewModel.device.beaconType?.textBeaconScreen2;
+            } else {
+                titleLabel.text = "device_desc_info2".localized()
+            }
+            
         } else if (index == 1) {
             index=2
             
-            titleLabel.text = "device_desc_info3".localized()
-            let image = UIImage.app( "device_info_3")
-            deviceImage.image = image
+            if (viewModel.device.beaconType?.imageBeaconScreen3 != nil) {
+                let imgURL = URL(string: viewModel.device.beaconType?.imageBeaconScreen3 ?? "")
+                deviceImage.kf.setImage(with: imgURL)
+            } else {
+                let image = UIImage.app("device_info_3")
+                deviceImage.image = image
+            }
+            
+            if (viewModel.device.beaconType?.textBeaconScreen3 != nil) {
+                titleLabel.text = viewModel.device.beaconType?.textBeaconScreen3;
+            } else {
+                titleLabel.text = "device_desc_info3".localized()
+            }
             
             backButton.setTitle("Finalizar", for: .normal)
         } else {

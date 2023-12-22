@@ -14,7 +14,9 @@ public class IABaseViewController: UIViewController, UIGestureRecognizerDelegate
     var forceShowBackButton = false
     var navigationColor: UIColor {
         get {
-            return UIColor.app(.black600) ?? .black
+            //return UIColor.app(.black600) ?? .black
+            let color : UIColor? = IncidenceLibraryManager.shared.getTextColor();
+            return color ?? UIColor.app(.black600) ?? .black
             
         }
     }

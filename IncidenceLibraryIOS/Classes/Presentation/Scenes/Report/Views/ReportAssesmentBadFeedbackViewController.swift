@@ -33,7 +33,8 @@ class ReportAssesmentBadFeedbackViewController: IABaseViewController, Storyboard
     
     // MARK: - Lifecycle
     static func create(with viewModel: ReportAssesmentBadFeedbackViewModel) -> ReportAssesmentBadFeedbackViewController {
-        let view = ReportAssesmentBadFeedbackViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        let view = ReportAssesmentBadFeedbackViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         return view

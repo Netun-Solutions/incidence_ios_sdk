@@ -9,12 +9,13 @@ import Foundation
 
 class DeviceDetailSdkViewModel: IABaseViewModel {
     public override var navigationTitle: String? {
-        get { return "beacon".localized() }
+        get { return (device != nil) ? device!.name : "beacon".localized() }
         set { }
     }
     
     public var vehicle: Vehicle
     public var user: User
+    public var device: Beacon?
     
     public init(vehicle: Vehicle, user: User) {
         self.vehicle = vehicle

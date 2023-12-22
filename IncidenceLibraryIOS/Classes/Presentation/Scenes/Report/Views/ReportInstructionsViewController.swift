@@ -62,10 +62,12 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
     
     // MARK: - Lifecycle
     static func create(with viewModel: ReportInstructionsViewModel) -> ReportInstructionsViewController {
-        let view = ReportInstructionsViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        let view = ReportInstructionsViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         view.vehicle = viewModel.vehicle
+        view.user = viewModel.user
         view.openFromNotification = viewModel.openFromNotification
         
         return view
@@ -96,14 +98,14 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
         super.setUpUI()
         insuraceImageView.layer.cornerRadius = 36
         insuraceImageView.layer.masksToBounds = true
-        if let vehicle = viewModel.vehicle, let insurance = vehicle.insurance, let url = insurance.image {
+        if let insurance = IncidenceLibraryManager.shared.getInsurance(), let url = insurance.image {
             let imgURL = URL(string: url)
             insuraceImageView.kf.setImage(with: imgURL)
         }
         
         descriptionLabel.text = viewModel.descriptionText
         descriptionLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0, aligment: .left)
-        if let vehicle = viewModel.vehicle, let insurance = vehicle.insurance, let message = insurance.textIncidence {
+        if let insurance = IncidenceLibraryManager.shared.getInsurance(), let message = insurance.textIncidence {
             descriptionLabel.text = message
         }
         
@@ -139,7 +141,7 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
         cancelButton.setTitle(viewModel.cancelButtonText, for: .normal)
         
         var disable = true
-        if let vehicle = viewModel.vehicle, let insurance = vehicle.insurance {
+        if IncidenceLibraryManager.shared.getInsurance() != nil {
             disable = false
         }
         if (disable) {
@@ -152,7 +154,7 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
     
     func setUpCarsVoiceRecognizer() {
         var array = [String]()
-        if let vehicle = viewModel.vehicle, let insurance = vehicle.insurance, let message = insurance.textIncidence {
+        if let insurance = IncidenceLibraryManager.shared.getInsurance(), let message = insurance.textIncidence {
             array.append(message)
         } else {
             array.append("calling_grua_tip".localizedVoice())
@@ -201,89 +203,10 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
     
     private func onSuccessReport(incidence:Incidence)
     {
-        if let openApp = incidence.openApp
-        {
-            EventNotification.post(code: .INCIDENCE_REPORTED)
-            
-            Core.shared.startNewApp(appScheme: openApp.iosUniversalLink ?? "")
-            self.navigationController?.popToRootViewController(animated: true)
-        }
-        else if let asitur = incidence.asitur {
-         
-            EventNotification.post(code: .INCIDENCE_REPORTED)
-            self.navigationController?.popToRootViewController(animated: true)
-        }
-        else
-        {
-            //llamamos a la aseguradora
-            LocationManager.shared.isLocationOutSpain { outSpain in
-                
-                var phoneNumber = self.viewModel.vehicle?.insurance?.phone ?? ""
-                if (outSpain)
-                {
-                    phoneNumber = self.viewModel.vehicle?.insurance?.internationaPhone ?? ""
-                }
-                
-                
-                if let url = URL(string: "tel://\(phoneNumber)")
-                {
-                    let application = UIApplication.shared
-                    if application.canOpenURL(url) {
-                        
-                        Core.shared.appStateBlocked = true
-                        let selector = #selector(self.appDidBecomeActive)
-                        let notifName = UIApplication.didBecomeActiveNotification
-                        NotificationCenter.default.addObserver(self, selector: selector, name: notifName, object: nil)
-
-                        
-                        application.open(url, options: [:], completionHandler: { isSuccess in
-                            // print here does your handler open/close : check 'isSuccess'
-                        })
-                        
-                        EventNotification.post(code: .INCIDENCE_REPORTED)
-                    }
-                    else
-                    {
-                        EventNotification.post(code: .INCIDENCE_REPORTED)
-                        
-                        self.navigationController?.popToRootViewController(animated: true)
-                    }
-                }
-                
-                /*
-                let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-                let firstAction: UIAlertAction = UIAlertAction(title: "call_to".localized() + phoneNumber , style: .default) { action -> Void in
-                    Core.shared.callNumber(phoneNumber: phoneNumber, autoCall: true)
-                    self.navigationController?.popToRootViewController(animated: true)
-                }
-                let image = UIImage.app( "PhoneBlack")?.withRenderingMode(.alwaysOriginal)
-                firstAction.setValue(image, forKey: "image")
-
-                let cancelAction: UIAlertAction = UIAlertAction(title: "cancel".localized(), style: .destructive) { action -> Void in
-                    
-                    self.showHUD()
-                    Api.shared.closeIncidence(incidenceId: incidence.id!, completion: { result in
-                        self.hideHUD()
-                        if (result.isSuccess())
-                        {
-                            incidence.close()
-                            
-                            EventNotification.post(code: .INCIDENCE_REPORTED)
-                        }
-                        else
-                        {
-                            self.onBadResponse(result: result)
-                        }
-                        self.navigationController?.popToRootViewController(animated: true)
-                   })
-                }
-                actionSheetController.addAction(firstAction)
-                actionSheetController.addAction(cancelAction)
-
-                self.present(actionSheetController, animated: true, completion: nil)
-                */
-            }
-        }
+        self.navigationController?.popToRootViewController(animated: false)
+        
+        let response: IActionResponse = IActionResponse(status: true)
+        self.viewModel.delegate.onResult(response: response)
     }
     
     @objc func appDidBecomeActive()
@@ -304,10 +227,10 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
         Core.shared.stopTimer()
         stopTimer()
         
+        showHUD()
+        
         if (LocationManager.shared.isLocationEnabled())
         {
-            showHUD()
-            
             if let manual = Core.shared.manualAddressCoordinate
             {
                 let location = CLLocation(latitude: manual.latitude, longitude: manual.longitude)
@@ -315,58 +238,52 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
             }
             else if let location = LocationManager.shared.getCurrentLocation() {
                 reportLocation(location: location)
+            } else {
+                reportLocation(location: nil)
             }
         }
         else
         {
-            showAlert(message: "activate_location_message".localized())
+            //showAlert(message: "activate_location_message".localized())
+            reportLocation(location: nil)
         }
     }
     
-    private func reportLocation(location: CLLocation)
+    private func reportLocation(location: CLLocation?)
     {
-        /*
-        MapBoxManager.searchAddress(location: location.coordinate) { address in
+        let incidenceType: IncidenceType = IncidenceType()
+        incidenceType.externalId = String(self.viewModel.incidenceTypeId!)
+        
+        
+        let incidence: Incidence = Incidence()
+        incidence.incidenceType = incidenceType
+        incidence.street = "";
+        incidence.city = "";
+        incidence.country = "";
+        incidence.latitude = location != nil ? location!.coordinate.latitude : nil;
+        incidence.longitude = location != nil ? location!.coordinate.longitude : nil;
+        
+        Api.shared.postIncidenceSdk(vehicle: vehicle!, user: user!, incidence: incidence, completion: { result in
             
-            var street = ""
-            var city = ""
-            var country = ""
-            let licensePlate = self.viewModel.vehicle?.licensePlate
-            
-            if (address.city != nil) {
-                city = address.city!
-            }
-            if (address.country != nil) {
-                country = address.country!
-            }
-            
-            var str2 = ""
-            if (address.street != nil) {
-                str2 = address.street!
-            }
-            if (address.streetNumber != nil) {
-                if (str2.count == 0) {
-                    str2 = address.streetNumber!
-                } else {
-                    str2 = str2 + ", " + address.streetNumber!
+            self.hideHUD()
+            if (result.isSuccess())
+            {
+                if let data = result.getJSONString(key: "incidence") {
+                    
+                    print(data)
+                    if let dataDic = StringUtils.convertToDictionary(text: data) {
+                        incidence.id = Int(dataDic["id"] as! Int)
+                        incidence.externalIncidenceId = dataDic["externalIncidenceTypeId"] as? String
+                    }
                 }
+                
+                self.onSuccessReport(incidence: incidence)
             }
-            street = str2
-            
-            Api.shared.reportIncidence(licensePlate: licensePlate!, incidenceTypeId: String(self.viewModel.incidenceTypeId!), street: street, city: city, country: country, location: location, openFromNotification: self.viewModel.openFromNotification, completion: { result in
-                self.hideHUD()
-                if (result.isSuccess())
-                {
-                    let incidence:Incidence? = result.get(key: "incidence")
-                    self.onSuccessReport(incidence: incidence!)
-                }
-                else
-                {
-                    self.onBadResponse(result: result)
-                }
-           })
-        }
-        */
+            else
+            {
+                self.onBadResponse(result: result)
+            }
+       })
     }
     
 

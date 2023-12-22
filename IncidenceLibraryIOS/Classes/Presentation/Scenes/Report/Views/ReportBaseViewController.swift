@@ -9,6 +9,45 @@ import UIKit
 import AVFoundation
 import CoreLocation
 
+enum NumbersRecognizion: Int, CaseIterable {
+    case one = 1
+    case two
+    case three
+    case four
+    case five
+    case six
+    case seven
+    case eight
+    case nine
+    
+    func getLocalizedText() -> String {
+        switch self {
+        case .one:
+            return "one".localizedVoice()
+        case .two:
+            return "two".localizedVoice()
+        case .three:
+            return "three".localizedVoice()
+        case .four:
+            return "four".localizedVoice()
+        case .five:
+            return "five".localizedVoice()
+        case .six:
+            return "six".localizedVoice()
+        case .seven:
+            return "seven".localizedVoice()
+        case .eight:
+            return "eight".localizedVoice()
+        case .nine:
+            return "nine".localizedVoice()
+        }
+    }
+}
+
+public protocol ReportTypeViewControllerDelegate: AnyObject {
+    func onResult(response: IActionResponse)
+}
+
 public class ReportBaseViewController: IABaseViewController {
     
     weak var speechReconizableDelegate: SpeechReconizable?
@@ -18,6 +57,7 @@ public class ReportBaseViewController: IABaseViewController {
     //var secondsRemainingAudio = -1
     
     var vehicle: Vehicle?
+    var user: User?
     var openFromNotification:Bool = false
     var timeFinished:Bool = false
     

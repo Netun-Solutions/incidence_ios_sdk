@@ -64,10 +64,12 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
     
     // MARK: - Lifecycle
     static func create(with viewModel: ReportAccidentViewModel) -> ReportAccidentViewController {
-        let view = ReportAccidentViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        let view = ReportAccidentViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         view.vehicle = viewModel.vehicle
+        view.user = viewModel.user
         view.openFromNotification = viewModel.openFromNotification
         
         return view
@@ -105,7 +107,7 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
         injuredButton.configure(text: viewModel.injuredText, color: .red)
         
         var disable = true
-        if let vehicle = viewModel.vehicle, let insurance = vehicle.insurance {
+        if IncidenceLibraryManager.shared.getInsurance() != nil {
             disable = false
         }
         
@@ -129,7 +131,7 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
     }
     
     private func noInjuredButtonPressed() {
-        if let vehicle = self.viewModel.vehicle, let insurance = vehicle.insurance {
+        if let insurance = IncidenceLibraryManager.shared.getInsurance() {
             LocationManager.shared.isLocationOutSpain { outSpain in
                 if (outSpain)
                 {
@@ -188,10 +190,10 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
         Core.shared.stopTimer()
         stopTimer()
 
+        showHUD()
+        
         if (LocationManager.shared.isLocationEnabled())
         {
-            showHUD()
-            
             if let manual = Core.shared.manualAddressCoordinate
             {
                 let location = CLLocation(latitude: manual.latitude, longitude: manual.longitude)
@@ -199,15 +201,18 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
             }
             else if let location = LocationManager.shared.getCurrentLocation() {
                 reportLocation(idIncidence: idIncidence, phone: phone, location: location)
+            } else {
+                reportLocation(idIncidence: idIncidence, phone: phone, location: nil)
             }
         }
         else
         {
-            showAlert(message: "activate_location_message".localized())
+            //showAlert(message: "activate_location_message".localized())
+            reportLocation(idIncidence: idIncidence, phone: phone, location: nil)
         }
     }
     
-    private func reportLocation(idIncidence: String, phone: String, location: CLLocation)
+    private func reportLocation(idIncidence: String, phone: String, location: CLLocation?)
     {
         /*
         MapBoxManager.searchAddress(location: location.coordinate) { address in
@@ -288,6 +293,45 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
            })
         }
         */
+        
+        let incidenceType: IncidenceType = IncidenceType()
+        incidenceType.externalId = idIncidence
+        
+        
+        let incidence: Incidence = Incidence()
+        incidence.incidenceType = incidenceType
+        incidence.street = "";
+        incidence.city = "";
+        incidence.country = "";
+        incidence.latitude = location != nil ? location!.coordinate.latitude : nil;
+        incidence.longitude = location != nil ? location!.coordinate.longitude : nil;
+        
+        Api.shared.postIncidenceSdk(vehicle: vehicle!, user: user!, incidence: incidence, completion: { result in
+            
+            self.hideHUD()
+            if (result.isSuccess())
+            {
+                if let data = result.getJSONString(key: "incidence") {
+                    
+                    print(data)
+                    if let dataDic = StringUtils.convertToDictionary(text: data) {
+                        incidence.id = Int(dataDic["id"] as! Int)
+                        incidence.externalIncidenceId = dataDic["externalIncidenceTypeId"] as? String
+                    }
+                }
+                
+                //self.onSuccessReport(incidence: incidence)
+                
+                self.navigationController?.popToRootViewController(animated: false)
+                
+                let response: IActionResponse = IActionResponse(status: true)
+                self.viewModel.delegate.onResult(response: response)
+            }
+            else
+            {
+                self.onBadResponse(result: result)
+            }
+       })
     }
     
     func updateSpeechButton() {

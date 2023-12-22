@@ -52,19 +52,20 @@ extension Api {
     
     func basicHeaders() -> HTTPHeaders {
         var headers:HTTPHeaders = [:]
-        
+        /*
         let token:String? = Prefs.loadString(key: Constants.KEY_USER_TOKEN)
         if (token != nil) {
             headers[Api.HEADER_TOKEN] = token!
         }
+         */
         
         let deviceId:Int? = Prefs.loadInt(key: Constants.KEY_DEVICE_ID)
         if (deviceId != nil) {
             headers[Api.HEADER_DEVICE_ID] = String(deviceId!)
         }
         
-        //headers[Api.HEADER_APP] = Bundle.main.bundleIdentifier
-        headers[Api.HEADER_APP] = "mapfre.com.app"
+        headers[Api.HEADER_APP] = Bundle.main.bundleIdentifier
+        //headers[Api.HEADER_APP] = "mapfre.com.app"
         headers[Api.HEADER_LANG] = Core.shared.getLanguage()
         headers[Api.HEADER_PLATFORM] = "ios"
         

@@ -88,7 +88,8 @@ class AddBeaconToCarViewController: IABaseViewController, StoryboardInstantiable
                 EventNotification.post(code: .BEACON_ADDED, object: vehicle.beacon)
                 
                 //Show beacon added view
-                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil))
+                let beaconTypeId: Int = vehicle.beacon?.beaconType?.id ?? 2;
+                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil), beaconTypeId: beaconTypeId)
                 let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                 self.navigationController?.pushViewController(viewController, animated: true)
             }

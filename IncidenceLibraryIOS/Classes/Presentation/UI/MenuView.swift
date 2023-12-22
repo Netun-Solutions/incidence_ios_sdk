@@ -21,6 +21,7 @@ enum MenuViewColors {
     case red
     case blue
     case white
+    case defaultColor
     
     func getColor() -> UIColor? {
         switch self {
@@ -30,9 +31,11 @@ enum MenuViewColors {
             return UIColor.app(.errorPrimary)
         case .blue:
             return UIColor.app(.incidencePrimary)
-            
         case .white:
             return UIColor.app(.white)
+        case .defaultColor:
+            let color : UIColor? = IncidenceLibraryManager.shared.getTextColor();
+            return color ?? UIColor.app(.black600) ?? .black
         }
     }
 }
@@ -117,7 +120,7 @@ class MenuView: UIView {
     }
 
     public func configure(text: String,
-                          color: MenuViewColors = .black,
+                          color: MenuViewColors = .defaultColor,
                           iconImage: UIImage? = nil,
                           iconImageWidth:CGFloat = 24.0,
                           iconImageHeight:CGFloat = 24.0,

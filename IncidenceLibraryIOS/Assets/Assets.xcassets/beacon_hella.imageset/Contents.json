@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "IconoHF-HELLA-200x200.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "IconoHF-HELLA-400x400.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "IconoHF-HELLA-600x600.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

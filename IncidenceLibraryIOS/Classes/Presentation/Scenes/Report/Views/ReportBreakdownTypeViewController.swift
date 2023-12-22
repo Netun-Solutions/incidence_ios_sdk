@@ -26,7 +26,8 @@ class ReportBreakdownTypeViewController: ReportBaseViewController, StoryboardIns
     
     // MARK: - Lifecycle
     static func create(with viewModel: ReportBreakdownTypeViewModel) -> ReportBreakdownTypeViewController {
-        let view = ReportBreakdownTypeViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        let view = ReportBreakdownTypeViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         view.vehicle = viewModel.vehicle
@@ -119,7 +120,7 @@ class ReportBreakdownTypeViewController: ReportBaseViewController, StoryboardIns
     }
     
     @objc private func phonePressed() {
-        let phone = self.viewModel.vehicle?.insurance?.phone
+        let phone = self.viewModel.vehicle.insurance?.phone
         Core.shared.callNumber(phoneNumber: phone!)
         stopTimer()
     }
@@ -138,12 +139,12 @@ class ReportBreakdownTypeViewController: ReportBaseViewController, StoryboardIns
         if let otherIncidencesTypes = Core.shared.getIncidencesTypes(parent: incidenceTypeId), !otherIncidencesTypes.isEmpty {
             let vm = ReportBreakdownTypeViewModel(incidenceTypeList: otherIncidencesTypes,
                                                   isChild: true,
-                                                  vehicle: viewModel.vehicle, openFromNotification: self.viewModel.openFromNotification)
+                                                  vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
             let viewController = ReportBreakdownTypeViewController.create(with: vm)
             self.navigationController?.pushViewController(viewController, animated: true)
         } else {
 
-            let vm = ReportInstructionsViewModel(vehicle: self.viewModel.vehicle, incidenceTypeId: incidenceTypeId, openFromNotification: self.viewModel.openFromNotification)
+            let vm = ReportInstructionsViewModel(vehicle: self.viewModel.vehicle, user: self.viewModel.user, delegate: viewModel.delegate, incidenceTypeId: incidenceTypeId, openFromNotification: self.viewModel.openFromNotification)
             let vc = ReportInstructionsViewController.create(with: vm)
             self.navigationController?.pushViewController(vc, animated: true)
         }

@@ -13,8 +13,17 @@ class ReportAccidentViewModel: IABaseViewModel {
         set { }
     }
     
-    var vehicle:Vehicle?
-    var openFromNotification:Bool = false
+    init(vehicle: Vehicle, user: User, delegate: ReportTypeViewControllerDelegate, openFromNotification:Bool = false) {
+        self.vehicle = vehicle
+        self.user = user
+        self.delegate = delegate
+        self.openFromNotification = openFromNotification
+    }
+    
+    var vehicle:Vehicle
+    var user:User
+    var delegate: ReportTypeViewControllerDelegate
+    var openFromNotification:Bool
 
     let descriptionText: String = "ask_wounded".localized()
     let noInjuredButtonText: String = "no_only_material_wounded".localized()

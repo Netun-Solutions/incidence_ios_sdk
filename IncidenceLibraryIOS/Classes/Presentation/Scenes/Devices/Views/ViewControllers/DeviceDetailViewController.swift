@@ -74,6 +74,7 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
         validateDeviceButton.configure(text: viewModel.validateDeviceButtonText)
         validateDeviceButton.onTap { [weak self] in
             if let beacon = self?.viewModel {
+                beacon.device = self?.device
                 let vc = DeviceDetailInfoViewController.create(with: beacon)
                 self?.navigationController?.pushViewController(vc, animated: true)
             }
@@ -104,7 +105,9 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
             }
             else
             {
-                self.onBadResponse(result: result)
+                self.onBadResponse(result: result, handler: { UIAlertAction in
+                    self.backPressed()
+                })
             }
        })
     }

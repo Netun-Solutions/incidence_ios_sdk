@@ -10,14 +10,16 @@ import Foundation
 class DeviceDetailViewModel: IABaseViewModel {
     
     public override var navigationTitle: String? {
-        get { return "beacon".localized() }
+        get { return useName ? device.name : "beacon".localized() }
         set { }
     }
     
     public var device: Beacon
+    var useName: Bool
     
-    public init(device: Beacon) {
+    public init(device: Beacon, useName: Bool) {
         self.device = device
+        self.useName = useName
     }
     
     var fieldNameTitle: String = "name".localized()

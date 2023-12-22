@@ -9,12 +9,16 @@ import UIKit
 
 class ReportInstructionsViewModel: IABaseViewModel {
     
-    var vehicle:Vehicle?
+    var vehicle:Vehicle
+    var user:User
+    var delegate: ReportTypeViewControllerDelegate
     var incidenceTypeId:Int?
     var openFromNotification:Bool = false
     
-    init(vehicle: Vehicle?, incidenceTypeId:Int?, openFromNotification:Bool) {
+    init(vehicle: Vehicle, user: User, delegate: ReportTypeViewControllerDelegate, incidenceTypeId:Int?, openFromNotification:Bool) {
         self.vehicle = vehicle
+        self.user = user
+        self.delegate = delegate
         self.incidenceTypeId = incidenceTypeId
         self.openFromNotification = openFromNotification
     }

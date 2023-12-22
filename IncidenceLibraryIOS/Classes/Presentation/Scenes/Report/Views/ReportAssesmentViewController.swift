@@ -20,7 +20,8 @@ class ReportAssesmentViewController: IABaseViewController, StoryboardInstantiabl
     
     // MARK: - Lifecycle
     static func create(with viewModel: ReportAssesmentViewModel) -> ReportAssesmentViewController {
-        let view = ReportAssesmentViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        let view = ReportAssesmentViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         return view

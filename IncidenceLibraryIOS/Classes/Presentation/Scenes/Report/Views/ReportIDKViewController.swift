@@ -29,7 +29,8 @@ class ReportIDKViewController: IABaseViewController, StoryboardInstantiable {
    
     // MARK: - Lifecycle
     static func create(with viewModel: ReportIDKViewModel) -> ReportIDKViewController {
-        let view = ReportIDKViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        let view = ReportIDKViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         return view

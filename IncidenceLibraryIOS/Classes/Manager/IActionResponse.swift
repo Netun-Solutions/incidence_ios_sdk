@@ -9,12 +9,13 @@ import Foundation
 
 public struct IActionResponse {
     
-    let status: Bool
-    let message: String?
+    public let status: Bool
+    public let message: String?
+    public let data: Any? = nil
     
     init(status:Bool) {
         self.status = status
-        message = ""
+        self.message = ""
     }
     
     init(status:Bool, message: String?) {

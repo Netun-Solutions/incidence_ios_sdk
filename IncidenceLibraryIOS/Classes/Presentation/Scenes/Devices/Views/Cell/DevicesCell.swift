@@ -35,7 +35,7 @@ class DevicesCell: UITableViewCell {
     public func configure(with model: Beacon?) {
         if let model = model {
             if model.id! > 0 {
-                let image = model.beaconType?.id == 1 ? UIImage.app( "beacon_smart") : UIImage.app( "beacon")
+                let image = model.beaconType?.id == 1 ? UIImage.app( "beacon_smart") : model.beaconType?.id == 3 ? UIImage.app( "beacon_hella") : UIImage.app( "beacon")
                 menuView.configure(text: model.name ?? "", iconImage: image, rightIcon: .arrow)
             } else {
                 menuView.configure(text: "add_new_device".localized(), color: .blue, rightIcon: .add)

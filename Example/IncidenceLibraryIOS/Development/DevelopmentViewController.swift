@@ -8,7 +8,7 @@
 import UIKit
 import IncidenceLibraryIOS
 
-class DevelopmentViewController: UIViewController, StoryboardInstantiable {
+class DevelopmentViewController: UIViewController, StoryboardInstantiable, ReportTypeViewControllerDelegate {
     
     static var storyboardFileName = "DevelopmentScene"
     
@@ -19,7 +19,7 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable {
     var user: User!
     var vehicle: Vehicle!
     var incidenceType: IncidenceType!
-    var incidence: Incidence!    
+    var incidence: Incidence!
     
     static func create() -> DevelopmentViewController {
         print("DevelopmentViewController create")
@@ -78,7 +78,7 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable {
 
         incidenceType = IncidenceType();
         //incidenceType.id = 5; // Pinchazo
-        incidenceType.externalId = "B10"; // Pinchazo
+        incidenceType.externalId = "B1"; // Pinchazo
 
         incidence = Incidence();
         incidence.incidenceType = incidenceType;
@@ -101,34 +101,40 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable {
     }
     
     @IBAction func btnDeviceDeletePressed(_ sender: Any) {
-        //let viewController = IncidenceLibraryManager.shared.getDeviceListViewController()
-        //navigationController?.pushViewController(viewController, animated: true)
-        
         IncidenceLibraryManager.shared.deleteBeaconFunc(user: user, vehicle: vehicle, completion: { result in
             print(result)
+            if (result.status) {
+                self.showToast(controller: self, message: "Baliza desvinculada con éxito")
+            } else {
+                self.showToast(controller: self, message: "Baliza desvinculada con error: " + (result.message ?? ""))
+            }
        })
     }
     
     @IBAction func btnDeviceReviewPressed(_ sender: Any) {
-        let viewController = IncidenceLibraryManager.shared.getDeviceListViewController(user: user, vehicle: vehicle)
+        let viewController = IncidenceLibraryManager.shared.getDeviceReviewViewController(user: user, vehicle: vehicle)
         navigationController?.pushViewController(viewController, animated: true)
     }
     
     @IBAction func btnIncidenceCreatePressed(_ sender: Any) {
-        //let viewController = IncidenceLibraryManager.shared.getIncidenceCreateViewController(user: user, vehicle: vehicle, incidence: incidence)
-        //navigationController?.pushViewController(viewController, animated: true)
-        
         IncidenceLibraryManager.shared.createIncidenceFunc(user: user, vehicle: vehicle, incidence: incidence, completion: { result in
             print(result)
+            if (result.status) {
+                self.showToast(controller: self, message: "Incidencia creada con éxito")
+            } else {
+                self.showToast(controller: self, message: "Incidencia creada con error: " + (result.message ?? ""))
+            }
        })
     }
     
     @IBAction func btnIncidenceClosePressed(_ sender: Any) {
-        //let viewController = IncidenceLibraryManager.shared.getIncidenceCloseViewController(user: user, vehicle: vehicle, incidence: incidence)
-        //navigationController?.pushViewController(viewController, animated: true)
-        
         IncidenceLibraryManager.shared.closeIncidenceFunc(user: user, vehicle: vehicle, incidence: incidence, completion: { result in
             print(result)
+            if (result.status) {
+                self.showToast(controller: self, message: "Incidencia cerrada con éxito")
+            } else {
+                self.showToast(controller: self, message: "Incidencia cerrada con error: " + (result.message ?? ""))
+            }
        })
     }
     
@@ -136,4 +142,36 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable {
         let viewController = IncidenceLibraryManager.shared.getEcommerceViewController(user: user, vehicle: vehicle)
         navigationController?.pushViewController(viewController, animated: true)
     }
+    
+    @IBAction func btnReportIncPressed(_ sender: Any) {
+        let viewController = IncidenceLibraryManager.shared.getReportIncViewController(user: user, vehicle: vehicle, delegate: self)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    @IBAction func btnReportIncSimpPressed(_ sender: Any) {
+        let viewController = IncidenceLibraryManager.shared.getReportIncSimpViewController(user: user, vehicle: vehicle, delegate: self)
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func onResult(response: IncidenceLibraryIOS.IActionResponse) {
+        print(response)
+        if (response.status) {
+            self.showToast(controller: self, message: "Incidencia creada con éxito")
+        } else {
+            self.showToast(controller: self, message: "Incidencia creada con error: " + (response.message ?? ""))
+        }
+    }
+    
+    func showToast(controller: UIViewController, message : String) {
+        let alert = UIAlertController(title: nil, message: message, preferredStyle: .alert)
+        alert.view.backgroundColor = UIColor.white
+        alert.view.alpha = 0.6
+        alert.view.layer.cornerRadius = 6
+
+        controller.present(alert, animated: true)
+
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
+        alert.dismiss(animated: true)
+        }
+     }
 }

@@ -28,7 +28,8 @@ class ReportExpiredInsuranceViewController: IABaseViewController, StoryboardInst
    
     // MARK: - Lifecycle
     static func create(with viewModel: ReportExpiredInsuranceViewModel) -> ReportExpiredInsuranceViewController {
-        let view = ReportExpiredInsuranceViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+        let view = ReportExpiredInsuranceViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
         return view

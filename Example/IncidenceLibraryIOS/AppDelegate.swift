@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
   ) -> Bool {
     
-      let apiKey = "bWFwZnJlX2NsaWVudDpkOTBlMTA3ZjdhNGU1NmQyYzlkMTJhMHM3ZTQ1ZDQ1MQ=="
+      let apiKey = "b3JnLmNvY29hcG9kcy5kZW1vLkluY2lkZW5jZUxpYnJhcnlJT1MtRXhhbXBsZTpkOTBlMTA3ZjdhNGU1NmQyYzlkMTJhMHM3ZTQ1ZDAwMA=="
       let config = IncidenceLibraryConfig(apiKey: .init(apiKey), env: .PRE)
       IncidenceLibraryManager.setup(config)
       

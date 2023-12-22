@@ -184,6 +184,21 @@ extension Core {
         return res
     }
     
+    func getIncidencesTypes(parent:Int, incidences: [IncidenceType]?) -> [IncidenceType]?
+    {
+        var res:[IncidenceType] = [IncidenceType]()
+        
+        if let list = incidences {
+            for it in list {
+                if let pr = it.parent, pr == parent {
+                    res.append(it)
+                }
+            }
+        }
+        
+        return res
+    }
+    
     func getVehicles() -> [Vehicle]
     {
         if let jsonStr = Prefs.loadString(key: Constants.KEY_USER_VEHICLES) {

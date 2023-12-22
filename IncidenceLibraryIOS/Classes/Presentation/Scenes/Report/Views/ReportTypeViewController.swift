@@ -62,14 +62,13 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
     
     // MARK: - Lifecycle
     public static func create(with viewModel: ReportTypeViewModel) -> ReportTypeViewController {
-        let view = ReportTypeViewController.instantiateViewController()
+        let bundle = Bundle(for: Self.self)
+                            
+        let view = ReportTypeViewController.instantiateViewController(bundle)
         view.baseViewModel = viewModel
         
-        if (viewModel.vehicle != nil) {
-            view.vehicle = viewModel.vehicle
-        } else if (viewModel.vehicleTmp != nil) {
-            view.vehicle = viewModel.vehicleTmp
-        }
+        view.vehicle = viewModel.vehicle
+        view.user = viewModel.user
         view.openFromNotification = viewModel.openFromNotification
         
         return view
@@ -163,23 +162,21 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
         //        navigationController?.pushViewController(vc, animated: true)
         
         /*if let tm = timer {
-            tm.invalidate()
-        }*/
+         tm.invalidate()
+         }*/
         
         stopTimer()
         
-        if viewModel.vehicle != nil {
-            guard let incidencesTypes = Core.shared.getIncidencesTypes(parent: 2) else { return }
-                
-            let vm = ReportBreakdownTypeViewModel(incidenceTypeList: incidencesTypes, openFromNotification: self.viewModel.openFromNotification)
+        if (!self.viewModel.flowComplete) {
+            reportIncidence(idIncidence: "2")
+        } else {
+            //guard let incidencesTypes = Core.shared.getIncidencesTypes(parent: 2) else { return }
+            guard let incidencesTypesAll = IncidenceLibraryManager.shared.incidencesTypes else { return }
+            guard let incidencesTypes: [IncidenceType] = Core.shared.getIncidencesTypes(parent: 2, incidences: incidencesTypesAll) else { return }
+            
+            let vm = ReportBreakdownTypeViewModel(incidenceTypeList: incidencesTypes, vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
             vm.vehicle = viewModel.vehicle
             let vc = ReportBreakdownTypeViewController.create(with: vm)
-            navigationController?.pushViewController(vc, animated: true)
-        } else {
-            let vm = ReportNotificationCarViewModel()
-            vm.isAccident = false
-            vm.openFromNotification = self.viewModel.openFromNotification
-            let vc = ReportNotificationCarViewController.create(with: vm, vehicle: self.vehicle)
             navigationController?.pushViewController(vc, animated: true)
         }
     }
@@ -187,25 +184,65 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
     @IBAction func accidentButtonPressed(_ sender: Any?) {
         //Core.shared.stopTimer()
         stopTimer()
-        
-//        let vm = ReportExpiredInsuranceViewModel()
-//        let vc = ReportExpiredInsuranceViewController.create(with: vm)
-//        navigationController?.pushViewController(vc, animated: true)
-        
-        if viewModel.vehicle != nil {
-            let vm = ReportAccidentViewModel()
-            vm.vehicle = viewModel.vehicle
-            vm.openFromNotification = self.viewModel.openFromNotification
+        /*
+        if (!self.viewModel.flowComplete) {
+            reportIncidence(idIncidence: "12")
+        } else {
+            let vm = ReportAccidentViewModel(vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
             let vc = ReportAccidentViewController.create(with: vm)
             navigationController?.pushViewController(vc, animated: true)
-        } else {
-            let vm = ReportNotificationCarViewModel()
-            vm.isAccident = true
-            vm.openFromNotification = self.viewModel.openFromNotification
-            let vc = ReportNotificationCarViewController.create(with: vm, vehicle: self.vehicle)
-            navigationController?.pushViewController(vc, animated: true)
         }
+        */
+        let vm = ReportAccidentViewModel(vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
+        let vc = ReportAccidentViewController.create(with: vm)
+        navigationController?.pushViewController(vc, animated: true)         
+    }
+    
+    private func reportIncidence(idIncidence: String) {
         
+        Core.shared.stopTimer()
+        stopTimer()
+
+        showHUD()
+        
+        let incidenceType: IncidenceType = IncidenceType()
+        incidenceType.externalId = idIncidence
+        
+        
+        let incidence: Incidence = Incidence()
+        incidence.incidenceType = incidenceType
+        incidence.street = "";
+        incidence.city = "";
+        incidence.country = "";
+        incidence.latitude = nil;
+        incidence.longitude = nil;
+        
+        Api.shared.postIncidenceSdk(vehicle: vehicle!, user: user!, incidence: incidence, completion: { result in
+            
+            self.hideHUD()
+            if (result.isSuccess())
+            {
+                if let data = result.getJSONString(key: "incidence") {
+                    
+                    print(data)
+                    if let dataDic = StringUtils.convertToDictionary(text: data) {
+                        incidence.id = Int(dataDic["id"] as! Int)
+                        incidence.externalIncidenceId = dataDic["externalIncidenceTypeId"] as? String
+                    }
+                }
+                
+                //self.onSuccessReport(incidence: incidence)
+                
+                self.navigationController?.popToRootViewController(animated: false)
+                
+                let response: IActionResponse = IActionResponse(status: true)
+                self.viewModel.delegate.onResult(response: response)
+            }
+            else
+            {
+                self.onBadResponse(result: result)
+            }
+       })
     }
     
     @IBAction func cancelButtonPressed(_ sender: Any?) {

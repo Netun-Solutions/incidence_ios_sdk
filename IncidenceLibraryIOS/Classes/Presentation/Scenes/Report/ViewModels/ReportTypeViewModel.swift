@@ -14,19 +14,28 @@ enum ReportType {
 
 public class ReportTypeViewModel: IABaseViewModel {
     
-    public var vehicle: Vehicle?
+    public var vehicle: Vehicle
     public var vehicleTmp: Vehicle?
+    public var user: User
+    public var delegate: ReportTypeViewControllerDelegate
+    public var flowComplete:Bool = true
     public var openFromNotification:Bool = false
     
-    public init(vehicle: Vehicle?, openFromNotification:Bool) {
+    public init(vehicle: Vehicle, user: User, delegate: ReportTypeViewControllerDelegate, openFromNotification:Bool, flowComplete:Bool ) {
         self.vehicle = vehicle
+        self.user = user
+        self.delegate = delegate
         self.openFromNotification = openFromNotification
+        self.flowComplete = flowComplete
     }
     
-    public init(vehicle: Vehicle?, vehicleTmp: Vehicle?, openFromNotification:Bool) {
+    public init(vehicle: Vehicle, vehicleTmp: Vehicle?, user: User, delegate: ReportTypeViewControllerDelegate, openFromNotification:Bool, flowComplete:Bool ) {
         self.vehicle = vehicle
         self.vehicleTmp = vehicleTmp
+        self.user = user
+        self.delegate = delegate
         self.openFromNotification = openFromNotification
+        self.flowComplete = flowComplete
     }
     public override var navigationTitle: String? {
         get { return "report_incidence".localized() }

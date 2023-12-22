@@ -41,12 +41,16 @@ class ReportBreakdownTypeViewModel: IABaseViewModel {
     //let childDescriptionText: String = "ask_valoration".localized()
     let cancelButtonText: String = "cancel".localized()
     
-    var vehicle:Vehicle?
+    var vehicle:Vehicle
+    var user:User
+    var delegate: ReportTypeViewControllerDelegate
     
-    public init(incidenceTypeList: [IncidenceType], isChild: Bool = false, vehicle: Vehicle? = nil, openFromNotification:Bool) {
+    public init(incidenceTypeList: [IncidenceType], isChild: Bool = false, vehicle: Vehicle, user: User, delegate: ReportTypeViewControllerDelegate, openFromNotification:Bool) {
         self.incidenceTypeList = incidenceTypeList
         self.isChild = isChild
         self.vehicle = vehicle
+        self.user = user
+        self.delegate = delegate
         self.openFromNotification = openFromNotification
     }
 }
