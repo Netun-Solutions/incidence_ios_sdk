@@ -85,7 +85,7 @@
                 self.validApiKey = true
                 
                 self.screens = result.getList(key: "functionalities") ?? [String]()
-                self.screens.append(Constants.SCREEN_REPOR_INC_SIMPLE)
+                //self.screens.append(Constants.SCREEN_REPOR_INC_SIMPLE)
                 
                 self.insurance = result.get(key: "insurance")
                 

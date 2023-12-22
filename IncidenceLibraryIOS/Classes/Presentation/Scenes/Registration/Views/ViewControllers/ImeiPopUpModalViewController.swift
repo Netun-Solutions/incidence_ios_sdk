@@ -109,8 +109,8 @@ public final class ImeiPopUpModalViewController: UIViewController, TextFieldView
         imeiTextFieldView.frame = CGRect(x: widthMargin, y: height, width:widthSubtitleLabel, height:64);
         imeiTextFieldView.title = "IMEI"
         imeiTextFieldView.placeholder = "IMEI"
-        //imeiTextFieldView.value = ""
-        imeiTextFieldView.value = "869154040054509"
+        imeiTextFieldView.value = ""
+        //imeiTextFieldView.value = "869154040054509"
         imeiTextFieldView.isUserInteractionEnabled = true
         imeiTextFieldView.isMultipleTouchEnabled = false
         imeiTextFieldView.disablePadding()
