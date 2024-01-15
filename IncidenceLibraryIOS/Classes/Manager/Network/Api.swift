@@ -90,6 +90,9 @@ extension Api {
         let url = apiUrl(path: path)
         #if DEBUG
         print("Request: " + url)
+        if let params {
+            print("Params: " + params.description)
+        }
         #endif
         
         AF.request(url, method: method, parameters: params, encoding: JSONEncoding.default, headers: basicHeaders()).responseJSON { response in
