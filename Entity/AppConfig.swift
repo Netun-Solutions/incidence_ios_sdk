@@ -18,4 +18,5 @@ class AppConfig: Codable {
     var support_letter_color: String?
     
     public init() {}
+    
 }
