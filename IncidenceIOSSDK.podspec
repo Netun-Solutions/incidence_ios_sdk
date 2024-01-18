@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'IncidenceLibraryIOS'
-  s.version          = '0.0.1'
-  s.summary          = 'A short description of IncidenceLibraryIOS.'
+  s.name             = 'IncidenceIOSSDK'
+  s.version          = '0.0.2'
+  s.summary          = 'A short description of IncidenceIOSSDK.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = 'IncidenceLibraryIOS.'
+  s.description      = 'IncidenceIOSSDK.'
 
   s.homepage         = 'https://github.com/Netun-Solutions/incidence_ios_sdk'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'

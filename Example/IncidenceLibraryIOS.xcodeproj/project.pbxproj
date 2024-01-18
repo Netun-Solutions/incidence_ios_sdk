@@ -43,7 +43,7 @@
 		8024D641A4C3C7EDBE3FAB96 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		82FDAD3BEC603ADE2E2F3294 /* Pods-IncidenceLibraryIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncidenceLibraryIOS_Example.release.xcconfig"; path = "Target Support Files/Pods-IncidenceLibraryIOS_Example/Pods-IncidenceLibraryIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C1E6D7B71D8523701F928D86 /* Pods_IncidenceLibraryIOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IncidenceLibraryIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C22485B63FFEC48B8A1216FB /* IncidenceLibraryIOS.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IncidenceLibraryIOS.podspec; path = ../IncidenceLibraryIOS.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C22485B63FFEC48B8A1216FB /* IncidenceIOSSDK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = IncidenceIOSSDK.podspec; path = ../IncidenceIOSSDK.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E4240C022D7621A483EF37AE /* Pods-IncidenceLibraryIOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IncidenceLibraryIOS_Tests.debug.xcconfig"; path = "Target Support Files/Pods-IncidenceLibraryIOS_Tests/Pods-IncidenceLibraryIOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		E53EB0E32A8EA71A006D9153 /* DevelopmentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DevelopmentViewController.swift; sourceTree = "<group>"; };
 		E53EB0E42A8EA71A006D9153 /* DevelopmentScene.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DevelopmentScene.storyboard; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				C22485B63FFEC48B8A1216FB /* IncidenceLibraryIOS.podspec */,
+				C22485B63FFEC48B8A1216FB /* IncidenceIOSSDK.podspec */,
 				04C445624238F35BF1D5E98D /* README.md */,
 				8024D641A4C3C7EDBE3FAB96 /* LICENSE */,
 			);
