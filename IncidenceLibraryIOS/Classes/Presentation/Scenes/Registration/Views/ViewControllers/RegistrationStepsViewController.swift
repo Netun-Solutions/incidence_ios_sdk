@@ -122,9 +122,9 @@ class RegistrationStepsViewController: IABaseViewController, StoryboardInstantia
             let viewController = RegistrationSuccessViewController.create(with: vm)
             navigationController?.setViewControllers([viewController], animated: true)
         } else {
-            let vm = SignInViewModel(viewType: .telephone)
-            let viewController = SignInViewController.create(with: vm)
-            navigationController?.setViewControllers([viewController], animated: false)
+            //let vm = SignInViewModel(viewType: .telephone)
+            //let viewController = SignInViewController.create(with: vm)
+            //navigationController?.setViewControllers([viewController], animated: false)
         }
     }
 }
