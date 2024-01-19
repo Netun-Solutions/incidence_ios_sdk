@@ -52,19 +52,22 @@ class RegistrationStepsViewController: IABaseViewController, StoryboardInstantia
         })?.removeFromSuperview()
         
         setUpRoundViews()
-        
+        /*
         if presentOnboarding, viewModel.presentOnboarding, viewModel.completedSteps.count == 0 {
             let onboarding = OnboardingRootViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
             onboarding.modalPresentationStyle = .fullScreen
             self.present(onboarding, animated: false, completion: nil)
             presentOnboarding = false
         }
+        */
     }
     
     override func backPressed() {
+        /*
         let onboarding = OnboardingRootViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         onboarding.modalPresentationStyle = .fullScreen
         self.present(onboarding, animated: true, completion: nil)
+         */
     }
     
     override func setUpUI() {
