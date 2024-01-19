@@ -97,7 +97,11 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable, Repor
    
     @IBAction func btnDeviceCreatePressed(_ sender: Any) {
         let viewController = IncidenceLibraryManager.shared.getDeviceCreateViewController(user: user, vehicle: vehicle)
-        navigationController?.pushViewController(viewController, animated: true)
+        //navigationController?.pushViewController(viewController, animated: true)
+        
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
     
     @IBAction func btnDeviceDeletePressed(_ sender: Any) {

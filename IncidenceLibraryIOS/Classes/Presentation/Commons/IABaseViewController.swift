@@ -65,7 +65,8 @@ public class IABaseViewController: UIViewController, UIGestureRecognizerDelegate
 
         var leftNavigationButtons: [UIBarButtonItem] = []
 
-        if forceShowBackButton || (navigationController?.viewControllers.count ?? 0) > 1 {
+        //if forceShowBackButton || (navigationController?.viewControllers.count ?? 0) > 1 {
+        if forceShowBackButton || (navigationController?.viewControllers.count ?? 0) > 1 || true {
             let image = UIImage.app( "Direction=Left")?.withRenderingMode(.alwaysTemplate)
             let backButton = UIBarButtonItem(image: image, style: .plain, target: self, action: #selector(backPressed))
             backButton.imageInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: -6)
@@ -102,7 +103,8 @@ public class IABaseViewController: UIViewController, UIGestureRecognizerDelegate
     }
     
     @objc func backPressed(){
-        navigationController?.popViewController(animated: true)
+        //navigationController?.popViewController(animated: true)
+        self.dismiss(animated: false, completion: nil)
     }
 
     func showHUD() {

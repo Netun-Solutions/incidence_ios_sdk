@@ -23,7 +23,6 @@
 		069A0ECA775FA7A2350F8C0A3CC9727B /* OnboardingScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = C6D840A8C698789AF9DFF7FAB8AF3AFD /* OnboardingScene.storyboard */; };
 		079F0820555C5B86C9FBD5EC6344137F /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F2CFCD848B22147390836F701B79D7 /* Protected.swift */; };
 		0801914A53C3CEE2AF9223CCED3B2FE2 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4009323002879A1E05FAF7956AE4137C /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		08043E1DB603FFACFFB0AE04CA0DB723 /* SelectLanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D066DF5024189054652485868BFFFA8D /* SelectLanguageViewController.swift */; };
 		084E6635705012819F16307C72853970 /* RegistrationValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD57D0ED3AACC86A3349B5787AE8796 /* RegistrationValidationViewController.swift */; };
 		0A14E22629E14EC69D0F0822422223A8 /* RegistrationVehicleInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C14E4C6890ED7EAB98EC66C30823C3C /* RegistrationVehicleInfoViewController.swift */; };
 		0A960F450D886FBD886BAE4DD291D240 /* ModelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901D16A7BBE6A67C436049662916F49 /* ModelDevice.swift */; };
@@ -199,7 +198,6 @@
 		77AB6AF4BFC6DE016DA7C057B5799C84 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800DC1F7E9EB8F7F8C3D9E793A6BC37 /* ServerTrustEvaluation.swift */; };
 		78B1DD1219182494A6AFAD26AAB20AA6 /* Concurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D538F7E4BBD8495E2444337D4BEB291 /* Concurrency.swift */; };
 		78DBDD7E90EB7E3551204A149E3166BE /* MapBoxManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2414C8A97F8294D72A2E7AEEA199F038 /* MapBoxManager.swift */; };
-		78E39061DDB65EED4AF4F69605F21F64 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCB3A9313B3408DC31BB110A80A7F17 /* MenuViewController.swift */; };
 		797337E0DB0C7D8D7D972A81AAADA92D /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52554E1C9731D5352FDE9E63F8C5466B /* Accelerate.framework */; };
 		7B0A1762CBECADF8BE2701BE94158361 /* AccountActiveSessionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85C7F4E27B5BFED9C9EC1EE19217052F /* AccountActiveSessionsViewModel.swift */; };
 		7B79E2B17E67512F7DF08AA306FCDC12 /* DeviceListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D4B08FB53E2863F8F63763406D8E10C /* DeviceListViewController.swift */; };
@@ -262,7 +260,6 @@
 		99315A31C0B57307919523E946C73CE7 /* DriverEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D993533C578F0BCDAF57F2DD6F25D39 /* DriverEditCell.swift */; };
 		99EF76910B70D2E3BE39E9F209CF9E82 /* RegistrationInsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E371926F0DFB24659067E7E14C1A6C /* RegistrationInsuranceViewModel.swift */; };
 		9A0F7E31FFF36BFA2F33AA3847450C89 /* RegistrationBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6825E3A569FA3FFB191E831CD7F93 /* RegistrationBeaconViewModel.swift */; };
-		9AB088B6B16F6D120DA02D4B26A447DD /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31329FFB06BF557768AAB5E0DBA88A6A /* LanguageCell.swift */; };
 		9B397020726009E2B6F776161228EC65 /* ReportAssesmentFeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6593B829C6C5016BB3205DEACDBC5 /* ReportAssesmentFeedbackViewModel.swift */; };
 		9B53C96E62C025F82BAB2919FD99E294 /* RegistrationTermsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8CDE856264FA3ADE503B2A01825B1 /* RegistrationTermsViewModel.swift */; };
 		9BAC2A86AF7163F82E1B668DCD53F09A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B02BF479F0CF976718C1FF7A26CF82 /* ImageCache.swift */; };
@@ -320,7 +317,6 @@
 		C30AA02B83CCA5BFAEB24D73FD7DEED2 /* SlidingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 571A85CB38F4231965F05DEF8F22787C /* SlidingButton.swift */; };
 		C5896F77A6148BB7C716056B7BA5C5E8 /* ReportAssesmentSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 070AAC20775C6F9A5EB3656EFB505587 /* ReportAssesmentSuccessViewController.swift */; };
 		C8269B42DED12AB1F275648D0BD32E45 /* URLEncodedFormEncoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2FCFF30AC292AF6D2D760BB1F52A4EF /* URLEncodedFormEncoder.swift */; };
-		C83D6634C6B1AFB1C706725FB6D35252 /* MenuScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = ADF0F53FF2F35512B6C44757C2B5C02E /* MenuScene.storyboard */; };
 		C8FAB0596412A801496AC99C5DA7AC78 /* RegistrationStepsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BAC379DD4B567BD09B44F935684E134 /* RegistrationStepsViewController.swift */; };
 		C91C2CCBA354EE655272CD250217D4E0 /* RegistrationStepsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 254D2483C98DC22C3A4A30BB37F4F881 /* RegistrationStepsViewModel.swift */; };
 		C97816BABD2B931FBCFE6A33046073E3 /* AppApperance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E85A3BE0CB17E8437C9DF4F18EA7CC /* AppApperance.swift */; };
@@ -565,7 +561,6 @@
 		2F2C6C1C9B85DBD083DEFAC7B4A52351 /* RegistrationBeaconViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationBeaconViewController.swift; sourceTree = "<group>"; };
 		3060134F769B6DE0C14941F1A9E7870A /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
 		3099EC08650000759835DB9E45A462E0 /* AddScene.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = AddScene.storyboard; sourceTree = "<group>"; };
-		31329FFB06BF557768AAB5E0DBA88A6A /* LanguageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
 		31F2CFCD848B22147390836F701B79D7 /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Source/Protected.swift; sourceTree = "<group>"; };
 		32B87DC1CC6EA521A575593028DB5701 /* IncidencesCarsListViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidencesCarsListViewModel.swift; sourceTree = "<group>"; };
 		356C1F638D40CFE9CE1D68631CFE49BD /* RegistrationEmailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationEmailViewController.swift; sourceTree = "<group>"; };
@@ -699,7 +694,6 @@
 		79ED035DB1229798DD2F67B64675E63D /* Alamofire-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Alamofire-Info.plist"; sourceTree = "<group>"; };
 		7B0726A1621800FECDB0C564780FD6FF /* LinkToCarBottomSheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LinkToCarBottomSheetView.swift; sourceTree = "<group>"; };
 		7B284F7FCA98CB7654D6D7D794C61247 /* GraphicsContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GraphicsContext.swift; path = Sources/Image/GraphicsContext.swift; sourceTree = "<group>"; };
-		7BCB3A9313B3408DC31BB110A80A7F17 /* MenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		7D0779F57837288D0EF2BE3080939165 /* OnboardingReportViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = OnboardingReportViewController.swift; sourceTree = "<group>"; };
 		7D1C19D1866E9240C628845CB0664471 /* RegistrationIDViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationIDViewModel.swift; sourceTree = "<group>"; };
 		7D33A2E5E8AD42D188162F330E971327 /* TVMonogramView+Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "TVMonogramView+Kingfisher.swift"; path = "Sources/Extensions/TVMonogramView+Kingfisher.swift"; sourceTree = "<group>"; };
@@ -772,7 +766,6 @@
 		A963BEE5E002F0C69A0DAE966CBB49BC /* IncidenceDGTCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidenceDGTCell.swift; sourceTree = "<group>"; };
 		A9F2E3D062542CAAC7D765D42B12E8F6 /* RegistrationTelephoneViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationTelephoneViewModel.swift; sourceTree = "<group>"; };
 		AA0CF464B1010F1A604012EC0741CF9D /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
-		ADF0F53FF2F35512B6C44757C2B5C02E /* MenuScene.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = MenuScene.storyboard; sourceTree = "<group>"; };
 		ADFF4ECD2DB8BDB1F3174C3ECB735838 /* Silka-Thin.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Silka-Thin.otf"; sourceTree = "<group>"; };
 		AE566CB1D24F973E9486CEB64F4EFC75 /* Kingfisher-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Kingfisher-dummy.m"; sourceTree = "<group>"; };
 		AED43EE8C6D30576C5454C6AAF6D1B60 /* ReportIDKViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportIDKViewModel.swift; sourceTree = "<group>"; };
@@ -846,7 +839,6 @@
 		CFD99DEBFC1494D9339196E0D1DE833B /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Source/HTTPMethod.swift; sourceTree = "<group>"; };
 		CFE6333B4C0F6E779D9AE160AA1D3490 /* Alamofire-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Alamofire-dummy.m"; sourceTree = "<group>"; };
 		D0617A3B74937646A3438F1D23D743B7 /* AppImage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppImage.swift; sourceTree = "<group>"; };
-		D066DF5024189054652485868BFFFA8D /* SelectLanguageViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SelectLanguageViewController.swift; sourceTree = "<group>"; };
 		D0B14D185FE8A0BE1619377EF4B66681 /* IncidenceLibraryIOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = IncidenceLibraryIOS.modulemap; sourceTree = "<group>"; };
 		D0D0D6969E2ED51EA96889C0F4A66F34 /* AppFont.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppFont.swift; sourceTree = "<group>"; };
 		D11AF9FB4C056151A19CCE3EB5CC0901 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
@@ -1089,7 +1081,6 @@
 				B9D49326261D7A8229BFBADC7AADEA4F /* Error */,
 				3B310A8F5BF17C63A314BFE773A229C0 /* Home */,
 				181DCAB8134B85DC0B65101872F3705B /* Incidence */,
-				60997CD211B05AAC9FC14D713A0CAC8B /* Menu */,
 				0D42DF828E92FA43840DF07144F723B0 /* Onboarding */,
 				582E526677EE50E1CA755091D74BDF70 /* Registration */,
 				B6E62F713A5A7B17FF3878C64AA31F40 /* Report */,
@@ -1426,17 +1417,6 @@
 				4207BEE6DFA63E5CF69828DD467E9674 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		60997CD211B05AAC9FC14D713A0CAC8B /* Menu */ = {
-			isa = PBXGroup;
-			children = (
-				31329FFB06BF557768AAB5E0DBA88A6A /* LanguageCell.swift */,
-				ADF0F53FF2F35512B6C44757C2B5C02E /* MenuScene.storyboard */,
-				7BCB3A9313B3408DC31BB110A80A7F17 /* MenuViewController.swift */,
-				D066DF5024189054652485868BFFFA8D /* SelectLanguageViewController.swift */,
-			);
-			path = Menu;
 			sourceTree = "<group>";
 		};
 		6C558F49C17A35A5E6CB541BA34C43B6 /* UI */ = {
@@ -2526,7 +2506,6 @@
 				56F40C1B561FD3676046B7B0F44238A4 /* IResponse+Decodable.swift in Sources */,
 				108FA2B5877F30FCA670A7ACBBF49213 /* KeyboardDismiss.swift in Sources */,
 				9EF9CCE8ECF5FD901B80BD71632BDD8B /* KeyboardListener.swift in Sources */,
-				9AB088B6B16F6D120DA02D4B26A447DD /* LanguageCell.swift in Sources */,
 				6E2920477782220B98C1AD79CA59C3BD /* LinkToCarBottomSheetView.swift in Sources */,
 				5C5A154CC84A2D44CA5D8A2F8F284483 /* Localizable.strings in Sources */,
 				BE2A4969D1CF8D77C771C8BA97A0B3AF /* Localizable.strings in Sources */,
@@ -2539,9 +2518,7 @@
 				A4B60E28852613EBC513E0C1C813AD2B /* LogFormatter.swift in Sources */,
 				F7105ECAD201248899C5EDFEA1B5EECA /* Logger.swift in Sources */,
 				78DBDD7E90EB7E3551204A149E3166BE /* MapBoxManager.swift in Sources */,
-				C83D6634C6B1AFB1C706725FB6D35252 /* MenuScene.storyboard in Sources */,
 				AE6BE2E9930BAFF995B905B54B542EA1 /* MenuView.swift in Sources */,
-				78E39061DDB65EED4AF4F69605F21F64 /* MenuViewController.swift in Sources */,
 				0A960F450D886FBD886BAE4DD291D240 /* ModelDevice.swift in Sources */,
 				A9EC94E8A7A46328592177A1900BA5F3 /* OnboardingCreateAccountViewController.swift in Sources */,
 				F8AFE26196E316963433C936B9249745 /* OnboardingReportViewController.swift in Sources */,
@@ -2617,7 +2594,6 @@
 				E1FD5EE46E210207BE9726C6400C4095 /* ReportTypeViewController.swift in Sources */,
 				2002E64CEC7109D99AC587EFAF5AE4E8 /* ReportTypeViewModel.swift in Sources */,
 				7C4B8A36C0F9B06AC7D12171CCE8146E /* SceneDelegate.swift in Sources */,
-				08043E1DB603FFACFFB0AE04CA0DB723 /* SelectLanguageViewController.swift in Sources */,
 				BEEDC30CA4E0921C8FD25B577CDC2DEF /* SelectVehicleDriverTypeViewController.swift in Sources */,
 				50BDAA32A80DC940F88DF9E7D0847F76 /* SelectVehicleDriverTypeViewModel.swift in Sources */,
 				647207A210BB9BDBE04A558D6F018BB4 /* Session.swift in Sources */,
