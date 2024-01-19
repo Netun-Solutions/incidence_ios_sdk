@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +18,7 @@
         <!--Device Edit View Controller-->
         <scene sceneID="ClA-st-3UD">
             <objects>
-                <viewController storyboardIdentifier="DeviceEditViewController" id="8QB-hu-EnU" customClass="DeviceEditViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceEditViewController" id="8QB-hu-EnU" customClass="DeviceEditViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jqa-cs-jE9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -29,7 +29,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GXV-30-lr3">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4a-T2-P0y" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4a-T2-P0y" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="630" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="23I-jU-HKh"/>
@@ -43,7 +43,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="dIh-hV-a0E">
                                                 <rect key="frame" x="24" y="24" width="366" height="64"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIc-VT-hDE" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIc-VT-hDE" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -55,7 +55,7 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHM-qT-SqV" customClass="TextButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sHM-qT-SqV" customClass="TextButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="738" width="366" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="Button"/>
@@ -115,7 +115,7 @@
         <!--Device Detail View Controller-->
         <scene sceneID="wEh-9K-uPD">
             <objects>
-                <viewController storyboardIdentifier="DeviceDetailViewController" id="Ra1-WU-gTV" customClass="DeviceDetailViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceDetailViewController" id="Ra1-WU-gTV" customClass="DeviceDetailViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YeG-56-oC4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -129,7 +129,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OZq-o3-S1z">
                                                 <rect key="frame" x="0.0" y="24" width="414" height="237"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxH-Ze-9ZS" customClass="FieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kxH-Ze-9ZS" customClass="FieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -139,7 +139,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdm-J5-sYo" customClass="FieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hdm-J5-sYo" customClass="FieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="79" width="414" height="79"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -149,7 +149,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXP-VD-D2L" customClass="FieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PXP-VD-D2L" customClass="FieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="158" width="414" height="79"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -170,7 +170,7 @@
                                             <constraint firstAttribute="trailing" secondItem="OZq-o3-S1z" secondAttribute="trailing" id="zXP-Dh-GuO"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61m-rf-Q2B" customClass="MenuView" customModule="PRE" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="61m-rf-Q2B" customClass="MenuView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="24" y="637" width="366" height="59"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -178,7 +178,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="59" id="xek-4y-u2F"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQw-2q-MJ2" customClass="MenuView" customModule="PRE" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SQw-2q-MJ2" customClass="MenuView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="24" y="696" width="366" height="59"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -186,7 +186,7 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="59" id="K5a-vo-Uz1"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ca-M8-c5K" customClass="MenuView" customModule="PRE" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4ca-M8-c5K" customClass="MenuView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="24" y="755" width="366" height="59"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -238,42 +238,10 @@
             </objects>
             <point key="canvasLocation" x="2386" y="1584"/>
         </scene>
-        <!--Device List View Controller-->
-        <scene sceneID="NPV-jX-e58">
-            <objects>
-                <viewController storyboardIdentifier="DeviceListViewController" id="EXg-WI-ho5" customClass="DeviceListViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xjO-LV-OWx">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="0jP-jL-AHc">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="NIk-II-qla"/>
-                        <color key="backgroundColor" name="incidence100"/>
-                        <constraints>
-                            <constraint firstItem="NIk-II-qla" firstAttribute="trailing" secondItem="0jP-jL-AHc" secondAttribute="trailing" id="6T6-CV-AUT"/>
-                            <constraint firstItem="0jP-jL-AHc" firstAttribute="leading" secondItem="NIk-II-qla" secondAttribute="leading" id="DOh-IT-hl5"/>
-                            <constraint firstItem="NIk-II-qla" firstAttribute="bottom" secondItem="0jP-jL-AHc" secondAttribute="bottom" id="eLR-Rb-qV9"/>
-                            <constraint firstItem="0jP-jL-AHc" firstAttribute="top" secondItem="NIk-II-qla" secondAttribute="top" id="kq5-H1-xWI"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="tableView" destination="0jP-jL-AHc" id="QIg-bT-ddn"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="LiM-BH-OL6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1662" y="1584"/>
-        </scene>
         <!--Device Detail Info View Controller-->
         <scene sceneID="qmm-t6-QIX">
             <objects>
-                <viewController storyboardIdentifier="DeviceDetailInfoViewController" id="k0H-F6-urN" customClass="DeviceDetailInfoViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceDetailInfoViewController" id="k0H-F6-urN" customClass="DeviceDetailInfoViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jxB-a8-zXe">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,7 +255,7 @@
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="99F-tz-Wnc">
                                                 <rect key="frame" x="0.0" y="24" width="414" height="738"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15c-Ru-f6d" customClass="FieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="15c-Ru-f6d" customClass="FieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="79"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -297,7 +265,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtc-YF-Hsx" customClass="BatteryExpirationView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtc-YF-Hsx" customClass="BatteryExpirationView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="79" width="414" height="100"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -334,7 +302,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PwW-93-hCk">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="762"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYE-Jm-16y" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYE-Jm-16y" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
@@ -346,7 +314,7 @@
                                                     <constraint firstAttribute="height" constant="300" id="aE2-fh-QoR"/>
                                                 </constraints>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BJ-EX-yya" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7BJ-EX-yya" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="431.5" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
@@ -381,7 +349,7 @@
                                     <constraint firstItem="A3j-fG-lPn" firstAttribute="leading" secondItem="CHr-Br-DrU" secondAttribute="leading" id="vlg-Hz-0Eq"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-ba-YYe" customClass="TextButton" customModule="PRE" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qHn-ba-YYe" customClass="TextButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="810" width="366" height="28"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Volver"/>
@@ -420,7 +388,7 @@
         <!--Device Info View Controller-->
         <scene sceneID="38v-TW-PoO">
             <objects>
-                <viewController storyboardIdentifier="DeviceInfoViewController" id="syw-9t-GUz" customClass="DeviceInfoViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DeviceInfoViewController" id="syw-9t-GUz" customClass="DeviceInfoViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YmF-6F-fwk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -431,7 +399,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oSb-42-aMf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oV-Ab-PBk" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oV-Ab-PBk" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
@@ -465,7 +433,7 @@
                                     <constraint firstItem="oSb-42-aMf" firstAttribute="width" secondItem="kJA-SA-f96" secondAttribute="width" id="xAy-w2-kBs"/>
                                 </constraints>
                             </scrollView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLF-pW-WQp" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLF-pW-WQp" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="774" width="366" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="OOf-Z6-i1D"/>
