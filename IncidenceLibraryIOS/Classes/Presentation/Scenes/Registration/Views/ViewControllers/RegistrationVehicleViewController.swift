@@ -126,6 +126,7 @@ class RegistrationVehicleViewController: IABaseViewController, StoryboardInstant
 
     @objc func vehicleTypePressed(_ sender: UITapGestureRecognizer)
     {
+        /*
         guard let button = sender.view as? UIButton else { return  }
         
         Core.shared.initVehicleCreating(viewModel.becomeFromAddBeacon)
@@ -135,6 +136,7 @@ class RegistrationVehicleViewController: IABaseViewController, StoryboardInstant
         let vm = RegistrationPlateViewModel(origin: viewModel.origin)
         let viewController = RegistrationPlateViewController.create(with: vm)
         navigationController?.pushViewController(viewController, animated: true)
+        */
     }
 
 }

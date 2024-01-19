@@ -63,9 +63,9 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
         //addCarButton.isHidden = device?.vehicle != nil
         addCarButton.isHidden = true
         addCarButton.onTap { [weak self] in
-            let vm = RegistrationPlateViewModel(origin: .add)
-            let viewController = RegistrationPlateViewController.create(with: vm)
-            self?.navigationController?.pushViewController(viewController, animated: true)
+            //let vm = RegistrationPlateViewModel(origin: .add)
+            //let viewController = RegistrationPlateViewController.create(with: vm)
+            //self?.navigationController?.pushViewController(viewController, animated: true)
         }
         if (addCarButton.isHidden) {
             addCarButton.heightAnchor.constraint(equalToConstant: 0).isActive = true

@@ -13,7 +13,6 @@
 		01445227ACDC0B476FA5807449BCD62D /* AccountActiveSessionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C203BA6074494BF2EF1EB5C195AA60 /* AccountActiveSessionsViewController.swift */; };
 		01CE71D61B40730D8E903E0828BDA958 /* IABaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183FAF78918914B4812D05F812B69445 /* IABaseViewController.swift */; };
 		03934ECC2BD2CF94907EA671586FE540 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 55CBE122C6BB2415707D9490A4ECD12A /* Localizable.strings */; };
-		04629E61D9F7EADC06A3F7ABF26BA95C /* VehiclesInfoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3917FF43197B66F122D60F61334B02 /* VehiclesInfoEditViewController.swift */; };
 		04A8430BFC619C34E5F4D3878D094380 /* CachedResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92DB21954E996D239B2FB532A0A065D3 /* CachedResponseHandler.swift */; };
 		054DE31A55621CFD112BEA6605B25F34 /* CallbackQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F3091E3D2111AB4B6DD6E1C6BCD39CF /* CallbackQueue.swift */; };
 		0578FC145EE66D697BB16E45D92B274B /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDCD7FEDEA2FDC750486E0CCBE128876 /* AccountViewController.swift */; };
@@ -34,8 +33,6 @@
 		108FA2B5877F30FCA670A7ACBBF49213 /* KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72A0426EFE5F776DD28C652D3FFF661 /* KeyboardDismiss.swift */; };
 		11ACF5B9D092EC76263AC7742F6D5F0D /* RegistrationColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F9573571F30875377BF991942DAFD /* RegistrationColorViewModel.swift */; };
 		11CCD832BD537718892C6A216A38490A /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D5CF5AC680A12DDB9ED185E7057B5 /* URLRequest+Alamofire.swift */; };
-		13301C5F7347288B71F19918F8D345BE /* VehiclesDeleteBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E09F9421FA28B45D3DBDBA63052EE5EE /* VehiclesDeleteBottomSheetView.swift */; };
-		133B79AA09A4B62DA591F6C826E93F32 /* VehiclesBeaconEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D499475B4368E0F784BA411DCCE17382 /* VehiclesBeaconEditViewController.swift */; };
 		13CF4C3AB2239DA6AD04623F0E21C9E5 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97AB07F0DBEAA133C67852E1F24811 /* DeviceDetailViewController.swift */; };
 		141F2D1E9CBB45172E37D41E240748B5 /* BeaconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952EF8B5552DEDD206A0106A99500A7 /* BeaconType.swift */; };
 		16361E4A36B6B8834388D8AB48D6E40D /* AddSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FC226AC710D9CB859718F14FEC898 /* AddSelectionViewModel.swift */; };
@@ -43,7 +40,6 @@
 		17C62CCD585DA59BBB5ABB745A5D262E /* RetryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2F6DE559BEC9520615126BA716FF2 /* RetryStrategy.swift */; };
 		17C7C59441614E4D5302E8D03F1B78F8 /* ConsoleLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013D2FF70CAE3B771E03628E8D91D62 /* ConsoleLogDestination.swift */; };
 		184636A6A6680BA0CC3ABB5A8BA89619 /* Policy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46D0DC6EEAC31DC1A47F717C9F19CFF2 /* Policy.swift */; };
-		18AC9FBC41FB799786B70CE9EBDC879A /* VehiclesDriversViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3A9BACB71ECA989375A57B08C134BB /* VehiclesDriversViewModel.swift */; };
 		18D46C29A5777D7947B8F201884DF6F4 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 39122F9B9B8881B6B44BA9F25944983B /* Localizable.strings */; };
 		197457852FC83E905248660B0F930452 /* AuthenticationInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DBCDB1945A9E41864E4BE964F1D7279 /* AuthenticationInterceptor.swift */; };
 		19CAE57B7D3A0DCA37C98EAC29D92CC9 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5B3D8ECEBB708EBCA8A07242E00E384 /* PrimaryButton.swift */; };
@@ -74,15 +70,12 @@
 		2C51C38922357A2E63BB82E59A48312A /* ImageTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B61A0D6A461A589D93E93A07B89B730 /* ImageTransition.swift */; };
 		2CD79D3835757C4C1CF164634615AA36 /* AssesmentBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C41A9127C8A5317E9332FD611EEB2D6 /* AssesmentBottomSheetView.swift */; };
 		2CEAD0E79AA35987667E226E27AAAA5A /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C1FD711F9C6C636964F8671E240674 /* HomeViewModel.swift */; };
-		2E3F54264C4CB99755104A381AADD12A /* VehiclesListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBA9F898C1A182D610675AF19CE35E4 /* VehiclesListViewModel.swift */; };
 		2EC22B2F1C6D38A19F5B557FC10CFC97 /* AccountNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C041450554303822060CA92A5403A408 /* AccountNotificationViewModel.swift */; };
 		302BB6D23817C94CD54AE88CA076AA59 /* SizeExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AA809F369C01BB3BED14C8EE383D52 /* SizeExtensions.swift */; };
 		311122BFCC3A3D74D83A2FB1999FF97E /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE38F86F17A44AC8681BAD99E886B0 /* UIKitExtensions.swift */; };
 		320C0D7A88AA812EFB20016BA1F5D7AE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458B861F03544D3CF1BC72946BB952B /* AFError.swift */; };
 		320CD7A2E84FCC952F464E69FE26541D /* Silka-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C0BF0A9571F28550183E9A415C9B8 /* Silka-Bold.otf */; };
-		329D2C17883CE46F5E17D01CDCF48550 /* VehiclesDriversViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE0763B981791871A3E2EF1CC12BB0C6 /* VehiclesDriversViewController.swift */; };
 		334BBCBB46D6869DF68B7BC2D9EECB37 /* RegistrationInsuranceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89490FB4253947FC1B5ED239B98284 /* RegistrationInsuranceInfoViewController.swift */; };
-		34D816486133EE9ABA602F1BD1EA922A /* VehiclesMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A8730766D74D4AE175EC985A7831C0 /* VehiclesMenuViewModel.swift */; };
 		356C655198DC007C21F9FBEAD1F09112 /* Silka-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = ADFF4ECD2DB8BDB1F3174C3ECB735838 /* Silka-Thin.otf */; };
 		35972C6A78DD24E67D3E926A69D90CC6 /* ActiveSessionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E6283BEF771CA554F1AB9C5A85076C /* ActiveSessionCell.swift */; };
 		3770CBC089A563D6041925BDB9FD4170 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB825FCE05401281BA9BF5A57F190F9A /* Beacon.swift */; };
@@ -99,7 +92,6 @@
 		39FC40C95404B7031B14BFA11ACF155C /* String+MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23809E835F3BD998CECFBB252D69ADC8 /* String+MD5.swift */; };
 		3A3D97CD90352D3453EC1C1B1DAD5ACB /* DiskStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768E1EBC609B171A12C6B154D8D04E8E /* DiskStorage.swift */; };
 		3A59D8FBAF9A54906E3644AC80465AFB /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86587FE1B931F56F5F2AF26AFD18D8EC /* Notifications.swift */; };
-		3AD23731C13F599C95750AD476CC22AC /* VehiclesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 134462039D3BC426E935EB417B45C22C /* VehiclesListViewController.swift */; };
 		3B6B6C71F499FA1E4D7D2F5C30BC7035 /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AC3B07822A4E5663C4CB4FE0A8B17A8 /* Storage.swift */; };
 		3C69AB64DDCD3A3EA07F571180539B1C /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4636C59B51943F5BCA43BBB12F86EC /* Placeholder.swift */; };
 		3C855F7381476A6E39CA9F0DB1641E17 /* ImageProgressive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F56FF2BF13D76A01D4C5C0DCB2553 /* ImageProgressive.swift */; };
@@ -129,9 +121,7 @@
 		4D562D8CFF1D9AAA002C4C54928340EB /* UILabel+LineHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C5E3B06AE25C20816141C05DF8B84D8 /* UILabel+LineHeight.swift */; };
 		4D8C9F905072BAAA974A2457C31D523E /* ImeiPopUpModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1527DE2292B0C28FD7A4D6C810E5FF3C /* ImeiPopUpModalViewController.swift */; };
 		4E77078384D26397F787A5042D577DE1 /* ImageFormat.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD723DDE8CD8FB89C85986DC1E4D086 /* ImageFormat.swift */; };
-		4FF55C44DCFFDF4EA70706D3F572681E /* RegistrationPlateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EFCF6CD3FA79C20DCFE41DCBEB91AFD /* RegistrationPlateViewController.swift */; };
 		50BC9D3E7F446339BC5DE528E9613355 /* ReportIncidenceSimpleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C24D7FAE8727C56056CFE7CEAC2D92 /* ReportIncidenceSimpleViewModel.swift */; };
-		50BDAA32A80DC940F88DF9E7D0847F76 /* SelectVehicleDriverTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D5E95B8F5B6ED4B3F415F060AD0382 /* SelectVehicleDriverTypeViewModel.swift */; };
 		50E8FB5AF116886210450036AAC88721 /* RegistrationTermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1079ED94279945B63E5147A0F9A1B98 /* RegistrationTermsViewController.swift */; };
 		51ABB8AB72491F7C3DC09D421CC6277E /* ValidatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6975331CCC2805F92C5BBA8049F7FD00 /* ValidatorView.swift */; };
 		529173B31EFCD3D199E79866AFBEC86C /* HTTPHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F3A257CD79DE706EDAEF1613421D95 /* HTTPHeaders.swift */; };
@@ -155,7 +145,6 @@
 		5ECA5B4DD5308FF59AC4C8C384B7E934 /* ImageDrawing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C78A28DE230303FA5C2BD6A57BD4743 /* ImageDrawing.swift */; };
 		5F80258521F1F7EF88029D9FA65B0C93 /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2474AEBA22DF360516F6788794FB888 /* Filter.swift */; };
 		60920526DB7CCF62AF8EF1D17E457417 /* TutorialVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = C416BA66AA5D37C9477C944C2519635D /* TutorialVideo.swift */; };
-		609BDB2BE41E10690B6C3292619131E3 /* VehiclesMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203C501C843F8E73FDE7A7CEDD54946B /* VehiclesMenuViewController.swift */; };
 		6321485C5C9C7CA251A4D54EDD49DB97 /* CarSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66346BD8BC54322F6B9757D19D30D635 /* CarSelectionView.swift */; };
 		63732520434536343032A8CF92F3494C /* RegistrationEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356C1F638D40CFE9CE1D68631CFE49BD /* RegistrationEmailViewController.swift */; };
 		643A7AFFB7AEB70B2B9B7E0926055023 /* RetryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69DCE47D15338436E9F32195DEF89EC3 /* RetryPolicy.swift */; };
@@ -192,7 +181,6 @@
 		7369F3CDD1E94244CC8A35DB1731478B /* Runtime.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7CA0C77A63EC0FE27E28FA9395A639 /* Runtime.swift */; };
 		737747B9A98257DB58112C3A23686669 /* MultipartFormData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03628FD2E59EC25D840E9E9DE6632D8F /* MultipartFormData.swift */; };
 		75562C6A291FDE21196EF444B7BC2228 /* RegistrationBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F2C6C1C9B85DBD083DEFAC7B4A52351 /* RegistrationBeaconViewController.swift */; };
-		756C9966B635CE9B0FA2F8EF97DE95DC /* VehiclesInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725A2B38913FF77C0C6F84ADAF2143EE /* VehiclesInfoViewModel.swift */; };
 		75DAD1254D17DA0BA6CA801137F9F88C /* SpeechReconizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9ED66AC96F608BF0A4296701C78FD31 /* SpeechReconizable.swift */; };
 		778762903B1D8CF35D66CF765EF3ED77 /* youtube-ios-player-helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D4A0227F9677EB2CEBCBCF5D5A3277C /* youtube-ios-player-helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		77AB6AF4BFC6DE016DA7C057B5799C84 /* ServerTrustEvaluation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E800DC1F7E9EB8F7F8C3D9E793A6BC37 /* ServerTrustEvaluation.swift */; };
@@ -214,7 +202,6 @@
 		82FD97FBBEFE51E2D3B434AF4954FC93 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772656A66966A9B4BA9CF75C7ECE16C /* EventMonitor.swift */; };
 		8341900C41B8D213669EFEEB76A133E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207BEE6DFA63E5CF69828DD467E9674 /* Foundation.framework */; };
 		8360A7D47FDEA0EBC69F0CC9C1162A44 /* WebViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EABB9AC2929CB51F33141E8BFC156D6 /* WebViewViewModel.swift */; };
-		8384E781969836D362586E3D4ED764EC /* RegistrationPlateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D157B7BF1EC37103627453F1A983780 /* RegistrationPlateViewModel.swift */; };
 		838E2D295AD3B8F1E015B29875DD3DB8 /* BottomSheetTransitioningDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D206A8C9CB4690EDA0C3017A238D0252 /* BottomSheetTransitioningDelegate.swift */; };
 		839F7211A4C2F43781A1B3136D8EE862 /* RegistrationSuccessBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A5638FBB6688276EFBAF7909DFDE24 /* RegistrationSuccessBeaconViewController.swift */; };
 		83D7C01E8D56C5A13BF09E035080CE0D /* Versions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B8684D78461FFD16A7418749ECF20BA /* Versions.swift */; };
@@ -232,8 +219,6 @@
 		8949DC717C8244074D47EC15F4B5F8F5 /* ReportIDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BDDFE602038E326F77F6301D69525F /* ReportIDKViewController.swift */; };
 		8A2D9FAE5069927A930320A90CB3C366 /* RegistrationScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 5AD6D6D486C3B394DB12123A23C7705B /* RegistrationScene.storyboard */; };
 		8B5C677281E3E65C4F70339BD4115E39 /* RegistrationColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FB468F1201B123660ED71C4EE088A3 /* RegistrationColorViewController.swift */; };
-		8CADE17449BC418527ABC1469F98B00C /* VehiclesInsuranceEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E3B04A0A8F046013ACF7B5B01E0006 /* VehiclesInsuranceEditViewModel.swift */; };
-		8D3E6E3BBEA39FCD243EA1384E37F879 /* VehiclesBeaconEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F95AD508B7E014CD8C146A90C5DD901E /* VehiclesBeaconEditViewModel.swift */; };
 		8D663FFB56A0B034E09379BF3DD97018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A33E355593EFD67923A7B6854981183 /* Assets.xcassets */; };
 		8D6A083EC2B6F1795722E28130DCE006 /* EcommerceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2CAD9D321E7A3E1E147CC2826C3441 /* EcommerceVC.swift */; };
 		8DFCE267D718C02DB2C083EFE8B044B7 /* RegistrationValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3271F837BC898F6FE1BF483016C48C /* RegistrationValidationViewModel.swift */; };
@@ -248,37 +233,31 @@
 		933DB0D904FFB6E452D2692CBDF74B06 /* RegistrationBeaconSelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FB38F57975B69FCE3569F11A0DB6B9 /* RegistrationBeaconSelectTypeViewController.swift */; };
 		93AC490FDCAA96E1CA5C04C0F3970F0B /* GradientView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19059C5D2F4401263CD7A7EDAC2EC055 /* GradientView+UIView.swift */; };
 		95089ED032ED8BD35053D90470AC6EAB /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE4D6FFCC0252BE5CF73AFBE6C6AB65 /* TextButton.swift */; };
-		952BF8F56CAF3B765556AF47EC0255EE /* VehiclesDriversEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408D9DE819F8539CC47F1EA0E41A2A20 /* VehiclesDriversEditViewController.swift */; };
 		957FD3C7868B23D61705862F882696DB /* RegistrationSuccessBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484625D7EFA5FF59F8273CC61184F7A /* RegistrationSuccessBeaconViewModel.swift */; };
 		95916815E6E60E47B1F1B1AFE36D3C07 /* CacheSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF0BA51D46FBCB694BDDC13C6F200DC9 /* CacheSerializer.swift */; };
-		959226EF699F3BD9A80FE243976C7BE5 /* VehiclesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9244B8315A2A344715B82E915F564491 /* VehiclesInfoViewController.swift */; };
 		95F175F1B7E79CC71AAB590013496A62 /* Silka-SemiBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BBFC3399CB8175A071F027AAF1EB3A70 /* Silka-SemiBold.otf */; };
 		963917BD6F70785AE72358430AD5148D /* HomeMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA8B590A5B32E627E6537222F70F4A /* HomeMapViewModel.swift */; };
 		97743737756DDDF5676B070DD74F29EB /* SignInValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00924F70E1CBF20D418024F761B9FEB5 /* SignInValidationViewModel.swift */; };
 		985B99BDE70C692F8886DF5E35F32800 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6D535CF2CE5F0E6769960AE756CBE /* Indicator.swift */; };
 		985D58F2C664580C104E71D48BB2F193 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6003EC675516D416AD29EC6876463647 /* Vehicle.swift */; };
-		99315A31C0B57307919523E946C73CE7 /* DriverEditCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D993533C578F0BCDAF57F2DD6F25D39 /* DriverEditCell.swift */; };
 		99EF76910B70D2E3BE39E9F209CF9E82 /* RegistrationInsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E371926F0DFB24659067E7E14C1A6C /* RegistrationInsuranceViewModel.swift */; };
 		9A0F7E31FFF36BFA2F33AA3847450C89 /* RegistrationBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6825E3A569FA3FFB191E831CD7F93 /* RegistrationBeaconViewModel.swift */; };
 		9B397020726009E2B6F776161228EC65 /* ReportAssesmentFeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6593B829C6C5016BB3205DEACDBC5 /* ReportAssesmentFeedbackViewModel.swift */; };
 		9B53C96E62C025F82BAB2919FD99E294 /* RegistrationTermsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8CDE856264FA3ADE503B2A01825B1 /* RegistrationTermsViewModel.swift */; };
 		9BAC2A86AF7163F82E1B668DCD53F09A /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B02BF479F0CF976718C1FF7A26CF82 /* ImageCache.swift */; };
 		9CD6BE304E550493CA44A0CAF55557FF /* Asitur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FEE0991AF188010F714AC0B1EE6D993 /* Asitur.swift */; };
-		9EB96ECA344A0C68241D856F672817CA /* VehiclesInsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37C2E1D2698369E2777B1BE2441E3BD0 /* VehiclesInsuranceViewModel.swift */; };
 		9EF9CCE8ECF5FD901B80BD71632BDD8B /* KeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633B37D92BFB9820B2AAA8B745E302FB /* KeyboardListener.swift */; };
 		9F573A9191BCC1826EC5052ADCF54E45 /* ErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC817129BF7E0EBD6B03EEB836FCF79 /* ErrorViewController.swift */; };
 		9F8F6BE5736F370489C1B8EFF82FB7AF /* DeviceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0069F7D0191CCDD02FA1759CFD64C31 /* DeviceInfoViewController.swift */; };
 		A17F51015E28E1135F0F5F4FB8EFCE23 /* KFOptionsSetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D43BC43063E6A754CFB8539BD50E7B /* KFOptionsSetter.swift */; };
 		A182D36F134A534BD01A674D20811192 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207BEE6DFA63E5CF69828DD467E9674 /* Foundation.framework */; };
 		A1C855685E70D7115DF9F62DA725C87C /* KingfisherOptionsInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95484C67D683FA850EAF40C04E8BF6B9 /* KingfisherOptionsInfo.swift */; };
-		A2FEF5249B38D1DF613F72138063F5AE /* VehiclesDriversEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57839BDE9EB67B1AB9199BBC3B2310FC /* VehiclesDriversEditViewModel.swift */; };
 		A3B7FF35221C50E7A5F42A1C105958E7 /* AuthenticationChallengeResponsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AADE4CEE40B8CEE896B20E25671E51D /* AuthenticationChallengeResponsable.swift */; };
 		A4B60E28852613EBC513E0C1C813AD2B /* LogFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79B35A1F5A8ACE43A293C89C55361C0 /* LogFormatter.swift */; };
 		A4B9A25056C1D36D83E977166C532E32 /* ReportAssesmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DAF247C5D2425AB6D061994D6BD543 /* ReportAssesmentViewController.swift */; };
 		A523488C60BF961290D0B1ABB9ADACEC /* RequestCompression.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B858A1B7450344DE929E906DF2F1EA0 /* RequestCompression.swift */; };
 		A8F63F55516382FB17769CB7D25048FC /* CheckboxButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A7FA60070DA6C5F60F98FDD83D6F56 /* CheckboxButton.swift */; };
 		A9940CC9B67E538C2FD5FBC21E8991CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207BEE6DFA63E5CF69828DD467E9674 /* Foundation.framework */; };
-		A9DC7D9738D7CBBF11E1096E4EFFFDA1 /* VehiclesScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 64D9BFF9680AB63952F63C54E2079AE2 /* VehiclesScene.storyboard */; };
 		A9EC94E8A7A46328592177A1900BA5F3 /* OnboardingCreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC634B2F02DD05F8718650E6EF4B783E /* OnboardingCreateAccountViewController.swift */; };
 		AA4198E08460250048344A718DDE975D /* IDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = F193F248192F026530DE1CE8D0B818C7 /* IDevice.swift */; };
 		AA721ECC2B36AFB7D9FE70C83E6D63F9 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = E582F02016503857F37324CDAEC12E48 /* Response.swift */; };
@@ -305,7 +284,6 @@
 		BDD0909312CC426F165F00F79360A959 /* ReportAccidentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 241A343EEFDDE00C771FFE66E0507D98 /* ReportAccidentViewController.swift */; };
 		BE2A4969D1CF8D77C771C8BA97A0B3AF /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = CDABFFAD883BB8BA1444DE15721A61D0 /* Localizable.strings */; };
 		BE7FDCDEA4F1AFD3C36477211D0C4740 /* RegistrationSuccessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB06BA2B659939FEC8FFEDB3DD848CC /* RegistrationSuccessViewController.swift */; };
-		BEEDC30CA4E0921C8FD25B577CDC2DEF /* SelectVehicleDriverTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA80DBF8985DE8D9A74026002332F0 /* SelectVehicleDriverTypeViewController.swift */; };
 		BF475E49CC04D93F44F0EBD46C7D79DF /* ReportIncidenceSimpleScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = F21BC832A48C6453C1EFD0BDA70618D6 /* ReportIncidenceSimpleScene.storyboard */; };
 		BF8BB034449A8905AC0E5664F875096E /* InteractiveLinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C780F7DC0BDFAF763CCE973E0940A79B /* InteractiveLinkLabel.swift */; };
 		C04739CBCEE445B66192BFA708655EDF /* StringEncoding+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCDD378BD7939841853235381406B3B7 /* StringEncoding+Alamofire.swift */; };
@@ -329,7 +307,6 @@
 		D03733019FFC3B9F83D5D22916C226C5 /* DeviceEditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EB096FEB5B54A5049685843F25FFF7 /* DeviceEditNameViewController.swift */; };
 		D0560E8E2E5EB407B5D8E0381BF453FA /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC17FAE6EC546C98A3B7477928AE4 /* URLConvertible+URLRequestConvertible.swift */; };
 		D09FBBADAF7C5C757AA5AB5DFE54BD25 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE6333B4C0F6E779D9AE160AA1D3490 /* Alamofire-dummy.m */; };
-		D1536067A2D9EE55AB71D8614259ABE5 /* VehiclesBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A17837398E79733CD736180745EFE696 /* VehiclesBeaconViewModel.swift */; };
 		D21C39071C95DAC6FB2BF9607AC04267 /* AVAssetImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49327587B9442D26113B36D46DAA2267 /* AVAssetImageDataProvider.swift */; };
 		D23DF875F89A1752E3BACCAE37FACF11 /* ReportInstructionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2683778D48B9BDBEFBA14827D75309F2 /* ReportInstructionsViewController.swift */; };
 		D2731B9C4ECC4CA71213B9BBCC21DA3E /* KF.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2867B274DD8720738C90337010E01213 /* KF.swift */; };
@@ -356,7 +333,6 @@
 		E04091F8BEA7291724FFD278C383CE40 /* ReportBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4011EFDA61ECB160E4D75EB866ABBD4 /* ReportBaseViewController.swift */; };
 		E176167B175E1B7DCF4E739C0E19CD6D /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0CF464B1010F1A604012EC0741CF9D /* UIBarButtonItem+Extension.swift */; };
 		E1B7265F0E8A67C36D4DEF1E6E83386F /* IActionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C072220333FF6BAAE593D4739C43236C /* IActionResponse.swift */; };
-		E1CD4F96E2C03A53C56529E46902A497 /* VehiclesInsuranceEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8388D51E660B3415C4F9BA533BF3843D /* VehiclesInsuranceEditViewController.swift */; };
 		E1FD5EE46E210207BE9726C6400C4095 /* ReportTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456FFAD21CC9179CCD74590898152876 /* ReportTypeViewController.swift */; };
 		E2E51934C49950B75DE42A755836614E /* YTPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = B57785B845E09016DB4FC254CFFB2A7E /* YTPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E350907483A980EC32C36A04AD4B3503 /* IResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CE898940B3D5D6FC46AE2FFC79444F /* IResponse.swift */; };
@@ -378,15 +354,12 @@
 		EF2967B4EDE04B08F2B1D2663CF01D7D /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8F9903E566085FD321B1B8CE9DD858 /* StoryboardInstantiable.swift */; };
 		EFB90B81EC0C9746BD0588257D56F9B3 /* AddScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 3099EC08650000759835DB9E45A462E0 /* AddScene.storyboard */; };
 		F038D81F7ABAA15CF03246AD4BF334F7 /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B84075C6319C739BCA3DDCC66CB20239 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F046D6A3EF8CD3315A1D51F5C7A243A9 /* DriverCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B216ACE56ABD81C991D4C448144411 /* DriverCell.swift */; };
 		F0485D2668D22F68B659534624B1E8EB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966DFFB93816A2AD14E59929AF50776D /* Colors.xcassets */; };
 		F116888920946F60FB1C2682891BFD4A /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6FE66309561022D4C291CA5FEC810C /* MemoryStorage.swift */; };
 		F1BEAA7432D6F55A333B9521DFAA5ABB /* BottomSheetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 612382E2B5E9317C3A6198D332BE8251 /* BottomSheetPresenter.swift */; };
-		F1C0151DCC8D82346CAFABD51DCD7F09 /* VehiclesInsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B236BC29A2E581C0A16669D380897B2B /* VehiclesInsuranceViewController.swift */; };
 		F2415AE8678DE2698B7AD7D88B1A5C0F /* AlamofireExtended.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67B222DED043A606F6B510859FFB9B9 /* AlamofireExtended.swift */; };
 		F2EC655BD78FEF85F8ECDA40C6A90825 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C67E3F79F1959950D57AD3E5E83F230 /* ImageView+Kingfisher.swift */; };
 		F38D3F8935280B596DA8BFF0CA059239 /* KFImageOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DE14B0759C720B5FE47E63DE7840857 /* KFImageOptions.swift */; };
-		F390B154409CCA3C37F2BF84DECF4567 /* VehiclesBeaconViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63626DEB5DCC86FD923230BA528ECA79 /* VehiclesBeaconViewController.swift */; };
 		F3CAA6C61338F62D89A10B30E7EEBEC8 /* IABaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE98DA9E8DF2FD9054947CE981C7D1A4 /* IABaseViewModel.swift */; };
 		F44F03702B5B433FD3BD134E7C115A1B /* IncidencesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8AFB248706CAD078D1EF1B643DEB7E4 /* IncidencesListViewController.swift */; };
 		F4C7827A57A7C59CB0BB4820C4A3807E /* ErrorScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = B3F702DA2377DE66884B41CDCBF26131 /* ErrorScene.storyboard */; };
@@ -402,7 +375,6 @@
 		FC2199CE1F8B64E920374ECDB93036AF /* ImageBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27500A0020DD209F982F84C0580F32A1 /* ImageBinder.swift */; };
 		FC465E98B191619A7B54EFFA3998F925 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0617A3B74937646A3438F1D23D743B7 /* AppImage.swift */; };
 		FCE359EEFE9FA78CA2BEE08889426AA0 /* RegistrationInsuranceInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF8DB66BF4DDF7B2CD97D5B6DDCCE8 /* RegistrationInsuranceInfoViewModel.swift */; };
-		FEAA803525FEBFC419E46EF7AB7D5B0F /* VehiclesInfoEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F630E3A04BB04395B346E257812964AA /* VehiclesInfoEditViewModel.swift */; };
 		FEB10FCE09C01A71235494AB28748083 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE59A64CCF553F5157515C536A45477 /* YTPlayerView.m */; };
 		FF7778AE757A30439FA35097A1AF3C32 /* ReportAssesmentFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D7FCA09A70D75A210892D680E2290 /* ReportAssesmentFeedbackViewController.swift */; };
 /* End PBXBuildFile section */
@@ -505,7 +477,6 @@
 		104669FDE846D785102868D0F0F3BE2E /* ColorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
 		10D5B6A53224127B0EF0120843C3BB03 /* RegistrationTelephoneViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationTelephoneViewController.swift; sourceTree = "<group>"; };
 		1126D73329C12C97F935014015724BDF /* AddSelectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddSelectionViewController.swift; sourceTree = "<group>"; };
-		134462039D3BC426E935EB417B45C22C /* VehiclesListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesListViewController.swift; sourceTree = "<group>"; };
 		139F828FAA4291B7831B46DDA581ACE7 /* VehicleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 		1495A4A938ECC13F3D7F2A2035AA4447 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
 		1527DE2292B0C28FD7A4D6C810E5FF3C /* ImeiPopUpModalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImeiPopUpModalViewController.swift; sourceTree = "<group>"; };
@@ -517,7 +488,6 @@
 		194BA81D8E4CE3EADDB71510791CFE54 /* Alamofire.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Alamofire.release.xcconfig; sourceTree = "<group>"; };
 		198F459E8EDADE05AFB01FB88953641B /* AppColors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
 		19CFCB72F233C67BB63451767A8A06CB /* IncidenceLibraryIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IncidenceLibraryIOS.release.xcconfig; sourceTree = "<group>"; };
-		1B3A9BACB71ECA989375A57B08C134BB /* VehiclesDriversViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesDriversViewModel.swift; sourceTree = "<group>"; };
 		1B9BD7AE829A3FE5903893EDF9066F1F /* ImageDataProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProcessor.swift; path = Sources/Networking/ImageDataProcessor.swift; sourceTree = "<group>"; };
 		1CA7214E1C7524FD956A38AB7C8056C9 /* Pods-IncidenceLibraryIOS_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IncidenceLibraryIOS_Tests"; path = Pods_IncidenceLibraryIOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DE4D6FFCC0252BE5CF73AFBE6C6AB65 /* TextButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextButton.swift; sourceTree = "<group>"; };
@@ -526,7 +496,6 @@
 		1F42FB0E4FC426D2E031014561FF858C /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Session.swift; path = Source/Session.swift; sourceTree = "<group>"; };
 		1FBF81F4347395E1FF673C2580C37B34 /* BadgeView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BadgeView.swift; sourceTree = "<group>"; };
 		203AADB29BD8DA9E7BBD0855DFB6D8FD /* SessionDataTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDataTask.swift; path = Sources/Networking/SessionDataTask.swift; sourceTree = "<group>"; };
-		203C501C843F8E73FDE7A7CEDD54946B /* VehiclesMenuViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesMenuViewController.swift; sourceTree = "<group>"; };
 		21737CE9E8739A557B69082B6B8987F7 /* StringUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
 		21B108E454F935C62D08491F412C0481 /* AnimatedImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AnimatedImageView.swift; path = Sources/Views/AnimatedImageView.swift; sourceTree = "<group>"; };
 		21D6CA38EB607C3214F4801FCE9F9DAB /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Sources/Networking/SessionDelegate.swift; sourceTree = "<group>"; };
@@ -566,8 +535,6 @@
 		356C1F638D40CFE9CE1D68631CFE49BD /* RegistrationEmailViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationEmailViewController.swift; sourceTree = "<group>"; };
 		35967C45FA358E97CF0EB1D1DAAEF65F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		35C24D7FAE8727C56056CFE7CEAC2D92 /* ReportIncidenceSimpleViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportIncidenceSimpleViewModel.swift; sourceTree = "<group>"; };
-		37C2E1D2698369E2777B1BE2441E3BD0 /* VehiclesInsuranceViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInsuranceViewModel.swift; sourceTree = "<group>"; };
-		37D5E95B8F5B6ED4B3F415F060AD0382 /* SelectVehicleDriverTypeViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SelectVehicleDriverTypeViewModel.swift; sourceTree = "<group>"; };
 		37DB7E3B742E0B33C81E278FC57ECF75 /* URLSessionConfiguration+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLSessionConfiguration+Alamofire.swift"; path = "Source/URLSessionConfiguration+Alamofire.swift"; sourceTree = "<group>"; };
 		38F5B1A301C6CD1D8175C0F58E80096C /* ReportExpiredInsuranceViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportExpiredInsuranceViewModel.swift; sourceTree = "<group>"; };
 		39122F9B9B8881B6B44BA9F25944983B /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = gl.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -581,18 +548,15 @@
 		3E6EE4641F0BCB56158353EB1D4B0C03 /* AccountNotificationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountNotificationViewController.swift; sourceTree = "<group>"; };
 		3E7B69AFB84D0A9A73910A743A28A7C8 /* CustomSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
 		3E89490FB4253947FC1B5ED239B98284 /* RegistrationInsuranceInfoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInsuranceInfoViewController.swift; sourceTree = "<group>"; };
-		3EFCF6CD3FA79C20DCFE41DCBEB91AFD /* RegistrationPlateViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationPlateViewController.swift; sourceTree = "<group>"; };
 		3F3091E3D2111AB4B6DD6E1C6BCD39CF /* CallbackQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackQueue.swift; path = Sources/Utility/CallbackQueue.swift; sourceTree = "<group>"; };
 		3F9800BA3927DB3F9C6863B8264DBED6 /* AddCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCell.swift; sourceTree = "<group>"; };
 		4009323002879A1E05FAF7956AE4137C /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
 		4045BA883CCE8A1F575BEB1F7760A965 /* BeaconView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BeaconView.swift; sourceTree = "<group>"; };
-		408D9DE819F8539CC47F1EA0E41A2A20 /* VehiclesDriversEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesDriversEditViewController.swift; sourceTree = "<group>"; };
 		41D271E61EABF97D6E283120E11EC43A /* SessionDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SessionDelegate.swift; path = Source/SessionDelegate.swift; sourceTree = "<group>"; };
 		4207BEE6DFA63E5CF69828DD467E9674 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		42909DE7C449C5BC1EA23EE6A7F46408 /* youtube-ios-player-helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.release.xcconfig"; sourceTree = "<group>"; };
 		433962442569DDB58E4B3AD9B001F53B /* CarsBottomSheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarsBottomSheetView.swift; sourceTree = "<group>"; };
 		441729490125857E37C1E6B7AE548FF2 /* KingfisherError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherError.swift; path = Sources/General/KingfisherError.swift; sourceTree = "<group>"; };
-		44E3B04A0A8F046013ACF7B5B01E0006 /* VehiclesInsuranceEditViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInsuranceEditViewModel.swift; sourceTree = "<group>"; };
 		456FFAD21CC9179CCD74590898152876 /* ReportTypeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportTypeViewController.swift; sourceTree = "<group>"; };
 		46BF04EC98CEF6B4B6A544FD2A864E2F /* IncidenceMapViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidenceMapViewModel.swift; sourceTree = "<group>"; };
 		46D0DC6EEAC31DC1A47F717C9F19CFF2 /* Policy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Policy.swift; sourceTree = "<group>"; };
@@ -619,7 +583,6 @@
 		56A5638FBB6688276EFBAF7909DFDE24 /* RegistrationSuccessBeaconViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessBeaconViewController.swift; sourceTree = "<group>"; };
 		56AEBA2BD5EE34490CA651AD7DED1820 /* AccountHelpViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountHelpViewController.swift; sourceTree = "<group>"; };
 		571A85CB38F4231965F05DEF8F22787C /* SlidingButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SlidingButton.swift; sourceTree = "<group>"; };
-		57839BDE9EB67B1AB9199BBC3B2310FC /* VehiclesDriversEditViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesDriversEditViewModel.swift; sourceTree = "<group>"; };
 		57A36C17F09A6B32B924924559C4A528 /* RegistrationNameViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationNameViewModel.swift; sourceTree = "<group>"; };
 		57D77FD8BD6EFA66B2BBCBCF0EE8F309 /* IncidencesCarsListViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidencesCarsListViewController.swift; sourceTree = "<group>"; };
 		5860ED1CF623320C5AA08D7081A177DD /* String+htmlAttributted.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+htmlAttributted.swift"; sourceTree = "<group>"; };
@@ -631,25 +594,20 @@
 		5C4636C59B51943F5BCA43BBB12F86EC /* Placeholder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Placeholder.swift; path = Sources/Image/Placeholder.swift; sourceTree = "<group>"; };
 		5CAD2E7790B7AB169319806F43D003A4 /* IncidenceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidenceType.swift; sourceTree = "<group>"; };
 		5CF6A04CF543B275E2F7222F52D5C91F /* AccountHelpViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountHelpViewModel.swift; sourceTree = "<group>"; };
-		5D157B7BF1EC37103627453F1A983780 /* RegistrationPlateViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationPlateViewModel.swift; sourceTree = "<group>"; };
 		5D241778C053B2AAF40BC48DCDDC18F5 /* AppNavigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppNavigation.swift; sourceTree = "<group>"; };
 		5D324C4E7965379D7CDFD4001EF54F49 /* DeviceNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceNotification.swift; sourceTree = "<group>"; };
 		5D538F7E4BBD8495E2444337D4BEB291 /* Concurrency.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Concurrency.swift; path = Source/Concurrency.swift; sourceTree = "<group>"; };
 		5D797E9A5C5782CE845840781FA1CC81 /* Alamofire */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Alamofire; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D993533C578F0BCDAF57F2DD6F25D39 /* DriverEditCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DriverEditCell.swift; sourceTree = "<group>"; };
 		5DE14B0759C720B5FE47E63DE7840857 /* KFImageOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFImageOptions.swift; path = Sources/SwiftUI/KFImageOptions.swift; sourceTree = "<group>"; };
 		5E6419C0F8DEE2A929CD01805666AE80 /* Pods-IncidenceLibraryIOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IncidenceLibraryIOS_Example-Info.plist"; sourceTree = "<group>"; };
 		6003EC675516D416AD29EC6876463647 /* Vehicle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Vehicle.swift; sourceTree = "<group>"; };
 		612382E2B5E9317C3A6198D332BE8251 /* BottomSheetPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BottomSheetPresenter.swift; sourceTree = "<group>"; };
-		61A8730766D74D4AE175EC985A7831C0 /* VehiclesMenuViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesMenuViewModel.swift; sourceTree = "<group>"; };
 		61F3A257CD79DE706EDAEF1613421D95 /* HTTPHeaders.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPHeaders.swift; path = Source/HTTPHeaders.swift; sourceTree = "<group>"; };
 		621D7FCA09A70D75A210892D680E2290 /* ReportAssesmentFeedbackViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportAssesmentFeedbackViewController.swift; sourceTree = "<group>"; };
 		633B37D92BFB9820B2AAA8B745E302FB /* KeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyboardListener.swift; sourceTree = "<group>"; };
 		635E5FA62C8052276E42E3729039043C /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = "es-419.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		63626DEB5DCC86FD923230BA528ECA79 /* VehiclesBeaconViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesBeaconViewController.swift; sourceTree = "<group>"; };
 		643430AAC925BDA46E2AC4471A20EBD4 /* ImageModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageModifier.swift; path = Sources/Networking/ImageModifier.swift; sourceTree = "<group>"; };
 		64B551AC133961BAE69395AE0DC455AE /* BottomSheetPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BottomSheetPresentationController.swift; sourceTree = "<group>"; };
-		64D9BFF9680AB63952F63C54E2079AE2 /* VehiclesScene.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = VehiclesScene.storyboard; sourceTree = "<group>"; };
 		66346BD8BC54322F6B9757D19D30D635 /* CarSelectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CarSelectionView.swift; sourceTree = "<group>"; };
 		6676BAE5B8BA39AF0EF634F68B4A6136 /* KingfisherManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KingfisherManager.swift; path = Sources/General/KingfisherManager.swift; sourceTree = "<group>"; };
 		66A336746B6BB392E552A1034D1230D1 /* IResponse+Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "IResponse+Decodable.swift"; sourceTree = "<group>"; };
@@ -677,7 +635,6 @@
 		71233F6BA56912827188A1BD2A5E9B6C /* TextFieldWithSelectView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextFieldWithSelectView.swift; sourceTree = "<group>"; };
 		71A7FA60070DA6C5F60F98FDD83D6F56 /* CheckboxButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CheckboxButton.swift; sourceTree = "<group>"; };
 		72117F44E08634CAEEC54772FBAFA916 /* InsuranceCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InsuranceCell.swift; sourceTree = "<group>"; };
-		725A2B38913FF77C0C6F84ADAF2143EE /* VehiclesInfoViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInfoViewModel.swift; sourceTree = "<group>"; };
 		72D88D1F44200035FB0327ECD580763F /* ExtensionHelpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ExtensionHelpers.swift; path = Sources/Utility/ExtensionHelpers.swift; sourceTree = "<group>"; };
 		74D5B90B7BE2248B0AC5EC420F539E46 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = ca.lproj/Localizable.strings; sourceTree = "<group>"; };
 		74F6825E3A569FA3FFB191E831CD7F93 /* RegistrationBeaconViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationBeaconViewModel.swift; sourceTree = "<group>"; };
@@ -707,7 +664,6 @@
 		82C1FD711F9C6C636964F8671E240674 /* HomeViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		82E6283BEF771CA554F1AB9C5A85076C /* ActiveSessionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ActiveSessionCell.swift; sourceTree = "<group>"; };
 		83142E919D830AB7E250B068613E26D3 /* Delegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Delegate.swift; path = Sources/Utility/Delegate.swift; sourceTree = "<group>"; };
-		8388D51E660B3415C4F9BA533BF3843D /* VehiclesInsuranceEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInsuranceEditViewController.swift; sourceTree = "<group>"; };
 		839F56FF2BF13D76A01D4C5C0DCB2553 /* ImageProgressive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProgressive.swift; path = Sources/Image/ImageProgressive.swift; sourceTree = "<group>"; };
 		83B2F6DE559BEC9520615126BA716FF2 /* RetryStrategy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryStrategy.swift; path = Sources/Networking/RetryStrategy.swift; sourceTree = "<group>"; };
 		8498A1B2C60117E181CA67921DDAE0B6 /* youtube-ios-player-helper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "youtube-ios-player-helper"; path = youtube_ios_player_helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -728,12 +684,9 @@
 		8BCDC17FAE6EC546C98A3B7477928AE4 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
 		8C66E3D9779DA86F7697D424A53E6175 /* Localizable.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = Localizable.strings; path = eu.lproj/Localizable.strings; sourceTree = "<group>"; };
 		8C78A28DE230303FA5C2BD6A57BD4743 /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
-		8D3917FF43197B66F122D60F61334B02 /* VehiclesInfoEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInfoEditViewController.swift; sourceTree = "<group>"; };
 		8D83565BB48483161CEEA868166BB1FE /* youtube-ios-player-helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "youtube-ios-player-helper.debug.xcconfig"; sourceTree = "<group>"; };
-		8DBA9F898C1A182D610675AF19CE35E4 /* VehiclesListViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesListViewModel.swift; sourceTree = "<group>"; };
 		9090E9F3B3B493943CD62B838BFF70CC /* OperationQueue+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "OperationQueue+Alamofire.swift"; path = "Source/OperationQueue+Alamofire.swift"; sourceTree = "<group>"; };
 		9126BD7CE7585A7F65D5CFD426B022AA /* UIStackView+RemoveAll.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIStackView+RemoveAll.swift"; sourceTree = "<group>"; };
-		9244B8315A2A344715B82E915F564491 /* VehiclesInfoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInfoViewController.swift; sourceTree = "<group>"; };
 		92DB21954E996D239B2FB532A0A065D3 /* CachedResponseHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CachedResponseHandler.swift; path = Source/CachedResponseHandler.swift; sourceTree = "<group>"; };
 		9466BC37CDF425104AA61BBF4DB6F9B5 /* Pods-IncidenceLibraryIOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IncidenceLibraryIOS_Tests-Info.plist"; sourceTree = "<group>"; };
 		94AD9F2F0DFB185D3DD595816797A58B /* DeviceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
@@ -750,7 +703,6 @@
 		9E6BF5E52E923ADA1879462746724414 /* AccountHelpCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountHelpCell.swift; sourceTree = "<group>"; };
 		9E7C13D267B20F0199381F37C13045F4 /* TextLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextLabel.swift; sourceTree = "<group>"; };
 		A14BD255D44E6AA8735EF2E8C4AA4C83 /* IncidenceLibraryIOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IncidenceLibraryIOS; path = IncidenceLibraryIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A17837398E79733CD736180745EFE696 /* VehiclesBeaconViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesBeaconViewModel.swift; sourceTree = "<group>"; };
 		A27386396968FE69231DFE6A7AAD7AF1 /* IncidenceLibraryConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidenceLibraryConfig.swift; sourceTree = "<group>"; };
 		A2BEE0C11E76046919BC413DD4AC3126 /* Pods-IncidenceLibraryIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IncidenceLibraryIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A2E371926F0DFB24659067E7E14C1A6C /* RegistrationInsuranceViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInsuranceViewModel.swift; sourceTree = "<group>"; };
@@ -773,7 +725,6 @@
 		AF6072AC0FE38A8DFA8007DBE3C78DBA /* FormatIndicatedCacheSerializer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormatIndicatedCacheSerializer.swift; path = Sources/Cache/FormatIndicatedCacheSerializer.swift; sourceTree = "<group>"; };
 		AF758FA3483BB9C405062999E0885D12 /* AccountMyDataEditViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountMyDataEditViewModel.swift; sourceTree = "<group>"; };
 		B0CB805D1AF00E91D657CB140F115B7E /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		B236BC29A2E581C0A16669D380897B2B /* VehiclesInsuranceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInsuranceViewController.swift; sourceTree = "<group>"; };
 		B32304138E37F6D3BFD3FE68CB2B74E9 /* ReportAssesmentBadFeedbackViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportAssesmentBadFeedbackViewController.swift; sourceTree = "<group>"; };
 		B3AAEF2B93C5906A3AD12DAA2DD315D7 /* Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Alamofire.swift; path = Source/Alamofire.swift; sourceTree = "<group>"; };
 		B3F702DA2377DE66884B41CDCBF26131 /* ErrorScene.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = ErrorScene.storyboard; sourceTree = "<group>"; };
@@ -798,7 +749,6 @@
 		BBD57D0ED3AACC86A3349B5787AE8796 /* RegistrationValidationViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationValidationViewController.swift; sourceTree = "<group>"; };
 		BBFC3399CB8175A071F027AAF1EB3A70 /* Silka-SemiBold.otf */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file; path = "Silka-SemiBold.otf"; sourceTree = "<group>"; };
 		BCF050B9420D9258B400E33A773EC7A6 /* IncidencesDetailViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidencesDetailViewModel.swift; sourceTree = "<group>"; };
-		BE0763B981791871A3E2EF1CC12BB0C6 /* VehiclesDriversViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesDriversViewController.swift; sourceTree = "<group>"; };
 		BE79E8D71A02EEB5C5D722DCECA52F74 /* Alamofire.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Alamofire.modulemap; sourceTree = "<group>"; };
 		BE7CA0C77A63EC0FE27E28FA9395A639 /* Runtime.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Runtime.swift; path = Sources/Utility/Runtime.swift; sourceTree = "<group>"; };
 		BE8B849A9143A0E3F4DB6F3B4ED816A2 /* AddBeaconToCarViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddBeaconToCarViewModel.swift; sourceTree = "<group>"; };
@@ -847,8 +797,6 @@
 		D249FB54A7F68EDA16DE9D472F90875F /* ReportAssesmentViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportAssesmentViewModel.swift; sourceTree = "<group>"; };
 		D32BA7F71888DE57D1F3E326D673B850 /* Pods-IncidenceLibraryIOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IncidenceLibraryIOS_Example-umbrella.h"; sourceTree = "<group>"; };
 		D3EE1DAD2989DE7BDAA37D91C0C4473F /* IncidenceScene.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = IncidenceScene.storyboard; sourceTree = "<group>"; };
-		D499475B4368E0F784BA411DCCE17382 /* VehiclesBeaconEditViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesBeaconEditViewController.swift; sourceTree = "<group>"; };
-		D4B216ACE56ABD81C991D4C448144411 /* DriverCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DriverCell.swift; sourceTree = "<group>"; };
 		D5EDC16935F99C117C0ACF5A1AA37D1E /* DirectionCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DirectionCell.swift; sourceTree = "<group>"; };
 		D674200BB0575198145B5455CF13275F /* youtube-ios-player-helper-Assets */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "youtube-ios-player-helper-Assets"; path = Assets.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6C6593B829C6C5016BB3205DEACDBC5 /* ReportAssesmentFeedbackViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportAssesmentFeedbackViewModel.swift; sourceTree = "<group>"; };
@@ -861,7 +809,6 @@
 		DE0964C332BBA9EF6F9B452C11621A10 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Utility/Result.swift; sourceTree = "<group>"; };
 		DF2CAD9D321E7A3E1E147CC2826C3441 /* EcommerceVC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcommerceVC.swift; sourceTree = "<group>"; };
 		DFE59A64CCF553F5157515C536A45477 /* YTPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YTPlayerView.m; path = Sources/YTPlayerView.m; sourceTree = "<group>"; };
-		E09F9421FA28B45D3DBDBA63052EE5EE /* VehiclesDeleteBottomSheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesDeleteBottomSheetView.swift; sourceTree = "<group>"; };
 		E1079ED94279945B63E5147A0F9A1B98 /* RegistrationTermsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationTermsViewController.swift; sourceTree = "<group>"; };
 		E2474AEBA22DF360516F6788794FB888 /* Filter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Filter.swift; path = Sources/Image/Filter.swift; sourceTree = "<group>"; };
 		E49A0296A7E90FBAFB7939A54BC7004F /* EcommerceViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EcommerceViewModel.swift; sourceTree = "<group>"; };
@@ -893,13 +840,11 @@
 		F33F1285B141CEBBC218C44A8767E2C8 /* Pods-IncidenceLibraryIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IncidenceLibraryIOS_Tests.modulemap"; sourceTree = "<group>"; };
 		F36163C4D140B7A490E9257A70B4D7E1 /* Pods-IncidenceLibraryIOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IncidenceLibraryIOS_Tests-dummy.m"; sourceTree = "<group>"; };
 		F3FF8DB66BF4DDF7B2CD97D5B6DDCCE8 /* RegistrationInsuranceInfoViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInsuranceInfoViewModel.swift; sourceTree = "<group>"; };
-		F630E3A04BB04395B346E257812964AA /* VehiclesInfoEditViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesInfoEditViewModel.swift; sourceTree = "<group>"; };
 		F67B222DED043A606F6B510859FFB9B9 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		F6B02BF479F0CF976718C1FF7A26CF82 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/Cache/ImageCache.swift; sourceTree = "<group>"; };
 		F7BE8D50E511180AC8AF0031C185325E /* EventNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventNotification.swift; sourceTree = "<group>"; };
 		F8788B916BB95598E6946511889E5442 /* AccountViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
 		F920F80B76040370E4ACCD5BA9510660 /* Pods-IncidenceLibraryIOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-IncidenceLibraryIOS_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F95AD508B7E014CD8C146A90C5DD901E /* VehiclesBeaconEditViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehiclesBeaconEditViewModel.swift; sourceTree = "<group>"; };
 		F983980897AD7DB2EC8F9DCE04D45125 /* MenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		F9AA8B590A5B32E627E6537222F70F4A /* HomeMapViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeMapViewModel.swift; sourceTree = "<group>"; };
 		FAC817129BF7E0EBD6B03EEB836FCF79 /* ErrorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorViewController.swift; sourceTree = "<group>"; };
@@ -907,7 +852,6 @@
 		FB0501996895C086B60AB76D607AE23C /* Pods-IncidenceLibraryIOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-IncidenceLibraryIOS_Example"; path = Pods_IncidenceLibraryIOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB3E7600E7C8A2A6264B25B23599611F /* Kingfisher-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Kingfisher-Info.plist"; sourceTree = "<group>"; };
 		FB825FCE05401281BA9BF5A57F190F9A /* Beacon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Beacon.swift; sourceTree = "<group>"; };
-		FDBA80DBF8985DE8D9A74026002332F0 /* SelectVehicleDriverTypeViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SelectVehicleDriverTypeViewController.swift; sourceTree = "<group>"; };
 		FE98DA9E8DF2FD9054947CE981C7D1A4 /* IABaseViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IABaseViewModel.swift; sourceTree = "<group>"; };
 		FEDC356139D9D469B8FE1831C7998401 /* DeviceDetailInfoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceDetailInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1018,27 +962,6 @@
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		0BBB618DCE3B6F24DA6430C4F3C79B20 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FDBA80DBF8985DE8D9A74026002332F0 /* SelectVehicleDriverTypeViewController.swift */,
-				D499475B4368E0F784BA411DCCE17382 /* VehiclesBeaconEditViewController.swift */,
-				63626DEB5DCC86FD923230BA528ECA79 /* VehiclesBeaconViewController.swift */,
-				408D9DE819F8539CC47F1EA0E41A2A20 /* VehiclesDriversEditViewController.swift */,
-				BE0763B981791871A3E2EF1CC12BB0C6 /* VehiclesDriversViewController.swift */,
-				8D3917FF43197B66F122D60F61334B02 /* VehiclesInfoEditViewController.swift */,
-				9244B8315A2A344715B82E915F564491 /* VehiclesInfoViewController.swift */,
-				8388D51E660B3415C4F9BA533BF3843D /* VehiclesInsuranceEditViewController.swift */,
-				B236BC29A2E581C0A16669D380897B2B /* VehiclesInsuranceViewController.swift */,
-				134462039D3BC426E935EB417B45C22C /* VehiclesListViewController.swift */,
-				203C501C843F8E73FDE7A7CEDD54946B /* VehiclesMenuViewController.swift */,
-				64D9BFF9680AB63952F63C54E2079AE2 /* VehiclesScene.storyboard */,
-				3FFB893D815E9C262F7C6019BA4743D8 /* Cells */,
-				B9BD59A69BA77377E60E47199D0E0EAA /* SheetViews */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		0D42DF828E92FA43840DF07144F723B0 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -1058,7 +981,6 @@
 				F3FF8DB66BF4DDF7B2CD97D5B6DDCCE8 /* RegistrationInsuranceInfoViewModel.swift */,
 				A2E371926F0DFB24659067E7E14C1A6C /* RegistrationInsuranceViewModel.swift */,
 				57A36C17F09A6B32B924924559C4A528 /* RegistrationNameViewModel.swift */,
-				5D157B7BF1EC37103627453F1A983780 /* RegistrationPlateViewModel.swift */,
 				254D2483C98DC22C3A4A30BB37F4F881 /* RegistrationStepsViewModel.swift */,
 				0484625D7EFA5FF59F8273CC61184F7A /* RegistrationSuccessBeaconViewModel.swift */,
 				C58A0EE22F503B69B31234C69C744BEB /* RegistrationSuccessViewModel.swift */,
@@ -1086,7 +1008,6 @@
 				B6E62F713A5A7B17FF3878C64AA31F40 /* Report */,
 				76B7ECE8A62EF87023C509737E49417B /* ReportIncidenceSimple */,
 				A9F1225812B2DEA8B57553408DFEBBFD /* SignIn */,
-				D683C9AD215FE9A59611BAE5560C07E6 /* Vehicles */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -1121,24 +1042,6 @@
 			);
 			name = Presentation;
 			path = IncidenceLibraryIOS/Classes/Presentation;
-			sourceTree = "<group>";
-		};
-		1F8BEB25BA156E91887496EEF5AFFB14 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-				37D5E95B8F5B6ED4B3F415F060AD0382 /* SelectVehicleDriverTypeViewModel.swift */,
-				F95AD508B7E014CD8C146A90C5DD901E /* VehiclesBeaconEditViewModel.swift */,
-				A17837398E79733CD736180745EFE696 /* VehiclesBeaconViewModel.swift */,
-				57839BDE9EB67B1AB9199BBC3B2310FC /* VehiclesDriversEditViewModel.swift */,
-				1B3A9BACB71ECA989375A57B08C134BB /* VehiclesDriversViewModel.swift */,
-				F630E3A04BB04395B346E257812964AA /* VehiclesInfoEditViewModel.swift */,
-				725A2B38913FF77C0C6F84ADAF2143EE /* VehiclesInfoViewModel.swift */,
-				44E3B04A0A8F046013ACF7B5B01E0006 /* VehiclesInsuranceEditViewModel.swift */,
-				37C2E1D2698369E2777B1BE2441E3BD0 /* VehiclesInsuranceViewModel.swift */,
-				8DBA9F898C1A182D610675AF19CE35E4 /* VehiclesListViewModel.swift */,
-				61A8730766D74D4AE175EC985A7831C0 /* VehiclesMenuViewModel.swift */,
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		1FDEADAAC06877D060D31CD033AFAC69 /* Ecommerce */ = {
@@ -1208,15 +1111,6 @@
 				E987E326809F8DFE000934F7A61D6BEC /* Views */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		3FFB893D815E9C262F7C6019BA4743D8 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				D4B216ACE56ABD81C991D4C448144411 /* DriverCell.swift */,
-				5D993533C578F0BCDAF57F2DD6F25D39 /* DriverEditCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		3FFF4C6022BAF0AB612E95A03FE77419 /* Add */ = {
@@ -1705,14 +1599,6 @@
 			path = Report;
 			sourceTree = "<group>";
 		};
-		B9BD59A69BA77377E60E47199D0E0EAA /* SheetViews */ = {
-			isa = PBXGroup;
-			children = (
-				E09F9421FA28B45D3DBDBA63052EE5EE /* VehiclesDeleteBottomSheetView.swift */,
-			);
-			path = SheetViews;
-			sourceTree = "<group>";
-		};
 		B9D49326261D7A8229BFBADC7AADEA4F /* Error */ = {
 			isa = PBXGroup;
 			children = (
@@ -1804,7 +1690,6 @@
 				3E89490FB4253947FC1B5ED239B98284 /* RegistrationInsuranceInfoViewController.swift */,
 				C65F63A8838C6F27B4D80BE9B7C00047 /* RegistrationInsuranceViewController.swift */,
 				6B4B430FACA404DFECBC69AB9F2C6DCB /* RegistrationNameViewController.swift */,
-				3EFCF6CD3FA79C20DCFE41DCBEB91AFD /* RegistrationPlateViewController.swift */,
 				5AD6D6D486C3B394DB12123A23C7705B /* RegistrationScene.storyboard */,
 				0BAC379DD4B567BD09B44F935684E134 /* RegistrationStepsViewController.swift */,
 				56A5638FBB6688276EFBAF7909DFDE24 /* RegistrationSuccessBeaconViewController.swift */,
@@ -1902,15 +1787,6 @@
 				FAE47336E15F9D5209772034D7245765 /* SignInViewController.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		D683C9AD215FE9A59611BAE5560C07E6 /* Vehicles */ = {
-			isa = PBXGroup;
-			children = (
-				1F8BEB25BA156E91887496EEF5AFFB14 /* ViewModels */,
-				0BBB618DCE3B6F24DA6430C4F3C79B20 /* Views */,
-			);
-			path = Vehicles;
 			sourceTree = "<group>";
 		};
 		D7F95A1009030BD9CA7EFA1324FD0F67 /* Commons */ = {
@@ -2456,8 +2332,6 @@
 				05D3E445BD96550C9388623EFE1C1A04 /* DeviceType.swift in Sources */,
 				29B0EF1EFCCAFFAAE3CD86909BF00B26 /* DirectionCell.swift in Sources */,
 				CAC8BF6E1A1B9FB2C2B5D6DFFB458B4A /* Driver.swift in Sources */,
-				F046D6A3EF8CD3315A1D51F5C7A243A9 /* DriverCell.swift in Sources */,
-				99315A31C0B57307919523E946C73CE7 /* DriverEditCell.swift in Sources */,
 				DB697FE8A5DC6A981041117EEA166E28 /* EasyTipView.swift in Sources */,
 				C25C283CFE4898663919D85F4EC566F8 /* EcommerceItem.swift in Sources */,
 				DB24AC11B0508885E7097E1EA89DBD8E /* EcommercePageVC.swift in Sources */,
@@ -2546,8 +2420,6 @@
 				99EF76910B70D2E3BE39E9F209CF9E82 /* RegistrationInsuranceViewModel.swift in Sources */,
 				DD79E1CB7E394C8E15664A2C81820BDC /* RegistrationNameViewController.swift in Sources */,
 				68B2329CEC6850288CE48B9BC3A850E1 /* RegistrationNameViewModel.swift in Sources */,
-				4FF55C44DCFFDF4EA70706D3F572681E /* RegistrationPlateViewController.swift in Sources */,
-				8384E781969836D362586E3D4ED764EC /* RegistrationPlateViewModel.swift in Sources */,
 				8A2D9FAE5069927A930320A90CB3C366 /* RegistrationScene.storyboard in Sources */,
 				C8FAB0596412A801496AC99C5DA7AC78 /* RegistrationStepsViewController.swift in Sources */,
 				C91C2CCBA354EE655272CD250217D4E0 /* RegistrationStepsViewModel.swift in Sources */,
@@ -2594,8 +2466,6 @@
 				E1FD5EE46E210207BE9726C6400C4095 /* ReportTypeViewController.swift in Sources */,
 				2002E64CEC7109D99AC587EFAF5AE4E8 /* ReportTypeViewModel.swift in Sources */,
 				7C4B8A36C0F9B06AC7D12171CCE8146E /* SceneDelegate.swift in Sources */,
-				BEEDC30CA4E0921C8FD25B577CDC2DEF /* SelectVehicleDriverTypeViewController.swift in Sources */,
-				50BDAA32A80DC940F88DF9E7D0847F76 /* SelectVehicleDriverTypeViewModel.swift in Sources */,
 				647207A210BB9BDBE04A558D6F018BB4 /* Session.swift in Sources */,
 				7DC6FC6FE79CF8AD4BAC8576DB565681 /* SignInScene.storyboard in Sources */,
 				40FE3687AA341A98124F9033B5C146A6 /* SignInValidationViewController.swift in Sources */,
@@ -2627,29 +2497,7 @@
 				985D58F2C664580C104E71D48BB2F193 /* Vehicle.swift in Sources */,
 				17A00A05760BE3B125FA0BE2C653625E /* VehicleCell.swift in Sources */,
 				9240D2805CCB6881EF9B604909016918 /* VehicleColorCell.swift in Sources */,
-				133B79AA09A4B62DA591F6C826E93F32 /* VehiclesBeaconEditViewController.swift in Sources */,
-				8D3E6E3BBEA39FCD243EA1384E37F879 /* VehiclesBeaconEditViewModel.swift in Sources */,
-				F390B154409CCA3C37F2BF84DECF4567 /* VehiclesBeaconViewController.swift in Sources */,
-				D1536067A2D9EE55AB71D8614259ABE5 /* VehiclesBeaconViewModel.swift in Sources */,
-				13301C5F7347288B71F19918F8D345BE /* VehiclesDeleteBottomSheetView.swift in Sources */,
-				952BF8F56CAF3B765556AF47EC0255EE /* VehiclesDriversEditViewController.swift in Sources */,
-				A2FEF5249B38D1DF613F72138063F5AE /* VehiclesDriversEditViewModel.swift in Sources */,
-				329D2C17883CE46F5E17D01CDCF48550 /* VehiclesDriversViewController.swift in Sources */,
-				18AC9FBC41FB799786B70CE9EBDC879A /* VehiclesDriversViewModel.swift in Sources */,
 				4530B994BF6E7C05E177B6BB75D50319 /* VehicleSelectionCell.swift in Sources */,
-				04629E61D9F7EADC06A3F7ABF26BA95C /* VehiclesInfoEditViewController.swift in Sources */,
-				FEAA803525FEBFC419E46EF7AB7D5B0F /* VehiclesInfoEditViewModel.swift in Sources */,
-				959226EF699F3BD9A80FE243976C7BE5 /* VehiclesInfoViewController.swift in Sources */,
-				756C9966B635CE9B0FA2F8EF97DE95DC /* VehiclesInfoViewModel.swift in Sources */,
-				E1CD4F96E2C03A53C56529E46902A497 /* VehiclesInsuranceEditViewController.swift in Sources */,
-				8CADE17449BC418527ABC1469F98B00C /* VehiclesInsuranceEditViewModel.swift in Sources */,
-				F1C0151DCC8D82346CAFABD51DCD7F09 /* VehiclesInsuranceViewController.swift in Sources */,
-				9EB96ECA344A0C68241D856F672817CA /* VehiclesInsuranceViewModel.swift in Sources */,
-				3AD23731C13F599C95750AD476CC22AC /* VehiclesListViewController.swift in Sources */,
-				2E3F54264C4CB99755104A381AADD12A /* VehiclesListViewModel.swift in Sources */,
-				609BDB2BE41E10690B6C3292619131E3 /* VehiclesMenuViewController.swift in Sources */,
-				34D816486133EE9ABA602F1BD1EA922A /* VehiclesMenuViewModel.swift in Sources */,
-				A9DC7D9738D7CBBF11E1096E4EFFFDA1 /* VehiclesScene.storyboard in Sources */,
 				FAFDD8E88CEAE5602C9892132DBC56B5 /* VehicleType.swift in Sources */,
 				83D7C01E8D56C5A13BF09E035080CE0D /* Versions.swift in Sources */,
 				43A96FD13A62EA13D7071C3C57FFAF02 /* WebViewViewController.swift in Sources */,
