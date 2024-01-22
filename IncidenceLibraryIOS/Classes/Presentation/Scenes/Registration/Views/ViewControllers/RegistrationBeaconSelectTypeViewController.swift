@@ -221,107 +221,6 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
     
     func validateBeacon() {
         showHUD()
-        /*
-        Api.shared.validateBeacon(beacon: selectedBeacon, completion: { result in
-            self.hideHUD()
-            if (result.isSuccess())
-            {
-                if self.viewModel.origin == .registration {
-                    
-                    let list = Core.shared.getVehicles()
-                    if (list.count == 1) {
-                        self.viewModel.autoSelectedVehicle = list[0]
-                        self.addVehicleBeacon()
-                    }
-                    else
-                    {
-                        self.showHUD()
-                        Api.shared.getVehicles(completion: { result in
-                            if (result.isSuccess())
-                            {
-                                let vehicles = result.getList(key: "vehicles") ?? [Vehicle]()
-                                if (vehicles.count == 1)
-                                {
-                                    let vehicle = vehicles[0]
-                                    Api.shared.addBeacon(beacon: self.selectedBeacon, vehicle: vehicle, completion: { result in
-                                        self.hideHUD()
-                                        if (result.isSuccess())
-                                        {
-                                            //vehicle.beacon = result.get(key: "beacon")
-                                            if (self.selectedBeacon == nil) {
-                                                vehicle.beacon = result.get(key: "vehicleBeacon")
-                                            } else {
-                                                let beaconResp = result.get(key: "vehicleBeacon") ?? Beacon()
-                                                self.selectedBeacon.id = beaconResp.id;
-                                                let beaconType = BeaconType()
-                                                if (self.selectedBeacon.iot != nil) {
-                                                    beaconType.id = 2;
-                                                } else{
-                                                    beaconType.id = 1;
-                                                }
-                                                self.selectedBeacon.beaconType = beaconType;
-                                                vehicle.beacon = self.selectedBeacon;
-                                            }
-                                            
-                                            Core.shared.saveVehicle(vehicle: vehicle)
-                                            EventNotification.post(code: .VEHICLE_UPDATED, object: vehicle)
-                                            EventNotification.post(code: .BEACON_ADDED, object: vehicle.beacon)
-                                            
-                                            //Show beacon added view
-                                            let vm = RegistrationSuccessBeaconViewModel()
-                                            let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
-                                            self.navigationController?.pushViewController(viewController, animated: true)
-                                        }
-                                        else
-                                        {
-                                            self.onBadResponse(result: result)
-                                        }
-                                   })
-                                }
-                                else
-                                {
-                                    self.hideHUD()
-                                    let vm = AddBeaconToCarViewModel()
-                                    vm.beacon = self.selectedBeacon
-                                    let viewController = AddBeaconToCarViewController.create(with: vm)
-                                    self.navigationController?.pushViewController(viewController, animated: true)
-                                }
-                            }
-                            else
-                            {
-                                self.hideHUD()
-                                self.onBadResponse(result: result)
-                            }
-                       })
-                    }
-                    
-                } else {
-                    
-                    if let model = self.viewModel.autoSelectedVehicle {
-                        self.addVehicleBeacon()
-                    }
-                    else
-                    {
-                        let list = Core.shared.getVehicles()
-                        if (list.count == 1) {
-                            self.viewModel.autoSelectedVehicle = list[0]
-                            self.addVehicleBeacon()
-                        }
-                        else{
-                            let vm = AddBeaconToCarViewModel()
-                            vm.beacon = self.selectedBeacon
-                            let viewController = AddBeaconToCarViewController.create(with: vm)
-                            self.navigationController?.pushViewController(viewController, animated: true)
-                        }
-                    }
-                }
-            }
-            else
-            {
-                self.onBadResponse(result: result)
-            }
-        })
-         */
         Api.shared.addBeaconSdk(beacon: self.selectedBeacon, vehicle: viewModel.vehicle, user: viewModel.user, completion: { result in
             self.hideHUD()
             if (result.isSuccess())
@@ -355,7 +254,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
                 }
                 
                 //Show beacon added view
-                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: false, beaconTypeId: beaconTypeId)
+                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: false, beaconTypeId: beaconTypeId, delegate: self.viewModel.delegate)
                 let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                 self.navigationController?.pushViewController(viewController, animated: true)
             }
@@ -558,7 +457,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
                 
                 //Show beacon added view
                 let beaconTypeId: Int = beacon?.beaconType?.id ?? 2;
-                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil), beaconTypeId: beaconTypeId)
+                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil), beaconTypeId: beaconTypeId, delegate: self.viewModel.delegate)
                 
                 let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                 self.navigationController?.pushViewController(viewController, animated: true)
