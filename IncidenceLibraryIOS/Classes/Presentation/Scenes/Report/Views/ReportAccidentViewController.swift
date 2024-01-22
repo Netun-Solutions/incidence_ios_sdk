@@ -179,8 +179,12 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
         speechButtonPressed()
     }
     
+    @objc override func backPressed(){
+        navigationController?.popViewController(animated: true)
+    }
+    
     @IBAction func cancelButtonPressed(_ sender: Any?) {
-        navigationController?.popToRootViewController(animated: true)
+        super.backPressed()
         Core.shared.stopTimer()
         stopTimer()
     }
@@ -213,87 +217,7 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
     }
     
     private func reportLocation(idIncidence: String, phone: String, location: CLLocation?)
-    {
-        /*
-        MapBoxManager.searchAddress(location: location.coordinate) { address in
-            
-            var street = ""
-            var city = ""
-            var country = ""
-            let licensePlate = self.viewModel.vehicle?.licensePlate
-            
-            if (address.city != nil) {
-                city = address.city!
-            }
-            if (address.country != nil) {
-                country = address.country!
-            }
-            
-            var str2 = ""
-            if (address.street != nil) {
-                str2 = address.street!
-            }
-            if (address.streetNumber != nil) {
-                if (str2.count == 0) {
-                    str2 = address.streetNumber!
-                } else {
-                    str2 = str2 + ", " + address.streetNumber!
-                }
-            }
-            street = str2
-            
-            Api.shared.reportIncidence(licensePlate: licensePlate!, incidenceTypeId: idIncidence, street: street, city: city, country: country, location: location, openFromNotification: self.viewModel.openFromNotification, completion: { result in
-                self.hideHUD()
-                if (result.isSuccess())
-                {
-                    EventNotification.post(code: .INCIDENCE_REPORTED)
-                    
-                    var call = true
-                    
-                    if (idIncidence == ReportAccidentViewController.ACCIDENT_TYPE_ONLY_MATERIAL)
-                    {
-                        let incidence:Incidence? = result.get(key: "incidence")
-                        if let inci = incidence, let openApp = inci.openApp
-                        {
-                            call = false
-                            Core.shared.startNewApp(appScheme: openApp.iosUniversalLink ?? "")
-                        }
-                    }
-                    
-                    if (call)
-                    {
-                        let tit = "call_to".localized() + phone
-                        
-                        let actionSheetController: UIAlertController = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-                        let firstAction: UIAlertAction = UIAlertAction(title: tit, style: .default) { action -> Void in
-                            Core.shared.callNumber(phoneNumber: phone)
-                            self.navigationController?.popToRootViewController(animated: true)
-                        }
-                        let image = UIImage.app( "PhoneBlack")?.withRenderingMode(.alwaysOriginal)
-                        firstAction.setValue(image, forKey: "image")
-
-                        let cancelAction: UIAlertAction = UIAlertAction(title: "cancel".localized(), style: .destructive) { action -> Void in
-                            self.navigationController?.popToRootViewController(animated: true)
-                        }
-
-                        actionSheetController.addAction(firstAction)
-                        actionSheetController.addAction(cancelAction)
-                        
-                        self.present(actionSheetController, animated: true, completion: nil)
-                    }
-                    else
-                    {
-                        self.navigationController?.popToRootViewController(animated: true)
-                    }
-                }
-                else
-                {
-                    self.onBadResponse(result: result)
-                }
-           })
-        }
-        */
-        
+    {        
         let incidenceType: IncidenceType = IncidenceType()
         incidenceType.externalId = idIncidence
         
@@ -322,9 +246,10 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
                 
                 //self.onSuccessReport(incidence: incidence)
                 
-                self.navigationController?.popToRootViewController(animated: false)
+                super.backPressed()
                 
-                let response: IActionResponse = IActionResponse(status: true)
+                var response: IActionResponse = IActionResponse(status: true)
+                response.data = incidence
                 self.viewModel.delegate.onResult(response: response)
             }
             else

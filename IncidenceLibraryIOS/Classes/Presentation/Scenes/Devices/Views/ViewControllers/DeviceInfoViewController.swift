@@ -109,7 +109,7 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
             
             backButton.setTitle("Finalizar", for: .normal)
         } else {
-            backPressed()
+            backInfoPressed()
         }
     }
 }

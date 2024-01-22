@@ -179,6 +179,10 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
     @objc private func speechPressed() {
         speechButtonPressed()
     }
+    
+    @objc override func backPressed(){
+        navigationController?.popViewController(animated: true)
+    }
  
     @IBAction func acceptButtonPressed(_ sender: Any?) {
         /*
@@ -194,7 +198,7 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
     }
     
     @IBAction func cancelButtonPressed(_ sender: Any?) {
-        navigationController?.popToRootViewController(animated: true)
+        super.backPressed()
         Core.shared.stopTimer()
         stopTimer()
     }
@@ -203,7 +207,8 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
     
     private func onSuccessReport(incidence:Incidence)
     {
-        self.navigationController?.popToRootViewController(animated: false)
+        //self.navigationController?.popToRootViewController(animated: false)
+        super.backPressed()
         
         let response: IActionResponse = IActionResponse(status: true)
         self.viewModel.delegate.onResult(response: response)

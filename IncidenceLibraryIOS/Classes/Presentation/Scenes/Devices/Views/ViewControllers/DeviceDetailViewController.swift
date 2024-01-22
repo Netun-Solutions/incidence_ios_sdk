@@ -23,7 +23,6 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
     static var storyboardFileName = "DevicesScene"
     private var viewModel: DeviceDetailSdkViewModel! { get { return baseViewModel as? DeviceDetailSdkViewModel }}
     
-    private var isPrincipal = false
     private var device: Beacon?
 
     
@@ -46,17 +45,7 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
     override func setUpUI() {
         super.setUpUI()
         
-        if (self.isPrincipal) {
-            deleteDeviceButton.configure(text: viewModel.deleteButtonText, color: .red)
-            deleteDeviceButton.onTap { [weak self] in
-                self?.configureBottomSheet()
-                guard let vc = self?.bottomSheetController else { return }
-                self?.navigationController?.present(vc, animated: true)
-            }
-        }
-        else {
-            deleteDeviceButton.isHidden = true
-        }
+        deleteDeviceButton.isHidden = true
         
         
         addCarButton.configure(text: viewModel.addButtonText)
@@ -128,21 +117,7 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
     }
     
     private func setUpNavigation() {
-        
-        if (self.isPrincipal) {
-            let editButton = UIBarButtonItem(image: UIImage.app( "icon_edit")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(editPressed))
-            editButton.imageInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 4)
-            navigationItem.rightBarButtonItem = editButton
-        }
-        else {
-            navigationItem.rightBarButtonItem = nil
-        }
-    }
-    
-    @objc func editPressed() {
-        let vm = DeviceEditNameViewModel(device: device)
-        let vc = DeviceEditViewController.create(with: vm)
-        navigationController?.pushViewController(vc, animated: true)
+        navigationItem.rightBarButtonItem = nil
     }
     
     @objc func beaconUpdated(_ notification: Notification) {

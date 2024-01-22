@@ -18,14 +18,12 @@
 		079F0820555C5B86C9FBD5EC6344137F /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F2CFCD848B22147390836F701B79D7 /* Protected.swift */; };
 		0801914A53C3CEE2AF9223CCED3B2FE2 /* Kingfisher-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4009323002879A1E05FAF7956AE4137C /* Kingfisher-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		084E6635705012819F16307C72853970 /* RegistrationValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBD57D0ED3AACC86A3349B5787AE8796 /* RegistrationValidationViewController.swift */; };
-		0A14E22629E14EC69D0F0822422223A8 /* RegistrationVehicleInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C14E4C6890ED7EAB98EC66C30823C3C /* RegistrationVehicleInfoViewController.swift */; };
 		0A960F450D886FBD886BAE4DD291D240 /* ModelDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4901D16A7BBE6A67C436049662916F49 /* ModelDevice.swift */; };
 		0B2294B569C218162B74098B53EACC45 /* CallBottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBB83E5C416B9615B9BBD11C13D43C37 /* CallBottomSheetView.swift */; };
 		0BC3AB36FCECF5C112340C38EFF788D9 /* RegistrationVehicleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF8C7ED0F61C0D4925192F433791552 /* RegistrationVehicleViewModel.swift */; };
 		0CB96C288A3649B247AB82CB9B210245 /* youtube-ios-player-helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BD25CD1FDE951C734BA8348D22438ED /* youtube-ios-player-helper-dummy.m */; };
 		0E71ED44223F30DB03AD5DF99BCD2B4D /* TextFieldWithSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71233F6BA56912827188A1BD2A5E9B6C /* TextFieldWithSelectView.swift */; };
 		108FA2B5877F30FCA670A7ACBBF49213 /* KeyboardDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = E72A0426EFE5F776DD28C652D3FFF661 /* KeyboardDismiss.swift */; };
-		11ACF5B9D092EC76263AC7742F6D5F0D /* RegistrationColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 680F9573571F30875377BF991942DAFD /* RegistrationColorViewModel.swift */; };
 		11CCD832BD537718892C6A216A38490A /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D5CF5AC680A12DDB9ED185E7057B5 /* URLRequest+Alamofire.swift */; };
 		13CF4C3AB2239DA6AD04623F0E21C9E5 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97AB07F0DBEAA133C67852E1F24811 /* DeviceDetailViewController.swift */; };
 		141F2D1E9CBB45172E37D41E240748B5 /* BeaconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952EF8B5552DEDD206A0106A99500A7 /* BeaconType.swift */; };
@@ -67,7 +65,6 @@
 		311122BFCC3A3D74D83A2FB1999FF97E /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55CE38F86F17A44AC8681BAD99E886B0 /* UIKitExtensions.swift */; };
 		320C0D7A88AA812EFB20016BA1F5D7AE /* AFError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2458B861F03544D3CF1BC72946BB952B /* AFError.swift */; };
 		320CD7A2E84FCC952F464E69FE26541D /* Silka-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 6D0C0BF0A9571F28550183E9A415C9B8 /* Silka-Bold.otf */; };
-		334BBCBB46D6869DF68B7BC2D9EECB37 /* RegistrationInsuranceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E89490FB4253947FC1B5ED239B98284 /* RegistrationInsuranceInfoViewController.swift */; };
 		356C655198DC007C21F9FBEAD1F09112 /* Silka-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = ADFF4ECD2DB8BDB1F3174C3ECB735838 /* Silka-Thin.otf */; };
 		3770CBC089A563D6041925BDB9FD4170 /* Beacon.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB825FCE05401281BA9BF5A57F190F9A /* Beacon.swift */; };
 		380F324D66030FB36F9DB8F977905789 /* INotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA68C30D5C35326B10617865539F2A74 /* INotification.swift */; };
@@ -195,7 +192,6 @@
 		885539EAF1964AD870B845577576CDA4 /* Pods-IncidenceLibraryIOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F920F80B76040370E4ACCD5BA9510660 /* Pods-IncidenceLibraryIOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8949DC717C8244074D47EC15F4B5F8F5 /* ReportIDKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3BDDFE602038E326F77F6301D69525F /* ReportIDKViewController.swift */; };
 		8A2D9FAE5069927A930320A90CB3C366 /* RegistrationScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 5AD6D6D486C3B394DB12123A23C7705B /* RegistrationScene.storyboard */; };
-		8B5C677281E3E65C4F70339BD4115E39 /* RegistrationColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7FB468F1201B123660ED71C4EE088A3 /* RegistrationColorViewController.swift */; };
 		8D663FFB56A0B034E09379BF3DD97018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A33E355593EFD67923A7B6854981183 /* Assets.xcassets */; };
 		8D6A083EC2B6F1795722E28130DCE006 /* EcommerceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2CAD9D321E7A3E1E147CC2826C3441 /* EcommerceVC.swift */; };
 		8DFCE267D718C02DB2C083EFE8B044B7 /* RegistrationValidationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3271F837BC898F6FE1BF483016C48C /* RegistrationValidationViewModel.swift */; };
@@ -206,7 +202,6 @@
 		90246FD3F31F76D2B6E59406DBA7A1FE /* Kingfisher-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AE566CB1D24F973E9486CEB64F4EFC75 /* Kingfisher-dummy.m */; };
 		90AB90022BB5C4884BAB9733BE95CFBC /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4B127DFE6341C439B79496516E2189D /* Core.swift */; };
 		9240D2805CCB6881EF9B604909016918 /* VehicleColorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3946A90BF103A2B7D5C7C5DA841ACCB /* VehicleColorCell.swift */; };
-		928A9B9131AF59A0E7C321FFFA884F78 /* RegistrationVehicleInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27EB89467DF3017AAA8CE3E752B263CE /* RegistrationVehicleInfoViewModel.swift */; };
 		933DB0D904FFB6E452D2692CBDF74B06 /* RegistrationBeaconSelectTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FB38F57975B69FCE3569F11A0DB6B9 /* RegistrationBeaconSelectTypeViewController.swift */; };
 		93AC490FDCAA96E1CA5C04C0F3970F0B /* GradientView+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19059C5D2F4401263CD7A7EDAC2EC055 /* GradientView+UIView.swift */; };
 		95089ED032ED8BD35053D90470AC6EAB /* TextButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE4D6FFCC0252BE5CF73AFBE6C6AB65 /* TextButton.swift */; };
@@ -216,7 +211,6 @@
 		963917BD6F70785AE72358430AD5148D /* HomeMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AA8B590A5B32E627E6537222F70F4A /* HomeMapViewModel.swift */; };
 		985B99BDE70C692F8886DF5E35F32800 /* Indicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAC6D535CF2CE5F0E6769960AE756CBE /* Indicator.swift */; };
 		985D58F2C664580C104E71D48BB2F193 /* Vehicle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6003EC675516D416AD29EC6876463647 /* Vehicle.swift */; };
-		99EF76910B70D2E3BE39E9F209CF9E82 /* RegistrationInsuranceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2E371926F0DFB24659067E7E14C1A6C /* RegistrationInsuranceViewModel.swift */; };
 		9A0F7E31FFF36BFA2F33AA3847450C89 /* RegistrationBeaconViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6825E3A569FA3FFB191E831CD7F93 /* RegistrationBeaconViewModel.swift */; };
 		9B397020726009E2B6F776161228EC65 /* ReportAssesmentFeedbackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C6593B829C6C5016BB3205DEACDBC5 /* ReportAssesmentFeedbackViewModel.swift */; };
 		9B53C96E62C025F82BAB2919FD99E294 /* RegistrationTermsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB8CDE856264FA3ADE503B2A01825B1 /* RegistrationTermsViewModel.swift */; };
@@ -277,9 +271,7 @@
 		CAFF04CAE24B3582D138233EF8DAE1D9 /* ReportScene.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = 87D80845CB6C81C6587E146FBFB19848 /* ReportScene.storyboard */; };
 		CC72DE53A23120B3B1AAB33C00782794 /* Localizable.strings in Sources */ = {isa = PBXBuildFile; fileRef = 635E5FA62C8052276E42E3729039043C /* Localizable.strings */; };
 		CD9486869900E6DF4E7CA1849098B284 /* SessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203AADB29BD8DA9E7BBD0855DFB6D8FD /* SessionDataTask.swift */; };
-		CE0D1C624B4128FE56781F4138CA7C49 /* RegistrationInsuranceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65F63A8838C6F27B4D80BE9B7C00047 /* RegistrationInsuranceViewController.swift */; };
 		CEC196119556114A7C8A4AC71654A048 /* BadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF81F4347395E1FF673C2580C37B34 /* BadgeView.swift */; };
-		D03733019FFC3B9F83D5D22916C226C5 /* DeviceEditNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02EB096FEB5B54A5049685843F25FFF7 /* DeviceEditNameViewController.swift */; };
 		D0560E8E2E5EB407B5D8E0381BF453FA /* URLConvertible+URLRequestConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BCDC17FAE6EC546C98A3B7477928AE4 /* URLConvertible+URLRequestConvertible.swift */; };
 		D09FBBADAF7C5C757AA5AB5DFE54BD25 /* Alamofire-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CFE6333B4C0F6E779D9AE160AA1D3490 /* Alamofire-dummy.m */; };
 		D21C39071C95DAC6FB2BF9607AC04267 /* AVAssetImageDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49327587B9442D26113B36D46DAA2267 /* AVAssetImageDataProvider.swift */; };
@@ -293,7 +285,6 @@
 		D880D0157C61CEA989D6C8EF234CE8D8 /* CarplaySceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C18C1D4044EDDD65FA8F1B1321CF4E1 /* CarplaySceneDelegate.swift */; };
 		D8C118F5550DF5E3D35ACD2DBE8193CA /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198F459E8EDADE05AFB01FB88953641B /* AppColors.swift */; };
 		DA3DDEC35CF6794AC3B1C0C9EC496199 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BEC90F893EC19023A0C38A574830666 /* Address.swift */; };
-		DA79C97EC746C8B76CE0AC9E01174010 /* DeviceEditNameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09E8BEA105E27515230F17745B90E564 /* DeviceEditNameViewModel.swift */; };
 		DABBDF14AF7A9B0FC2CD03334125AE67 /* Box.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3060134F769B6DE0C14941F1A9E7870A /* Box.swift */; };
 		DB24AC11B0508885E7097E1EA89DBD8E /* EcommercePageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79403CBC3E3E34775D93E84A6B4FE921 /* EcommercePageVC.swift */; };
 		DB697FE8A5DC6A981041117EEA166E28 /* EasyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66CCB744165099EE064AADE5A5384A3 /* EasyTipView.swift */; };
@@ -347,7 +338,6 @@
 		FAFDD8E88CEAE5602C9892132DBC56B5 /* VehicleType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B26F7FF1A285724D0E04B245D4A7D6D /* VehicleType.swift */; };
 		FC2199CE1F8B64E920374ECDB93036AF /* ImageBinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27500A0020DD209F982F84C0580F32A1 /* ImageBinder.swift */; };
 		FC465E98B191619A7B54EFFA3998F925 /* AppImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0617A3B74937646A3438F1D23D743B7 /* AppImage.swift */; };
-		FCE359EEFE9FA78CA2BEE08889426AA0 /* RegistrationInsuranceInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FF8DB66BF4DDF7B2CD97D5B6DDCCE8 /* RegistrationInsuranceInfoViewModel.swift */; };
 		FEB10FCE09C01A71235494AB28748083 /* YTPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFE59A64CCF553F5157515C536A45477 /* YTPlayerView.m */; };
 		FF7778AE757A30439FA35097A1AF3C32 /* ReportAssesmentFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621D7FCA09A70D75A210892D680E2290 /* ReportAssesmentFeedbackViewController.swift */; };
 /* End PBXBuildFile section */
@@ -420,7 +410,6 @@
 
 /* Begin PBXFileReference section */
 		01D43BC43063E6A754CFB8539BD50E7B /* KFOptionsSetter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KFOptionsSetter.swift; path = Sources/General/KFOptionsSetter.swift; sourceTree = "<group>"; };
-		02EB096FEB5B54A5049685843F25FFF7 /* DeviceEditNameViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceEditNameViewController.swift; sourceTree = "<group>"; };
 		03628FD2E59EC25D840E9E9DE6632D8F /* MultipartFormData.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipartFormData.swift; path = Source/MultipartFormData.swift; sourceTree = "<group>"; };
 		0484625D7EFA5FF59F8273CC61184F7A /* RegistrationSuccessBeaconViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessBeaconViewModel.swift; sourceTree = "<group>"; };
 		0503855AC534C1B3C77F80EF0D95BEE0 /* Answer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
@@ -434,7 +423,6 @@
 		093D5CF5AC680A12DDB9ED185E7057B5 /* URLRequest+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLRequest+Alamofire.swift"; path = "Source/URLRequest+Alamofire.swift"; sourceTree = "<group>"; };
 		098D060E17E8F0BAB79465233868EDEA /* BottomSheetView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
 		09A22C37C51A96FA2D6CEF4469F1A275 /* ToolbarPickerView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ToolbarPickerView.swift; sourceTree = "<group>"; };
-		09E8BEA105E27515230F17745B90E564 /* DeviceEditNameViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceEditNameViewModel.swift; sourceTree = "<group>"; };
 		0AADE4CEE40B8CEE896B20E25671E51D /* AuthenticationChallengeResponsable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AuthenticationChallengeResponsable.swift; path = Sources/Networking/AuthenticationChallengeResponsable.swift; sourceTree = "<group>"; };
 		0B9191D6E3390A5F9FF1531B22B05D64 /* IncidenceCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidenceCell.swift; sourceTree = "<group>"; };
 		0BAC379DD4B567BD09B44F935684E134 /* RegistrationStepsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationStepsViewController.swift; sourceTree = "<group>"; };
@@ -484,13 +472,11 @@
 		2683778D48B9BDBEFBA14827D75309F2 /* ReportInstructionsViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportInstructionsViewController.swift; sourceTree = "<group>"; };
 		26FE97C1E09887E9670849AE7E422E0C /* Pods-IncidenceLibraryIOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IncidenceLibraryIOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		27500A0020DD209F982F84C0580F32A1 /* ImageBinder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageBinder.swift; path = Sources/SwiftUI/ImageBinder.swift; sourceTree = "<group>"; };
-		27EB89467DF3017AAA8CE3E752B263CE /* RegistrationVehicleInfoViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationVehicleInfoViewModel.swift; sourceTree = "<group>"; };
 		280FB67076B7A612A2EEDBE5D58378F2 /* ImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProvider.swift; path = Sources/General/ImageSource/ImageDataProvider.swift; sourceTree = "<group>"; };
 		28495424708D33A58AAECC1C41C3DF82 /* Pods-IncidenceLibraryIOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IncidenceLibraryIOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2867B274DD8720738C90337010E01213 /* KF.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KF.swift; path = Sources/General/KF.swift; sourceTree = "<group>"; };
 		2B89833871D8A269BB3CF14CCB93B0C0 /* ImageDownloader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDownloader.swift; path = Sources/Networking/ImageDownloader.swift; sourceTree = "<group>"; };
 		2BA1DE1324CF31828D4C4DF65179DC7D /* ReportAssesmentBadFeedbackViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReportAssesmentBadFeedbackViewModel.swift; sourceTree = "<group>"; };
-		2C14E4C6890ED7EAB98EC66C30823C3C /* RegistrationVehicleInfoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationVehicleInfoViewController.swift; sourceTree = "<group>"; };
 		2C6F9E80CB5A2829BD3CEAC9351A4A53 /* Pods-IncidenceLibraryIOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IncidenceLibraryIOS_Example-dummy.m"; sourceTree = "<group>"; };
 		2F09F5929FF750756D5746D596F95804 /* BottomSheetViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = BottomSheetViewController.swift; sourceTree = "<group>"; };
 		2F2C6C1C9B85DBD083DEFAC7B4A52351 /* RegistrationBeaconViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationBeaconViewController.swift; sourceTree = "<group>"; };
@@ -512,7 +498,6 @@
 		3D07CF2C6054AA32F12E6D55D87E664C /* AddBeaconToCarViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddBeaconToCarViewController.swift; sourceTree = "<group>"; };
 		3D4A0227F9677EB2CEBCBCF5D5A3277C /* youtube-ios-player-helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "youtube-ios-player-helper-umbrella.h"; sourceTree = "<group>"; };
 		3E7B69AFB84D0A9A73910A743A28A7C8 /* CustomSlider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
-		3E89490FB4253947FC1B5ED239B98284 /* RegistrationInsuranceInfoViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInsuranceInfoViewController.swift; sourceTree = "<group>"; };
 		3F3091E3D2111AB4B6DD6E1C6BCD39CF /* CallbackQueue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CallbackQueue.swift; path = Sources/Utility/CallbackQueue.swift; sourceTree = "<group>"; };
 		3F9800BA3927DB3F9C6863B8264DBED6 /* AddCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddCell.swift; sourceTree = "<group>"; };
 		4009323002879A1E05FAF7956AE4137C /* Kingfisher-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-umbrella.h"; sourceTree = "<group>"; };
@@ -576,7 +561,6 @@
 		66A336746B6BB392E552A1034D1230D1 /* IResponse+Decodable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "IResponse+Decodable.swift"; sourceTree = "<group>"; };
 		671926614E57D6BA4F2DBD81AF763BB2 /* DeviceDetailViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DeviceDetailViewModel.swift; sourceTree = "<group>"; };
 		6772656A66966A9B4BA9CF75C7ECE16C /* EventMonitor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventMonitor.swift; path = Source/EventMonitor.swift; sourceTree = "<group>"; };
-		680F9573571F30875377BF991942DAFD /* RegistrationColorViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationColorViewModel.swift; sourceTree = "<group>"; };
 		6975331CCC2805F92C5BBA8049F7FD00 /* ValidatorView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ValidatorView.swift; sourceTree = "<group>"; };
 		69DCE47D15338436E9F32195DEF89EC3 /* RetryPolicy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RetryPolicy.swift; path = Source/RetryPolicy.swift; sourceTree = "<group>"; };
 		6AB8CDE856264FA3ADE503B2A01825B1 /* RegistrationTermsViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationTermsViewModel.swift; sourceTree = "<group>"; };
@@ -661,7 +645,6 @@
 		A14BD255D44E6AA8735EF2E8C4AA4C83 /* IncidenceLibraryIOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = IncidenceLibraryIOS; path = IncidenceLibraryIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A27386396968FE69231DFE6A7AAD7AF1 /* IncidenceLibraryConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidenceLibraryConfig.swift; sourceTree = "<group>"; };
 		A2BEE0C11E76046919BC413DD4AC3126 /* Pods-IncidenceLibraryIOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IncidenceLibraryIOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A2E371926F0DFB24659067E7E14C1A6C /* RegistrationInsuranceViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInsuranceViewModel.swift; sourceTree = "<group>"; };
 		A2FCFF30AC292AF6D2D760BB1F52A4EF /* URLEncodedFormEncoder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLEncodedFormEncoder.swift; path = Source/URLEncodedFormEncoder.swift; sourceTree = "<group>"; };
 		A31089B755A0779D78AFDABFFE907F1A /* File.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		A3946A90BF103A2B7D5C7C5DA841ACCB /* VehicleColorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehicleColorCell.swift; sourceTree = "<group>"; };
@@ -693,7 +676,6 @@
 		B66CCB744165099EE064AADE5A5384A3 /* EasyTipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EasyTipView.swift; sourceTree = "<group>"; };
 		B6A12D15AB0A4D9E67713DCDADFA1C33 /* CustomUISwitch.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CustomUISwitch.swift; sourceTree = "<group>"; };
 		B7A574843129BE1C0E87D564C8022D42 /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Sources/General/ImageSource/Source.swift; sourceTree = "<group>"; };
-		B7FB468F1201B123660ED71C4EE088A3 /* RegistrationColorViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationColorViewController.swift; sourceTree = "<group>"; };
 		B7FEAEC95B373A21ACB30EDF221C1FE0 /* IncidencesListViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = IncidencesListViewModel.swift; sourceTree = "<group>"; };
 		B84075C6319C739BCA3DDCC66CB20239 /* Alamofire-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Alamofire-umbrella.h"; sourceTree = "<group>"; };
 		B9ED66AC96F608BF0A4296701C78FD31 /* SpeechReconizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SpeechReconizable.swift; sourceTree = "<group>"; };
@@ -718,7 +700,6 @@
 		C58A0EE22F503B69B31234C69C744BEB /* RegistrationSuccessViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationSuccessViewModel.swift; sourceTree = "<group>"; };
 		C5B3D8ECEBB708EBCA8A07242E00E384 /* PrimaryButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		C600CF7FA1CCBE7346F543042DF67DA8 /* ImagePrefetcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePrefetcher.swift; path = Sources/Networking/ImagePrefetcher.swift; sourceTree = "<group>"; };
-		C65F63A8838C6F27B4D80BE9B7C00047 /* RegistrationInsuranceViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInsuranceViewController.swift; sourceTree = "<group>"; };
 		C6EF50159794D701898BE08660626E76 /* DevicesCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DevicesCell.swift; sourceTree = "<group>"; };
 		C780F7DC0BDFAF763CCE973E0940A79B /* InteractiveLinkLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractiveLinkLabel.swift; sourceTree = "<group>"; };
 		C88ABD322C2BB69D5B1868E4D435810D /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
@@ -787,7 +768,6 @@
 		F28ACFE7137444AAEEC3150BD46A8CC9 /* Pods-IncidenceLibraryIOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IncidenceLibraryIOS_Example.modulemap"; sourceTree = "<group>"; };
 		F33F1285B141CEBBC218C44A8767E2C8 /* Pods-IncidenceLibraryIOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-IncidenceLibraryIOS_Tests.modulemap"; sourceTree = "<group>"; };
 		F36163C4D140B7A490E9257A70B4D7E1 /* Pods-IncidenceLibraryIOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IncidenceLibraryIOS_Tests-dummy.m"; sourceTree = "<group>"; };
-		F3FF8DB66BF4DDF7B2CD97D5B6DDCCE8 /* RegistrationInsuranceInfoViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationInsuranceInfoViewModel.swift; sourceTree = "<group>"; };
 		F67B222DED043A606F6B510859FFB9B9 /* AlamofireExtended.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = AlamofireExtended.swift; path = Source/AlamofireExtended.swift; sourceTree = "<group>"; };
 		F6B02BF479F0CF976718C1FF7A26CF82 /* ImageCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageCache.swift; path = Sources/Cache/ImageCache.swift; sourceTree = "<group>"; };
 		F7BE8D50E511180AC8AF0031C185325E /* EventNotification.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EventNotification.swift; sourceTree = "<group>"; };
@@ -903,11 +883,8 @@
 			isa = PBXGroup;
 			children = (
 				74F6825E3A569FA3FFB191E831CD7F93 /* RegistrationBeaconViewModel.swift */,
-				680F9573571F30875377BF991942DAFD /* RegistrationColorViewModel.swift */,
 				060ADEE1A0581E1CC77C7EAE167148BF /* RegistrationEmailViewModel.swift */,
 				7D1C19D1866E9240C628845CB0664471 /* RegistrationIDViewModel.swift */,
-				F3FF8DB66BF4DDF7B2CD97D5B6DDCCE8 /* RegistrationInsuranceInfoViewModel.swift */,
-				A2E371926F0DFB24659067E7E14C1A6C /* RegistrationInsuranceViewModel.swift */,
 				57A36C17F09A6B32B924924559C4A528 /* RegistrationNameViewModel.swift */,
 				254D2483C98DC22C3A4A30BB37F4F881 /* RegistrationStepsViewModel.swift */,
 				0484625D7EFA5FF59F8273CC61184F7A /* RegistrationSuccessBeaconViewModel.swift */,
@@ -915,7 +892,6 @@
 				A9F2E3D062542CAAC7D765D42B12E8F6 /* RegistrationTelephoneViewModel.swift */,
 				6AB8CDE856264FA3ADE503B2A01825B1 /* RegistrationTermsViewModel.swift */,
 				CD3271F837BC898F6FE1BF483016C48C /* RegistrationValidationViewModel.swift */,
-				27EB89467DF3017AAA8CE3E752B263CE /* RegistrationVehicleInfoViewModel.swift */,
 				6CF8C7ED0F61C0D4925192F433791552 /* RegistrationVehicleViewModel.swift */,
 			);
 			path = ViewModels;
@@ -1349,7 +1325,6 @@
 			children = (
 				FEDC356139D9D469B8FE1831C7998401 /* DeviceDetailInfoViewController.swift */,
 				7D97AB07F0DBEAA133C67852E1F24811 /* DeviceDetailViewController.swift */,
-				02EB096FEB5B54A5049685843F25FFF7 /* DeviceEditNameViewController.swift */,
 				F0069F7D0191CCDD02FA1759CFD64C31 /* DeviceInfoViewController.swift */,
 			);
 			path = ViewControllers;
@@ -1470,7 +1445,6 @@
 			children = (
 				3997B4D00DCAE73BD2C783667B685ABF /* DeviceDetailSdkViewModel.swift */,
 				671926614E57D6BA4F2DBD81AF763BB2 /* DeviceDetailViewModel.swift */,
-				09E8BEA105E27515230F17745B90E564 /* DeviceEditNameViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1569,11 +1543,8 @@
 				1527DE2292B0C28FD7A4D6C810E5FF3C /* ImeiPopUpModalViewController.swift */,
 				07FB38F57975B69FCE3569F11A0DB6B9 /* RegistrationBeaconSelectTypeViewController.swift */,
 				2F2C6C1C9B85DBD083DEFAC7B4A52351 /* RegistrationBeaconViewController.swift */,
-				B7FB468F1201B123660ED71C4EE088A3 /* RegistrationColorViewController.swift */,
 				356C1F638D40CFE9CE1D68631CFE49BD /* RegistrationEmailViewController.swift */,
 				EACFF0912193822CB3814BB490D18898 /* RegistrationIDViewController.swift */,
-				3E89490FB4253947FC1B5ED239B98284 /* RegistrationInsuranceInfoViewController.swift */,
-				C65F63A8838C6F27B4D80BE9B7C00047 /* RegistrationInsuranceViewController.swift */,
 				6B4B430FACA404DFECBC69AB9F2C6DCB /* RegistrationNameViewController.swift */,
 				5AD6D6D486C3B394DB12123A23C7705B /* RegistrationScene.storyboard */,
 				0BAC379DD4B567BD09B44F935684E134 /* RegistrationStepsViewController.swift */,
@@ -1582,7 +1553,6 @@
 				10D5B6A53224127B0EF0120843C3BB03 /* RegistrationTelephoneViewController.swift */,
 				E1079ED94279945B63E5147A0F9A1B98 /* RegistrationTermsViewController.swift */,
 				BBD57D0ED3AACC86A3349B5787AE8796 /* RegistrationValidationViewController.swift */,
-				2C14E4C6890ED7EAB98EC66C30823C3C /* RegistrationVehicleInfoViewController.swift */,
 				8B2512184C2ABD71A7F946E66634EF29 /* RegistrationVehicleViewController.swift */,
 			);
 			path = ViewControllers;
@@ -2145,8 +2115,6 @@
 				EE8159AE8DEB856F55257DB416BFEC9E /* DeviceDetailSdkViewModel.swift in Sources */,
 				13CF4C3AB2239DA6AD04623F0E21C9E5 /* DeviceDetailViewController.swift in Sources */,
 				B29FD6B395A1A1CE066AC1FF56A40C70 /* DeviceDetailViewModel.swift in Sources */,
-				D03733019FFC3B9F83D5D22916C226C5 /* DeviceEditNameViewController.swift in Sources */,
-				DA79C97EC746C8B76CE0AC9E01174010 /* DeviceEditNameViewModel.swift in Sources */,
 				9F8F6BE5736F370489C1B8EFF82FB7AF /* DeviceInfoViewController.swift in Sources */,
 				65325ACDD782772F0E73CF93FC29D853 /* DeviceNotification.swift in Sources */,
 				39AF2FC88D0304B3BF1EA8FB26F5CF28 /* DevicesCell.swift in Sources */,
@@ -2225,16 +2193,10 @@
 				933DB0D904FFB6E452D2692CBDF74B06 /* RegistrationBeaconSelectTypeViewController.swift in Sources */,
 				75562C6A291FDE21196EF444B7BC2228 /* RegistrationBeaconViewController.swift in Sources */,
 				9A0F7E31FFF36BFA2F33AA3847450C89 /* RegistrationBeaconViewModel.swift in Sources */,
-				8B5C677281E3E65C4F70339BD4115E39 /* RegistrationColorViewController.swift in Sources */,
-				11ACF5B9D092EC76263AC7742F6D5F0D /* RegistrationColorViewModel.swift in Sources */,
 				63732520434536343032A8CF92F3494C /* RegistrationEmailViewController.swift in Sources */,
 				EB3282DBC88ECE2A067A8673BAAB2E08 /* RegistrationEmailViewModel.swift in Sources */,
 				718C9298AA7B5EBD6B12A0A34186C849 /* RegistrationIDViewController.swift in Sources */,
 				6F0E1C5848D4C909C68F837AFBCD6188 /* RegistrationIDViewModel.swift in Sources */,
-				334BBCBB46D6869DF68B7BC2D9EECB37 /* RegistrationInsuranceInfoViewController.swift in Sources */,
-				FCE359EEFE9FA78CA2BEE08889426AA0 /* RegistrationInsuranceInfoViewModel.swift in Sources */,
-				CE0D1C624B4128FE56781F4138CA7C49 /* RegistrationInsuranceViewController.swift in Sources */,
-				99EF76910B70D2E3BE39E9F209CF9E82 /* RegistrationInsuranceViewModel.swift in Sources */,
 				DD79E1CB7E394C8E15664A2C81820BDC /* RegistrationNameViewController.swift in Sources */,
 				68B2329CEC6850288CE48B9BC3A850E1 /* RegistrationNameViewModel.swift in Sources */,
 				8A2D9FAE5069927A930320A90CB3C366 /* RegistrationScene.storyboard in Sources */,
@@ -2251,8 +2213,6 @@
 				9B53C96E62C025F82BAB2919FD99E294 /* RegistrationTermsViewModel.swift in Sources */,
 				084E6635705012819F16307C72853970 /* RegistrationValidationViewController.swift in Sources */,
 				8DFCE267D718C02DB2C083EFE8B044B7 /* RegistrationValidationViewModel.swift in Sources */,
-				0A14E22629E14EC69D0F0822422223A8 /* RegistrationVehicleInfoViewController.swift in Sources */,
-				928A9B9131AF59A0E7C321FFFA884F78 /* RegistrationVehicleInfoViewModel.swift in Sources */,
 				47AD67F4CFB185AE4B110C40EE44E484 /* RegistrationVehicleViewController.swift in Sources */,
 				0BC3AB36FCECF5C112340C38EFF788D9 /* RegistrationVehicleViewModel.swift in Sources */,
 				BDD0909312CC426F165F00F79360A959 /* ReportAccidentViewController.swift in Sources */,

@@ -117,7 +117,11 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable, Repor
     
     @IBAction func btnDeviceReviewPressed(_ sender: Any) {
         let viewController = IncidenceLibraryManager.shared.getDeviceReviewViewController(user: user, vehicle: vehicle)
-        navigationController?.pushViewController(viewController, animated: true)
+        //navigationController?.pushViewController(viewController, animated: true)
+        
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
     
     @IBAction func btnIncidenceCreatePressed(_ sender: Any) {
@@ -144,17 +148,29 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable, Repor
     
     @IBAction func btnEcommercePressed(_ sender: Any) {
         let viewController = IncidenceLibraryManager.shared.getEcommerceViewController(user: user, vehicle: vehicle)
-        navigationController?.pushViewController(viewController, animated: true)
+        //navigationController?.pushViewController(viewController, animated: true)
+        
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
     
     @IBAction func btnReportIncPressed(_ sender: Any) {
         let viewController = IncidenceLibraryManager.shared.getReportIncViewController(user: user, vehicle: vehicle, delegate: self)
-        navigationController?.pushViewController(viewController, animated: true)
+        //navigationController?.pushViewController(viewController, animated: true)
+        
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
     
     @IBAction func btnReportIncSimpPressed(_ sender: Any) {
         let viewController = IncidenceLibraryManager.shared.getReportIncSimpViewController(user: user, vehicle: vehicle, delegate: self)
-        navigationController?.pushViewController(viewController, animated: true)
+        //navigationController?.pushViewController(viewController, animated: true)
+        
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        present(navigationController, animated: true, completion: nil)
     }
     
     func onResult(response: IncidenceLibraryIOS.IActionResponse) {

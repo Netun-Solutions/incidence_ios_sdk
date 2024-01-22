@@ -11,7 +11,7 @@ public struct IActionResponse {
     
     public let status: Bool
     public let message: String?
-    public let data: Any? = nil
+    public var data: Any? = nil
     
     init(status:Bool) {
         self.status = status

@@ -233,9 +233,11 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
                 
                 //self.onSuccessReport(incidence: incidence)
                 
-                self.navigationController?.popToRootViewController(animated: false)
+                //self.navigationController?.popToRootViewController(animated: false)
+                super.backPressed()
                 
-                let response: IActionResponse = IActionResponse(status: true)
+                var response: IActionResponse = IActionResponse(status: true)
+                response.data = incidence
                 self.viewModel.delegate.onResult(response: response)
             }
             else
@@ -248,7 +250,7 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
     @IBAction func cancelButtonPressed(_ sender: Any?) {
         Core.shared.stopTimer()
         stopTimer()
-        navigationController?.popViewController(animated: true)
+        backPressed()
     }
     
     public func updateSpeechButton() {

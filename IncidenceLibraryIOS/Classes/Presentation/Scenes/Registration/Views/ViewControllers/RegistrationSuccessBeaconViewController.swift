@@ -78,7 +78,7 @@ class RegistrationSuccessBeaconViewController: IABaseViewController, StoryboardI
             })?.removeFromSuperview()
             AppNavigation.setupNavigationApperance(navigationController!, with: .transparent)
             
-            navigationController?.popToRootViewController(animated: true)
+            self.dismiss(animated: false, completion: nil)
         } else {
             let vm = RegistrationSuccessViewModel()
             let viewController = RegistrationSuccessViewController.create(with: vm)

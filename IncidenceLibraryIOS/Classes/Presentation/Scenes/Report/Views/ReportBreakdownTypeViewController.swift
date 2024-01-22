@@ -100,13 +100,18 @@ class ReportBreakdownTypeViewController: ReportBaseViewController, StoryboardIns
         voiceDialogs.append(contentsOf: array)
     }
     private func setUpNavigation() {
-        let phoneButton = UIBarButtonItem(image: UIImage.app( "Phone"), style: .plain, target: self, action: #selector(phonePressed))
-        phoneButton.imageInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
+        //let phoneButton = UIBarButtonItem(image: UIImage.app( "Phone"), style: .plain, target: self, action: #selector(phonePressed))
+        //phoneButton.imageInsets = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 0)
         
         speechButton = UIBarButtonItem(image: UIImage.app( "ic_nav_micro_off")?.withRenderingMode(.alwaysOriginal), style: .plain, target: self, action: #selector(speechPressed))
         speechButton!.imageInsets = UIEdgeInsets(top: 0, left: -20, bottom: 0, right: 4)
         
-        navigationItem.rightBarButtonItems = [speechButton!, phoneButton]
+        //navigationItem.rightBarButtonItems = [speechButton!, phoneButton]
+        navigationItem.rightBarButtonItems = [speechButton!]
+    }
+    
+    @objc override func backPressed(){
+        navigationController?.popViewController(animated: true)
     }
     
     @objc private func speechPressed() {
@@ -114,7 +119,7 @@ class ReportBreakdownTypeViewController: ReportBaseViewController, StoryboardIns
     }
     
     @IBAction func cancelButtonPressed(_ sender: Any?) {
-        navigationController?.popToRootViewController(animated: true)
+        super.backPressed()
         Core.shared.stopTimer()
         stopTimer()
     }

@@ -106,6 +106,10 @@ public class IABaseViewController: UIViewController, UIGestureRecognizerDelegate
         //navigationController?.popViewController(animated: true)
         self.dismiss(animated: false, completion: nil)
     }
+    
+    @objc func backInfoPressed(){
+        navigationController?.popViewController(animated: true)
+    }
 
     func showHUD() {
         guard let targetView = self.view else { return }
