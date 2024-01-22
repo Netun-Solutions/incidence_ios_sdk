@@ -79,6 +79,10 @@ class RegistrationSuccessBeaconViewController: IABaseViewController, StoryboardI
             AppNavigation.setupNavigationApperance(navigationController!, with: .transparent)
             
             self.dismiss(animated: false, completion: nil)
+            
+            var response: IActionResponse = IActionResponse(status: true)
+            self.viewModel.delegate.onResult(response: response)
+            
         } else {
             let vm = RegistrationSuccessViewModel()
             let viewController = RegistrationSuccessViewController.create(with: vm)

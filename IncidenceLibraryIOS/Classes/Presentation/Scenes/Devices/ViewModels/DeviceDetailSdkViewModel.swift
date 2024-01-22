@@ -16,12 +16,10 @@ class DeviceDetailSdkViewModel: IABaseViewModel {
     public var vehicle: Vehicle
     public var user: User
     public var device: Beacon?
-    var delegate: ReportTypeViewControllerDelegate
     
-    public init(vehicle: Vehicle, user: User, delegate: ReportTypeViewControllerDelegate!) {
+    public init(vehicle: Vehicle, user: User) {
         self.vehicle = vehicle
         self.user = user
-        self.delegate = delegate
     }
     
     var fieldNameTitle: String = "name".localized()

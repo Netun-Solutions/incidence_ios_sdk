@@ -116,7 +116,7 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable, Repor
     }
     
     @IBAction func btnDeviceReviewPressed(_ sender: Any) {
-        let viewController = IncidenceLibraryManager.shared.getDeviceReviewViewController(user: user, vehicle: vehicle, delegate: self)
+        let viewController = IncidenceLibraryManager.shared.getDeviceReviewViewController(user: user, vehicle: vehicle)
         //navigationController?.pushViewController(viewController, animated: true)
         
         let navigationController = UINavigationController(rootViewController: viewController)
