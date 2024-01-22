@@ -27,7 +27,6 @@
 		11CCD832BD537718892C6A216A38490A /* URLRequest+Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093D5CF5AC680A12DDB9ED185E7057B5 /* URLRequest+Alamofire.swift */; };
 		13CF4C3AB2239DA6AD04623F0E21C9E5 /* DeviceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D97AB07F0DBEAA133C67852E1F24811 /* DeviceDetailViewController.swift */; };
 		141F2D1E9CBB45172E37D41E240748B5 /* BeaconType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7952EF8B5552DEDD206A0106A99500A7 /* BeaconType.swift */; };
-		16361E4A36B6B8834388D8AB48D6E40D /* AddSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C97FC226AC710D9CB859718F14FEC898 /* AddSelectionViewModel.swift */; };
 		17A00A05760BE3B125FA0BE2C653625E /* VehicleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 139F828FAA4291B7831B46DDA581ACE7 /* VehicleCell.swift */; };
 		17C62CCD585DA59BBB5ABB745A5D262E /* RetryStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B2F6DE559BEC9520615126BA716FF2 /* RetryStrategy.swift */; };
 		17C7C59441614E4D5302E8D03F1B78F8 /* ConsoleLogDestination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8013D2FF70CAE3B771E03628E8D91D62 /* ConsoleLogDestination.swift */; };
@@ -173,7 +172,6 @@
 		7DB39174ECB2C9072ECC417E84E28C51 /* Silka-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 481B0C5D51F5CD2E97F71EC07F0EE043 /* Silka-Regular.otf */; };
 		7E4E0EB0B3BD1A80666F198FF7687524 /* IncidenceLibraryIOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD21067FB17AC2A57AF401D0A3230EB2 /* IncidenceLibraryIOS-dummy.m */; };
 		81E6A0FF7F286008345ECFA3A2103FA8 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3AAEF2B93C5906A3AD12DAA2DD315D7 /* Alamofire.swift */; };
-		825AC43AA739EB8BF1804219047F705A /* AddSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1126D73329C12C97F935014015724BDF /* AddSelectionViewController.swift */; };
 		82FD97FBBEFE51E2D3B434AF4954FC93 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6772656A66966A9B4BA9CF75C7ECE16C /* EventMonitor.swift */; };
 		8341900C41B8D213669EFEEB76A133E0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4207BEE6DFA63E5CF69828DD467E9674 /* Foundation.framework */; };
 		8360A7D47FDEA0EBC69F0CC9C1162A44 /* WebViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EABB9AC2929CB51F33141E8BFC156D6 /* WebViewViewModel.swift */; };
@@ -433,7 +431,6 @@
 		104661C4B64265AE625369BE9D2BEA24 /* Result+Alamofire.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Result+Alamofire.swift"; path = "Source/Result+Alamofire.swift"; sourceTree = "<group>"; };
 		104669FDE846D785102868D0F0F3BE2E /* ColorType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ColorType.swift; sourceTree = "<group>"; };
 		10D5B6A53224127B0EF0120843C3BB03 /* RegistrationTelephoneViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RegistrationTelephoneViewController.swift; sourceTree = "<group>"; };
-		1126D73329C12C97F935014015724BDF /* AddSelectionViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddSelectionViewController.swift; sourceTree = "<group>"; };
 		139F828FAA4291B7831B46DDA581ACE7 /* VehicleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = VehicleCell.swift; sourceTree = "<group>"; };
 		1495A4A938ECC13F3D7F2A2035AA4447 /* Kingfisher-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Kingfisher-prefix.pch"; sourceTree = "<group>"; };
 		1527DE2292B0C28FD7A4D6C810E5FF3C /* ImeiPopUpModalViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ImeiPopUpModalViewController.swift; sourceTree = "<group>"; };
@@ -703,7 +700,6 @@
 		C6EF50159794D701898BE08660626E76 /* DevicesCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DevicesCell.swift; sourceTree = "<group>"; };
 		C780F7DC0BDFAF763CCE973E0940A79B /* InteractiveLinkLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = InteractiveLinkLabel.swift; sourceTree = "<group>"; };
 		C88ABD322C2BB69D5B1868E4D435810D /* UIView+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
-		C97FC226AC710D9CB859718F14FEC898 /* AddSelectionViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddSelectionViewModel.swift; sourceTree = "<group>"; };
 		C9A68C7B2B3152728A7D62F321461639 /* HomeMessageCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeMessageCell.swift; sourceTree = "<group>"; };
 		CA8A4E4019BF3FAFA63CE85495C0DB43 /* Pods-IncidenceLibraryIOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IncidenceLibraryIOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		CAA4C731F82060B4970E3110F51F32F4 /* HomeErrorCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HomeErrorCell.swift; sourceTree = "<group>"; };
@@ -1155,7 +1151,6 @@
 			isa = PBXGroup;
 			children = (
 				BE8B849A9143A0E3F4DB6F3B4ED816A2 /* AddBeaconToCarViewModel.swift */,
-				C97FC226AC710D9CB859718F14FEC898 /* AddSelectionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -1422,7 +1417,6 @@
 			children = (
 				3D07CF2C6054AA32F12E6D55D87E664C /* AddBeaconToCarViewController.swift */,
 				3099EC08650000759835DB9E45A462E0 /* AddScene.storyboard */,
-				1126D73329C12C97F935014015724BDF /* AddSelectionViewController.swift */,
 				F8D5371F6F85BC21D119E7E67A7E5EF8 /* Cells */,
 				40433FEF8E6C6136433754B50A08F6FF /* SheetViews */,
 			);
@@ -2072,8 +2066,6 @@
 				266786AEC536B753000652863F2FF4BE /* AddCell.swift in Sources */,
 				DA3DDEC35CF6794AC3B1C0C9EC496199 /* Address.swift in Sources */,
 				EFB90B81EC0C9746BD0588257D56F9B3 /* AddScene.storyboard in Sources */,
-				825AC43AA739EB8BF1804219047F705A /* AddSelectionViewController.swift in Sources */,
-				16361E4A36B6B8834388D8AB48D6E40D /* AddSelectionViewModel.swift in Sources */,
 				38FAA7066F44F0D06F854E2D94E9C5EA /* Answer.swift in Sources */,
 				B118E547FEFAEF6E7D6318ABBF0B5125 /* Api.swift in Sources */,
 				AC508577CE00ED90E11F1C9EDA83C49C /* APIEndpoints.swift in Sources */,

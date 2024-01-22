@@ -167,13 +167,12 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
         
         stopTimer()
         
-        if (!self.viewModel.flowComplete) {
+        guard let incidencesTypesAll = IncidenceLibraryManager.shared.incidencesTypes else { return }
+        guard let incidencesTypes: [IncidenceType] = Core.shared.getIncidencesTypes(parent: 2, incidences: incidencesTypesAll) else { return }
+        
+        if (!self.viewModel.flowComplete || incidencesTypes.count == 0) {
             reportIncidence(idIncidence: "2")
         } else {
-            //guard let incidencesTypes = Core.shared.getIncidencesTypes(parent: 2) else { return }
-            guard let incidencesTypesAll = IncidenceLibraryManager.shared.incidencesTypes else { return }
-            guard let incidencesTypes: [IncidenceType] = Core.shared.getIncidencesTypes(parent: 2, incidences: incidencesTypesAll) else { return }
-            
             let vm = ReportBreakdownTypeViewModel(incidenceTypeList: incidencesTypes, vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
             vm.vehicle = viewModel.vehicle
             let vc = ReportBreakdownTypeViewController.create(with: vm)
@@ -193,9 +192,16 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
             navigationController?.pushViewController(vc, animated: true)
         }
         */
-        let vm = ReportAccidentViewModel(vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
-        let vc = ReportAccidentViewController.create(with: vm)
-        navigationController?.pushViewController(vc, animated: true)         
+        guard let incidencesTypesAll = IncidenceLibraryManager.shared.incidencesTypes else { return }
+        guard let incidencesTypes: [IncidenceType] = Core.shared.getIncidencesTypes(parent: 1, incidences: incidencesTypesAll) else { return }
+        
+        if (incidencesTypes.count == 0) {
+            reportIncidence(idIncidence: "12")
+        } else {
+            let vm = ReportAccidentViewModel(vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
+            let vc = ReportAccidentViewController.create(with: vm)
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     private func reportIncidence(idIncidence: String) {

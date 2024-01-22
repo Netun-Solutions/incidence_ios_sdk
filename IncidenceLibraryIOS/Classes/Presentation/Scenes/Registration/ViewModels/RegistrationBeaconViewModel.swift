@@ -34,9 +34,11 @@ class RegistrationBeaconViewModel: IABaseViewModel {
 
     var user: User!
     var vehicle: Vehicle!
+    var delegate: ReportTypeViewControllerDelegate
     
-    internal init(origin: RegistrationOrigin = .registration) {
+    internal init(origin: RegistrationOrigin = .registration, delegate: ReportTypeViewControllerDelegate!) {
         self.origin = origin
+        self.delegate = delegate
     }
     
     public override var navigationTitle: String? {

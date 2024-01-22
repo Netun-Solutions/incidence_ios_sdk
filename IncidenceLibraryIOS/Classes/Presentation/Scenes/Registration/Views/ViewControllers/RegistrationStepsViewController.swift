@@ -113,9 +113,9 @@ class RegistrationStepsViewController: IABaseViewController, StoryboardInstantia
             let viewController = RegistrationVehicleViewController.create(with: vm)
             navigationController?.pushViewController(viewController, animated: true)
         } else if viewModel.completedSteps.count == 2 {
-            let vm = RegistrationBeaconViewModel(origin: viewModel.origin)
-            let viewController = RegistrationBeaconSelectTypeViewController.create(with: vm)
-            navigationController?.pushViewController(viewController, animated: true)
+            //let vm = RegistrationBeaconViewModel(origin: viewModel.origin)
+            //let viewController = RegistrationBeaconSelectTypeViewController.create(with: vm)
+            //navigationController?.pushViewController(viewController, animated: true)
         }
     }
     
