@@ -300,6 +300,13 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         
     }
     
+    @objc override func backPressed(){
+        self.dismiss(animated: false, completion: nil)
+        
+        let response: IActionResponse = IActionResponse(status: true)
+        self.viewModel.delegate.onResult(response: response)
+    }
+    
     func startCountDownTimer() {
         stopTimer()
         secondsRemaining = secondsRemainingConfig;

@@ -128,10 +128,10 @@
         }
     }
     
-    public func getDeviceReviewViewController(user: User!, vehicle: Vehicle!) -> IABaseViewController {
+    public func getDeviceReviewViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> IABaseViewController {
         let res = validateScreen(screen: Constants.SCREEN_DEVICE_REVIEW)
         if (res == "SCREEN_OK") {
-            let viewModel = DeviceDetailSdkViewModel(vehicle: vehicle, user: user)
+            let viewModel = DeviceDetailSdkViewModel(vehicle: vehicle, user: user, delegate: delegate)
             let viewController = DeviceDetailInfoViewController.create(with: viewModel)
             return viewController
         } else {
