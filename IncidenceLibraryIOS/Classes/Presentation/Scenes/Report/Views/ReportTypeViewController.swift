@@ -196,7 +196,7 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
         guard let incidencesTypes: [IncidenceType] = Core.shared.getIncidencesTypes(parent: 1, incidences: incidencesTypesAll) else { return }
         
         if (incidencesTypes.count == 0) {
-            reportIncidence(idIncidence: "12")
+            reportIncidence(idIncidence: "1")
         } else {
             let vm = ReportAccidentViewModel(vehicle: viewModel.vehicle, user: viewModel.user, delegate: viewModel.delegate, openFromNotification: self.viewModel.openFromNotification)
             let vc = ReportAccidentViewController.create(with: vm)
