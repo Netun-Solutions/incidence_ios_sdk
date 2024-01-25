@@ -23,7 +23,7 @@ public struct IncidenceLibraryConfig {
     ///
     public let apiKey: APIKey
     
-    public let env: Environment
+    public let env: IncidenceEnvironment
     
     /*
     /// The security application group ID to use for the local storage. This is needed if you want to share offline storage between
@@ -146,11 +146,11 @@ public struct IncidenceLibraryConfig {
     public var deletedMessagesVisibility: DeletedMessageVisibility = .visibleForCurrentUser
     */
     public init(apiKey: APIKey) {
-        self.init(apiKey: apiKey, env: Environment.TEST)
+        self.init(apiKey: apiKey, env: IncidenceEnvironment.TEST)
         //isClientInActiveMode = !Bundle.main.isAppExtension
     }
     
-    public init(apiKey: APIKey, env: Environment) {
+    public init(apiKey: APIKey, env: IncidenceEnvironment) {
         self.apiKey = apiKey
         self.env = env
         //isClientInActiveMode = !Bundle.main.isAppExtension
@@ -205,7 +205,7 @@ public struct APIKey: Equatable {
     }
 }
 
-public enum Environment: Int {
+public enum IncidenceEnvironment: Int {
     case TEST = 0
     case PRE
     case PRO

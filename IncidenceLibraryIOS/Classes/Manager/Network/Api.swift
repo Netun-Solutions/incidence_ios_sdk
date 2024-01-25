@@ -36,10 +36,10 @@ final class Api {
 
 extension Api {
     
-    func setup(env: Environment) {
-        if (env == Environment.TEST) {
+    func setup(env: IncidenceEnvironment) {
+        if (env == IncidenceEnvironment.TEST) {
             APIEndpoints.API_BASE_URL = APIEndpoints.API_BASE_URL_TEST
-        } else if (env == Environment.PRE) {
+        } else if (env == IncidenceEnvironment.PRE) {
             APIEndpoints.API_BASE_URL = APIEndpoints.API_BASE_URL_PRE
         } else {
             APIEndpoints.API_BASE_URL = APIEndpoints.API_BASE_URL_PRO

@@ -9,7 +9,7 @@
     private var config: IncidenceLibraryConfig?
     
     let apiKey: String
-    private let env: Environment
+    private let env: IncidenceEnvironment
     
     private var validApiKey: Bool? = nil
     private var screens: [String] = [String]()
