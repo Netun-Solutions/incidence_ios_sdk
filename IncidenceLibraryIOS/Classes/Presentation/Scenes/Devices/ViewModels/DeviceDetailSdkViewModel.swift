@@ -9,7 +9,7 @@ import Foundation
 
 class DeviceDetailSdkViewModel: IABaseViewModel {
     public override var navigationTitle: String? {
-        get { return (device != nil) ? device!.name : "beacon".localized() }
+        get { return (device != nil) ? device!.name : "incidence_key_beacon".localized() }
         set { }
     }
     
@@ -24,10 +24,10 @@ class DeviceDetailSdkViewModel: IABaseViewModel {
         self.delegate = delegate
     }
     
-    var fieldNameTitle: String = "name".localized()
-    var fieldModelTitle: String = "model".localized()
-    var fieldLinkedVehicleTitle: String = "link_with".localized()
-    var deleteButtonText: String = "delete_device".localized()
-    var addButtonText: String = "link_with_vehicle".localized()
-    var validateDeviceButtonText: String = "validate_device".localized()
+    var fieldNameTitle: String = "incidence_key_name".localized()
+    var fieldModelTitle: String = "incidence_key_model".localized()
+    var fieldLinkedVehicleTitle: String = "incidence_key_link_with".localized()
+    var deleteButtonText: String = "incidence_key_delete_device".localized()
+    var addButtonText: String = "incidence_key_link_with_vehicle".localized()
+    var validateDeviceButtonText: String = "incidence_key_validate_device".localized()
 }

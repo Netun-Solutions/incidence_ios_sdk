@@ -146,7 +146,7 @@ class EcommercePageVC: UIViewController {
             priceSubLabel = UILabel()
             priceSubLabel?.textColor = UIColor.app(.black500)
             priceSubLabel?.font = UIFont.app(.primaryRegular, size: 12)
-            priceSubLabel?.text = "ecommerce_subtitle".localized();
+            priceSubLabel?.text = "incidence_key_ecommerce_subtitle".localized();
             contentView.addSubview(priceSubLabel!)
             priceSubLabel?.anchor(top: priceOldLabel?.bottomAnchor, left: cardView?.leftAnchor, right: cardView?.rightAnchor, topConstant: 0, leftConstant: 20, rightConstant: 20)
             priceSubLabel?.textAlignment = .right
@@ -164,7 +164,7 @@ class EcommercePageVC: UIViewController {
             priceSubLabel = UILabel()
             priceSubLabel?.textColor = UIColor.app(.black500)
             priceSubLabel?.font = UIFont.app(.primaryRegular, size: 12)
-            priceSubLabel?.text = "ecommerce_subtitle".localized();
+            priceSubLabel?.text = "incidence_key_ecommerce_subtitle".localized();
             contentView.addSubview(priceSubLabel!)
             priceSubLabel?.anchor(top: priceLabel?.bottomAnchor, left: cardView?.leftAnchor, right: cardView?.rightAnchor, topConstant: 0, leftConstant: 20, rightConstant: 20)
             priceSubLabel?.textAlignment = .right

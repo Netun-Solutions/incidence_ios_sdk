@@ -22,7 +22,7 @@ class IncidencesDetailViewModel: IABaseViewModel {
             
             if let city = incidence.city {
                 
-                return incidence.getTitle() + " " + "incidence_in".localized() + " " + city
+                return incidence.getTitle() + " " + "incidence_key_incidence_in".localized() + " " + city
             }
             
             return incidence.getTitle()

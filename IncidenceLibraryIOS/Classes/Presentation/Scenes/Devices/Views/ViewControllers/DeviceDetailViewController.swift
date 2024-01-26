@@ -105,8 +105,8 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
         let view = ButtonsBottomSheetView()
 
         let name = device?.vehicle != nil ? device?.vehicle?.getName() ?? "" : ""
-        let title = device?.vehicle != nil ? String(format: "delete_device_vinculated_message".localized(), device?.name ?? "") : String(format: "delete_device_message".localized(), name)
-        view.configure(delegate: self, title:nil, desc: title, firstButtonText: "cancel".localized(), secondButtonText: "delete".localized(), identifier: nil)
+        let title = device?.vehicle != nil ? String(format: "incidence_key_delete_device_vinculated_message".localized(), device?.name ?? "") : String(format: "incidence_key_delete_device_message".localized(), name)
+        view.configure(delegate: self, title:nil, desc: title, firstButtonText: "incidence_key_cancel".localized(), secondButtonText: "incidence_key_delete".localized(), identifier: nil)
         
         let controller = BottomSheetViewController(contentView: view)
         controller.sheetCornerRadius = 16

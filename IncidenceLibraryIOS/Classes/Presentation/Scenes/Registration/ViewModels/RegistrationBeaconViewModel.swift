@@ -42,7 +42,7 @@ class RegistrationBeaconViewModel: IABaseViewModel {
     }
     
     public override var navigationTitle: String? {
-        get { return "create_account_step3".localized() }
+        get { return "incidence_key_create_account_step3".localized() }
         set { }
     }
     
@@ -51,9 +51,9 @@ class RegistrationBeaconViewModel: IABaseViewModel {
             switch status {
             case .alertBluetooth,
                  .lookingBeacon:
-                return "turn_on_beacon_flash".localized()
+                return "incidence_key_turn_on_beacon_flash".localized()
             case .selectionBeacon:
-                return "turn_on_beacon_flash_detected".localized()
+                return "incidence_key_turn_on_beacon_flash_detected".localized()
             default:
                 return nil
             }
@@ -64,9 +64,9 @@ class RegistrationBeaconViewModel: IABaseViewModel {
         get {
             switch status {
             case .bluetoothFail:
-                return "<span style='color:#737373'>" + "beacon_error_need_bluettoh".localized() + "</span>"
+                return "<span style='color:#737373'>" + "incidence_key_beacon_error_need_bluettoh".localized() + "</span>"
             case .missingBeacon:
-                return "<span style='color:#737373'>" + "beacons_not_detected".localized() + "</span>"
+                return "<span style='color:#737373'>" + "incidence_key_beacons_not_detected".localized() + "</span>"
             default:
                 return nil
             }
@@ -78,9 +78,9 @@ class RegistrationBeaconViewModel: IABaseViewModel {
             switch status {
             case .bluetoothFail,
                  .missingBeacon:
-                return "retry".localized()
+                return "incidence_key_retry".localized()
             case .selectionBeacon:
-                return "search_again".localized()
+                return "incidence_key_search_again".localized()
             default:
                 return nil
             }
@@ -91,12 +91,12 @@ class RegistrationBeaconViewModel: IABaseViewModel {
         get {
             switch status {
             case .bluetoothFail:
-                return "no_activate_now".localized()
+                return "incidence_key_no_activate_now".localized()
             case .missingBeacon,
                  .selectionBeacon,
                  .lookingBeacon,
                  .alertBluetooth:
-                return "omitir".localized()
+                return "incidence_key_omitir".localized()
             default:
                 return nil
             }

@@ -233,7 +233,7 @@ public class IABaseViewController: UIViewController, UIGestureRecognizerDelegate
         let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
 
         // add an action (button)
-        alert.addAction(UIAlertAction(title: "accept".localized(), style: UIAlertAction.Style.default, handler: handler))
+        alert.addAction(UIAlertAction(title: "incidence_key_accept".localized(), style: UIAlertAction.Style.default, handler: handler))
 
         // show the alert
         self.present(alert, animated: true, completion: completion)

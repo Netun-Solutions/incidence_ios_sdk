@@ -22,20 +22,20 @@ class RegistrationSuccessBeaconViewModel: IABaseViewModel {
     }
     
     public override var navigationTitle: String? {
-        get { return "create_account_step3".localized() }
+        get { return "incidence_key_create_account_step3".localized() }
         set { }
     }
     
     lazy var titleLabelText: String = {
-        return "beacon_sync_success".localized()
+        return "incidence_key_beacon_sync_success".localized()
     }()
     
     lazy var subtitleLabelText: String = {
-        return "beacon_sync_success_desc".localized()
+        return "incidence_key_beacon_sync_success_desc".localized()
     }()
     
     lazy var continueButtonText: String = {
-        return "finish".localized()
+        return "incidence_key_finish".localized()
     }()
     
 }

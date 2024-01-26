@@ -46,7 +46,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
     
     override func setUpUI() {
         super.setUpUI()
-        helperLabel.text = "select_beacon_type".localized()
+        helperLabel.text = "incidence_key_select_beacon_type".localized()
         helperLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0, aligment: .left)
      
         tableView.delegate = self
@@ -335,7 +335,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
         button.titleLabel?.lineBreakMode = .byClipping
         button.titleLabel?.minimumScaleFactor = 0.1
         button.titleLabel?.adjustsFontSizeToFitWidth = true
-        button.setTitle("button_close".localized(), for: .normal)
+        button.setTitle("incidence_key_button_close".localized(), for: .normal)
         button.backgroundColor = .black
         button.tintColor = .white
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
@@ -347,7 +347,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
     
     lazy var cameraTextInfo : UILabel = {
         let label = UILabel()
-        label.text = "qr_desc".localized()
+        label.text = "incidence_key_qr_desc".localized()
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -364,7 +364,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
         attachment.bounds = CGRect(x: 0, y: -7, width: attachment.image!.size.width, height: attachment.image!.size.height)
 
         let attachmentString = NSMutableAttributedString(attributedString: NSAttributedString(attachment: attachment))
-        attachmentString.append(NSAttributedString(string: "create_account_step3".localized()))
+        attachmentString.append(NSAttributedString(string: "incidence_key_create_account_step3".localized()))
         
         let label = UILabel()
         label.attributedText = attachmentString
@@ -390,7 +390,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
         button.titleLabel?.lineBreakMode = .byClipping
         button.titleLabel?.minimumScaleFactor = 0.1
         button.titleLabel?.adjustsFontSizeToFitWidth = true
-        button.setTitle("create_account_step3".localized(), for: .normal)
+        button.setTitle("incidence_key_create_account_step3".localized(), for: .normal)
         //button.backgroundColor = .red
         button.tintColor = .white
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
@@ -416,8 +416,8 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
         
         let view = LinkToCarBottomSheetView()
   
-        let title = String(format: "ask_link_beacon_to_vehicle_linked".localized(), model.getName())
-        view.configure(delegate: self, title: title, firstButtonText: "cancel".localized(), secondButtonText: "replace_beacon".localized(), identifier: model)
+        let title = String(format: "incidence_key_ask_link_beacon_to_vehicle_linked".localized(), model.getName())
+        view.configure(delegate: self, title: title, firstButtonText: "incidence_key_cancel".localized(), secondButtonText: "incidence_key_replace_beacon".localized(), identifier: model)
         
         let controller = BottomSheetViewController(contentView: view)
         controller.sheetCornerRadius = 16
@@ -507,15 +507,15 @@ extension RegistrationBeaconSelectTypeViewController: UITableViewDelegate, UITab
         var indexRowIoTAmp2 = showingIoT ? 2 : -1;
         if (indexPath.row == indexRowIoT && !hideIOT)
         {
-            cell.configure(with: "dispositivo_red", title: "select_beacon_type_iot".localized(), identifier: 1, delegate: self, rightIcon: showingIoT ? .arrowUp : .arrowDown, tooltipText:nil)
+            cell.configure(with: "dispositivo_red", title: "incidence_key_select_beacon_type_iot".localized(), identifier: 1, delegate: self, rightIcon: showingIoT ? .arrowUp : .arrowDown, tooltipText:nil)
         }
         else if (indexPath.row == indexRowIoTAmp && !hideIOT)
         {
-            cell.configure(with: "icon_qr", title: "select_beacon_type_qr".localized(), identifier: indexPath.row, delegate: nil, rightIcon: .info, tooltipText: "select_beacon_type_qr_info".localized())
+            cell.configure(with: "icon_qr", title: "incidence_key_select_beacon_type_qr".localized(), identifier: indexPath.row, delegate: nil, rightIcon: .info, tooltipText: "incidence_key_select_beacon_type_qr_info".localized())
         }
         else if (indexPath.row == indexRowIoTAmp2 && !hideIOT)
         {
-            cell.configure(with: "icon_imei", title: "select_beacon_imei".localized(), identifier: indexPath.row, delegate: nil, rightIcon: .info, tooltipText: "select_beacon_imei_info".localized())
+            cell.configure(with: "icon_imei", title: "incidence_key_select_beacon_imei".localized(), identifier: indexPath.row, delegate: nil, rightIcon: .info, tooltipText: "incidence_key_select_beacon_imei_info".localized())
         }
         
         return cell
@@ -543,7 +543,7 @@ extension RegistrationBeaconSelectTypeViewController: UITableViewDelegate, UITab
                       
                       DispatchQueue.main.async {
                           // Create Alert
-                            let alert = UIAlertController(title: "app_name".localized(), message: "alert_need_camera_permission_qr".localized(), preferredStyle: .alert)
+                            let alert = UIAlertController(title: "incidence_key_app_name".localized(), message: "incidence_key_alert_need_camera_permission_qr".localized(), preferredStyle: .alert)
 
                           // Add "OK" Button to alert, pressing it will bring you to the settings app
                           alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in

@@ -54,10 +54,10 @@ final class PlateBottomSheetView: UIView {
     public func configure(id: Int, delegate: PlateBottomSheetDelegate) {
         self.id = id
         self.delegate = delegate
-        self.title = "error_matricula_other_user".localized()
+        self.title = "incidence_key_error_matricula_other_user".localized()
         self.message = nil
-        self.acceptTitle = "continuar".localized()
-        self.cancelTitle = "cancel".localized()
+        self.acceptTitle = "incidence_key_continuar".localized()
+        self.cancelTitle = "incidence_key_cancel".localized()
         
         setUpUI()
     }

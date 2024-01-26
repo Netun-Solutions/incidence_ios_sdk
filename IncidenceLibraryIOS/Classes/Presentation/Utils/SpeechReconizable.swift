@@ -113,7 +113,7 @@ public extension SpeechReconizable where Self: UIViewController {
             return
         }
         
-        let sentence = !notUnderstand ? (!emergency ? voiceDialogs.joined(separator: ". ") : emergencyMessage) : "not_understand_voice".localizedVoice()
+        let sentence = !notUnderstand ? (!emergency ? voiceDialogs.joined(separator: ". ") : emergencyMessage) : "incidence_key_not_understand_voice".localizedVoice()
         
         //let cLocaleOld = Locale.current.identifier
         let cLocale = Core.shared.getLanguage()
@@ -144,8 +144,8 @@ public extension SpeechReconizable where Self: UIViewController {
     }
     
     func showPermissionAlert() {
-        let alertController = UIAlertController (title: "alert_need_audio_permission_title".localized(), message: "alert_need_audio_permission_description".localized(), preferredStyle: .alert)
-        let settingsAction = UIAlertAction(title: "settings".localized(), style: .default) { (_) -> Void in
+        let alertController = UIAlertController (title: "incidence_key_alert_need_audio_permission_title".localized(), message: "incidence_key_alert_need_audio_permission_description".localized(), preferredStyle: .alert)
+        let settingsAction = UIAlertAction(title: "incidence_key_settings".localized(), style: .default) { (_) -> Void in
             guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
             if UIApplication.shared.canOpenURL(settingsUrl) {
                 UIApplication.shared.open(settingsUrl, completionHandler: { (success) in
@@ -154,7 +154,7 @@ public extension SpeechReconizable where Self: UIViewController {
             }
             }
         alertController.addAction(settingsAction)
-        let cancelAction = UIAlertAction(title: "cancel".localized(), style: .default, handler: nil)
+        let cancelAction = UIAlertAction(title: "incidence_key_cancel".localized(), style: .default, handler: nil)
             alertController.addAction(cancelAction)
         self.present(alertController, animated: true, completion: nil)
     }

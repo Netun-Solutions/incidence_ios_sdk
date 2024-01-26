@@ -12,7 +12,7 @@ class IncidencesCarsListViewModel: IABaseViewModel {
     var vehicles: [Vehicle?] = [Vehicle]()
     
     public override var navigationTitle: String? {
-        get { return "incidences".localized() }
+        get { return "incidence_key_incidences".localized() }
         set { }
     }
 }

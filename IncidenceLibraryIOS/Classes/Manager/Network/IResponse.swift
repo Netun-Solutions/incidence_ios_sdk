@@ -44,10 +44,10 @@ struct IResponse {
         if ((error.asAFError?.isSessionTaskError) != nil)
         {
             if (error._code == 500 || error._code == 10) {
-                self.message = "alert_error_ws".localized()
+                self.message = "incidence_key_alert_error_ws".localized()
             }
             else {
-                self.message = "alert_error_ws_connection".localized()
+                self.message = "incidence_key_alert_error_ws_connection".localized()
             }
             
         }

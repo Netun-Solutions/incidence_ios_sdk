@@ -220,6 +220,36 @@
         return viewController
     }
     
+    public func hasBeaconFunc(user: User!, vehicle: Vehicle!, completion: @escaping (IActionResponse) -> Void) {
+        //let res = validateScreen(screen: Constants.FUNC_DEVICE_GET)
+        let res = validateScreen(screen: Constants.FUNC_DEVICE_DELETE)
+        if (res == "SCREEN_OK") {
+            Api.shared.getBeaconSdk(vehicle: vehicle, user: user, completion: { result in
+                
+                var response: IActionResponse
+                
+                if (result.isSuccess())
+                {
+                    let beacons = result.getList(key: "beacon") ?? [Beacon]()
+                    if (beacons.count > 0) {
+                        response = IActionResponse(status: true)
+                    } else {
+                        response = IActionResponse(status: false, message: result.message)
+                    }
+                }
+                else
+                {
+                    response = IActionResponse(status: false, message: result.message)
+                }
+                
+                completion(response)
+           })
+        } else {
+            let response: IActionResponse = IActionResponse(status: false, message: res)
+            completion(response)
+        }
+    }
+    
     public func deleteBeaconFunc(user: User!, vehicle: Vehicle!, completion: @escaping (IActionResponse) -> Void) {
         let res = validateScreen(screen: Constants.FUNC_DEVICE_DELETE)
         if (res == "SCREEN_OK") {

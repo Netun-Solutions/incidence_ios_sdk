@@ -20,13 +20,13 @@ enum ReportInstructionsViewSpeechRecognizion: CaseIterable {
     func getLocalizedText() -> String {
         switch self {
         case .acceptNumber:
-            return "one".localizedVoice()
+            return "incidence_key_one".localizedVoice()
         case .accept:
-            return "accept".localizedVoice()
+            return "incidence_key_accept".localizedVoice()
         case .cancelNumber:
-            return "two".localizedVoice()
+            return "incidence_key_two".localizedVoice()
         case .cancel:
-            return "cancel".localizedVoice()
+            return "incidence_key_cancel".localizedVoice()
         }
     }
 }
@@ -157,13 +157,13 @@ class ReportInstructionsViewController: ReportBaseViewController, StoryboardInst
         if let insurance = IncidenceLibraryManager.shared.getInsurance(), let message = insurance.textIncidence {
             array.append(message)
         } else {
-            array.append("calling_grua_tip".localizedVoice())
+            array.append("incidence_key_calling_grua_tip".localizedVoice())
         }
         
-        array.append(contentsOf: ["incidence_tip_beacon".localizedVoice(),
-                     "incidence_tip_lights".localizedVoice(),
-                     "incidence_tip_vest".localizedVoice(),
-                     "incidence_tip_exit_car".localizedVoice()])
+        array.append(contentsOf: ["incidence_key_incidence_tip_beacon".localizedVoice(),
+                     "incidence_key_incidence_tip_lights".localizedVoice(),
+                     "incidence_key_incidence_tip_vest".localizedVoice(),
+                     "incidence_key_incidence_tip_exit_car".localizedVoice()])
 
         array.append(contentsOf: speechRecognizion)
         

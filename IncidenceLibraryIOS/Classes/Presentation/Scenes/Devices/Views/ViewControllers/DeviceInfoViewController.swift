@@ -55,10 +55,10 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
         if (viewModel.device.beaconType?.textBeaconScreen1 != nil) {
             titleLabel.text = viewModel.device.beaconType?.textBeaconScreen1;
         } else {
-            titleLabel.text = "device_desc_info1".localized()
+            titleLabel.text = "incidence_key_device_desc_info1".localized()
         }
         
-        backButton.setTitle("continuar".localized(), for: .normal)
+        backButton.setTitle("incidence_key_continuar".localized(), for: .normal)
         backButton.addTarget(self, action: #selector(onClickReturn), for: .touchUpInside)
         
         setUpNavigation()
@@ -87,7 +87,7 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
             if (viewModel.device.beaconType?.textBeaconScreen2 != nil) {
                 titleLabel.text = viewModel.device.beaconType?.textBeaconScreen2;
             } else {
-                titleLabel.text = "device_desc_info2".localized()
+                titleLabel.text = "incidence_key_device_desc_info2".localized()
             }
             
         } else if (index == 1) {
@@ -104,7 +104,7 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
             if (viewModel.device.beaconType?.textBeaconScreen3 != nil) {
                 titleLabel.text = viewModel.device.beaconType?.textBeaconScreen3;
             } else {
-                titleLabel.text = "device_desc_info3".localized()
+                titleLabel.text = "incidence_key_device_desc_info3".localized()
             }
             
             backButton.setTitle("Finalizar", for: .normal)

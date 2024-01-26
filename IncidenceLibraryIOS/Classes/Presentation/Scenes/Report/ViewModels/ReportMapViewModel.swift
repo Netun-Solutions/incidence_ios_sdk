@@ -19,7 +19,7 @@ class ReportMapViewModel: IABaseViewModel {
     
     
     public override var navigationTitle: String? {
-        get { return "back".localized() }
+        get { return "incidence_key_back".localized() }
         set { }
     }
 }

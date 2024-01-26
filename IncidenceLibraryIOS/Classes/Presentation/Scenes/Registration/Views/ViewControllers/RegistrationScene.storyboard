@@ -18,18 +18,18 @@
         <!--Registration Steps View Controller-->
         <scene sceneID="Tcd-eU-8bj">
             <objects>
-                <viewController storyboardIdentifier="RegistrationStepsViewController" id="sn6-JH-dOb" customClass="RegistrationStepsViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationStepsViewController" id="sn6-JH-dOb" customClass="RegistrationStepsViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nzW-9J-ica">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aib-zx-Gph" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aib-zx-Gph" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="760.5" width="366" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" name="black500"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS7-D3-56l" customClass="TextButton" customModule="PRE" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tS7-D3-56l" customClass="TextButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="786" width="366" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <state key="normal" title="Button"/>
@@ -37,7 +37,7 @@
                                     <action selector="SignInButtonPressed:" destination="sn6-JH-dOb" eventType="touchUpInside" id="bmS-9y-XSF"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvo-G1-MjX" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nvo-G1-MjX" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="648.5" width="366" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="8Zs-w6-jbC"/>
@@ -53,7 +53,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C6f-iC-Idx">
                                         <rect key="frame" x="8" y="0.0" width="24" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-vp-Vto" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pR6-vp-Vto" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="8" y="1.5" width="8" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -68,13 +68,13 @@
                                             <constraint firstAttribute="height" constant="24" id="y9I-lw-Zia"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptj-go-Pej" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ptj-go-Pej" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="44" y="1.5" width="282" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL2-JG-GrP" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lL2-JG-GrP" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="44" y="68" width="282" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
@@ -83,7 +83,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bEU-hI-T0A">
                                         <rect key="frame" x="8" y="68" width="24" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDD-Y1-Zuo" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nDD-Y1-Zuo" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="7" y="1.5" width="10" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
@@ -98,7 +98,7 @@
                                             <constraint firstItem="nDD-Y1-Zuo" firstAttribute="centerX" secondItem="bEU-hI-T0A" secondAttribute="centerX" id="rG4-c8-3Me"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PON-Tw-40C" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PON-Tw-40C" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="44" y="137.5" width="282" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <nil key="textColor"/>
@@ -107,7 +107,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rcX-pi-vAi">
                                         <rect key="frame" x="8" y="136" width="24" height="24"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcB-AK-NfK" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcB-AK-NfK" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="6.5" y="1.5" width="11" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" name="netunPrimary"/>
@@ -187,7 +187,7 @@
         <!--Registration Name View Controller-->
         <scene sceneID="sQB-km-bUI">
             <objects>
-                <viewController storyboardIdentifier="RegistrationNameViewController" id="MSo-oq-Tgw" customClass="RegistrationNameViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationNameViewController" id="MSo-oq-Tgw" customClass="RegistrationNameViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jdv-Hk-HHo">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -198,20 +198,20 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t6A-Bu-4Rg">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbi-9O-smt" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sbi-9O-smt" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Du-rA-9eW" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Du-rA-9eW" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="224" width="366" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="XOh-AC-aEN"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKR-hF-7Vf" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKR-hF-7Vf" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="336" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="0CU-L4-YNd"/>
@@ -271,7 +271,7 @@
         <!--Registration Telephone View Controller-->
         <scene sceneID="0fg-GQ-PJf">
             <objects>
-                <viewController storyboardIdentifier="RegistrationTelephoneViewController" id="SW3-it-lBv" customClass="RegistrationTelephoneViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationTelephoneViewController" id="SW3-it-lBv" customClass="RegistrationTelephoneViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZHO-zL-PoD">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -282,13 +282,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GA1-qQ-XJn">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Og-iJ-W4L" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Og-iJ-W4L" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqJ-Kb-Q2c" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqJ-Kb-Q2c" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="336" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="dde-HK-pbT"/>
@@ -300,7 +300,7 @@
                                                     <action selector="continueButtonPressed:" destination="sn6-JH-dOb" eventType="touchUpInside" id="f4G-Ew-tHg"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajP-4u-5LE" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ajP-4u-5LE" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="224" width="366" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -353,166 +353,10 @@
             </objects>
             <point key="canvasLocation" x="897" y="187"/>
         </scene>
-        <!--Registration Terms View Controller-->
-        <scene sceneID="fk2-As-UZt">
-            <objects>
-                <viewController storyboardIdentifier="RegistrationTermsViewController" id="4NX-bN-gWE" customClass="RegistrationTermsViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="icD-dJ-ApH">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iy7-PQ-G2J">
-                                <rect key="frame" x="0.0" y="750" width="414" height="146"/>
-                                <color key="backgroundColor" name="white"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgB-F5-0m6" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
-                                <rect key="frame" x="24" y="774" width="366" height="64"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="kJl-7S-SiI"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="nkw-qh-pWc"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="continueButtonPressed:" destination="4NX-bN-gWE" eventType="touchUpInside" id="OgV-gf-EI5"/>
-                                </connections>
-                            </button>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mkj-uO-jGL">
-                                <rect key="frame" x="0.0" y="60" width="414" height="690"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xqc-72-RtU">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="181.5"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="on0-nb-mlJ">
-                                                <rect key="frame" x="24" y="24" width="366" height="17"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="17" id="LYA-lh-qCe"/>
-                                                    <constraint firstAttribute="width" constant="366" id="p4i-Q0-fWa"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
-                                                <color key="textColor" name="black600"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xk1-KC-ytC" customClass="InteractiveLinkLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="60" width="366" height="16.5"/>
-                                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="14"/>
-                                                <color key="textColor" name="black500"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cbL-CU-j8L">
-                                                <rect key="frame" x="24" y="100.5" width="366" height="57"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq4-7u-K6o" customClass="CheckboxButton" customModule="PRE" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="24" id="Jpa-Lg-pro"/>
-                                                            <constraint firstAttribute="width" constant="24" id="k0B-5u-nvb"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <connections>
-                                                            <action selector="checkboxButtonPressed:" destination="4NX-bN-gWE" eventType="touchUpInside" id="m3o-Zx-M0m"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TCD-Tg-8WK" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                        <rect key="frame" x="48" y="0.0" width="318" height="16.5"/>
-                                                        <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="14"/>
-                                                        <color key="textColor" name="black500"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1u-X7-sEV" customClass="CheckboxButton" customModule="PRE" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="40.5" width="24" height="24"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="width" constant="24" id="LgR-g1-wh0"/>
-                                                            <constraint firstAttribute="height" constant="24" id="okH-tC-oIT"/>
-                                                        </constraints>
-                                                        <state key="normal" title="Button"/>
-                                                        <connections>
-                                                            <action selector="checkboxButtonPressed:" destination="4NX-bN-gWE" eventType="touchUpInside" id="ewD-sL-VEy"/>
-                                                        </connections>
-                                                    </button>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="La" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGb-T3-beh" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                        <rect key="frame" x="48" y="40.5" width="318" height="16.5"/>
-                                                        <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="14"/>
-                                                        <color key="textColor" name="black500"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="TCD-Tg-8WK" secondAttribute="trailing" id="1jO-Nm-MfE"/>
-                                                    <constraint firstItem="GGb-T3-beh" firstAttribute="top" secondItem="TCD-Tg-8WK" secondAttribute="bottom" constant="24" id="D5N-0b-TU9"/>
-                                                    <constraint firstItem="TCD-Tg-8WK" firstAttribute="leading" secondItem="Iq4-7u-K6o" secondAttribute="trailing" constant="24" id="Grx-yt-rpR"/>
-                                                    <constraint firstItem="TCD-Tg-8WK" firstAttribute="top" secondItem="cbL-CU-j8L" secondAttribute="top" id="Jwj-Vh-LUM"/>
-                                                    <constraint firstItem="GGb-T3-beh" firstAttribute="top" secondItem="C1u-X7-sEV" secondAttribute="top" id="Q7s-at-9ZA"/>
-                                                    <constraint firstAttribute="trailing" secondItem="GGb-T3-beh" secondAttribute="trailing" id="Xxd-0J-GaA"/>
-                                                    <constraint firstItem="GGb-T3-beh" firstAttribute="leading" secondItem="C1u-X7-sEV" secondAttribute="trailing" constant="24" id="Yxp-n3-omQ"/>
-                                                    <constraint firstItem="Iq4-7u-K6o" firstAttribute="top" secondItem="cbL-CU-j8L" secondAttribute="top" id="bLf-Iw-OOl"/>
-                                                    <constraint firstItem="Iq4-7u-K6o" firstAttribute="leading" secondItem="cbL-CU-j8L" secondAttribute="leading" id="cp0-gz-bT2"/>
-                                                    <constraint firstAttribute="bottom" secondItem="GGb-T3-beh" secondAttribute="bottom" id="pIf-lA-yIR"/>
-                                                    <constraint firstItem="C1u-X7-sEV" firstAttribute="leading" secondItem="cbL-CU-j8L" secondAttribute="leading" id="q61-WI-ccp"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="cbL-CU-j8L" firstAttribute="leading" secondItem="Xqc-72-RtU" secondAttribute="leading" constant="24" id="36P-J9-96D"/>
-                                            <constraint firstAttribute="bottom" secondItem="cbL-CU-j8L" secondAttribute="bottom" constant="24" id="8vs-JO-xBR"/>
-                                            <constraint firstItem="Xk1-KC-ytC" firstAttribute="top" secondItem="Xqc-72-RtU" secondAttribute="top" constant="60" id="CDI-PT-yB7"/>
-                                            <constraint firstItem="Xk1-KC-ytC" firstAttribute="leading" secondItem="Xqc-72-RtU" secondAttribute="leading" constant="24" id="Km2-5D-adp"/>
-                                            <constraint firstAttribute="trailing" secondItem="cbL-CU-j8L" secondAttribute="trailing" constant="24" id="M3h-J7-L4z"/>
-                                            <constraint firstItem="Xk1-KC-ytC" firstAttribute="top" secondItem="on0-nb-mlJ" secondAttribute="bottom" constant="19" id="UbG-Sd-Awf"/>
-                                            <constraint firstItem="cbL-CU-j8L" firstAttribute="top" secondItem="Xk1-KC-ytC" secondAttribute="bottom" constant="24" id="cYk-pv-Wzm"/>
-                                            <constraint firstAttribute="trailing" secondItem="Xk1-KC-ytC" secondAttribute="trailing" constant="24" id="kTN-SD-pqb"/>
-                                            <constraint firstItem="on0-nb-mlJ" firstAttribute="leading" secondItem="Xk1-KC-ytC" secondAttribute="leading" id="yZe-vW-Yvx"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="Xqc-72-RtU" secondAttribute="trailing" id="5Hn-Y7-VT6"/>
-                                    <constraint firstItem="Xqc-72-RtU" firstAttribute="height" secondItem="mkj-uO-jGL" secondAttribute="height" priority="250" id="gp2-dr-PTR"/>
-                                    <constraint firstItem="Xqc-72-RtU" firstAttribute="width" secondItem="mkj-uO-jGL" secondAttribute="width" id="kui-tp-XGF"/>
-                                    <constraint firstItem="Xqc-72-RtU" firstAttribute="top" secondItem="mkj-uO-jGL" secondAttribute="top" id="mj1-8y-FkW"/>
-                                    <constraint firstAttribute="bottom" secondItem="Xqc-72-RtU" secondAttribute="bottom" id="xSt-pl-ktK"/>
-                                    <constraint firstItem="Xqc-72-RtU" firstAttribute="leading" secondItem="mkj-uO-jGL" secondAttribute="leading" id="zr0-Pi-drs"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="quj-SP-Wk3"/>
-                        <color key="backgroundColor" name="incidence100"/>
-                        <constraints>
-                            <constraint firstItem="mkj-uO-jGL" firstAttribute="leading" secondItem="quj-SP-Wk3" secondAttribute="leading" id="8th-ns-EXX"/>
-                            <constraint firstItem="Iy7-PQ-G2J" firstAttribute="trailing" secondItem="quj-SP-Wk3" secondAttribute="trailing" id="F53-8S-YJ0"/>
-                            <constraint firstItem="mkj-uO-jGL" firstAttribute="top" secondItem="quj-SP-Wk3" secondAttribute="top" constant="12" id="KVR-DV-Z8M"/>
-                            <constraint firstItem="quj-SP-Wk3" firstAttribute="trailing" secondItem="UgB-F5-0m6" secondAttribute="trailing" constant="24" id="T1u-LC-gWl"/>
-                            <constraint firstItem="Iy7-PQ-G2J" firstAttribute="top" secondItem="UgB-F5-0m6" secondAttribute="top" constant="-24" id="d1o-B2-LGO"/>
-                            <constraint firstItem="UgB-F5-0m6" firstAttribute="leading" secondItem="quj-SP-Wk3" secondAttribute="leading" constant="24" id="dhb-LF-QMR"/>
-                            <constraint firstItem="Iy7-PQ-G2J" firstAttribute="leading" secondItem="quj-SP-Wk3" secondAttribute="leading" id="eHC-V7-CkN"/>
-                            <constraint firstItem="Iy7-PQ-G2J" firstAttribute="top" secondItem="mkj-uO-jGL" secondAttribute="bottom" id="fYv-fy-0vX"/>
-                            <constraint firstItem="mkj-uO-jGL" firstAttribute="trailing" secondItem="quj-SP-Wk3" secondAttribute="trailing" id="i26-bV-NqD"/>
-                            <constraint firstAttribute="bottom" secondItem="Iy7-PQ-G2J" secondAttribute="bottom" id="kVW-3L-IoO"/>
-                            <constraint firstItem="quj-SP-Wk3" firstAttribute="bottom" secondItem="UgB-F5-0m6" secondAttribute="bottom" constant="24" id="x0a-P6-z9U"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="bottomContainerView" destination="Iy7-PQ-G2J" id="HH3-ZW-SC0"/>
-                        <outlet property="continueButton" destination="UgB-F5-0m6" id="Lnt-oN-sk0"/>
-                        <outlet property="firstCheckboxButton" destination="Iq4-7u-K6o" id="yk7-Go-qNU"/>
-                        <outlet property="firstCheckboxLabel" destination="TCD-Tg-8WK" id="4Ug-sV-HBL"/>
-                        <outlet property="scrollView" destination="mkj-uO-jGL" id="3nS-fl-RMK"/>
-                        <outlet property="secondCheckboxButton" destination="C1u-X7-sEV" id="WXF-6a-mdS"/>
-                        <outlet property="secondCheckboxLabel" destination="GGb-T3-beh" id="x5h-vD-jUL"/>
-                        <outlet property="textLabel" destination="Xk1-KC-ytC" id="iCn-uQ-mbC"/>
-                        <outlet property="textTitleLabel" destination="on0-nb-mlJ" id="yxY-Zq-0VO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="5WY-2z-IbO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1618.840579710145" y="186.83035714285714"/>
-        </scene>
         <!--Registration Validation View Controller-->
         <scene sceneID="qPJ-BA-OfN">
             <objects>
-                <viewController storyboardIdentifier="RegistrationValidationViewController" id="g1M-Re-mlt" customClass="RegistrationValidationViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationValidationViewController" id="g1M-Re-mlt" customClass="RegistrationValidationViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5c5-zO-Mqh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -523,36 +367,36 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52U-C4-Zrz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ben-6D-zhk" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ben-6D-zhk" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqG-4P-iN7" customClass="ValidatorView" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="64" y="111" width="286" height="64"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rqG-4P-iN7" customClass="ValidatorView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="64" y="111.5" width="286" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" priority="250" constant="64" id="JUz-qo-D0l"/>
                                                     <constraint firstAttribute="width" priority="750" constant="286" id="na2-if-N0j"/>
                                                 </constraints>
                                             </view>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-mD-GsL" customClass="TextButton" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="199" width="366" height="29"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="juQ-mD-GsL" customClass="TextButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="199.5" width="366" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="Button"/>
                                                 <connections>
                                                     <action selector="resendButtonPressed:" destination="g1M-Re-mlt" eventType="touchUpInside" id="dQn-gZ-yqV"/>
                                                 </connections>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkY-Q0-PVh" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="234" width="366" height="14.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jkY-Q0-PVh" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="234.5" width="366" height="14.5"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                 <color key="textColor" name="black500"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAG-qX-pz4" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="272.5" width="366" height="64"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAG-qX-pz4" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="273" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="aOY-TZ-PIa"/>
                                                 </constraints>
@@ -616,7 +460,7 @@
         <!--RegistrationID View Controller-->
         <scene sceneID="mym-8Y-F7O">
             <objects>
-                <viewController storyboardIdentifier="RegistrationIDViewController" id="NsA-V9-JWy" customClass="RegistrationIDViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationIDViewController" id="NsA-V9-JWy" customClass="RegistrationIDViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VST-0G-f7I">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -627,13 +471,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gIS-x4-FCI">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK0-7B-Zf2" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fK0-7B-Zf2" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vu-8B-JBw" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Vu-8B-JBw" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="336" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="7hs-n0-G5p"/>
@@ -645,7 +489,7 @@
                                                     <action selector="continueButtonPressed:" destination="NsA-V9-JWy" eventType="touchUpInside" id="v6u-4V-htE"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLb-49-h9c" customClass="TextFieldWithSelectView" customModule="PRE" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VLb-49-h9c" customClass="TextFieldWithSelectView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="224" width="366" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -700,7 +544,7 @@
         <!--Registration Email View Controller-->
         <scene sceneID="ea5-I4-4nn">
             <objects>
-                <viewController storyboardIdentifier="RegistrationEmailViewController" id="Y6a-bk-j9p" customClass="RegistrationEmailViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationEmailViewController" id="Y6a-bk-j9p" customClass="RegistrationEmailViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9Eg-CX-eTN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -711,13 +555,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y54-L9-ZKf">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xx-dg-vJd" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xx-dg-vJd" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a1-Jk-hZb" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0a1-Jk-hZb" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="336" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="KI6-Wu-m5N"/>
@@ -729,7 +573,7 @@
                                                     <action selector="continueButtonPressed:" destination="Y6a-bk-j9p" eventType="touchUpInside" id="ayl-BH-Wrd"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-Ql-ACR" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxh-Ql-ACR" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="224" width="366" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -784,7 +628,7 @@
         <!--Registration Vehicle View Controller-->
         <scene sceneID="4Uu-MR-k0k">
             <objects>
-                <viewController storyboardIdentifier="RegistrationVehicleViewController" id="cYn-sy-B6z" customClass="RegistrationVehicleViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationVehicleViewController" id="cYn-sy-B6z" customClass="RegistrationVehicleViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="rK0-fk-wbr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -795,14 +639,14 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QQr-CG-zlR">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYC-ep-7Sc" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYC-ep-7Sc" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="PRi-gT-Bir">
-                                                <rect key="frame" x="67" y="127" width="280" height="120"/>
+                                                <rect key="frame" x="67" y="127.5" width="280" height="120"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="280" id="VLC-Ad-iTu"/>
                                                     <constraint firstAttribute="height" priority="250" constant="120" id="rhc-Mv-oMq"/>
@@ -850,7 +694,7 @@
         <!--Registration Plate View Controller-->
         <scene sceneID="eXe-yr-xyQ">
             <objects>
-                <viewController storyboardIdentifier="RegistrationPlateViewController" id="GaQ-7c-eNJ" customClass="RegistrationPlateViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationPlateViewController" id="GaQ-7c-eNJ" customClass="RegistrationPlateViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qh6-LJ-PwB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -861,13 +705,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8B0-uI-JTO">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7J-Fm-opw" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R7J-Fm-opw" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnh-YL-mp5" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnh-YL-mp5" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="336" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="GiJ-wb-EYj"/>
@@ -879,7 +723,7 @@
                                                     <action selector="continueButtonPressed:" destination="GaQ-7c-eNJ" eventType="touchUpInside" id="le0-u6-7q1"/>
                                                 </connections>
                                             </button>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FO4-oS-jSV" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FO4-oS-jSV" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="224" width="366" height="64"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -934,7 +778,7 @@
         <!--Registration Vehicle Info View Controller-->
         <scene sceneID="mhb-bB-Z0r">
             <objects>
-                <viewController storyboardIdentifier="RegistrationVehicleInfoViewController" id="RD1-r6-dTj" customClass="RegistrationVehicleInfoViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationVehicleInfoViewController" id="RD1-r6-dTj" customClass="RegistrationVehicleInfoViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HD2-XV-PY2">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -945,13 +789,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7hj-os-QIr">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-48-HrO" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-48-HrO" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgo-wb-r2T" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgo-wb-r2T" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="710" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="YdP-D1-e6h"/>
@@ -964,9 +808,9 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="YhG-kW-hfy">
-                                                <rect key="frame" x="24" y="95" width="366" height="328"/>
+                                                <rect key="frame" x="24" y="95.5" width="366" height="328"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjw-lA-SX2" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zjw-lA-SX2" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -976,7 +820,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsH-FM-jjj" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsH-FM-jjj" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="88" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -986,7 +830,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roO-XC-KNe" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roO-XC-KNe" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="176" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -996,7 +840,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Tl-EL5" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VSv-Tl-EL5" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="264" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -1063,7 +907,7 @@
         <!--Registration Insurance View Controller-->
         <scene sceneID="x5S-Wq-SQl">
             <objects>
-                <viewController storyboardIdentifier="RegistrationInsuranceViewController" id="DbY-s9-HAG" customClass="RegistrationInsuranceViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationInsuranceViewController" id="DbY-s9-HAG" customClass="RegistrationInsuranceViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0NE-dK-jiU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1082,13 +926,13 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmF-k4-8xg" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                <rect key="frame" x="24" y="210" width="366" height="19"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmF-k4-8xg" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                <rect key="frame" x="24" y="210" width="366" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                 <color key="textColor" name="black600"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoA-62-5O3" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BoA-62-5O3" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="780" width="366" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="lZY-bv-cBJ"/>
@@ -1098,8 +942,8 @@
                                     <action selector="newInsuranceButtonPressed:" destination="DbY-s9-HAG" eventType="touchUpInside" id="4xG-Av-xkg"/>
                                 </connections>
                             </button>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-Ic-rny" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
-                                <rect key="frame" x="24" y="273" width="366" height="64"/>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a0s-Ic-rny" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                <rect key="frame" x="24" y="273.5" width="366" height="64"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="MkB-GQ-0OA"/>
@@ -1143,7 +987,7 @@
         <!--Registration Insurance Info View Controller-->
         <scene sceneID="K9v-4I-Gb5">
             <objects>
-                <viewController storyboardIdentifier="RegistrationInsuranceInfoViewController" id="FsK-ZN-0FS" customClass="RegistrationInsuranceInfoViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationInsuranceInfoViewController" id="FsK-ZN-0FS" customClass="RegistrationInsuranceInfoViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4aQ-r3-VOl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1154,13 +998,13 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lag-5I-pnz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzh-df-cov" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="44" width="366" height="19"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tzh-df-cov" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="44" width="366" height="19.5"/>
                                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                                 <color key="textColor" name="black600"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bET-dg-CeU" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bET-dg-CeU" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="630" width="366" height="64"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="64" id="tpu-Xc-CAO"/>
@@ -1173,9 +1017,9 @@
                                                 </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="yUH-lQ-k3w">
-                                                <rect key="frame" x="24" y="95" width="366" height="328"/>
+                                                <rect key="frame" x="24" y="95.5" width="366" height="328"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psU-uO-3ig" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="psU-uO-3ig" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="0.0" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -1185,7 +1029,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-r3-fma" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xn8-r3-fma" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="88" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -1195,7 +1039,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuP-9R-Asp" customClass="TextFieldWithSelectView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iuP-9R-Asp" customClass="TextFieldWithSelectView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="176" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -1205,7 +1049,7 @@
                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="showSuccess" value="YES"/>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akV-cC-WHp" customClass="TextFieldView" customModule="PRE" customModuleProvider="target">
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="akV-cC-WHp" customClass="TextFieldView" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="264" width="366" height="64"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <constraints>
@@ -1217,7 +1061,7 @@
                                                     </view>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm1-Y9-F8a" customClass="TextButton" customModule="PRE" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nm1-Y9-F8a" customClass="TextButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                                 <rect key="frame" x="24" y="738" width="366" height="32"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                 <state key="normal" title="Button"/>
@@ -1282,121 +1126,10 @@
             </objects>
             <point key="canvasLocation" x="3077" y="889"/>
         </scene>
-        <!--Registration Color View Controller-->
-        <scene sceneID="0hJ-Cb-rbv">
-            <objects>
-                <viewController storyboardIdentifier="RegistrationColorViewController" id="RWy-pL-v3N" customClass="RegistrationColorViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5Bc-Pn-It3">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LfV-AQ-aMj">
-                                <rect key="frame" x="0.0" y="48" width="414" height="814"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="btn-Hk-r0R">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Car=Black" translatesAutoresizingMaskIntoConstraints="NO" id="SLB-qk-SWh">
-                                                <rect key="frame" x="147" y="82" width="120" height="120"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="120" id="Qin-YF-PeJ"/>
-                                                    <constraint firstAttribute="width" constant="120" id="w6x-9o-djt"/>
-                                                </constraints>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZP-S1-wan" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="284" width="366" height="19"/>
-                                                <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
-                                                <color key="textColor" name="black600"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhe-Pg-Tp6" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="630" width="366" height="64"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="64" id="3lN-eI-ot6"/>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="Qih-Zd-G6w"/>
-                                                </constraints>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="continueButtonPressed:" destination="RWy-pL-v3N" eventType="touchUpInside" id="BG7-Ln-nmP"/>
-                                                    <action selector="continueButtonPressed:" destination="sn6-JH-dOb" eventType="touchUpInside" id="Y2S-JK-1ar"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cs4-bu-kt1" customClass="TextButton" customModule="PRE" customModuleProvider="target">
-                                                <rect key="frame" x="24" y="738" width="366" height="32"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                                <state key="normal" title="Button"/>
-                                                <connections>
-                                                    <action selector="SignInButtonPressed:" destination="sn6-JH-dOb" eventType="touchUpInside" id="7Te-ai-A1o"/>
-                                                    <action selector="laterButtonPressed:" destination="RWy-pL-v3N" eventType="touchUpInside" id="mR6-wL-P2T"/>
-                                                </connections>
-                                            </button>
-                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="7rs-pa-9eS">
-                                                <rect key="frame" x="75" y="327" width="264" height="60"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="264" id="EWg-Ao-Hfp"/>
-                                                    <constraint firstAttribute="height" priority="250" constant="60" id="XpU-Xr-O3h"/>
-                                                </constraints>
-                                            </stackView>
-                                        </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstItem="SLB-qk-SWh" firstAttribute="top" secondItem="btn-Hk-r0R" secondAttribute="top" constant="82" id="0Q5-f1-RZ5"/>
-                                            <constraint firstAttribute="trailing" secondItem="Qhe-Pg-Tp6" secondAttribute="trailing" constant="24" id="15b-8c-6Eb"/>
-                                            <constraint firstAttribute="bottom" secondItem="cs4-bu-kt1" secondAttribute="bottom" constant="44" id="1r0-Sn-igO"/>
-                                            <constraint firstItem="cs4-bu-kt1" firstAttribute="leading" secondItem="btn-Hk-r0R" secondAttribute="leading" constant="24" id="5Xa-yw-KAx"/>
-                                            <constraint firstItem="NZP-S1-wan" firstAttribute="leading" secondItem="btn-Hk-r0R" secondAttribute="leading" constant="24" id="8QL-OL-EvQ"/>
-                                            <constraint firstItem="NZP-S1-wan" firstAttribute="leading" secondItem="btn-Hk-r0R" secondAttribute="leading" constant="24" id="CGQ-b9-b4N"/>
-                                            <constraint firstItem="7rs-pa-9eS" firstAttribute="top" secondItem="NZP-S1-wan" secondAttribute="bottom" constant="24" id="Jpf-bK-GVQ"/>
-                                            <constraint firstItem="Qhe-Pg-Tp6" firstAttribute="leading" secondItem="btn-Hk-r0R" secondAttribute="leading" constant="24" id="KcA-6v-1HH"/>
-                                            <constraint firstAttribute="trailing" secondItem="NZP-S1-wan" secondAttribute="trailing" constant="24" id="Rks-ok-BmC"/>
-                                            <constraint firstAttribute="trailing" secondItem="Qhe-Pg-Tp6" secondAttribute="trailing" constant="24" id="ShF-Ah-nkH"/>
-                                            <constraint firstAttribute="trailing" secondItem="NZP-S1-wan" secondAttribute="trailing" constant="24" id="Vos-dj-Xon"/>
-                                            <constraint firstItem="NZP-S1-wan" firstAttribute="top" secondItem="SLB-qk-SWh" secondAttribute="bottom" constant="82" id="Wkj-gS-e2h"/>
-                                            <constraint firstItem="Qhe-Pg-Tp6" firstAttribute="leading" secondItem="btn-Hk-r0R" secondAttribute="leading" constant="24" id="Zjo-td-njt"/>
-                                            <constraint firstItem="7rs-pa-9eS" firstAttribute="centerX" secondItem="btn-Hk-r0R" secondAttribute="centerX" id="l9G-m0-puH"/>
-                                            <constraint firstItem="Qhe-Pg-Tp6" firstAttribute="top" relation="greaterThanOrEqual" secondItem="7rs-pa-9eS" secondAttribute="bottom" constant="44" id="mb8-qe-Z6s"/>
-                                            <constraint firstItem="SLB-qk-SWh" firstAttribute="centerX" secondItem="btn-Hk-r0R" secondAttribute="centerX" id="pKW-KM-6Nw"/>
-                                            <constraint firstAttribute="trailing" secondItem="cs4-bu-kt1" secondAttribute="trailing" constant="24" id="pyU-y3-pMk"/>
-                                            <constraint firstItem="cs4-bu-kt1" firstAttribute="top" secondItem="Qhe-Pg-Tp6" secondAttribute="bottom" constant="44" id="rpY-Bp-M8s"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="btn-Hk-r0R" firstAttribute="height" secondItem="LfV-AQ-aMj" secondAttribute="height" priority="250" id="LrF-vF-Wiy"/>
-                                    <constraint firstAttribute="bottom" secondItem="btn-Hk-r0R" secondAttribute="bottom" id="Nwl-X3-ZgX"/>
-                                    <constraint firstItem="btn-Hk-r0R" firstAttribute="width" secondItem="LfV-AQ-aMj" secondAttribute="width" id="UHo-Bl-7bv"/>
-                                    <constraint firstAttribute="trailing" secondItem="btn-Hk-r0R" secondAttribute="trailing" id="aU7-5M-Oly"/>
-                                    <constraint firstItem="btn-Hk-r0R" firstAttribute="leading" secondItem="LfV-AQ-aMj" secondAttribute="leading" id="l2X-uL-Agm"/>
-                                    <constraint firstItem="btn-Hk-r0R" firstAttribute="top" secondItem="LfV-AQ-aMj" secondAttribute="top" id="w1O-ZL-NSc"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="9Gh-4q-7Vr"/>
-                        <color key="backgroundColor" name="incidence100"/>
-                        <constraints>
-                            <constraint firstItem="9Gh-4q-7Vr" firstAttribute="bottom" secondItem="LfV-AQ-aMj" secondAttribute="bottom" id="0QN-Sf-kr8"/>
-                            <constraint firstItem="LfV-AQ-aMj" firstAttribute="top" secondItem="9Gh-4q-7Vr" secondAttribute="top" id="SWt-RD-V3a"/>
-                            <constraint firstItem="LfV-AQ-aMj" firstAttribute="leading" secondItem="5Bc-Pn-It3" secondAttribute="leading" id="q5t-qO-Q02"/>
-                            <constraint firstItem="9Gh-4q-7Vr" firstAttribute="trailing" secondItem="LfV-AQ-aMj" secondAttribute="trailing" id="zhy-GV-DB0"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="carImageView" destination="SLB-qk-SWh" id="hrC-c2-Roz"/>
-                        <outlet property="continueButton" destination="Qhe-Pg-Tp6" id="QBB-IQ-IGe"/>
-                        <outlet property="helperLabel" destination="NZP-S1-wan" id="0Ei-et-jcT"/>
-                        <outlet property="laterButton" destination="cs4-bu-kt1" id="ZOA-9A-PVz"/>
-                        <outlet property="stackView" destination="7rs-pa-9eS" id="Sq8-wN-680"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="QL9-8i-Kyk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3783" y="889"/>
-        </scene>
         <!--Registration Beacon View Controller-->
         <scene sceneID="aj2-SP-Vmk">
             <objects>
-                <viewController storyboardIdentifier="RegistrationBeaconViewController" id="EZz-iK-9gM" customClass="RegistrationBeaconViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationBeaconViewController" id="EZz-iK-9gM" customClass="RegistrationBeaconViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3DF-1j-ZEr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1410,13 +1143,13 @@
                                             <constraint firstAttribute="width" secondItem="g8D-4j-xgq" secondAttribute="height" multiplier="1500:2056" id="tq2-PQ-I0i"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1r-eN-jFs" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="24" width="366" height="16.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z1r-eN-jFs" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="24" width="366" height="17"/>
                                         <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="14"/>
                                         <color key="textColor" name="black600"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMh-sC-jBA" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gMh-sC-jBA" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="24" y="630" width="366" height="64"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="64" id="0Se-TC-ZjE"/>
@@ -1428,7 +1161,7 @@
                                             <action selector="continueButtonPressed:" destination="EZz-iK-9gM" eventType="touchUpInside" id="K7Z-na-mff"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-Hd-0Xt" customClass="TextButton" customModule="PRE" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIT-Hd-0Xt" customClass="TextButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="24" y="738" width="366" height="32"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" title="Button"/>
@@ -1438,14 +1171,14 @@
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wBf-YQ-ze2">
-                                        <rect key="frame" x="117" y="126.5" width="180" height="180"/>
+                                        <rect key="frame" x="117" y="127" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="4UQ-lf-Xou"/>
                                             <constraint firstAttribute="width" constant="180" id="GMt-5W-f8A"/>
                                         </constraints>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cn-49-hFB" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
-                                        <rect key="frame" x="24" y="390.5" width="366" height="19.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cn-49-hFB" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="391" width="366" height="19.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" name="black500"/>
                                         <nil key="highlightedColor"/>
@@ -1505,12 +1238,12 @@
         <!--Registration Success Beacon View Controller-->
         <scene sceneID="5W1-uK-hpy">
             <objects>
-                <viewController storyboardIdentifier="RegistrationSuccessBeaconViewController" id="oGh-y4-MGs" customClass="RegistrationSuccessBeaconViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationSuccessBeaconViewController" id="oGh-y4-MGs" customClass="RegistrationSuccessBeaconViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jd9-JH-BMR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUh-ja-tcB" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lUh-ja-tcB" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="754" width="366" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="NPe-Md-TzF"/>
@@ -1520,13 +1253,13 @@
                                     <action selector="continueButtonPressed:" destination="oGh-y4-MGs" eventType="touchUpInside" id="X6n-fK-mUz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-LV-Adx" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E7V-LV-Adx" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="674.5" width="366" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" name="black500"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8c-Q3-zjU" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G8c-Q3-zjU" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="635" width="366" height="19.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <color key="textColor" name="black600"/>
@@ -1575,7 +1308,7 @@
         <!--Registration Success View Controller-->
         <scene sceneID="y9g-OJ-BCg">
             <objects>
-                <viewController storyboardIdentifier="RegistrationSuccessViewController" id="tJd-Tn-nme" customClass="RegistrationSuccessViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationSuccessViewController" id="tJd-Tn-nme" customClass="RegistrationSuccessViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c91-3G-7pB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1600,13 +1333,13 @@
                                             <constraint firstAttribute="width" constant="24" id="o68-kB-QIj"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-Zl-ng4" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLh-Zl-ng4" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="44" y="1.5" width="282" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="white"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rs-bz-Xw1" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Rs-bz-Xw1" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="44" y="68" width="282" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="white"/>
@@ -1629,7 +1362,7 @@
                                             <constraint firstAttribute="trailing" secondItem="l7l-gV-6cw" secondAttribute="trailing" id="evE-te-267"/>
                                         </constraints>
                                     </view>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83V-Uj-2ip" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="83V-Uj-2ip" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                         <rect key="frame" x="44" y="137.5" width="282" height="21.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <color key="textColor" name="white"/>
@@ -1674,7 +1407,7 @@
                                     <constraint firstItem="83V-Uj-2ip" firstAttribute="centerY" secondItem="ydb-U7-aOU" secondAttribute="centerY" id="vpk-6u-Xbk"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGL-6R-aId" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CGL-6R-aId" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="44" y="81" width="346" height="41"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" name="white"/>
@@ -1689,7 +1422,7 @@
                                     <constraint firstAttribute="width" secondItem="uCr-4H-9CW" secondAttribute="height" multiplier="1:1.35" id="Wql-qk-WYG"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRu-Cf-80Q" customClass="PrimaryButton" customModule="PRE" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aRu-Cf-80Q" customClass="PrimaryButton" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="754" width="366" height="64"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="64" id="4Bi-Ow-UjR"/>
@@ -1740,12 +1473,12 @@
         <!--Registration Beacon Select Type View Controller-->
         <scene sceneID="YJa-5O-6Ea">
             <objects>
-                <viewController storyboardIdentifier="RegistrationBeaconSelectTypeViewController" id="WBn-St-IFP" customClass="RegistrationBeaconSelectTypeViewController" customModule="PRE" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegistrationBeaconSelectTypeViewController" id="WBn-St-IFP" customClass="RegistrationBeaconSelectTypeViewController" customModule="IncidenceLibraryIOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2RW-2H-Ge8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxi-yI-K4Q" customClass="TextLabel" customModule="PRE" customModuleProvider="target">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxi-yI-K4Q" customClass="TextLabel" customModule="IncidenceLibraryIOS" customModuleProvider="target">
                                 <rect key="frame" x="24" y="92" width="366" height="19.5"/>
                                 <fontDescription key="fontDescription" name="Silka-Regular" family="Silka" pointSize="16"/>
                                 <color key="textColor" name="black600"/>
@@ -1794,7 +1527,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Car=Black" width="40" height="40"/>
         <image name="CheckCircleLine" width="24" height="24"/>
         <image name="Ellipse" width="216" height="293"/>
         <image name="background" width="1500" height="2056"/>

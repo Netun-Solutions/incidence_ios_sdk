@@ -13,7 +13,7 @@ class RegistrationVehicleViewModel: IABaseViewModel {
     public var fromBeacon = false
 
     public override var navigationTitle: String? {
-        get { return "create_account_step2".localized() }
+        get { return "incidence_key_create_account_step2".localized() }
         set { }
     }
     
@@ -24,7 +24,7 @@ class RegistrationVehicleViewModel: IABaseViewModel {
     }
     
     lazy var helperLabelText: String = {
-        return "select_type_vechicle".localized()
+        return "incidence_key_select_type_vechicle".localized()
     }()
     
 }

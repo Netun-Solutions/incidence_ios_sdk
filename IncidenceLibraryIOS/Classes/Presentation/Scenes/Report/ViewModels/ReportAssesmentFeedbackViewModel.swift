@@ -20,12 +20,12 @@ class ReportAssesmentFeedbackViewModel: IABaseViewModel {
     }
     
     public override var navigationTitle: String? {
-        get { return "service_valoration".localized() }
+        get { return "incidence_key_service_valoration".localized() }
         set { }
     }
 
-    let descriptionText: String = "ask_valoration_comment".localized()
-    let placeholderText: String = "write_comment".localized()
-    let continueText: String = "send_valoration".localized()
+    let descriptionText: String = "incidence_key_ask_valoration_comment".localized()
+    let placeholderText: String = "incidence_key_write_comment".localized()
+    let continueText: String = "incidence_key_send_valoration".localized()
 }
 

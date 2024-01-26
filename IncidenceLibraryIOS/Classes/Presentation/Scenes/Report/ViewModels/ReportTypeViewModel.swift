@@ -38,13 +38,13 @@ public class ReportTypeViewModel: IABaseViewModel {
         self.flowComplete = flowComplete
     }
     public override var navigationTitle: String? {
-        get { return "report_incidence".localized() }
+        get { return "incidence_key_report_incidence".localized() }
         set { }
     }
 
-    let titleText: String = "report_ask_what".localized()
-    let descriptionText: String = "report_ask_what_descrip".localized()
-    let breakdownButtonText: String = "fault".localized()
-    let accidentButtonText: String = "accident".localized()
-    let cancelButtonText: String = "cancel".localized()
+    let titleText: String = "incidence_key_report_ask_what".localized()
+    let descriptionText: String = "incidence_key_report_ask_what_descrip".localized()
+    let breakdownButtonText: String = "incidence_key_fault".localized()
+    let accidentButtonText: String = "incidence_key_accident".localized()
+    let cancelButtonText: String = "incidence_key_cancel".localized()
 }

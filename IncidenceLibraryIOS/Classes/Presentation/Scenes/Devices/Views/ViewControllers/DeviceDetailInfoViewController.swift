@@ -40,8 +40,8 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     private var viewModel: DeviceDetailSdkViewModel! { get { return baseViewModel as? DeviceDetailSdkViewModel }}
     
     lazy var alertStopDeviceView: UIView = {
-        let customTitleText = "stop_device".localized()
-        let customSubtitleText = "stop_device_desc".localized()
+        let customTitleText = "incidence_key_stop_device".localized()
+        let customSubtitleText = "incidence_key_stop_device_desc".localized()
         
         let x = 30.0;
         let y = view.frame.y + 90;
@@ -114,9 +114,9 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     }()
     
     lazy var alertNewIncidenceView: UIView = {
-        let customTitleText = "alert_new_incidence_title".localized()
-        let customSubtitleText = "alert_new_incidence_subtitle".localized()
-        let customAlertText = "report_incidence".localized()
+        let customTitleText = "incidence_key_alert_new_incidence_title".localized()
+        let customSubtitleText = "incidence_key_alert_new_incidence_subtitle".localized()
+        let customAlertText = "incidence_key_report_incidence".localized()
         
         let x = 30.0;
         let y = view.frame.y + 90;
@@ -231,7 +231,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     override func setUpUI() {
         super.setUpUI()
         
-        titleLabel.text = "start_device".localized()
+        titleLabel.text = "incidence_key_start_device".localized()
         titleLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0, aligment: .center)
         
         timeLabel.text = "01:30"
@@ -251,7 +251,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         }       
         
         
-        backButton.setTitle("return_back".localized(), for: .normal)
+        backButton.setTitle("incidence_key_return_back".localized(), for: .normal)
         backButton.addTarget(self, action: #selector(onClickReturn), for: .touchUpInside)
         
         tableView.delegate = self
@@ -455,12 +455,12 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
     }
     
     func showAlertFinishTimer() {
-        let alertController: UIAlertController = UIAlertController(title: "start_device_without_network".localized(), message: "start_device_without_network_desc".localized(), preferredStyle: .alert)
-        let firstAction: UIAlertAction = UIAlertAction(title: "accept".localized(), style: .default) { action -> Void in
+        let alertController: UIAlertController = UIAlertController(title: "incidence_key_start_device_without_network".localized(), message: "incidence_key_start_device_without_network_desc".localized(), preferredStyle: .alert)
+        let firstAction: UIAlertAction = UIAlertAction(title: "incidence_key_accept".localized(), style: .default) { action -> Void in
             self.startCountDownTimer();
         }
 
-        let cancelAction: UIAlertAction = UIAlertAction(title: "cancel".localized(), style: .default) { action -> Void in
+        let cancelAction: UIAlertAction = UIAlertAction(title: "incidence_key_cancel".localized(), style: .default) { action -> Void in
             self.onClickReturn();
             
         }
@@ -492,8 +492,8 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
             txtSubTitleBattery.setText(battery + " %");
          */
         
-        fechaTextFieldView.configure(titleText: "device_expiration".localized(), valueText: expirationDate);
-        batteryExpirationView.configure(titleText: "device_battery_status".localized(), progress: battery , alert: alert, completion: {
+        fechaTextFieldView.configure(titleText: "incidence_key_device_expiration".localized(), valueText: expirationDate);
+        batteryExpirationView.configure(titleText: "incidence_key_device_battery_status".localized(), progress: battery , alert: alert, completion: {
             if let device = self.viewModel.device {
                 
                 let deviceModel: DeviceDetailViewModel = DeviceDetailViewModel(device: device, useName: true)

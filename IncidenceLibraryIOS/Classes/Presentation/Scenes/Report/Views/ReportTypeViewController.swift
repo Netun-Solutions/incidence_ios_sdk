@@ -19,17 +19,17 @@ enum ReportViewSpeechRecognizion: CaseIterable {
     func getLocalizedText() -> String {
         switch self {
         case .faultNumber:
-            return "one".localizedVoice()
+            return "incidence_key_one".localizedVoice()
         case .fault:
-            return "fault".localizedVoice()
+            return "incidence_key_fault".localizedVoice()
         case .accidentNumber:
-            return "two".localizedVoice()
+            return "incidence_key_two".localizedVoice()
         case .accident:
-            return "accident".localizedVoice()
+            return "incidence_key_accident".localizedVoice()
         case .cancelNumber:
-            return "three".localizedVoice()
+            return "incidence_key_three".localizedVoice()
         case .cancel:
-            return "cancel".localizedVoice()
+            return "incidence_key_cancel".localizedVoice()
         }
     }
 }
@@ -37,8 +37,8 @@ enum ReportViewSpeechRecognizion: CaseIterable {
 public class ReportTypeViewController: ReportBaseViewController, StoryboardInstantiable, SpeechReconizable {
     public var voiceDialogs: [String] {
         get {
-            var array = ["report_ask_what".localizedVoice(),
-                         "report_ask_what_descrip".localizedVoice()]
+            var array = ["incidence_key_report_ask_what".localizedVoice(),
+                         "incidence_key_report_ask_what_descrip".localizedVoice()]
             array.append(contentsOf: speechRecognizion)
             return array
         }

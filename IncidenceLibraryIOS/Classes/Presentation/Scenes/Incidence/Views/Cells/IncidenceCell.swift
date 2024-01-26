@@ -72,9 +72,9 @@ class IncidenceCell: UITableViewCell {
         dateLabel.text = model.dateCreated
         addressLabel.text = model.street
         
-        let otherStr = model.isCanceled() ? "incidence_status_canceled".localized() : "incidence_status_active".localized()
+        let otherStr = model.isCanceled() ? "incidence_key_incidence_status_canceled".localized() : "incidence_key_incidence_status_active".localized()
         let otherColor = model.isCanceled() ? UIColor.app(.errorPrimary) : UIColor.app(.incidencePrimary)
-        badgeView.configure(titleText: model.isClosed() ? "incidence_status_closed".localized() : otherStr, badgeColor: model.isClosed() ? UIColor.app(.success) : otherColor)
+        badgeView.configure(titleText: model.isClosed() ? "incidence_key_incidence_status_closed".localized() : otherStr, badgeColor: model.isClosed() ? UIColor.app(.success) : otherColor)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

@@ -11,7 +11,7 @@ import Foundation
 class EcommerceViewModel: IABaseViewModel {
     
     public override var navigationTitle: String? {
-        get { return "buy_beacon".localized() }
+        get { return "incidence_key_buy_beacon".localized() }
         set { }
     }
     

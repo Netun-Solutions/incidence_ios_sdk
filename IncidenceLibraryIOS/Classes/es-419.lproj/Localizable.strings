@@ -6,149 +6,149 @@
   
 */
 /*  */
-"app_name" = "IncidenceAPP";
+"incidence_key_app_name" = "IncidenceAPP";
 
 /*  */
-"nombre_app" = "IncidenceAPP";
+"incidence_key_nombre_app" = "IncidenceAPP";
 
 /*  */
-"welcome_slide_1_title" = "Crea una cuenta";
+"incidence_key_welcome_slide_1_title" = "Crea una cuenta";
 
 /*  */
-"welcome_slide_1_subtitle" = "Añade tus datos personales, los datos de tu vehículo y tu seguro";
+"incidence_key_welcome_slide_1_subtitle" = "Añade tus datos personales, los datos de tu vehículo y tu seguro";
 
 /*  */
-"welcome_slide_2_title" = "Sincroniza tu baliza";
+"incidence_key_welcome_slide_2_title" = "Sincroniza tu baliza";
 
 /*  */
-"welcome_slide_2_subtitle" = "Activa tu localización y vincula tu baliza Help Flash u otros dispositivos compatibles";
+"incidence_key_welcome_slide_2_subtitle" = "Activa tu localización y vincula tu baliza Help Flash u otros dispositivos compatibles";
 
 /*  */
-"welcome_slide_3_title" = "Reporta incidencias";
+"incidence_key_welcome_slide_3_title" = "Reporta incidencias";
 
 /*  */
-"welcome_slide_3_subtitle" = "Recibe asistencia en carretera en caso de avería o llamaremos a emergencias en caso de accidente";
+"incidence_key_welcome_slide_3_subtitle" = "Recibe asistencia en carretera en caso de avería o llamaremos a emergencias en caso de accidente";
 
 /*  */
-"next" = "Siguiente";
+"incidence_key_next" = "Siguiente";
 
 /*  */
-"create_account" = "Crear cuenta";
+"incidence_key_create_account" = "Crear cuenta";
 
 /*  */
-"create_one_account" = "Crear una cuenta";
+"incidence_key_create_one_account" = "Crear una cuenta";
 
 /*  */
-"create_new_account" = "Crear nueva cuenta";
+"incidence_key_create_new_account" = "Crear nueva cuenta";
 
 /*  */
-"create_account_step1" = "Datos personales";
+"incidence_key_create_account_step1" = "Datos personales";
 
 /*  */
-"create_account_step2" = "Vehículo y seguro";
+"incidence_key_create_account_step2" = "Vehículo y seguro";
 
 /*  */
-"create_account_step3" = "Sincronización con baliza";
+"incidence_key_create_account_step3" = "Sincronización con baliza";
 
 /*  */
-"already_have_account" = "¿Ya tienes una cuenta?";
+"incidence_key_already_have_account" = "¿Ya tienes una cuenta?";
 
 /*  */
-"already_not_have_account" = "¿Aún no tienes una cuenta?";
+"incidence_key_already_not_have_account" = "¿Aún no tienes una cuenta?";
 
 /*  */
-"sign_in" = "Iniciar sesión";
+"incidence_key_sign_in" = "Iniciar sesión";
 
 /*  */
-"sign_out" = "Cerrar sesión";
+"incidence_key_sign_out" = "Cerrar sesión";
 
 /*  */
-"sign_out_message" = "¿Quieres cerrar sesión?";
+"incidence_key_sign_out_message" = "¿Quieres cerrar sesión?";
 
 /*  */
-"sign_out_on_device" = "¿Quieres cerrar sesión en %@?";
+"incidence_key_sign_out_on_device" = "¿Quieres cerrar sesión en %@?";
 
 /*  */
-"delete_account" = "Eliminar cuenta";
+"incidence_key_delete_account" = "Eliminar cuenta";
 
 /*  */
-"delete_account_message" = "¿Quieres eliminar tu cuenta?\nSi eliminas tu cuenta, se borrará toda tu información de nuestra base de datos.";
+"incidence_key_delete_account_message" = "¿Quieres eliminar tu cuenta?\nSi eliminas tu cuenta, se borrará toda tu información de nuestra base de datos.";
 
 /*  */
-"my_data" = "Mis datos";
+"incidence_key_my_data" = "Mis datos";
 
 /*  */
-"active_sessions" = "Sesiones activas";
+"incidence_key_active_sessions" = "Sesiones activas";
 
 /*  */
-"notifications" = "Notificaciones";
+"incidence_key_notifications" = "Notificaciones";
 
 /*  */
-"help" = "Ayuda";
+"incidence_key_help" = "Ayuda";
 
 /*  */
-"continuar" = "Continuar";
+"incidence_key_continuar" = "Continuar";
 
 /*  */
-"acepto" = "Acepto";
+"incidence_key_acepto" = "Acepto";
 
 /*  */
-"sign_in_phone" = "Iniciar sesión con teléfono";
+"incidence_key_sign_in_phone" = "Iniciar sesión con teléfono";
 
 /*  */
-"sign_in_email" = "Iniciar sesión con correo electrónico";
+"incidence_key_sign_in_email" = "Iniciar sesión con correo electrónico";
 
 /*  */
-"sign_in_phone_change" = "Iniciar con teléfono";
+"incidence_key_sign_in_phone_change" = "Iniciar con teléfono";
 
 /*  */
-"sign_in_email_change" = "Iniciar con correo electrónico";
+"incidence_key_sign_in_email_change" = "Iniciar con correo electrónico";
 
 /*  */
-"hola_nombre" = "¡Hola, %@!";
+"incidence_key_hola_nombre" = "¡Hola, %@!";
 
 /*  */
-"hola" = "¡Hola!";
+"incidence_key_hola" = "¡Hola!";
 
 /*  */
-"name_surname_title" = "Añade tu nombre y apellidos";
+"incidence_key_name_surname_title" = "Añade tu nombre y apellidos";
 
 /*  */
-"name_surname" = "Nombre y Apellidos";
+"incidence_key_name_surname" = "Nombre y Apellidos";
 
 /*  */
-"phone_title" = "Te enviaremos un mensaje de texto para verificar tu número";
+"incidence_key_phone_title" = "Te enviaremos un mensaje de texto para verificar tu número";
 
-"email_title" = "Te enviaremos un correo electrónico para verificar tu cuenta";
-
-/*  */
-"phone" = "Teléfono";
+"incidence_key_email_title" = "Te enviaremos un correo electrónico para verificar tu cuenta";
 
 /*  */
-"mobile_phone" = "Teléfono móvil";
+"incidence_key_phone" = "Teléfono";
 
 /*  */
-"nif_title" = "Añade tu documento de identidad";
+"incidence_key_mobile_phone" = "Teléfono móvil";
 
 /*  */
-"nif" = "DNI";
-"nie" = "NIE";
-"cif" = "CIF";
+"incidence_key_nif_title" = "Añade tu documento de identidad";
 
 /*  */
-"nif_doc_identity" = "Documento de identidad";
+"incidence_key_nif" = "DNI";
+"incidence_key_nie" = "NIE";
+"incidence_key_cif" = "CIF";
 
 /*  */
-"email_title_signup" = "Por último, añade tu correo electrónico para completar tu perfil";
+"incidence_key_nif_doc_identity" = "Documento de identidad";
 
 /*  */
-"email" = "Correo electrónico";
+"incidence_key_email_title_signup" = "Por último, añade tu correo electrónico para completar tu perfil";
 
 /*  */
-"privacy" = "Política de privacidad";
+"incidence_key_email" = "Correo electrónico";
 
 /*  */
-"terms_description" = "<h1>Política de Privacidad de Datos Personales</h1>
+"incidence_key_privacy" = "Política de privacidad";
+
+/*  */
+"incidence_key_terms_description" = "<h1>Política de Privacidad de Datos Personales</h1>
 
 <p>En cumplimiento de la normativa vigente en materia de protección de datos, Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 (GDPR), Ley Orgánica de Protección de Datos y Garantía de Derechos Digitales (LOPDGDD, Ley 3/2018 de 5 de diciembre), le informamos de la Política de Privacidad de Datos Personales, en lo que se refiere al tratamiento de los datos personales de la misma.</p>
 
@@ -383,612 +383,612 @@ Todo ello sin perjuicio de que dicho plazo pueda ampliarse, cuando usted así lo
 ";
 
 /*  */
-"terms_check1" = "Acepto las condiciones de uso y política de privacidad";
+"incidence_key_terms_check1" = "Acepto las condiciones de uso y política de privacidad";
 
 /*  */
-"terms_check2" = "Autorizo el envío de información para la comunicación de mejoras en la aplicación, nuevos productos y servicios desarrollados por INCIDENCE CLOUD, S.L.";
+"incidence_key_terms_check2" = "Autorizo el envío de información para la comunicación de mejoras en la aplicación, nuevos productos y servicios desarrollados por INCIDENCE CLOUD, S.L.";
 
 /*  */
-"sms_introduce" = "Introduce el código que has recibido en un SMS";
+"incidence_key_sms_introduce" = "Introduce el código que has recibido en un SMS";
 
 /*  */
-"sms_introduce_email" = "Introduce el código que has recibido en un e-mail";
+"incidence_key_sms_introduce_email" = "Introduce el código que has recibido en un e-mail";
 
 /*  */
-"sms_resend" = "Enviar código de nuevo";
+"incidence_key_sms_resend" = "Enviar código de nuevo";
 
 /*  */
-"sms_caducity_time" = "El código caducará en %02d:%02d";
+"incidence_key_sms_caducity_time" = "El código caducará en %02d:%02d";
 
 /*  */
-"sms_validate" = "Validar código";
+"incidence_key_sms_validate" = "Validar código";
 
-"sms_code_timed_out" = "El código ha caducado";
+"incidence_key_sms_code_timed_out" = "El código ha caducado";
 
 /*  */
-"dni" = "DNI";
+"incidence_key_dni" = "DNI";
 
 /*  */
-"hint_phone" = "666 666 666";
+"incidence_key_hint_phone" = "666 666 666";
 
 /*  */
-"hint_dni" = "12345678A";
+"incidence_key_hint_dni" = "12345678A";
 
 /*  */
-"hint_email" = "lucia@gmail.com";
+"incidence_key_hint_email" = "lucia@gmail.com";
 
 /*  */
-"vehicle_data" = "Datos del vehículo";
+"incidence_key_vehicle_data" = "Datos del vehículo";
 
 /*  */
-"select_type_vechicle" = "Selecciona el tipo de vehículo";
+"incidence_key_select_type_vechicle" = "Selecciona el tipo de vehículo";
 
 /*  */
-"add_matricula_title" = "Introduce la matrícula de tu vehículo habitual";
+"incidence_key_add_matricula_title" = "Introduce la matrícula de tu vehículo habitual";
 
 /*  */
-"matricula" = "Matrícula";
+"incidence_key_matricula" = "Matrícula";
 
 /*  */
-"check_vehicle_data_correct" = "Rellena los datos de tu vehículo";
+"incidence_key_check_vehicle_data_correct" = "Rellena los datos de tu vehículo";
 
 /*  */
-"matricula_year_optional" = "Año de matriculación (opcional)";
+"incidence_key_matricula_year_optional" = "Año de matriculación (opcional)";
 
 /*  */
-"matricula_year" = "Año de matriculación";
+"incidence_key_matricula_year" = "Año de matriculación";
 
 /*  */
-"brand" = "Marca";
+"incidence_key_brand" = "Marca";
 
 /*  */
-"model" = "Modelo";
+"incidence_key_model" = "Modelo";
 
 /*  */
-"name" = "Nombre";
+"incidence_key_name" = "Nombre";
 
 /*  */
-"select_vehicle_color" = "Selecciona el color de tu vehículo";
+"incidence_key_select_vehicle_color" = "Selecciona el color de tu vehículo";
 
 /*  */
-"add_later" = "Añadir más tarde";
+"incidence_key_add_later" = "Añadir más tarde";
 
 /*  */
-"later" = "Más tarde";
+"incidence_key_later" = "Más tarde";
 
 /*  */
-"search_insurance" = "Busca tu aseguradora";
+"incidence_key_search_insurance" = "Busca tu aseguradora";
 
 /*  */
-"featured_insurance" = "ASEGURADORAS DESTACADAS";
+"incidence_key_featured_insurance" = "ASEGURADORAS DESTACADAS";
 
 /*  */
-"list_insurance" = "LISTADO DE ASEGURADORAS";
+"incidence_key_list_insurance" = "LISTADO DE ASEGURADORAS";
 
 /*  */
-"complete_insurance_data" = "Completa los datos de tu seguro";
+"incidence_key_complete_insurance_data" = "Completa los datos de tu seguro";
 
 /*  */
-"company_insurance" = "Compañia de seguros";
+"incidence_key_company_insurance" = "Compañia de seguros";
 
 /*  */
-"company_insurance_number" = "Número de póliza";
+"incidence_key_company_insurance_number" = "Número de póliza";
 
 /*  */
-"company_insurance_titular" = "Titular de la póliza";
+"incidence_key_company_insurance_titular" = "Titular de la póliza";
 
 /*  */
-"company_insurance_caducity" = "Caducidad de la póliza";
+"incidence_key_company_insurance_caducity" = "Caducidad de la póliza";
 
 /*  */
-"caducity" = "Caducidad";
+"incidence_key_caducity" = "Caducidad";
 
 /*  */
-"caducity_insurance_date_near" = "La fecha de caducidad de tu póliza está cercana";
+"incidence_key_caducity_insurance_date_near" = "La fecha de caducidad de tu póliza está cercana";
 
 /*  */
-"birthday" = "Fecha de nacimiento";
+"incidence_key_birthday" = "Fecha de nacimiento";
 
 /*  */
-"search_baliza" = "Buscar baliza";
+"incidence_key_search_baliza" = "Buscar baliza";
 
 /*  */
-"omitir" = "Omitir";
+"incidence_key_omitir" = "Omitir";
 
 /*  */
-"turn_on_beacon_flash" = "Enciende tu baliza en modo destello";
+"incidence_key_turn_on_beacon_flash" = "Enciende tu baliza en modo destello";
 
 /*  */
-"turn_on_beacon_flash_detected" = "Pulsa sobre la baliza que quieras sincronizar con tu teléfono móvil";
+"incidence_key_turn_on_beacon_flash_detected" = "Pulsa sobre la baliza que quieras sincronizar con tu teléfono móvil";
 
 /*  */
-"select_vehicle_to_link" = "Elige uno de tus vehículos para vincular tu baliza";
+"incidence_key_select_vehicle_to_link" = "Elige uno de tus vehículos para vincular tu baliza";
 
 /*  */
-"search_again" = "Buscar de nuevo";
+"incidence_key_search_again" = "Buscar de nuevo";
 
 /*  */
-"alert_need_bluetooth_title" = "Es necesario activar el bluetooth";
+"incidence_key_alert_need_bluetooth_title" = "Es necesario activar el bluetooth";
 
 /*  */
-"alert_need_bluetooth_description" = "Con ello podrás localizar tu dispositivo";
+"incidence_key_alert_need_bluetooth_description" = "Con ello podrás localizar tu dispositivo";
 
 /*  */
-"accept" = "Aceptar";
+"incidence_key_accept" = "Aceptar";
 
 /*  */
-"cancel" = "Cancelar";
+"incidence_key_cancel" = "Cancelar";
 
 /*  */
-"save" = "Guardar";
+"incidence_key_save" = "Guardar";
 
 /*  */
-"retry" = "Intentar de nuevo";
+"incidence_key_retry" = "Intentar de nuevo";
 
 /*  */
-"settings" = "Ajustes";
+"incidence_key_settings" = "Ajustes";
 
 /*  */
-"beacon_sync_success" = "¡Tu baliza se ha sincronizado con éxito con tu teléfono móvil!";
+"incidence_key_beacon_sync_success" = "¡Tu baliza se ha sincronizado con éxito con tu teléfono móvil!";
 
 /*  */
-"beacon_sync_success_desc" = "La baliza se ha vinculado automáticamente al vehículo que has añadido. En tu perfil podrás añadir otros vehículos y balizas.";
+"incidence_key_beacon_sync_success_desc" = "La baliza se ha vinculado automáticamente al vehículo que has añadido. En tu perfil podrás añadir otros vehículos y balizas.";
 
 /*  */
-"beacon_error_need_bluettoh" = "Es necesario que <b style='color:#303030'>actives tu bluetooth</b> para sincronizar una baliza con tu teléfono móvil. ¿Deseas intentarlo de nuevo?";
+"incidence_key_beacon_error_need_bluettoh" = "Es necesario que <b style='color:#303030'>actives tu bluetooth</b> para sincronizar una baliza con tu teléfono móvil. ¿Deseas intentarlo de nuevo?";
 
 /*  */
-"beacons_not_detected" = "No se han localizado balizas para sincronizar con tu teléfono móvil";
+"incidence_key_beacons_not_detected" = "No se han localizado balizas para sincronizar con tu teléfono móvil";
 
 /*  */
-"no_activate_now" = "No quiero activarlo ahora";
+"incidence_key_no_activate_now" = "No quiero activarlo ahora";
 
 /*  */
-"finish" = "Finalizar";
+"incidence_key_finish" = "Finalizar";
 
 /*  */
-"go_home" = "Ir a inicio";
+"incidence_key_go_home" = "Ir a inicio";
 
 /*  */
-"success_create_your_account" = "¡Tu cuenta se ha creado con éxito!";
+"incidence_key_success_create_your_account" = "¡Tu cuenta se ha creado con éxito!";
 
 /*  */
-"error_matricula_other_user" = "La matrícula del vehículo que has introducido ya ha sido utilizada por otro usuario. ¿Quieres añadirla de todas formas?";
+"incidence_key_error_matricula_other_user" = "La matrícula del vehículo que has introducido ya ha sido utilizada por otro usuario. ¿Quieres añadirla de todas formas?";
 
 /*  */
-"account" = "Cuenta";
+"incidence_key_account" = "Cuenta";
 
 /*  */
-"vehicles" = "Vehículos";
+"incidence_key_vehicles" = "Vehículos";
 
 /*  */
-"incidences" = "Incidencias";
+"incidence_key_incidences" = "Incidencias";
 
 /*  */
-"devices" = "Dispositivos";
+"incidence_key_devices" = "Dispositivos";
 
 /*  */
-"add" = "Añadir";
+"incidence_key_add" = "Añadir";
 
 /*  */
-"delete" = "Eliminar";
+"incidence_key_delete" = "Eliminar";
 
 /*  */
-"location_disabled_click_to_activate" = "La ubicación está desactivada, pulsa para activarla";
+"incidence_key_location_disabled_click_to_activate" = "La ubicación está desactivada, pulsa para activarla";
 
 /*  */
-"activate_location_title" = "Activa tu ubicación";
+"incidence_key_activate_location_title" = "Activa tu ubicación";
 
 /*  */
-"activate_location_message" = "Es necesario conocer tu ubicación para reportar una incidencia";
-"activate_location_message_beacon" = "Es necesario conocer tu ubicación para sincronizar la baliza";
-"activate_location_message_beacon_always" = "Es necesario conocer siempre tu ubicación para detectar la baliza";
-"activate_location_message_beacon_always_go" = "Permitir siempre";
+"incidence_key_activate_location_message" = "Es necesario conocer tu ubicación para reportar una incidencia";
+"incidence_key_activate_location_message_beacon" = "Es necesario conocer tu ubicación para sincronizar la baliza";
+"incidence_key_activate_location_message_beacon_always" = "Es necesario conocer siempre tu ubicación para detectar la baliza";
+"incidence_key_activate_location_message_beacon_always_go" = "Permitir siempre";
 
 /*  */
-"activate_location" = "Activar ubicación";
+"incidence_key_activate_location" = "Activar ubicación";
 
 /*  */
-"add_manually" = "Introducir manualmente";
+"incidence_key_add_manually" = "Introducir manualmente";
 
 /*  */
-"back" = "Atrás";
+"incidence_key_back" = "Atrás";
 
 /*  */
-"search_or_move_map" = "Busca o mueve el mapa";
+"incidence_key_search_or_move_map" = "Busca o mueve el mapa";
 
 /*  */
-"insurance_data" = "Datos de la póliza";
+"incidence_key_insurance_data" = "Datos de la póliza";
 
 /*  */
-"beacon" = "Baliza";
+"incidence_key_beacon" = "Baliza";
 
 /*  */
-"drivers" = "Conductores";
+"incidence_key_drivers" = "Conductores";
 
 /*  */
-"delete_vechicle" = "Eliminar vehículo";
+"incidence_key_delete_vechicle" = "Eliminar vehículo";
 
 /*  */
-"color" = "Color";
+"incidence_key_color" = "Color";
 
 /*  */
-"insurance" = "Aseguradora";
+"incidence_key_insurance" = "Aseguradora";
 
 /*  */
-"unlink" = "Desvincular";
+"incidence_key_unlink" = "Desvincular";
 
 /*  */
-"unlink_beacon_message" = "¿Quieres desvincular la baliza del vehículo %@?\nPodrás vincularla a otro vehículo desde el inicio.";
+"incidence_key_unlink_beacon_message" = "¿Quieres desvincular la baliza del vehículo %@?\nPodrás vincularla a otro vehículo desde el inicio.";
 
 /*  */
-"delete_vechicle_message" = "¿Quieres eliminar tu vehículo?\nPodrás añadir un nuevo vehículo para vincular tu baliza";
-"delete_vechicle_message_primary" = "¿Quieres eliminar tu vehículo?\nSe eliminará para el resto de conductores";
+"incidence_key_delete_vechicle_message" = "¿Quieres eliminar tu vehículo?\nPodrás añadir un nuevo vehículo para vincular tu baliza";
+"incidence_key_delete_vechicle_message_primary" = "¿Quieres eliminar tu vehículo?\nSe eliminará para el resto de conductores";
 
 /*  */
-"delete_driver_message" = "¿Quieres eliminar al conductor %@ de tu vehículo?";
+"incidence_key_delete_driver_message" = "¿Quieres eliminar al conductor %@ de tu vehículo?";
 
 /*  */
-"incidence_status_active" = "Activa";
+"incidence_key_incidence_status_active" = "Activa";
 
 /*  */
-"incidence_status_closed" = "Cerrada";
+"incidence_key_incidence_status_closed" = "Cerrada";
 
-"incidence_status_canceled" = "Cancelada";
+"incidence_key_incidence_status_canceled" = "Cancelada";
 
 /*  */
-"go_to_map" = "Ir al mapa";
+"incidence_key_go_to_map" = "Ir al mapa";
 
 /*  */
-"incidence_valorated_very_good" = "Has valorado esta incidencia como muy satisfactoria";
+"incidence_key_incidence_valorated_very_good" = "Has valorado esta incidencia como muy satisfactoria";
 
 /*  */
-"incidence_valorated_good" = "Has valorado esta incidencia como satisfactoria";
+"incidence_key_incidence_valorated_good" = "Has valorado esta incidencia como satisfactoria";
 
 /*  */
-"incidence_valorated_neutral" = "Has valorado esta incidencia como mejorable";
+"incidence_key_incidence_valorated_neutral" = "Has valorado esta incidencia como mejorable";
 
 /*  */
-"incidence_valorated_bad" = "Has valorado esta incidencia como insatisfactoria";
+"incidence_key_incidence_valorated_bad" = "Has valorado esta incidencia como insatisfactoria";
 
 /*  */
-"incidence_valorated_very_bad" = "Has valorado esta incidencia como muy insatisfactoria";
+"incidence_key_incidence_valorated_very_bad" = "Has valorado esta incidencia como muy insatisfactoria";
 
 /*  */
-"valorate_assitence" = "Valorar asistencia";
+"incidence_key_valorate_assitence" = "Valorar asistencia";
 
 /*  */
-"link_with" = "Vinculado con";
+"incidence_key_link_with" = "Vinculado con";
 
 /*  */
-"delete_device" = "Eliminar dispositivo";
+"incidence_key_delete_device" = "Eliminar dispositivo";
 
 /*  */
-"delete_device_vinculated_message" = "¿Quieres eliminar tu dispositivo %@?\nLos datos se borrarán de tu cuenta y se desvinculará del vehículo";
+"incidence_key_delete_device_vinculated_message" = "¿Quieres eliminar tu dispositivo %@?\nLos datos se borrarán de tu cuenta y se desvinculará del vehículo";
 
 /*  */
-"delete_device_message" = "¿Quieres eliminar tu dispositivo %@?\nLos datos se borrarán de tu cuenta";
+"incidence_key_delete_device_message" = "¿Quieres eliminar tu dispositivo %@?\nLos datos se borrarán de tu cuenta";
 
 /*  */
-"link_with_vehicle" = "Vincular con un vehículo";
+"incidence_key_link_with_vehicle" = "Vincular con un vehículo";
 
 /*  */
-"select_vehicle_or_beacon" = "¿Quieres añadir un vehículo o una baliza?";
+"incidence_key_select_vehicle_or_beacon" = "¿Quieres añadir un vehículo o una baliza?";
 
 /*  */
-"add_new_vehicle" = "Añadir nuevo vehículo";
+"incidence_key_add_new_vehicle" = "Añadir nuevo vehículo";
 
 /*  */
-"add_new_device" = "Añadir nuevo dispositivo";
+"incidence_key_add_new_device" = "Añadir nuevo dispositivo";
 
 /*  */
-"notifications_disable_message" = "Si desactivas las notificaciones y si reportas una incidencia con tu baliza, siempre te mandaremos una notificación por motivos de seguridad";
+"incidence_key_notifications_disable_message" = "Si desactivas las notificaciones y si reportas una incidencia con tu baliza, siempre te mandaremos una notificación por motivos de seguridad";
 
 /*  */
-"ask_link_beacon_to_vehicle_linked" = "¿Quieres vincular tu baliza con %@? Este vehículo ya tiene una baliza vinculada. Si lo seleccionas, se sustituirá la anterior";
+"incidence_key_ask_link_beacon_to_vehicle_linked" = "¿Quieres vincular tu baliza con %@? Este vehículo ya tiene una baliza vinculada. Si lo seleccionas, se sustituirá la anterior";
 
 /*  */
-"replace_beacon" = "Sustituir baliza";
+"incidence_key_replace_beacon" = "Sustituir baliza";
 
 /*  */
-"include_birthday_to_complete" = "Incluye tu fecha de nacimiento para completar tus datos personales";
+"incidence_key_include_birthday_to_complete" = "Incluye tu fecha de nacimiento para completar tus datos personales";
 
 /*  */
-"contact_phone" = "Contáctanos por teléfono";
+"incidence_key_contact_phone" = "Contáctanos por teléfono";
 
 /*  */
-"contact_email" = "Contáctanos por email";
+"incidence_key_contact_email" = "Contáctanos por email";
 
 /*  */
-"contact_faqs" = "Preguntas frecuentes";
-"contact_tutorial" = "Tutorial";
+"incidence_key_contact_faqs" = "Preguntas frecuentes";
+"incidence_key_contact_tutorial" = "Tutorial";
 
 /*  */
-"vehicle_and_beacon" = "Vehiculo y baliza*";
+"incidence_key_vehicle_and_beacon" = "Vehiculo y baliza*";
 
 /*  */
-"promotions" = "Promociones";
+"incidence_key_promotions" = "Promociones";
 
 /*  */
-"notifs_beacon_description" = "*Si tienes una baliza sincronizada con tu dispositivo y reportas una incidencia, te mandaremos siempre una notificación por motivos de seguridad.";
+"incidence_key_notifs_beacon_description" = "*Si tienes una baliza sincronizada con tu dispositivo y reportas una incidencia, te mandaremos siempre una notificación por motivos de seguridad.";
 
 /* Notificaciones */
-"channel_id" = "incidenceapp";
+"incidence_key_channel_id" = "incidenceapp";
 
 /*  */
-"channel_name" = "incidenceapp";
+"incidence_key_channel_name" = "incidenceapp";
 
 /*  */
-"channel_description" = "incidenceapp";
+"incidence_key_channel_description" = "incidenceapp";
 
 /*  */
-"report_incidence" = "Reportar incidencia";
+"incidence_key_report_incidence" = "Reportar incidencia";
 
 /*  */
-"accident" = "Accidente";
+"incidence_key_accident" = "Accidente";
 
 /*  */
-"fault" = "Avería";
+"incidence_key_fault" = "Avería";
 
 /*  */
-"report_ask_what" = "¿Has tenido una avería o un accidente?";
+"incidence_key_report_ask_what" = "¿Has tenido una avería o un accidente?";
 
 /*  */
-"report_ask_what_descrip" = "Pasados %02d:%02d minutos sin respuesta, llamaremos automáticamente a emergencias";
+"incidence_key_report_ask_what_descrip" = "Pasados %02d:%02d minutos sin respuesta, llamaremos automáticamente a emergencias";
 
 /*  */
-"ask_wounded" = "¿Hay heridos?";
+"incidence_key_ask_wounded" = "¿Hay heridos?";
 
 /*  */
-"yes" = "Si";
-"no" = "No";
+"incidence_key_yes" = "Si";
+"incidence_key_no" = "No";
 
-"accident_with_wounded" = "Accidente con heridos";
-
-/*  */
-"no_only_material_wounded" = "No, solo hay daños materiales";
+"incidence_key_accident_with_wounded" = "Accidente con heridos";
 
 /*  */
-"policy_expired" = "Tu póliza ha caducado";
+"incidence_key_no_only_material_wounded" = "No, solo hay daños materiales";
 
 /*  */
-"policy_expired_desc" = "Debes actualizar la fecha de caducidad de tu póliza para que podamos ponerte en contacto con tu aseguradora";
+"incidence_key_policy_expired" = "Tu póliza ha caducado";
 
 /*  */
-"incidence_tip_lights" = "Activa las luces de emergencia";
+"incidence_key_policy_expired_desc" = "Debes actualizar la fecha de caducidad de tu póliza para que podamos ponerte en contacto con tu aseguradora";
 
 /*  */
-"incidence_tip_vest" = "Ponte el chaleco reflectante";
+"incidence_key_incidence_tip_lights" = "Activa las luces de emergencia";
 
 /*  */
-"incidence_tip_exit_car" = "En el caso de salir del coche, hazlo por el lado más seguro";
+"incidence_key_incidence_tip_vest" = "Ponte el chaleco reflectante";
 
 /*  */
-"incidence_tip_beacon" = "Enciende tu baliza en modo destello";
+"incidence_key_incidence_tip_exit_car" = "En el caso de salir del coche, hazlo por el lado más seguro";
 
 /*  */
-"policy_update" = "Actualizar póliza";
+"incidence_key_incidence_tip_beacon" = "Enciende tu baliza en modo destello";
 
 /*  */
-"ask_fault" = "¿Cuál es tu avería? Selecciona la opción que explique tu situación";
-"ask_fault_simple" = "¿Cuál es tu avería?";
+"incidence_key_policy_update" = "Actualizar póliza";
 
 /*  */
-"fault_car_not_on" = "El coche no arranca";
+"incidence_key_ask_fault" = "¿Cuál es tu avería? Selecciona la opción que explique tu situación";
+"incidence_key_ask_fault_simple" = "¿Cuál es tu avería?";
 
 /*  */
-"fault_battery" = "Batería";
+"incidence_key_fault_car_not_on" = "El coche no arranca";
 
 /*  */
-"fault_flat" = "Pinchazo";
+"incidence_key_fault_battery" = "Batería";
 
 /*  */
-"fault_car_not_fuel" = "No tengo combustible";
+"incidence_key_fault_flat" = "Pinchazo";
 
 /*  */
-"fault_other" = "No lo sé / Otros";
+"incidence_key_fault_car_not_fuel" = "No tengo combustible";
 
 /*  */
-"fault_fallo_mecanico" = "Fallo mecánico";
+"incidence_key_fault_other" = "No lo sé / Otros";
 
 /*  */
-"fault_fallo_motor" = "Fallo del motor";
+"incidence_key_fault_fallo_mecanico" = "Fallo mecánico";
 
 /*  */
-"fault_fallo_electrico" = "Fallo eléctrico";
+"incidence_key_fault_fallo_motor" = "Fallo del motor";
 
 /*  */
-"fault_fallo_no_identifico" = "No identifico el problema";
+"incidence_key_fault_fallo_electrico" = "Fallo eléctrico";
 
 /*  */
-"fault_fallo_title" = "%@, ¿podrías identificar la avería entre las siguientes opciones?";
+"incidence_key_fault_fallo_no_identifico" = "No identifico el problema";
 
 /*  */
-"ask_valoration" = "¿Estás satisfecho con el servicio de asistencia de Incidence?";
-
-"calling_grua_tip" = "Estamos llamando a la grúa para solucionar tu incidencia. Mientras tanto, recuerda:";
+"incidence_key_fault_fallo_title" = "%@, ¿podrías identificar la avería entre las siguientes opciones?";
 
 /*  */
-"valorate_later" = "Valorar más tarde";
+"incidence_key_ask_valoration" = "¿Estás satisfecho con el servicio de asistencia de Incidence?";
+
+"incidence_key_calling_grua_tip" = "Estamos llamando a la grúa para solucionar tu incidencia. Mientras tanto, recuerda:";
 
 /*  */
-"send_valoration" = "Enviar valoración";
+"incidence_key_valorate_later" = "Valorar más tarde";
 
 /*  */
-"ask_valoration_comment" = "Añade algún comentario que quieras hacer sobre tu experiencia:";
+"incidence_key_send_valoration" = "Enviar valoración";
 
 /*  */
-"write_comment" = "Escribe aquí tu comentario...";
+"incidence_key_ask_valoration_comment" = "Añade algún comentario que quieras hacer sobre tu experiencia:";
 
 /*  */
-"return_to_init" = "Volver al inicio";
+"incidence_key_write_comment" = "Escribe aquí tu comentario...";
 
 /*  */
-"thanks_for_valoration" = "¡Muchas gracias por tu valoración!";
+"incidence_key_return_to_init" = "Volver al inicio";
 
 /*  */
-"your_opinion_important" = "Tu opinión nos ayuda a mejorar el servicio que ofrecemos.";
+"incidence_key_thanks_for_valoration" = "¡Muchas gracias por tu valoración!";
 
 /*  */
-"ask_valoration_why_bad" = "¿Por qué no estás satisfecho/a con el servicio? Puedes seleccionar varias opciones";
+"incidence_key_your_opinion_important" = "Tu opinión nos ayuda a mejorar el servicio que ofrecemos.";
 
 /*  */
-"specify_reason" = "Especifica el motivo:";
+"incidence_key_ask_valoration_why_bad" = "¿Por qué no estás satisfecho/a con el servicio? Puedes seleccionar varias opciones";
 
 /*  */
-"write_here" = "Escribe aquí...";
+"incidence_key_specify_reason" = "Especifica el motivo:";
 
 /*  */
-"valoration_bad_spec_one" = "El servicio de asistencia técnica";
+"incidence_key_write_here" = "Escribe aquí...";
 
 /*  */
-"valoration_bad_spec_two" = "La aplicación Incidence";
+"incidence_key_valoration_bad_spec_one" = "El servicio de asistencia técnica";
 
 /*  */
-"valoration_bad_spec_three" = "El tiempo de espera";
+"incidence_key_valoration_bad_spec_two" = "La aplicación Incidence";
 
 /*  */
-"valoration_bad_spec_other" = "Otros";
+"incidence_key_valoration_bad_spec_three" = "El tiempo de espera";
 
 /*  */
-"service_valoration" = "Valoración del servicio";
+"incidence_key_valoration_bad_spec_other" = "Otros";
 
 /*  */
-"your_insurance_contact_you" = "Tu aseguradora se pondrá en contacto contigo en unos minutos:";
+"incidence_key_service_valoration" = "Valoración del servicio";
 
 /*  */
-"ask_report_choose_vehicle" = "¿Podrías indicarnos con qué vehículo has sufrido la avería?";
-"ask_report_choose_vehicle_simple" = "¿Con qué vehículo viajas?";
+"incidence_key_your_insurance_contact_you" = "Tu aseguradora se pondrá en contacto contigo en unos minutos:";
 
 /*  */
-"title_assist_coming" = "La asistencia está de camino";
+"incidence_key_ask_report_choose_vehicle" = "¿Podrías indicarnos con qué vehículo has sufrido la avería?";
+"incidence_key_ask_report_choose_vehicle_simple" = "¿Con qué vehículo viajas?";
 
 /*  */
-"subtitle_assist_coming" = "Hora estimada de llegada %@";
+"incidence_key_title_assist_coming" = "La asistencia está de camino";
 
 /*  */
-"make_valoration" = "Dar valoración";
+"incidence_key_subtitle_assist_coming" = "Hora estimada de llegada %@";
 
 /*  */
-"title_assist_finished" = "La grúa ha llegado con éxito";
+"incidence_key_make_valoration" = "Dar valoración";
 
 /*  */
-"subtitle_assist_finished" = "Esperamos que recibas la asistencia adecuada";
+"incidence_key_title_assist_finished" = "La grúa ha llegado con éxito";
+
+/*  */
+"incidence_key_subtitle_assist_finished" = "Esperamos que recibas la asistencia adecuada";
 
 
-"call_to" = "Llamar al ";
-"permitir" = "Permitir";
-"no_permitir" = "No permitir";
-"ask_permitir_location" = "¿Permitir a Incidence acceder a tu ubicación mientras utilizas la app?";
-"ask_permitir_location_message" = "Tu ubicación actual se mostrará en el mapa y se usará para propocionarte una asistencia personalizada.";
+"incidence_key_call_to" = "Llamar al ";
+"incidence_key_permitir" = "Permitir";
+"incidence_key_no_permitir" = "No permitir";
+"incidence_key_ask_permitir_location" = "¿Permitir a Incidence acceder a tu ubicación mientras utilizas la app?";
+"incidence_key_ask_permitir_location_message" = "Tu ubicación actual se mostrará en el mapa y se usará para propocionarte una asistencia personalizada.";
 
-"ask_beacon_activated" = "¿Has activado tu baliza?";
-"ask_beacon_activated_desc" = "Haz click aquí para acceder directamente a la aplicación y reportar una incidencia";
-"contact_grua" = "Contactar con la grúa";
-"contact_grua_cancel" = "Cancelar asistencia";
-"alert_error_ws_connection" = "No hay conexión a internet";
-"alert_error_ws" = "Se ha producido un error";
-"confirm_address" = "Confirmar dirección";
+"incidence_key_ask_beacon_activated" = "¿Has activado tu baliza?";
+"incidence_key_ask_beacon_activated_desc" = "Haz click aquí para acceder directamente a la aplicación y reportar una incidencia";
+"incidence_key_contact_grua" = "Contactar con la grúa";
+"incidence_key_contact_grua_cancel" = "Cancelar asistencia";
+"incidence_key_alert_error_ws_connection" = "No hay conexión a internet";
+"incidence_key_alert_error_ws" = "Se ha producido un error";
+"incidence_key_confirm_address" = "Confirmar dirección";
 
-"alert_inform_name" = "Debes informar el nombre";
-"alert_inform_email" = "Debes informar el correo electrónico";
-"alert_inform_dni" = "Debes informar el documento de identidad";
+"incidence_key_alert_inform_name" = "Debes informar el nombre";
+"incidence_key_alert_inform_email" = "Debes informar el correo electrónico";
+"incidence_key_alert_inform_dni" = "Debes informar el documento de identidad";
 
-"alert_no_internet" = "Sin conexión a Internet";
-"alert_no_internet_message" = "Espera unos segundos o llama a tu aseguradora si estás en una emergencia";
-"call_my_insurance" = "Llamar a mi aseguradora";
+"incidence_key_alert_no_internet" = "Sin conexión a Internet";
+"incidence_key_alert_no_internet_message" = "Espera unos segundos o llama a tu aseguradora si estás en una emergencia";
+"incidence_key_call_my_insurance" = "Llamar a mi aseguradora";
 
-"insurance_not_found_desc" = "Tu aseguradora no aparece dentro del listado pero puedes añadirla manualmente";
-"new_insurance" = "Nueva aseguradora";
-"add_insurance" = "Añadir aseguradora";
-"alert_must_add_insurance" = "Debes añadir una aseguradora al vehículo";
+"incidence_key_insurance_not_found_desc" = "Tu aseguradora no aparece dentro del listado pero puedes añadirla manualmente";
+"incidence_key_new_insurance" = "Nueva aseguradora";
+"incidence_key_add_insurance" = "Añadir aseguradora";
+"incidence_key_alert_must_add_insurance" = "Debes añadir una aseguradora al vehículo";
 
-"version_app" = "Versión app";
-"wish_continue" = "¿Deseas continuar?";
-"no_saved_changes" = "No has guardado los cambios realizados";
-"save_and_close" = "Guardar y volver/cerrar";
-"no_save" = "No guardar";
-"buy_beacon" = "Comprar baliza";
-"your_incidence_reported" = "¡Tu incidencia ha sido reportada!";
-"your_incidence_reported_desc" = "Esperamos que recibas la asistencia adecuada";
-"close_incidence" = "Cerrar incidencia";
-"incidence_wish_good" = "¡Esperamos que todo haya ido bien!";
-"incidence_wish_good_desc" = "Ayúdanos a mejorar el servicio valorando tu experiencia";
-"incidence_in" = "en";
-"cancel_incidence" = "Cancelar incidencia";
-"driver_primary" = "Conductor principal";
-"driver_secondary" = "Conductor secundario";
-"select_type_driver" = "Selecciona tipo de conductor";
-"ask_you_are_this_vehicle_driver" = "¿Eres conductor de este vehículo?";
-"ask_you_are_this_vehicle_driver_desc" = "Este vehículo ya ha sido añadido por otro usuario";
-"ask_you_are_this_vehicle_driver_yes" = "Si, también soy conductor";
-"ask_you_are_this_vehicle_driver_no" = "No, introducir otra matrícula";
-"ask_type_driver_you_are" = "¿Qué tipo de conductor eres?";
-"ask_you_are_driver_primary" = "¿Eres el conductor principal?";
-"ask_you_are_driver_primary_desc" = "Hay otro usuario como conductor principal. Solicita sustituirlo por ti.";
-"i_am_driver_primary" = "Soy el conductor principal";
-"ask_you_are_driver_secondary" = "¿Eres conductor secundario?";
-"ask_you_are_driver_secondary_desc" = "Debes esperar a que el conductor principal valide tu solicitud para ser conductor secundario del vehículo";
-"validate_driver_primary" = "Valida al nuevo conductor principal";
-"validate_driver_primary_desc" = "%@ ha solicitado sustituirte como conductor principal del vehículo %@\n\nSi aceptas se compartirán los datos del seguro y la baliza con él, y tú ya no podrás editarlos";
-"validate" = "Validar";
-"no_validate" = "No validar";
-"validate_driver_secondary" = "Valida al conductor secundario";
-"validate_driver_secondary_desc" = "%@ ha solicitado ser conductor secundario de tu vehículo %@\n\nSi aceptas se compartirán los datos del seguro y la baliza con él";
-"alert_bluetooth_title" = "Activar el bluetooth";
-"alert_bluetooth_message" = "Es necesario que actives el bluetooth para sincronizar la baliza del vehículo con tu teléfono";
-"alert_bluetooth_btn_activate" = "Activar bluetooth";
-"alert_no_location_to_report" = "No podremos detectar tu posición en caso de incidencia";
-"alert_no_location_to_beacon" = "No podremos detectar la activación de tu baliza";
-"select_beacon_type" = "Elige el dispositivo que necesitas vincular";
-"select_beacon_type_bluetooth" = "Bluetooth";
-"select_beacon_type_qr" = "Lectura de QR";
-"select_beacon_type_smart" = "Smart";
-"select_beacon_type_iot" = "IoT";
-"select_beacon_type_qr_info" = "¿Dónde encuentro el QR de mi baliza?";
-"select_beacon_imei" = "IMEI";
-"select_beacon_imei_info" = "Podras escribir tu IMEI manualmente para configurar tu baliza";
-"button_close" = "CERRAR";
-"alert_need_camera_permission_qr" = "Es necesario el permiso de acceso a la cámara para poder capturar el QR";
-"lang_spanish" = "Español";
-"lang_english" = "English";
-"one" = "Uno";
-"two" = "Dos";
-"three" = "Tres";
-"four" = "Cuatro";
-"five" = "Cinco";
-"six" = "Seis";
-"seven" = "Siete";
-"eight" = "Ocho";
-"nine" = "Nueve";
-"alert_need_audio_permission_title" = "Es necesario activar el microfono";
-"alert_need_audio_permission_description" = "Es necesario el microfono para reportar tu incidencia por voz";
-"not_understand_voice" = "Perdona, no te he entendido";
-"call" = "LLamar";
-"qr_desc" = "Aleje la cámara al QR de su dispositivo";
-"validate_device" = "Comprobar tu baliza";
-"start_device" = "Enciende tu baliza y te mostraremos la fecha de caducidad, estado de la batería e incidencias comunicadas";
-"start_device_without_network" = "Sin red";
-"start_device_without_network_desc" = "Tu baliza parece no haber encontrado red para comunicar; por favor, apágala y vuelve a encenderla";
-"return_back" = "Volver";
-"stop_device" = "Apaga tu baliza";
-"stop_device_desc" = "Apaga tu baliza y así no notifica a la DGT";
-"device_desc_info1" = "Levante y retire la tapa presionando sobre el clip de anclaje de la misma.\nUtilice siempre pilas alcalinas tipo LR6 (AA).";
-"device_desc_info2" = " La caja portapila está diseñada para que las pilas se coloquen en serie en una única posición. Si no consigue colocarlas o no entran correctamente, por favor fíjese en la posición y marcado de los bornes, y repita la operación.";
-"device_desc_info3" = "Una vez haya montado las nuevas pilas introduzca la tapa de nuevo colocándola como en el esquema, encaje, y presione hasta oír clic.Verifique que su equipo funciona correctamente";
-"device_desc_info_finish" = "Finalizar";
-"device_expiration" = "Fecha de caducidad";
-"device_battery_status" = "Estado de la batería";
-"alert_new_incidence_title" = "¿Tienes una incidencia real?";
-"alert_new_incidence_subtitle" = "Tu baliza ya ha notificado a la DGT tu detención en la vía";
-"faqs_url" = "https://soporte.incidence.eu/hc/es";
-"imei_code_title" = "Teclea tu IMEI";
-"imei_code_subtitle" = "Introduce tu IMEI manualmente para sincronizar tu baliza";
-"ecommerce_subtitle" = "IVA y ENVÍO incluidos";
-"calling_emergency" = "Procedemos a llamar a emergencias";
-"alert_llamada_emergencias" = "En %d segundos llamaremos a Emergencias.";
-"turn_up_volume" = "Sube el volumen";
-"please_turn_up_volume" = "Por favor sube el volumen de tu dispositivo";
-"alert_llamada_emergencias_title" = "Aviso a emergencias";
-"alert_llamada_emergencias_subtitle" = "Has iniciado una incidencia.";
-"error" = "Error";
+"incidence_key_version_app" = "Versión app";
+"incidence_key_wish_continue" = "¿Deseas continuar?";
+"incidence_key_no_saved_changes" = "No has guardado los cambios realizados";
+"incidence_key_save_and_close" = "Guardar y volver/cerrar";
+"incidence_key_no_save" = "No guardar";
+"incidence_key_buy_beacon" = "Comprar baliza";
+"incidence_key_your_incidence_reported" = "¡Tu incidencia ha sido reportada!";
+"incidence_key_your_incidence_reported_desc" = "Esperamos que recibas la asistencia adecuada";
+"incidence_key_close_incidence" = "Cerrar incidencia";
+"incidence_key_incidence_wish_good" = "¡Esperamos que todo haya ido bien!";
+"incidence_key_incidence_wish_good_desc" = "Ayúdanos a mejorar el servicio valorando tu experiencia";
+"incidence_key_incidence_in" = "en";
+"incidence_key_cancel_incidence" = "Cancelar incidencia";
+"incidence_key_driver_primary" = "Conductor principal";
+"incidence_key_driver_secondary" = "Conductor secundario";
+"incidence_key_select_type_driver" = "Selecciona tipo de conductor";
+"incidence_key_ask_you_are_this_vehicle_driver" = "¿Eres conductor de este vehículo?";
+"incidence_key_ask_you_are_this_vehicle_driver_desc" = "Este vehículo ya ha sido añadido por otro usuario";
+"incidence_key_ask_you_are_this_vehicle_driver_yes" = "Si, también soy conductor";
+"incidence_key_ask_you_are_this_vehicle_driver_no" = "No, introducir otra matrícula";
+"incidence_key_ask_type_driver_you_are" = "¿Qué tipo de conductor eres?";
+"incidence_key_ask_you_are_driver_primary" = "¿Eres el conductor principal?";
+"incidence_key_ask_you_are_driver_primary_desc" = "Hay otro usuario como conductor principal. Solicita sustituirlo por ti.";
+"incidence_key_i_am_driver_primary" = "Soy el conductor principal";
+"incidence_key_ask_you_are_driver_secondary" = "¿Eres conductor secundario?";
+"incidence_key_ask_you_are_driver_secondary_desc" = "Debes esperar a que el conductor principal valide tu solicitud para ser conductor secundario del vehículo";
+"incidence_key_validate_driver_primary" = "Valida al nuevo conductor principal";
+"incidence_key_validate_driver_primary_desc" = "%@ ha solicitado sustituirte como conductor principal del vehículo %@\n\nSi aceptas se compartirán los datos del seguro y la baliza con él, y tú ya no podrás editarlos";
+"incidence_key_validate" = "Validar";
+"incidence_key_no_validate" = "No validar";
+"incidence_key_validate_driver_secondary" = "Valida al conductor secundario";
+"incidence_key_validate_driver_secondary_desc" = "%@ ha solicitado ser conductor secundario de tu vehículo %@\n\nSi aceptas se compartirán los datos del seguro y la baliza con él";
+"incidence_key_alert_bluetooth_title" = "Activar el bluetooth";
+"incidence_key_alert_bluetooth_message" = "Es necesario que actives el bluetooth para sincronizar la baliza del vehículo con tu teléfono";
+"incidence_key_alert_bluetooth_btn_activate" = "Activar bluetooth";
+"incidence_key_alert_no_location_to_report" = "No podremos detectar tu posición en caso de incidencia";
+"incidence_key_alert_no_location_to_beacon" = "No podremos detectar la activación de tu baliza";
+"incidence_key_select_beacon_type" = "Elige el dispositivo que necesitas vincular";
+"incidence_key_select_beacon_type_bluetooth" = "Bluetooth";
+"incidence_key_select_beacon_type_qr" = "Lectura de QR";
+"incidence_key_select_beacon_type_smart" = "Smart";
+"incidence_key_select_beacon_type_iot" = "IoT";
+"incidence_key_select_beacon_type_qr_info" = "¿Dónde encuentro el QR de mi baliza?";
+"incidence_key_select_beacon_imei" = "IMEI";
+"incidence_key_select_beacon_imei_info" = "Podras escribir tu IMEI manualmente para configurar tu baliza";
+"incidence_key_button_close" = "CERRAR";
+"incidence_key_alert_need_camera_permission_qr" = "Es necesario el permiso de acceso a la cámara para poder capturar el QR";
+"incidence_key_lang_spanish" = "Español";
+"incidence_key_lang_english" = "English";
+"incidence_key_one" = "Un";
+"incidence_key_two" = "Dos";
+"incidence_key_three" = "Tres";
+"incidence_key_four" = "Cuatre";
+"incidence_key_five" = "Cinc";
+"incidence_key_six" = "Sis";
+"incidence_key_seven" = "Siete";
+"incidence_key_eight" = "Ocho";
+"incidence_key_nine" = "Nueve";
+"incidence_key_alert_need_audio_permission_title" = "Es necesario activar el microfono";
+"incidence_key_alert_need_audio_permission_description" = "Es necesario el microfono para reportar tu incidencia por voz";
+"incidence_key_not_understand_voice" = "Perdona, no te he entendido";
+"incidence_key_call" = "LLamar";
+"incidence_key_qr_desc" = "Aleje la cámara al QR de su dispositivo";
+"incidence_key_validate_device" = "Comprobar tu baliza";
+"incidence_key_start_device" = "Enciende tu baliza y te mostraremos la fecha de caducidad, estado de la batería e incidencias comunicadas";
+"incidence_key_start_device_without_network" = "Sin red";
+"incidence_key_start_device_without_network_desc" = "Tu baliza parece no haber encontrado red para comunicar; por favor, apágala y vuelve a encenderla";
+"incidence_key_return_back" = "Volver";
+"incidence_key_stop_device" = "Apaga tu baliza";
+"incidence_key_stop_device_desc" = "Apaga tu baliza y así no notifica a la DGT";
+"incidence_key_device_desc_info1" = "Levante y retire la tapa presionando sobre el clip de anclaje de la misma.\nUtilice siempre pilas alcalinas tipo LR6 (AA).";
+"incidence_key_device_desc_info2" = " La caja portapila está diseñada para que las pilas se coloquen en serie en una única posición. Si no consigue colocarlas o no entran correctamente, por favor fíjese en la posición y marcado de los bornes, y repita la operación.";
+"incidence_key_device_desc_info3" = "Una vez haya montado las nuevas pilas introduzca la tapa de nuevo colocándola como en el esquema, encaje, y presione hasta oír clic.Verifique que su equipo funciona correctamente";
+"incidence_key_device_desc_info_finish" = "Finalizar";
+"incidence_key_device_expiration" = "Fecha de caducidad";
+"incidence_key_device_battery_status" = "Estado de la batería";
+"incidence_key_alert_new_incidence_title" = "¿Tienes una incidencia real?";
+"incidence_key_alert_new_incidence_subtitle" = "Tu baliza ya ha notificado a la DGT tu detención en la vía";
+"incidence_key_faqs_url" = "https://soporte.incidence.eu/hc/es";
+"incidence_key_imei_code_title" = "Teclea tu IMEI";
+"incidence_key_imei_code_subtitle" = "Introduce tu IMEI manualmente para sincronizar tu baliza";
+"incidence_key_ecommerce_subtitle" = "IVA y ENVÍO incluidos";
+"incidence_key_calling_emergency" = "Procedemos a llamar a emergencias";
+"incidence_key_alert_llamada_emergencias" = "En %d segundos llamaremos a Emergencias.";
+"incidence_key_turn_up_volume" = "Sube el volumen";
+"incidence_key_please_turn_up_volume" = "Por favor sube el volumen de tu dispositivo";
+"incidence_key_alert_llamada_emergencias_title" = "Aviso a emergencias";
+"incidence_key_alert_llamada_emergencias_subtitle" = "Has iniciado una incidencia.";
+"incidence_key_error" = "Error";

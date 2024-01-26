@@ -197,8 +197,8 @@ class TextFieldView: UIView {
         toolBar.barStyle = .default
         toolBar.isTranslucent = true
         let space = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
-        let cancelButton = UIBarButtonItem(title: "cancel".localized(), style: .done, target: self, action: #selector(onClickCancelButton))
-        let doneButton = UIBarButtonItem(title: "accept".localized(), style: .done, target: self, action: #selector(onClickDoneButton))
+        let cancelButton = UIBarButtonItem(title: "incidence_key_cancel".localized(), style: .done, target: self, action: #selector(onClickCancelButton))
+        let doneButton = UIBarButtonItem(title: "incidence_key_accept".localized(), style: .done, target: self, action: #selector(onClickDoneButton))
         toolBar.setItems([cancelButton, space, doneButton], animated: false)
         toolBar.isUserInteractionEnabled = true
         toolBar.sizeToFit()

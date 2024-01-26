@@ -9,7 +9,7 @@ import Foundation
 
 class ReportAccidentViewModel: IABaseViewModel {
     public override var navigationTitle: String? {
-        get { return "report_incidence".localized() }
+        get { return "incidence_key_report_incidence".localized() }
         set { }
     }
     
@@ -25,8 +25,8 @@ class ReportAccidentViewModel: IABaseViewModel {
     var delegate: ReportTypeViewControllerDelegate
     var openFromNotification:Bool
 
-    let descriptionText: String = "ask_wounded".localized()
-    let noInjuredButtonText: String = "no_only_material_wounded".localized()
-    let injuredText: String = "accident_with_wounded".localized()
-    let cancelButtonText: String = "cancel".localized()
+    let descriptionText: String = "incidence_key_ask_wounded".localized()
+    let noInjuredButtonText: String = "incidence_key_no_only_material_wounded".localized()
+    let injuredText: String = "incidence_key_accident_with_wounded".localized()
+    let cancelButtonText: String = "incidence_key_cancel".localized()
 }

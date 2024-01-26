@@ -69,8 +69,8 @@ public final class ImeiPopUpModalViewController: UIViewController, TextFieldView
         let fontTitle = UIFont.app(.primarySemiBold, size: 16)!
         let fontSubTitle = UIFont.app(.primaryRegular, size: 14)!
         
-        let customTitleText = "imei_code_title".localized()
-        let customSubtitleText = "imei_code_subtitle".localized()
+        let customTitleText = "incidence_key_imei_code_title".localized()
+        let customSubtitleText = "incidence_key_imei_code_subtitle".localized()
         
         let titleHeight = widthCross;
         let subtitleHeight = customSubtitleText.height(withConstrainedWidth: widthSubtitleLabel, font: fontSubTitle);
@@ -125,7 +125,7 @@ public final class ImeiPopUpModalViewController: UIViewController, TextFieldView
         view.addSubview(imeiTextFieldView)
         
         let continueButton = PrimaryButton(frame: CGRect(x: widthMargin, y: height + imeiTextFieldView.frame.height + paddingLabel, width: widthSubtitleLabel, height: 64))
-        continueButton.setTitle("accept".localized(), for: .normal)
+        continueButton.setTitle("incidence_key_accept".localized(), for: .normal)
         let tapContinue = UITapGestureRecognizer(target: self, action: #selector(didTapAccept))
         continueButton.addGestureRecognizer(tapContinue)
         view.addSubview(continueButton)

@@ -16,7 +16,7 @@ public class ErrorViewModel: IABaseViewModel {
     }
     
     public override var navigationTitle: String? {
-        get { return "error".localized() }
+        get { return "incidence_key_error".localized() }
         set { }
     }
 }

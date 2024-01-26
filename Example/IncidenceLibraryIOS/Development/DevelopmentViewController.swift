@@ -94,6 +94,17 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable, Repor
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    @IBAction func btnGetDevicePressed(_ sender: Any) {
+        IncidenceLibraryManager.shared.hasBeaconFunc(user: user, vehicle: vehicle, completion: { result in
+            print(result)
+            if (result.status) {
+                self.showToast(controller: self, message: "SI hay baliza asociada")
+            } else {
+                self.showToast(controller: self, message: "NO hay baliza asociada")
+            }
+       })
+    }
    
     @IBAction func btnDeviceCreatePressed(_ sender: Any) {
         let viewController = IncidenceLibraryManager.shared.getDeviceCreateViewController(user: user, vehicle: vehicle, delegate: self)

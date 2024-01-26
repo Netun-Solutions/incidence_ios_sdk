@@ -80,7 +80,7 @@ class RegistrationSuccessBeaconViewController: IABaseViewController, StoryboardI
             
             self.dismiss(animated: false, completion: nil)
             
-            var response: IActionResponse = IActionResponse(status: true)
+            let response: IActionResponse = IActionResponse(status: true)
             self.viewModel.delegate.onResult(response: response)
             
         } else {

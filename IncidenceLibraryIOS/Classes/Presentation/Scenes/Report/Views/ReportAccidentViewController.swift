@@ -20,17 +20,17 @@ enum ReportAccidentSpeechRecognizion: CaseIterable {
     func getLocalizedText() -> String {
         switch self {
         case .noInjuredNumber:
-            return "one".localizedVoice()
+            return "incidence_key_one".localizedVoice()
         case .noInjured:
-            return "no_only_material_wounded".localizedVoice()
+            return "incidence_key_no_only_material_wounded".localizedVoice()
         case .injuredNumber:
-            return "two".localizedVoice()
+            return "incidence_key_two".localizedVoice()
         case .injured:
-            return "accident_with_wounded".localizedVoice()
+            return "incidence_key_accident_with_wounded".localizedVoice()
         case .cancelNumber:
-            return "three".localizedVoice()
+            return "incidence_key_three".localizedVoice()
         case .cancel:
-            return "cancel".localizedVoice()
+            return "incidence_key_cancel".localizedVoice()
         }
     }
 }
@@ -39,7 +39,7 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
     
     var voiceDialogs: [String] {
         get {
-            var array = ["ask_wounded".localizedVoice()]
+            var array = ["incidence_key_ask_wounded".localizedVoice()]
             array.append(contentsOf: speechRecognizion)
             return array
         }
@@ -161,7 +161,7 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
             
             
         } else {
-            self.showAlert(message: "alert_must_add_insurance".localized())
+            self.showAlert(message: "incidence_key_alert_must_add_insurance".localized())
         }
     }
     
@@ -211,7 +211,7 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
         }
         else
         {
-            //showAlert(message: "activate_location_message".localized())
+            //showAlert(message: "incidence_key_activate_location_message".localized())
             reportLocation(idIncidence: idIncidence, phone: phone, location: nil)
         }
     }

@@ -22,7 +22,7 @@ public class ReportIncidenceSimpleViewModel: IABaseViewModel {
     }
     
     public override var navigationTitle: String? {
-        get { return "devices".localized() }
+        get { return "incidence_key_devices".localized() }
         set { }
     }
 }

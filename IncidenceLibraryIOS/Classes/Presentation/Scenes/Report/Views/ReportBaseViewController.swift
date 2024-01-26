@@ -23,23 +23,23 @@ enum NumbersRecognizion: Int, CaseIterable {
     func getLocalizedText() -> String {
         switch self {
         case .one:
-            return "one".localizedVoice()
+            return "incidence_key_one".localizedVoice()
         case .two:
-            return "two".localizedVoice()
+            return "incidence_key_two".localizedVoice()
         case .three:
-            return "three".localizedVoice()
+            return "incidence_key_three".localizedVoice()
         case .four:
-            return "four".localizedVoice()
+            return "incidence_key_four".localizedVoice()
         case .five:
-            return "five".localizedVoice()
+            return "incidence_key_five".localizedVoice()
         case .six:
-            return "six".localizedVoice()
+            return "incidence_key_six".localizedVoice()
         case .seven:
-            return "seven".localizedVoice()
+            return "incidence_key_seven".localizedVoice()
         case .eight:
-            return "eight".localizedVoice()
+            return "incidence_key_eight".localizedVoice()
         case .nine:
-            return "nine".localizedVoice()
+            return "incidence_key_nine".localizedVoice()
         }
     }
 }
@@ -62,8 +62,8 @@ public class ReportBaseViewController: IABaseViewController {
     var timeFinished:Bool = false
     
     public lazy var alertView: UIView = {
-        let customTitleText = "turn_up_volume".localized()
-        let customSubtitleText = "please_turn_up_volume".localized()
+        let customTitleText = "incidence_key_turn_up_volume".localized()
+        let customSubtitleText = "incidence_key_please_turn_up_volume".localized()
         
         let x = 30.0;
         let y = view.frame.y;
@@ -139,9 +139,9 @@ public class ReportBaseViewController: IABaseViewController {
     }()
     
     lazy var alertTimeView: UIView = {
-        let customTitleText = "alert_llamada_emergencias_title".localized()
-        let customSubtitleText = "alert_llamada_emergencias_subtitle".localized()
-        let customAlertText = "alert_llamada_emergencias".localized()
+        let customTitleText = "incidence_key_alert_llamada_emergencias_title".localized()
+        let customSubtitleText = "incidence_key_alert_llamada_emergencias_subtitle".localized()
+        let customAlertText = "incidence_key_alert_llamada_emergencias".localized()
         
         let x = 30.0;
         let y = view.frame.y;
@@ -247,7 +247,7 @@ public class ReportBaseViewController: IABaseViewController {
             
             if (!Core.shared.alertTimeErrorContainerHided) {
                 alertTimeView.isHidden = false;
-                var message = "alert_llamada_emergencias".localized()
+                var message = "incidence_key_alert_llamada_emergencias".localized()
                 message = String.localizedStringWithFormat(message, seconds)
                 alertTimeLabel.text = message
                 
@@ -273,7 +273,7 @@ public class ReportBaseViewController: IABaseViewController {
         
         if (SpeechRecognizer.isEnabled) {
             if let delegate = speechReconizableDelegate {
-                let message = "calling_emergency".localized()
+                let message = "incidence_key_calling_emergency".localized()
                 
                 delegate.stopSpeechRecognizion()
                 delegate.startSpeechDialog(notUnderstand: false, emergency: true, emergencyMessage: message);
@@ -464,7 +464,7 @@ public class ReportBaseViewController: IABaseViewController {
         }
         else
         {
-            showAlert(message: "activate_location_message".localized())
+            showAlert(message: "incidence_key_activate_location_message".localized())
         }
     }
     
