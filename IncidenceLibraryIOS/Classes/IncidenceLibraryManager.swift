@@ -221,8 +221,7 @@
     }
     
     public func hasBeaconFunc(user: User!, vehicle: Vehicle!, completion: @escaping (IActionResponse) -> Void) {
-        //let res = validateScreen(screen: Constants.FUNC_DEVICE_GET)
-        let res = validateScreen(screen: Constants.FUNC_DEVICE_DELETE)
+        let res = validateScreen(screen: Constants.FUNC_DEVICE_GET)
         if (res == "SCREEN_OK") {
             Api.shared.getBeaconSdk(vehicle: vehicle, user: user, completion: { result in
                 
