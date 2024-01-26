@@ -283,6 +283,8 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
                 if (beacons.count > 0) {
                     //self.device = beacons[0]
                     self.viewModel.device = beacons[0]
+                    
+                    self.navigationItem.leftBarButtonItems?[1].title = self.viewModel.device?.name
                 }
                 self.refreshData()
             }
