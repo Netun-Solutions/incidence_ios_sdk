@@ -41,22 +41,11 @@
     <string>Es necesario para poder detectar la baliza cuando se activa</string>
     <key>NSCameraUsageDescription</key>
     <string>Es necesario para registrar dispositivos con QR</string>
-    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-    <string>Es necesario para poder detectar la baliza cuando se activa</string>
-    <key>NSLocationAlwaysUsageDescription</key>
-    <string>Es necesario para poder detectar la baliza cuando se activa</string>
-    <key>NSLocationTemporaryUsageDescriptionDictionary</key>
-    <dict>
-        <key>MGLAccuracyAuthorizationDescription</key>
-        <string>Please enable precise location. Turn-by-turn directions only work when precise location data is available.</string>
-    </dict>
     <key>NSLocationWhenInUseUsageDescription</key>
     <string>Your precise location is used to calculate turn-by-turn directions, show your location on the map, and help improve the map.</string>
     <key>NSMicrophoneUsageDescription</key>
     <string>Con ello pordrás reportar tu incidencia por voz</string>
     <key>NSSpeechRecognitionUsageDescription</key>
     <string>Con ello pordrás reportar tu incidencia por voz</string>
-    <key>NSContactsUsageDescription</key>
-    <string>Incidencia necesita acceder a su lista de contactos</string>
 </dict>
 </plist>

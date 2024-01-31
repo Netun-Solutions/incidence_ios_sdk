@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'IncidenceIOSSDK'
-  s.version          = '0.0.9'
+  s.version          = '0.0.10'
   s.summary          = 'A short description of IncidenceIOSSDK.'
 
 # This description is used to generate tags and improve search results.
@@ -50,5 +50,5 @@ Pod::Spec.new do |s|
   s.dependency 'Kingfisher'
   s.dependency 'Alamofire'
   # s.dependency 'Hue'
-  s.dependency 'youtube-ios-player-helper'
+  # s.dependency 'youtube-ios-player-helper'
 end
