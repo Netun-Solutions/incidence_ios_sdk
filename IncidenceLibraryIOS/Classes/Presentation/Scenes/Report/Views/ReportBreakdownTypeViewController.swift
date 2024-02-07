@@ -49,13 +49,11 @@ class ReportBreakdownTypeViewController: ReportBaseViewController, StoryboardIns
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AppNavigation.setupNavigationApperance(navigationController!, with: .white)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         stopSpeechRecognizion()
-        AppNavigation.setupNavigationApperance(navigationController!, with: .regular)
     }
     
     override func setUpUI() {

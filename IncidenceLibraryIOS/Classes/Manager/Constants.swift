@@ -82,4 +82,5 @@ struct Constants {
     static let SCREEN_REPOR_INC = "SCREEN_REPOR_INC"
     static let SCREEN_REPOR_INC_SIMPLE = "SCREEN_REPOR_INC_SIMPLE"
     static let SCREEN_ERROR = "ERROR"
+    static let SCREEN_LINK_RESULT = "SCREEN_LINK_RESULT"
 }

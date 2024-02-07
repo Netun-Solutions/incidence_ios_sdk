@@ -81,7 +81,6 @@ class RegistrationSuccessBeaconViewController: IABaseViewController, StoryboardI
             navigationController?.view.subviews.first(where: { (view) -> Bool in
                 return view is StepperView
             })?.removeFromSuperview()
-            AppNavigation.setupNavigationApperance(navigationController!, with: .transparent)
             
             self.dismiss(animated: false, completion: nil)
             

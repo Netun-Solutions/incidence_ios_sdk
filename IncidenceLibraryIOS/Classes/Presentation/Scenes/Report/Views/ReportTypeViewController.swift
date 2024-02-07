@@ -92,7 +92,6 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
         
     public override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        AppNavigation.setupNavigationApperance(navigationController!, with: .white)
         
         EventNotification.addObserver(self, code: .INCIDENCE_TIMER_CHANGE, selector: #selector(timerUpdated))
     }
@@ -106,7 +105,6 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
         super.viewWillDisappear(animated)
 
         stopSpeechRecognizion()
-        AppNavigation.setupNavigationApperance(navigationController!, with: .regular)
         
         //Core.shared.stopTimer()
     }

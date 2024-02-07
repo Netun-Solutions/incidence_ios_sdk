@@ -138,19 +138,35 @@
         }
     }
     
-    public func getDeviceReviewViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> IABaseViewController {
+    public func getDeviceReviewViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> UINavigationController {
         let res = validateScreen(screen: Constants.SCREEN_DEVICE_REVIEW)
         if (res == "SCREEN_OK") {
             let viewModel = DeviceDetailSdkViewModel(vehicle: vehicle, user: user, delegate: delegate)
             let viewController = DeviceDetailInfoViewController.create(with: viewModel)
-            return viewController
+            return createNavigationController(viewController: viewController)
         } else {
             return processScreenError(error: res)
         }
     }
     
+    func createNavigationController(viewController: IABaseViewController) -> UINavigationController {
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.modalPresentationStyle = .fullScreen
+        
+        //navigationController.navigationBar.setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
+        //navigationController.navigationBar.shadowImage = UIImage()
+        //navigationController.navigationBar.tintColor = UIColor.yellow
+        //navigationController.navigationBar.barTintColor = UIColor.red
+        //navigationController.navigationBar.isTranslucent = false
+        //navigationController.navigationBar.clipsToBounds = false
+        //navigationController.navigationBar.backgroundColor = UIColor.white
+        
+        AppNavigation.setupNavigationApperance(navigationController, with: .white)
+        
+        return navigationController
+    }
     
-    public func getDeviceCreateViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> IABaseViewController {
+    public func getDeviceCreateViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> UINavigationController {
         let res = validateScreen(screen: Constants.SCREEN_DEVICE_CREATE)
         if (res == "SCREEN_OK") {
             let vm = RegistrationBeaconViewModel(origin: .addBeacon, delegate: delegate)
@@ -158,76 +174,86 @@
             vm.user = user
             vm.vehicle = vehicle
             let viewController = RegistrationBeaconSelectTypeViewController.create(with: vm)
-            return viewController
+            return createNavigationController(viewController: viewController)
             
         } else {
             return processScreenError(error: res)
         }
     }
     
-    public func getIncidenceCreateViewController(user: User!, vehicle: Vehicle!, incidence: Incidence!) -> IABaseViewController {
+    public func getIncidenceCreateViewController(user: User!, vehicle: Vehicle!, incidence: Incidence!) -> UINavigationController {
         let res = validateScreen(screen: Constants.FUNC_REPOR_INC)
         if (res == "SCREEN_OK") {
             let vm = ReportIncidenceSimpleViewModel(user: user, vehicle: vehicle, incidence: incidence, createIncidence: true)
             let viewController = ReportIncidenceSimpleViewController.create(with: vm)
-            return viewController
+            return createNavigationController(viewController: viewController)
             
         } else {
             return processScreenError(error: res)
         }
     }
     
-    public func getIncidenceCloseViewController(user: User!, vehicle: Vehicle!, incidence: Incidence!) -> IABaseViewController {
+    public func getIncidenceCloseViewController(user: User!, vehicle: Vehicle!, incidence: Incidence!) -> UINavigationController {
         let res = validateScreen(screen: Constants.FUNC_CLOSE_INC)
         if (res == "SCREEN_OK") {
             let vm = ReportIncidenceSimpleViewModel(user: user, vehicle: vehicle, incidence: incidence, createIncidence: false)
             let viewController = ReportIncidenceSimpleViewController.create(with: vm)
-            return viewController
+            return createNavigationController(viewController: viewController)
         } else {
             return processScreenError(error: res)
         }
     }
     
-    public func getEcommerceViewController(user: User!, vehicle: Vehicle!) -> IABaseViewController {
+    public func getEcommerceViewController(user: User!, vehicle: Vehicle!) -> UINavigationController {
         let res = validateScreen(screen: Constants.SCREEN_ECOMMERCE)
         if (res == "SCREEN_OK") {
             let vm = EcommerceViewModel(vehicle: vehicle, user: user)
             let viewController = EcommerceVC.create(with: vm)
-            return viewController
+            return createNavigationController(viewController: viewController)
             
         } else {
             return processScreenError(error: res)
         }
     }
     
-    public func getReportIncViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> IABaseViewController {
+    public func getReportIncViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> UINavigationController {
         let res = validateScreen(screen: Constants.SCREEN_REPOR_INC)
         if (res == "SCREEN_OK") {
             let vm = ReportTypeViewModel(vehicle: vehicle, user: user, delegate: delegate, openFromNotification: false, flowComplete: true)
             let viewController = ReportTypeViewController.create(with: vm)
-            return viewController
+            return createNavigationController(viewController: viewController)
             
         } else {
             return processScreenError(error: res)
         }
     }
     
-    public func getReportIncSimpViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> IABaseViewController {
+    public func getReportIncSimpViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> UINavigationController {
         let res = validateScreen(screen: Constants.SCREEN_REPOR_INC_SIMPLE)
         if (res == "SCREEN_OK") {
             let vm = ReportTypeViewModel(vehicle: vehicle, user: user, delegate: delegate, openFromNotification: false, flowComplete: false)
             let viewController = ReportTypeViewController.create(with: vm)
-            return viewController
+            return createNavigationController(viewController: viewController)
             
         } else {
             return processScreenError(error: res)
         }
     }
     
-    func processScreenError(error: String) -> IABaseViewController {
+    public func needShowLinkResult() -> Bool {
+        let res = validateScreen(screen: Constants.SCREEN_LINK_RESULT)
+        if (res == "SCREEN_OK") {
+            return true
+            
+        } else {
+            return true
+        }
+    }
+    
+    func processScreenError(error: String) -> UINavigationController {
         let viewModel = ErrorViewModel(error: error)
         let viewController = ErrorViewController.create(with: viewModel)
-        return viewController
+        return createNavigationController(viewController: viewController)
     }
     
     public func hasBeaconFunc(user: User!, vehicle: Vehicle!, completion: @escaping (IActionResponse) -> Void) {

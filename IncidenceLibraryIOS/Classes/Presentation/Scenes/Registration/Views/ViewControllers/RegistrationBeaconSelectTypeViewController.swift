@@ -253,10 +253,17 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
                     }
                 }
                 
-                //Show beacon added view
-                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: false, beaconTypeId: beaconTypeId, delegate: self.viewModel.delegate)
-                let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
-                self.navigationController?.pushViewController(viewController, animated: true)
+                if (IncidenceLibraryManager.shared.needShowLinkResult()) {
+                    //Show beacon added view
+                    let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: false, beaconTypeId: beaconTypeId, delegate: self.viewModel.delegate)
+                    let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
+                    self.navigationController?.pushViewController(viewController, animated: true)
+                } else {
+                    self.dismiss(animated: false, completion: nil)
+                    
+                    let response: IActionResponse = IActionResponse(status: true)
+                    self.viewModel.delegate.onResult(response: response)
+                }
             }
             else
             {

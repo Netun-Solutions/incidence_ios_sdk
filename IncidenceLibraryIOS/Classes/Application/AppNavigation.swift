@@ -63,9 +63,9 @@ final class AppNavigation {
                 appearance.shadowImage = UIImage()
                 appearance.shadowColor = .clear
                 //appearance.titleTextAttributes = attributes
-                UINavigationBar.appearance().standardAppearance = appearance
-                UINavigationBar.appearance().compactAppearance = appearance
-                UINavigationBar.appearance().scrollEdgeAppearance = appearance
+                //UINavigationBar.appearance().standardAppearance = appearance
+                //UINavigationBar.appearance().compactAppearance = appearance
+                //UINavigationBar.appearance().scrollEdgeAppearance = appearance
                 
                 navigationController.navigationBar.standardAppearance = appearance
                 navigationController.navigationBar.compactAppearance = appearance

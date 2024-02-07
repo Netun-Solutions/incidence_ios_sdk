@@ -31,7 +31,6 @@ class WebViewViewController: IABaseViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        AppNavigation.setupNavigationApperance(navigationController!, with: .regular)
         self.loadWebsite()
         view.backgroundColor = UIColor.app(.incidence100)
     }

@@ -37,7 +37,6 @@ class RegistrationSuccessViewController: IABaseViewController, StoryboardInstant
         navigationController?.view.subviews.first(where: { (view) -> Bool in
             return view is StepperView
         })?.removeFromSuperview()
-        AppNavigation.setupNavigationApperance(navigationController!, with: .transparent)
     }
     
     override func setUpUI() {

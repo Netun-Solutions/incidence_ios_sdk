@@ -42,7 +42,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       rootVC.isNavigationBarHidden = false
       
       window?.rootViewController = rootVC
-
+      
+      UINavigationBar.appearance().setBackgroundImage(UIImage(), for: UIBarPosition.any, barMetrics: UIBarMetrics.default)
+      UINavigationBar.appearance().shadowImage = UIImage()
+      UINavigationBar.appearance().tintColor = UIColor.yellow
+      UINavigationBar.appearance().barTintColor = UIColor.red
+      UINavigationBar.appearance().isTranslucent = false
+      UINavigationBar.appearance().clipsToBounds = false
+      UINavigationBar.appearance().backgroundColor = UIColor.blue
+      //UINavigationBar.appearance().titleTextAttributes = [NSAttributedStringKey.font : (UIFont(name: "FONT NAME", size: 18))!, NSAttributedStringKey.foregroundColor: UIColor.white]
+      
       return true
   }
 }

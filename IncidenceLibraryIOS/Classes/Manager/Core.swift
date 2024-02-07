@@ -479,36 +479,7 @@ extension Core {
     
     func showContent()
     {
-        /*
-        if getUser() != nil {
-            let vm = HomeViewModel()
-            let viewController = HomeViewController.create(with: vm)
-            let navigationController = UINavigationController(rootViewController: viewController)
-            AppNavigation.setupNavigationApperance(navigationController, with: .regular)
-            window?.rootViewController = navigationController
-        } else {
-            
-            if Prefs.loadString(key: Constants.KEY_USER_SIGNOUT) != nil {
-                //Ya no eliminamos, mantenemos siempre en pantalla login. (BH05. Login. LOGIN tras cerrar sesión)
-                //Prefs.removeData(key: Constants.KEY_USER_SIGNOUT)
-                
-                let vm = SignInViewModel(viewType: .telephone)
-                let viewController = SignInViewController.create(with: vm)
-                let navigationController = UINavigationController(rootViewController: viewController)
-                navigationController.setViewControllers([viewController], animated: false)
-                AppNavigation.setupNavigationApperance(navigationController, with: .regular)
-                window?.rootViewController = navigationController
-            }
-            else {
-                let viewModel = RegistrationStepsViewModel(completedSteps: [], origin: .registration)
-                let viewController = RegistrationStepsViewController.create(with: viewModel)
-                let navigationController = UINavigationController(rootViewController: viewController)
-                navigationController.setViewControllers([viewController], animated: false)
-                AppNavigation.setupNavigationApperance(navigationController, with: .regular)
-                window?.rootViewController = navigationController
-            }
-        }
-        */
+        
     }
     
     func onAppBecomeActive()
