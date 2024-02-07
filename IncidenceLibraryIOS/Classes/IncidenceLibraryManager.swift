@@ -161,7 +161,7 @@
         //navigationController.navigationBar.clipsToBounds = false
         //navigationController.navigationBar.backgroundColor = UIColor.white
         
-        AppNavigation.setupNavigationApperance(navigationController, with: .white)
+        //AppNavigation.setupNavigationApperance(navigationController, with: .white)
         
         return navigationController
     }
@@ -243,10 +243,9 @@
     public func needShowLinkResult() -> Bool {
         let res = validateScreen(screen: Constants.SCREEN_LINK_RESULT)
         if (res == "SCREEN_OK") {
-            return true
-            
+            return true            
         } else {
-            return true
+            return false
         }
     }
     

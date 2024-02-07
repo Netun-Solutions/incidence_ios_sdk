@@ -14,7 +14,7 @@ enum NavigationStyle {
 }
 
 final class AppNavigation {
-    static func setupNavigationApperance(_ navigationController: UINavigationController, with style: NavigationStyle) {
+    static func setupNavigationApperanceOLD(_ navigationController: UINavigationController, with style: NavigationStyle) {
         switch style {
         case .regular:
             navigationController.navigationItem.backBarButtonItem?.title = ""
