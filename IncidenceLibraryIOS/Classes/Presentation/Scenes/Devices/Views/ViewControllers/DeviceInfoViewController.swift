@@ -62,6 +62,10 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
         backButton.addTarget(self, action: #selector(onClickReturn), for: .touchUpInside)
         
         setUpNavigation()
+        
+        IncidenceLibraryManager.shared.setViewBackground(view: self.view)
+        IncidenceLibraryManager.shared.setButtonBackground(view: backButton)
+        IncidenceLibraryManager.shared.setButtonTextColor(view: backButton)        
     }
     
     override func loadData() {

@@ -310,7 +310,7 @@ class MenuView: UIView {
         
         var preferences = EasyTipView.Preferences()
                 
-        preferences.drawing.backgroundColor = UIColor.app(.incidencePrimary)!
+        preferences.drawing.backgroundColor = IncidenceLibraryManager.shared.getSupportBackgroundColor() ?? UIColor.app(.incidencePrimary)!
         preferences.drawing.font = UIFont.app(.primaryRegular, size: 16)!
         preferences.drawing.foregroundColor = UIColor.white
         preferences.drawing.textAlignment = NSTextAlignment.center
@@ -379,7 +379,7 @@ class MenuView: UIView {
             
             let crossImageView = UIImageView(frame: CGRect(x: width - 16 - 24, y: 16, width: 24, height: 24))
             //crossImageView.backgroundColor = UIColor.app(.black)
-            crossImageView.image = UIImage.app( "Cross")
+            crossImageView.image = UIImage.app( "Cross")?.withRenderingMode(.alwaysTemplate)
             crossImageView.isUserInteractionEnabled = true
             let tap = UITapGestureRecognizer(target: self, action: #selector(closeTooltip))
             crossImageView.addGestureRecognizer(tap)
@@ -400,6 +400,10 @@ class MenuView: UIView {
             containerView.frame.size = CGSize(width: containerView.frame.size.width, height: newHeight)
             
             parentViewController?.view.addSubview(viewOpa);
+            
+            //IncidenceLibraryManager.shared.setSupportBackground(view: containerView)
+            IncidenceLibraryManager.shared.setSupportTextColor(view: tooltipLabel)
+            IncidenceLibraryManager.shared.setSupportTintColor(imageView: crossImageView)
             
             let tip = EasyTipView(contentView: containerView, preferences: preferences)
             tip.show(animated: false, forView: arrowImageView, withinSuperview: parentViewController?.view)
@@ -509,8 +513,15 @@ class MenuView: UIView {
             
             let crossImageView = UIImageView(frame: CGRect(x: width - 16 - 24, y: 16, width: 24, height: 24))
             //crossImageView.backgroundColor = UIColor.app(.black)
-            crossImageView.image = UIImage.app( "Cross")
+            crossImageView.image = UIImage.app( "Cross")?.withRenderingMode(.alwaysTemplate)
             crossImageView.isUserInteractionEnabled = true
+            
+            
+            
+            let image = UIImage(named: "Swift")?.withRenderingMode(.alwaysTemplate)
+            let imageView = UIImageView(image: image)
+            imageView.tintColor = .systemPink
+            
             let tap = UITapGestureRecognizer(target: self, action: #selector(closeTooltip))
             crossImageView.addGestureRecognizer(tap)
             containerView.addSubview(crossImageView)
@@ -519,6 +530,10 @@ class MenuView: UIView {
             containerView.frame.size = CGSize(width: containerView.frame.size.width, height: newHeight)
             
             parentViewController?.view.addSubview(viewOpa);
+            
+            //IncidenceLibraryManager.shared.setSupportBackground(view: containerView)
+            IncidenceLibraryManager.shared.setSupportTextColor(view: tooltipLabel)
+            IncidenceLibraryManager.shared.setSupportTintColor(imageView: crossImageView)
             
             let tip = EasyTipView(contentView: containerView, preferences: preferences)
             tip.show(animated: false, forView: arrowImageView, withinSuperview: parentViewController?.view)

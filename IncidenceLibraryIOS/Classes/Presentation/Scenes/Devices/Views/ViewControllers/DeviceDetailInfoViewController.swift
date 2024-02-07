@@ -272,6 +272,8 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         startCountDownTimer()
         
         setUpNavigation()
+        
+        IncidenceLibraryManager.shared.setViewBackground(view: self.view)
     }
     
     override func loadData() {

@@ -39,6 +39,10 @@ class EcommerceVC: IABaseViewController
         firstButton.addGestureRecognizer(tap)
         
         self.setupPageController()
+        
+        IncidenceLibraryManager.shared.setViewBackground(view: self.view)
+        IncidenceLibraryManager.shared.setButtonBackground(view: firstButton)
+        IncidenceLibraryManager.shared.setButtonTextColor(view: firstButton)
     }
     
     private func setupPageController()

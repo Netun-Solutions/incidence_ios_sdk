@@ -502,9 +502,9 @@ extension RegistrationBeaconSelectTypeViewController: UITableViewDelegate, UITab
             return UITableViewCell()
         }
         
-        var indexRowIoT = 0;
-        var indexRowIoTAmp = showingIoT ? 1 : -1;
-        var indexRowIoTAmp2 = showingIoT ? 2 : -1;
+        let indexRowIoT = 0;
+        let indexRowIoTAmp = showingIoT ? 1 : -1;
+        let indexRowIoTAmp2 = showingIoT ? 2 : -1;
         if (indexPath.row == indexRowIoT && !hideIOT)
         {
             cell.configure(with: "dispositivo_red", title: "incidence_key_select_beacon_type_iot".localized(), identifier: 1, delegate: self, rightIcon: showingIoT ? .arrowUp : .arrowDown, tooltipText:nil)
@@ -523,9 +523,9 @@ extension RegistrationBeaconSelectTypeViewController: UITableViewDelegate, UITab
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        var indexRowIoT = 0;
-        var indexRowIoTAmp = showingIoT ? 1 : -1;
-        var indexRowIoTAmp2 = showingIoT ? 2 : -1;
+        let indexRowIoT = 0;
+        let indexRowIoTAmp = showingIoT ? 1 : -1;
+        let indexRowIoTAmp2 = showingIoT ? 2 : -1;
         
         if (indexPath.row == indexRowIoT)
         {

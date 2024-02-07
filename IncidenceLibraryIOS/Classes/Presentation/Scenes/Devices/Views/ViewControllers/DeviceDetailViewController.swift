@@ -70,6 +70,8 @@ class DeviceDetailViewController: IABaseViewController, StoryboardInstantiable {
         }
         scrollView.isHidden = true
         setUpNavigation()
+        
+        IncidenceLibraryManager.shared.setViewBackground(view: self.view)
     }
     
     func updateUI() {

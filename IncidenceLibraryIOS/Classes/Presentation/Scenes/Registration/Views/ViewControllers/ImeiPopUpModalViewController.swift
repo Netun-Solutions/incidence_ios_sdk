@@ -128,6 +128,10 @@ public final class ImeiPopUpModalViewController: UIViewController, TextFieldView
         continueButton.setTitle("incidence_key_accept".localized(), for: .normal)
         let tapContinue = UITapGestureRecognizer(target: self, action: #selector(didTapAccept))
         continueButton.addGestureRecognizer(tapContinue)
+        
+        IncidenceLibraryManager.shared.setButtonBackground(view: continueButton)
+        IncidenceLibraryManager.shared.setButtonTextColor(view: continueButton)
+        
         view.addSubview(continueButton)
         
         

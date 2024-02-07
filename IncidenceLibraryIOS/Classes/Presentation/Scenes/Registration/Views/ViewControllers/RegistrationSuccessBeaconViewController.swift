@@ -51,6 +51,11 @@ class RegistrationSuccessBeaconViewController: IABaseViewController, StoryboardI
         
         let image = viewModel.beaconTypeId == 1 ? UIImage.app("location_smart") : viewModel.beaconTypeId == 3 ? UIImage.app("beacon_hella_reg") : UIImage.app("location")
         imageBeacon.image = image;
+        
+        IncidenceLibraryManager.shared.setViewBackground(view: self.view)
+        IncidenceLibraryManager.shared.setTextColor(view: titleLabel)
+        IncidenceLibraryManager.shared.setButtonBackground(view: continueButton)
+        IncidenceLibraryManager.shared.setButtonTextColor(view: continueButton)
     }
   
     private func setUpStepperView() {

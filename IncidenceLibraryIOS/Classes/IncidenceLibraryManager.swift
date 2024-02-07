@@ -18,11 +18,11 @@
     
     public var incidencesTypes: [IncidenceType]? = [IncidenceType]()
 
-    public class func setup(_ config: IncidenceLibraryConfig) {
+    public class func setup(_ config: IncidenceLibraryConfig, completion: @escaping (IActionResponse) -> Void) {
         IncidenceLibraryManager.shared = IncidenceLibraryManager(config: config)
         Api.shared.setup(env: config.env);
         shared.initFonts()
-        shared.validateApiKey();
+        shared.validateApiKey(completionCall: completion);
     }
     
     func initFonts() {
@@ -77,11 +77,9 @@
         log.error("Config ok " + String(describing: env))
     }
     
-    private func validateApiKey(
-        completionCall: ((Error?) -> Void)? = nil
-    ) {
+    private func validateApiKey(completionCall: @escaping (IActionResponse) -> Void) {
         Api.shared.validateApiKey(apiKey: apiKey, completion: { result in
-            
+            var response: IActionResponse
             if (result.isSuccess())
             {
                 self.validApiKey = true
@@ -92,7 +90,15 @@
                 self.insurance = result.get(key: "insurance")
                 
                 self.appearance = result.get(key: "appearance")
-                
+                /*
+                self.appearance?.background_color="#FFFFFF";
+                self.appearance?.letter_color="#2D373D";
+                self.appearance?.error_letter_color="#2D373D";
+                self.appearance?.button_color="#D81E05";
+                self.appearance?.button_letter_color="#FFFFFF";
+                self.appearance?.support_background_color="#D81E05";
+                self.appearance?.support_letter_color="#D81E05";
+                */
                 self.incidencesTypes = result.getList(key: "incidenceTypes") ?? [IncidenceType]()
                 
                 var valores = result.getJSONString(key: "literals")
@@ -108,11 +114,15 @@
                 }
                 
                 Core.shared.registerDevice()
+                response = IActionResponse(status: true)
             }
             else
             {
                 self.validApiKey = false
+                response = IActionResponse(status: false, message: result.message)
             }
+            
+            completionCall(response)
        })
     }
     
@@ -335,7 +345,6 @@
             }
         }
     }
-    
     func getTextColor() -> UIColor? {
         var colorRes: UIColor? = nil;
         if let letterColor = self.appearance?.letter_color {
@@ -345,6 +354,51 @@
         }
         
         return colorRes
+    }
+    func setButtonBackground(view: UIView) {
+        if let backgroundColor = self.appearance?.button_color {
+            if let color = UIColor.appWithHex(hex: backgroundColor) {
+                view.backgroundColor = color
+            }
+        }
+    }
+    func setButtonTextColor(view: PrimaryButton) {
+        if let letterColor = self.appearance?.button_letter_color {
+            if let color = UIColor.appWithHex(hex: letterColor) {
+                view.setTitleColor(color, for: .normal)
+            }
+        }
+    }
+    func setSupportBackground(view: UIView) {
+        if let backgroundColor = self.appearance?.support_background_color {
+            if let color = UIColor.appWithHex(hex: backgroundColor) {
+                view.backgroundColor = color
+            }
+        }
+    }
+    func getSupportBackgroundColor() -> UIColor? {
+        var colorRes: UIColor? = nil;
+        if let letterColor = self.appearance?.support_background_color {
+            if let color = UIColor.appWithHex(hex: letterColor) {
+                colorRes = color
+            }
+        }
+        
+        return colorRes
+    }
+    func setSupportTintColor(imageView: UIView) {
+        if let backgroundColor = self.appearance?.support_letter_color {
+            if let color = UIColor.appWithHex(hex: backgroundColor) {
+                imageView.tintColor = color
+            }
+        }
+    }
+    func setSupportTextColor(view: UILabel) {
+        if let letterColor = self.appearance?.support_letter_color {
+            if let color = UIColor.appWithHex(hex: letterColor) {
+                view.textColor = color
+            }
+        }
     }
     
     func getInsurance() -> Insurance? {
