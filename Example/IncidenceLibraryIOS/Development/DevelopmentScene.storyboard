@@ -191,6 +191,24 @@
                                             <action selector="btnReportIncSimpPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="pfI-bH-y3N"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3No-LC-hZm">
+                                        <rect key="frame" x="0.0" y="680" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Obq-dK-5Fl"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Opciones de baliza"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Flujo reportar incidencia OP1 (simplificado)">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnReportIncSimpOp1Pressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dFH-iJ-gNI"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -203,11 +221,13 @@
                                     <constraint firstItem="qVt-JF-sYA" firstAttribute="top" secondItem="N6d-Ew-bZw" secondAttribute="bottom" constant="20" id="E3Q-2L-Clp"/>
                                     <constraint firstItem="N6d-Ew-bZw" firstAttribute="top" secondItem="PfN-eX-F67" secondAttribute="bottom" constant="20" id="EFg-HL-Z43"/>
                                     <constraint firstAttribute="trailing" secondItem="N6d-Ew-bZw" secondAttribute="trailing" id="EUq-cm-gV7"/>
+                                    <constraint firstAttribute="trailing" secondItem="3No-LC-hZm" secondAttribute="trailing" id="GKN-oh-I46"/>
                                     <constraint firstItem="Iz2-a2-R3V" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="GmJ-IF-35w"/>
                                     <constraint firstItem="UvN-Vt-Jpy" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="Gox-Qv-0cC"/>
                                     <constraint firstAttribute="trailing" secondItem="8Qz-Vm-AG0" secondAttribute="trailing" id="HRz-0w-arL"/>
                                     <constraint firstAttribute="trailing" secondItem="Joe-A6-pz9" secondAttribute="trailing" id="HW7-jD-Kvt"/>
                                     <constraint firstAttribute="trailing" secondItem="R7B-0P-S7c" secondAttribute="trailing" id="Hjq-Av-kfy"/>
+                                    <constraint firstItem="3No-LC-hZm" firstAttribute="top" secondItem="R7B-0P-S7c" secondAttribute="bottom" constant="20" id="Kp2-gB-toW"/>
                                     <constraint firstAttribute="trailing" secondItem="qVt-JF-sYA" secondAttribute="trailing" id="Lzu-YG-6fV"/>
                                     <constraint firstAttribute="trailing" secondItem="Eof-UZ-t8h" secondAttribute="trailing" id="OEK-Mx-EiD"/>
                                     <constraint firstItem="R7B-0P-S7c" firstAttribute="top" secondItem="Eof-UZ-t8h" secondAttribute="bottom" constant="20" id="Okc-18-Gk0"/>
@@ -216,6 +236,7 @@
                                     <constraint firstItem="Eof-UZ-t8h" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="Xa1-2l-ZkK"/>
                                     <constraint firstItem="8Qz-Vm-AG0" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="dYD-tI-tUP"/>
                                     <constraint firstItem="Joe-A6-pz9" firstAttribute="top" secondItem="UvN-Vt-Jpy" secondAttribute="bottom" constant="20" id="dtd-Nu-dFY"/>
+                                    <constraint firstItem="3No-LC-hZm" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="fzU-kD-W1F"/>
                                     <constraint firstAttribute="trailing" secondItem="Iz2-a2-R3V" secondAttribute="trailing" id="gYE-W0-vwX"/>
                                     <constraint firstAttribute="trailing" secondItem="PfN-eX-F67" secondAttribute="trailing" id="q2B-Ms-A2G"/>
                                     <constraint firstItem="R7B-0P-S7c" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="qP2-DC-e07"/>

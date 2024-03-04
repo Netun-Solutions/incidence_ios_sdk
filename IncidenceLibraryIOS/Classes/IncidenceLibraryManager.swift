@@ -240,6 +240,18 @@
         }
     }
     
+    public func getReportIncSimpOp1ViewController(user: User!, vehicle: Vehicle!, delegate: ReportTypeViewControllerDelegate!) -> UINavigationController {
+        let res = validateScreen(screen: Constants.SCREEN_REPOR_INC_SIMPLE_OP1)
+        if (res == "SCREEN_OK") {
+            let vm = ReportTypeViewModel(vehicle: vehicle, user: user, delegate: delegate, openFromNotification: false, flowComplete: false)
+            let viewController = ReportTypeOp1ViewController.create(with: vm)
+            return createNavigationController(viewController: viewController)
+            
+        } else {
+            return processScreenError(error: res)
+        }
+    }
+    
     public func needShowLinkResult() -> Bool {
         let res = validateScreen(screen: Constants.SCREEN_LINK_RESULT)
         if (res == "SCREEN_OK") {

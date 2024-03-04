@@ -266,6 +266,7 @@
 		E5522694CC2EA58312459F4730985666 /* NSTextAttachment+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = A77E71E2E8CF6308B2D6203235362DD0 /* NSTextAttachment+Kingfisher.swift */; };
 		E59FC59C2B638AEE000A961E /* ReportBreakdownTypeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FC59B2B638AEE000A961E /* ReportBreakdownTypeViewModel.swift */; };
 		E59FC59E2B638AFD000A961E /* ReportBreakdownTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E59FC59D2B638AFD000A961E /* ReportBreakdownTypeViewController.swift */; };
+		E5AA742B2B95C6830041B241 /* ReportTypeOp1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5AA742A2B95C6830041B241 /* ReportTypeOp1ViewController.swift */; };
 		E5BA79342B580CAD006FBC46 /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5BA79332B580CAD006FBC46 /* AppConfig.swift */; };
 		E5D868542B17573800F9CB7B /* BeaconData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5D868532B17573800F9CB7B /* BeaconData.swift */; };
 		E61E4E1DF791252FA42033D48545E2D9 /* UIStackView+RemoveAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9126BD7CE7585A7F65D5CFD426B022AA /* UIStackView+RemoveAll.swift */; };
@@ -634,6 +635,7 @@
 		E582F02016503857F37324CDAEC12E48 /* Response.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Response.swift; path = Source/Response.swift; sourceTree = "<group>"; };
 		E59FC59B2B638AEE000A961E /* ReportBreakdownTypeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportBreakdownTypeViewModel.swift; sourceTree = "<group>"; };
 		E59FC59D2B638AFD000A961E /* ReportBreakdownTypeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportBreakdownTypeViewController.swift; sourceTree = "<group>"; };
+		E5AA742A2B95C6830041B241 /* ReportTypeOp1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportTypeOp1ViewController.swift; sourceTree = "<group>"; };
 		E5BA79332B580CAD006FBC46 /* AppConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		E5D868532B17573800F9CB7B /* BeaconData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconData.swift; sourceTree = "<group>"; };
 		E5DBA4F4946DBABD4C740A4144939CC7 /* Constants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -1091,6 +1093,7 @@
 				87D80845CB6C81C6587E146FBFB19848 /* ReportScene.storyboard */,
 				456FFAD21CC9179CCD74590898152876 /* ReportTypeViewController.swift */,
 				0B48352C6CA69D40D8075E7C9E853AF8 /* BottomSheet */,
+				E5AA742A2B95C6830041B241 /* ReportTypeOp1ViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -1823,6 +1826,7 @@
 				BB69A1DAE9E1F4FAD926A1B7BB427EB2 /* CustomNavigationController.swift in Sources */,
 				8F92C3A0B92BF12B4A097620B3057328 /* CustomUISwitch.swift in Sources */,
 				068D25473DDF41B647B4CCF2890CC322 /* DateUtils.swift in Sources */,
+				E5AA742B2B95C6830041B241 /* ReportTypeOp1ViewController.swift in Sources */,
 				67D9014435370C0256F2AD663667E100 /* DeviceDeleteBottomSheetView.swift in Sources */,
 				2A1033A1171673C85C2F4F2B018FBEEF /* DeviceDetailInfoViewController.swift in Sources */,
 				EE8159AE8DEB856F55257DB416BFEC9E /* DeviceDetailSdkViewModel.swift in Sources */,

@@ -164,6 +164,11 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable, Repor
         present(navigationController, animated: true, completion: nil)
     }
     
+    @IBAction func btnReportIncSimpOp1Pressed(_ sender: Any) {
+        let navigationController = IncidenceLibraryManager.shared.getReportIncSimpOp1ViewController(user: user, vehicle: vehicle, delegate: self)
+        present(navigationController, animated: true, completion: nil)
+    }
+    
     func onResult(response: IncidenceLibraryIOS.IActionResponse) {
         print(response)
         if (response.status) {

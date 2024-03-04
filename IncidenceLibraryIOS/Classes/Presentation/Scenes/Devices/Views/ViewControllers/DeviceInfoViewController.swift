@@ -17,6 +17,8 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
     
     private var index: Int = 0
     
+    let stepperView = StepperView()
+    
     static var storyboardFileName = "DevicesScene"
     private var viewModel: DeviceDetailViewModel! { get { return baseViewModel as? DeviceDetailViewModel }}
     
@@ -32,6 +34,11 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        setUpStepperView()
     }
     
     override func setUpUI() {
@@ -76,6 +83,23 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
         
     }
     
+    private func setUpStepperView() {
+        navigationController?.view.subviews.first(where: { (view) -> Bool in
+            return view is StepperView
+            })?.removeFromSuperview()
+
+        navigationController?.view.addSubview(stepperView)
+            
+        if let view = navigationController?.navigationBar {
+            stepperView.topAnchor.constraint(equalTo: view.bottomAnchor, constant: 0).isActive = true
+            stepperView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 24).isActive = true
+            stepperView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -24).isActive = true
+            stepperView.anchorCenterXToSuperview()
+            stepperView.currentStep = 1
+            stepperView.percentatge = 100
+        }
+    }
+    
     @objc func onClickReturn() {
         if (index == 0) {
             index=1;
@@ -93,6 +117,9 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
             } else {
                 titleLabel.text = "incidence_key_device_desc_info2".localized()
             }
+            
+            stepperView.currentStep = 2
+            stepperView.percentatge = 100
             
         } else if (index == 1) {
             index=2
@@ -112,7 +139,13 @@ class DeviceInfoViewController: IABaseViewController, StoryboardInstantiable {
             }
             
             backButton.setTitle("Finalizar", for: .normal)
+            
+            stepperView.currentStep = 3
+            stepperView.percentatge = 100
         } else {
+            navigationController?.view.subviews.first(where: { (view) -> Bool in
+                return view is StepperView
+                })?.removeFromSuperview()
             backInfoPressed()
         }
     }

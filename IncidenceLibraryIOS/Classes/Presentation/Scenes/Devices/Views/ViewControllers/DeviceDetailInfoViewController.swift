@@ -44,7 +44,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         let customSubtitleText = "incidence_key_stop_device_desc".localized()
         
         let x = 30.0;
-        let y = view.frame.y + 90;
+        let y = view.frame.y + 10;
         let width = UIScreen.main.bounds.width - x - x
         let widthMargin = 16.0
         let widthCross = 24.0
@@ -119,7 +119,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         let customAlertText = "incidence_key_report_incidence".localized()
         
         let x = 30.0;
-        let y = view.frame.y + 90;
+        let y = view.frame.y + 10;
         let width = UIScreen.main.bounds.width - x - x
         let widthMargin = 16.0
         let widthCross = 24.0
