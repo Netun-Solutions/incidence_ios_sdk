@@ -74,6 +74,7 @@ extension Core {
         if let str = Prefs.loadString(key: Constants.KEY_USER_LANG) {
             res = str
         }
+        res = "es";
         
         return res
     }

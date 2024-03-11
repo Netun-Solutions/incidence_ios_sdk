@@ -8,16 +8,43 @@
 import UIKit
 import AVFoundation
 
+enum ReportTypeOp1SpeechRecognizion: CaseIterable {
+    case accidentNumber
+    case accident
+    case faultNumber
+    case fault
+    case cancelNumber
+    case cancel
+
+    func getLocalizedText() -> String {
+        switch self {
+        case .accidentNumber:
+            return "incidence_key_one".localizedVoice()
+        case .accident:
+            return "incidence_key_accident".localizedVoice()
+        case .faultNumber:
+            return "incidence_key_two".localizedVoice()
+        case .fault:
+            return "incidence_key_fault".localizedVoice()
+        case .cancelNumber:
+            return "incidence_key_three".localizedVoice()
+        case .cancel:
+            return "incidence_key_cancel".localizedVoice()
+        }
+    }
+}
+
 public class ReportTypeOp1ViewController: ReportBaseViewController, StoryboardInstantiable, SpeechReconizable {
     public var voiceDialogs: [String] {
         get {
-            var array = ["incidence_key_report_ask_what".localizedVoice(),
-                         "incidence_key_report_ask_what_descrip".localizedVoice()]
+            let desc = String(format:"incidence_key_report_ask_what_descrip".localizedVoice(), 3, 0);
+            var array = ["incidence_key_report_ask_what2".localizedVoice(),
+                         desc]
             array.append(contentsOf: speechRecognizion)
             return array
         }
     }
-    public var speechRecognizion: [String] = ReportViewSpeechRecognizion.allCases.map({ $0.getLocalizedText() })
+    public var speechRecognizion: [String] = ReportTypeOp1SpeechRecognizion.allCases.map({ $0.getLocalizedText() })
     
     public var speechSynthesizer: AVSpeechSynthesizer!
     public var speechRecognizer: SpeechRecognizer!
@@ -93,13 +120,13 @@ public class ReportTypeOp1ViewController: ReportBaseViewController, StoryboardIn
     
     override func setUpUI() {
         super.setUpUI()
-        incidenceImageView.layer.shadowColor = UIColor.app(.incidencePrimary)?.cgColor
-        incidenceImageView.layer.shadowOffset = CGSize(width: 0.0, height: 16)
-        incidenceImageView.layer.shadowOpacity = 0.16
-        incidenceImageView.layer.shadowRadius = 32
-        incidenceImageView.layer.masksToBounds = false
+        //incidenceImageView.layer.shadowColor = UIColor.app(.incidencePrimary)?.cgColor
+        //incidenceImageView.layer.shadowOffset = CGSize(width: 0.0, height: 16)
+        //incidenceImageView.layer.shadowOpacity = 0.16
+        //incidenceImageView.layer.shadowRadius = 32
+        //incidenceImageView.layer.masksToBounds = false
         
-        titleLabel.text = viewModel.titleText
+        titleLabel.text = viewModel.titleText2
         titleLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0, aligment: .center)
         self.descriptionLabel.text = String(format:self.viewModel.descriptionText, 3, 0)
         descriptionLabel.setLineSpacing(lineSpacing: 8, lineHeightMultiple: 0, aligment: .center)
@@ -225,7 +252,7 @@ public class ReportTypeOp1ViewController: ReportBaseViewController, StoryboardIn
                     
                     print(data)
                     if let dataDic = StringUtils.convertToDictionary(text: data) {
-                        incidence.id = Int(dataDic["id"] as! Int)
+                        //incidence.id = Int(dataDic["id"] as! Int)
                         incidence.externalIncidenceId = dataDic["externalIncidenceTypeId"] as? String
                     }
                 }
@@ -259,7 +286,7 @@ public class ReportTypeOp1ViewController: ReportBaseViewController, StoryboardIn
     
     public func recognizedSpeech(text: String) {
         stopTimer()
-        if let action = ReportViewSpeechRecognizion.allCases.first(where: {$0.getLocalizedText() == text}) {
+        if let action = ReportTypeOp1SpeechRecognizion.allCases.first(where: {$0.getLocalizedText() == text}) {
             stopSpeechRecognizion()
             switch action {
             case .faultNumber,

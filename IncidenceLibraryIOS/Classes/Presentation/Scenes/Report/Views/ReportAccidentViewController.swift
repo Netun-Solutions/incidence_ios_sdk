@@ -237,7 +237,7 @@ class ReportAccidentViewController: ReportBaseViewController, StoryboardInstanti
                     
                     print(data)
                     if let dataDic = StringUtils.convertToDictionary(text: data) {
-                        incidence.id = Int(dataDic["id"] as! Int)
+                        //incidence.id = Int(dataDic["id"] as! Int)
                         incidence.externalIncidenceId = dataDic["externalIncidenceTypeId"] as? String
                     }
                 }

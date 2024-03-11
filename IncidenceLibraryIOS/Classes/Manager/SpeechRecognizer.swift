@@ -15,7 +15,7 @@ enum SpeechStatus: Error {
 
 public class SpeechRecognizer {
     
-    let speechRecognizer = SFSpeechRecognizer(locale: Locale.current)!
+    let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: Core.shared.getLanguage()))!
     var recognitionRequest: SFSpeechAudioBufferRecognitionRequest?
     var recognitionTask: SFSpeechRecognitionTask?
     let audioEngine = AVAudioEngine()

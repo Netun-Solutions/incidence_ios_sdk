@@ -45,6 +45,15 @@ extension String {
             }
         }
         
-        return NSLocalizedString(self, comment: comment ?? "")
+        if let literales = Core.shared.literales {
+            if let valor = literales[self] {
+                var str = valor as? String ?? ""
+                str = str.replacingOccurrences(of: "\\n", with: "\n")
+                return str
+            }
+        }
+        
+        let bundle = Bundle(for: IncidenceLibraryManager.self)
+        return NSLocalizedString(self, bundle: bundle, comment: comment ?? "")
     }
 }

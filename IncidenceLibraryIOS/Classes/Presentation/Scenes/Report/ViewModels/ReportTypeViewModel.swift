@@ -43,6 +43,7 @@ public class ReportTypeViewModel: IABaseViewModel {
     }
 
     let titleText: String = "incidence_key_report_ask_what".localized()
+    let titleText2: String = "incidence_key_report_ask_what2".localized()
     let descriptionText: String = "incidence_key_report_ask_what_descrip".localized()
     let breakdownButtonText: String = "incidence_key_fault".localized()
     let accidentButtonText: String = "incidence_key_accident".localized()

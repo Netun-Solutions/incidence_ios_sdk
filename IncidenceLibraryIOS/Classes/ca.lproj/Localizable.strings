@@ -732,6 +732,7 @@ Todo ello sin perjuicio de que dicho plazo pueda ampliarse, cuando usted así lo
 
 /*  */
 "incidence_key_report_ask_what" = "¿Has tenido una avería o un accidente?";
+"incidence_key_report_ask_what2" = "¿Has tenido un accidente o una avería?";
 
 /*  */
 "incidence_key_report_ask_what_descrip" = "Pasados %02d:%02d minutos sin respuesta, llamaremos automáticamente a emergencias";
@@ -952,7 +953,7 @@ Todo ello sin perjuicio de que dicho plazo pueda ampliarse, cuando usted así lo
 "incidence_key_alert_need_camera_permission_qr" = "Es necesario el permiso de acceso a la cámara para poder capturar el QR";
 "incidence_key_lang_spanish" = "Español";
 "incidence_key_lang_english" = "English";
-"incidence_key_one" = "Un";
+"incidence_key_one" = "Uno";
 "incidence_key_two" = "Dos";
 "incidence_key_three" = "Tres";
 "incidence_key_four" = "Cuatre";

@@ -66,7 +66,7 @@ public class ReportBaseViewController: IABaseViewController {
         let customSubtitleText = "incidence_key_please_turn_up_volume".localized()
         
         let x = 30.0;
-        let y = view.frame.y;
+        let y = view.frame.y + 90;
         let width = UIScreen.main.bounds.width - x - x
         let widthMargin = 16.0
         let widthCross = 24.0
@@ -144,7 +144,7 @@ public class ReportBaseViewController: IABaseViewController {
         let customAlertText = "incidence_key_alert_llamada_emergencias".localized()
         
         let x = 30.0;
-        let y = view.frame.y;
+        let y = view.frame.y + 90;
         let width = UIScreen.main.bounds.width - x - x
         let widthMargin = 16.0
         let widthCross = 24.0
