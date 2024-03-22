@@ -169,6 +169,21 @@ class DevelopmentViewController: UIViewController, StoryboardInstantiable, Repor
         present(navigationController, animated: true, completion: nil)
     }
     
+    @IBAction func btnGetGeoPressed(_ sender: Any) {
+        IncidenceLibraryManager.shared.getGeo(user: user, vehicle: vehicle, completion: { result in
+            print(result)
+            if (result.status && result.data != nil) {
+                
+                let jsonData = try? JSONSerialization.data(withJSONObject: result.data!, options: [])
+                let jsonString = String(data: jsonData!, encoding: .utf8)!
+                
+                self.showToast(controller: self, message: "SI hay baliza asociada " + jsonString)
+            } else {
+                self.showToast(controller: self, message: "NO hay coordenadas")
+            }
+       })
+    }
+    
     func onResult(response: IncidenceLibraryIOS.IActionResponse) {
         print(response)
         if (response.status) {

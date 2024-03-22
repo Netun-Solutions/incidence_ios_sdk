@@ -209,6 +209,24 @@
                                             <action selector="btnReportIncSimpOp1Pressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dFH-iJ-gNI"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bp-yL-Jbd">
+                                        <rect key="frame" x="0.0" y="650" width="374" height="50"/>
+                                        <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MxB-lQ-KHl"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Opciones de baliza"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Obtener geoposición">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" red="0.84510344270000004" green="0.034931246190000001" blue="0.073007173839999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </backgroundConfiguration>
+                                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="btnGetGeoPressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="h6f-FF-uYf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -234,8 +252,10 @@
                                     <constraint firstItem="N6d-Ew-bZw" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="QO8-Un-kro"/>
                                     <constraint firstItem="PfN-eX-F67" firstAttribute="top" secondItem="Joe-A6-pz9" secondAttribute="bottom" constant="10" id="UKW-Ww-U6e"/>
                                     <constraint firstItem="Eof-UZ-t8h" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="Xa1-2l-ZkK"/>
+                                    <constraint firstItem="0bp-yL-Jbd" firstAttribute="top" secondItem="3No-LC-hZm" secondAttribute="bottom" constant="10" id="auC-bV-OG3"/>
                                     <constraint firstItem="8Qz-Vm-AG0" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="dYD-tI-tUP"/>
                                     <constraint firstItem="Joe-A6-pz9" firstAttribute="top" secondItem="UvN-Vt-Jpy" secondAttribute="bottom" constant="10" id="dtd-Nu-dFY"/>
+                                    <constraint firstItem="0bp-yL-Jbd" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="eld-rw-0G9"/>
                                     <constraint firstItem="3No-LC-hZm" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="fzU-kD-W1F"/>
                                     <constraint firstAttribute="trailing" secondItem="Iz2-a2-R3V" secondAttribute="trailing" id="gYE-W0-vwX"/>
                                     <constraint firstAttribute="trailing" secondItem="PfN-eX-F67" secondAttribute="trailing" id="q2B-Ms-A2G"/>
@@ -245,6 +265,7 @@
                                     <constraint firstAttribute="trailing" secondItem="Y6s-GS-oAh" secondAttribute="trailing" id="vSK-Dk-DBe"/>
                                     <constraint firstItem="Joe-A6-pz9" firstAttribute="leading" secondItem="5fU-ie-WHQ" secondAttribute="leading" id="wSI-t1-KtF"/>
                                     <constraint firstItem="UvN-Vt-Jpy" firstAttribute="top" secondItem="Y6s-GS-oAh" secondAttribute="bottom" constant="10" id="yE5-hi-xtL"/>
+                                    <constraint firstAttribute="trailing" secondItem="0bp-yL-Jbd" secondAttribute="trailing" id="yU3-NX-QdU"/>
                                 </constraints>
                             </view>
                         </subviews>

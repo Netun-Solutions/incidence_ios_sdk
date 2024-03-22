@@ -296,6 +296,43 @@
         }
     }
     
+    public func getGeo(user: User!, vehicle: Vehicle!, completion: @escaping (IActionResponse) -> Void) {
+        let res = validateScreen(screen: Constants.FUNC_COORDINATES_GET)
+        if (res == "SCREEN_OK") {
+            Api.shared.getGeoSdk(vehicle: vehicle, user: user, completion: { result in
+                
+                var response: IActionResponse
+                
+                if (result.isSuccess())
+                {
+                    response = IActionResponse(status: false, message: "Aún no se tienen coordenadas de la baliza")
+                    
+                    if let data = result.getJSONString(key: "data") {
+                        
+                        if let dataDic = StringUtils.convertToDictionary(text: data) {
+                            let latitude: Double? = Double(dataDic["latitude"] as! Double)
+                            let longitude: Double? = Double(dataDic["latitude"] as! Double)
+                            
+                            if (latitude != nil && longitude != nil) {
+                                response = IActionResponse(status: true)
+                                response.data = dataDic
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    response = IActionResponse(status: false, message: result.message)
+                }
+                
+                completion(response)
+           })
+        } else {
+            let response: IActionResponse = IActionResponse(status: false, message: res)
+            completion(response)
+        }
+    }
+    
     public func deleteBeaconFunc(user: User!, vehicle: Vehicle!, completion: @escaping (IActionResponse) -> Void) {
         let res = validateScreen(screen: Constants.FUNC_DEVICE_DELETE)
         if (res == "SCREEN_OK") {
