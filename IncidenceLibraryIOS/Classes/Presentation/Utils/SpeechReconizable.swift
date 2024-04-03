@@ -46,6 +46,8 @@ public extension SpeechReconizable where Self: UIViewController {
         } else {
             SpeechRecognizer.isEnabled = false
             stopSpeechRecognizion()
+            
+            Core.shared.stopTimerRepeat()
         }
     }
     
