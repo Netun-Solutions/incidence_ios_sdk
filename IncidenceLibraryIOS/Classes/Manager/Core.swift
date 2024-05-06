@@ -37,6 +37,9 @@ final class Core {
     var secondsRemainingAudioConfig = 15
     var secondsRemainingAudio = -1
     
+    var alertDgtNeedContainerShow: Bool = false
+    var alertDgtNeedContainerClosed: Bool = false
+    
     private init() {
         userCreating = User()
         vehicleCreating = Vehicle()

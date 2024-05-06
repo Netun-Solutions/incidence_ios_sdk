@@ -70,6 +70,7 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
         view.vehicle = viewModel.vehicle
         view.user = viewModel.user
         view.openFromNotification = viewModel.openFromNotification
+        view.delegateAction = viewModel.delegate
         
         return view
     }
@@ -99,13 +100,14 @@ public class ReportTypeViewController: ReportBaseViewController, StoryboardInsta
     public override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         updateSpeech()
+        loadBeacon();
     }
     
     public override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
         stopSpeechRecognizion()
-        
+        cancelHandler()
         //Core.shared.stopTimer()
     }
     
