@@ -262,8 +262,12 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         tableView.contentInsetAdjustmentBehavior = .never
         tableView.insetsContentViewsToSafeArea = false
         
+        changeImageView()
+        
+        /*
         let imageType = viewModel.device?.beaconType?.id == 1 ? UIImage.app("beacon_smart") : viewModel.device?.beaconType?.id == 3 ? UIImage.app("beacon_hella") : UIImage.app("beacon")
         deviceTypeImage.image = imageType
+         */
         deviceTypeImage.contentMode = .scaleAspectFit
         
         view.addSubview(alertStopDeviceView)
@@ -285,7 +289,7 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
                 if (beacons.count > 0) {
                     //self.device = beacons[0]
                     self.viewModel.device = beacons[0]
-                    
+                    self.changeImageView()
                     self.navigationItem.leftBarButtonItems?[1].title = self.viewModel.device?.name
                 }
                 self.refreshData()
@@ -478,6 +482,17 @@ class DeviceDetailInfoViewController: IABaseViewController, StoryboardInstantiab
         stopTimer();
         stopTimerVibrate()
         backPressed()
+    }
+    
+    func changeImageView() {
+        if let imgURLStr = viewModel.device?.beaconType?.imageBeaconIcon {
+            print("imgURLStr: " + imgURLStr)
+            let imgURL = URL(string: imgURLStr)
+            deviceTypeImage.kf.setImage(with: imgURL)
+        } else {
+            let imageType = viewModel.device?.beaconType?.id == 1 ? UIImage.app("beacon_smart") : viewModel.device?.beaconType?.id == 3 ? UIImage.app("beacon_hella") : UIImage.app("beacon")
+            deviceTypeImage.image = imageType
+        }
     }
     
     func changeView() {

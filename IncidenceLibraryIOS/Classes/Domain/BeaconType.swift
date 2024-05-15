@@ -18,6 +18,8 @@ class BeaconType:Codable {
     var textBeaconScreen1: String?
     var textBeaconScreen2: String?
     var textBeaconScreen3: String?
+    var imageBeaconIcon: String?
+    var imageBeaconIconIos: String?
     
     init()
     {

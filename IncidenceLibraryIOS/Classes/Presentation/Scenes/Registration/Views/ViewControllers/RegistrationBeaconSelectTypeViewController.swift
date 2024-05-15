@@ -245,17 +245,19 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
                 Core.shared.saveVehicle(vehicle: self.viewModel.vehicle)
                 
                 var beaconTypeId: Int = 2;
+                var imageBeaconIconIos: String?
                 let beaconData = result.get(key: "data") ?? BeaconData()
                 if let beacons = beaconData.beacon {
                     if (beacons.count > 0) {
                         let beacon = beacons[0];
                         beaconTypeId = beacon.beaconType?.id ?? 2;
+                        imageBeaconIconIos = beacon.beaconType?.imageBeaconIconIos;
                     }
                 }
                 
                 if (IncidenceLibraryManager.shared.needShowLinkResult()) {
                     //Show beacon added view
-                    let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: false, beaconTypeId: beaconTypeId, delegate: self.viewModel.delegate)
+                    let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: false, beaconTypeId: beaconTypeId, imageBeaconIcon: imageBeaconIconIos, delegate: self.viewModel.delegate)
                     let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                     self.navigationController?.pushViewController(viewController, animated: true)
                 } else {
@@ -464,7 +466,7 @@ class RegistrationBeaconSelectTypeViewController: IABaseViewController, Storyboa
                 
                 //Show beacon added view
                 let beaconTypeId: Int = beacon?.beaconType?.id ?? 2;
-                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil), beaconTypeId: beaconTypeId, delegate: self.viewModel.delegate)
+                let vm = RegistrationSuccessBeaconViewModel(origin: .addBeacon, isIoT: (vehicle.beacon?.iot != nil), beaconTypeId: beaconTypeId, imageBeaconIcon: nil, delegate: self.viewModel.delegate)
                 
                 let viewController = RegistrationSuccessBeaconViewController.create(with: vm)
                 self.navigationController?.pushViewController(viewController, animated: true)

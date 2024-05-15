@@ -12,12 +12,14 @@ class RegistrationSuccessBeaconViewModel: IABaseViewModel {
     public var origin: RegistrationOrigin
     public var isIoT = false
     public var beaconTypeId: Int
+    public var imageBeaconIcon: String?
     var delegate: ReportTypeViewControllerDelegate
     
-    internal init(origin: RegistrationOrigin = .registration, isIoT:Bool = false, beaconTypeId:Int, delegate: ReportTypeViewControllerDelegate!) {
+    internal init(origin: RegistrationOrigin = .registration, isIoT:Bool = false, beaconTypeId:Int, imageBeaconIcon:String?, delegate: ReportTypeViewControllerDelegate!) {
         self.origin = origin
         self.isIoT = isIoT
         self.beaconTypeId = beaconTypeId
+        self.imageBeaconIcon = imageBeaconIcon
         self.delegate = delegate
     }
     
