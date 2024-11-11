@@ -65,17 +65,10 @@ extension Api {
         }
         
         headers[Api.HEADER_APP] = Bundle.main.bundleIdentifier
-        //headers[Api.HEADER_APP] = "mapfre.com.app"
         headers[Api.HEADER_LANG] = Core.shared.getLanguage()
         headers[Api.HEADER_PLATFORM] = "ios"
         
         headers[Api.HEADER_AUTHORIZATION] = IncidenceLibraryManager.shared.apiKey
-        
-        // token: 254c6025c2b3e6c2495bc535b434037a
-        // deviceId: 10107
-        // app: es.incidence.app.pre2
-        // lang: es
-        // platform: ios
         
         return headers
     }
